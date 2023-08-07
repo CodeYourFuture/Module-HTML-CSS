@@ -113,3 +113,20 @@ section:first-child {
   padding: 1% 0 1% 1%;
   color: white;
 }
+
+/* Fixed Footer section */
+
+footer {
+  padding: 1.8rem 0;
+  border-top: 2px solid #40c057;
+  text-align: center;
+  color: #dee2e6;
+  font-style: italic;
+  font-size: 1.8rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-shadow: 1px 3px 4px black;
+}
