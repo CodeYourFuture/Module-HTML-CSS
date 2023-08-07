@@ -9,19 +9,31 @@ body {
     padding-top: 2%;
     font-family: "Karla";
     font-weight: 200;
+    background-color: #212529;
 }
 
 header {
     text-align: center;
+    color: white;
 }
 
 h1 {
     padding-bottom: 1%;
+    color: white;
 }
 
 section {
     width: 80%;
     margin: 0 auto;
+}
+
+h4 {
+    font-style: italic;
+    font-weight: normal;
+}
+
+button {
+    margin-top: 1.4%;
 }
 
 /* Main Section - What is git? */
@@ -48,7 +60,6 @@ section {
 }
 
 .read-more-btn {
-    margin-top: 1.4%;
     padding: 8px 16px;
     font-size: 18px;
     background-color: #40c057;
@@ -70,32 +81,34 @@ section {
 .why-do-devs-and-branch-container {
     display: grid;
     grid-template-rows: repeat(2, auto);
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 1rem;
-    column-gap: 4rem;
+    column-gap: 1rem;
 }
 
 .why-do-devs-img {
     width: 100%;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
+    border-radius: 16px;
 }
 
 .-title-desc-btn {
     grid-column: 2 / 1;
     grid-row: 2 / 3;
+    padding: 1% 0 1% 1%;
+    color: white;
 }
 
 /* Section 2a - What is a branch in Git */
 
 .what-is-branch-img {
     width: 100%;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
+    border-radius: 16px;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
 }
 
 .--title-desc-btn {
     grid-column: 2 / 3;
+    padding: 1% 0 1% 1%;
+    color: white;
 }
