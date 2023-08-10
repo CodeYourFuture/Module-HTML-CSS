@@ -127,7 +127,7 @@ article {
 
 .article__link {
     padding: .5rem 0;
-    width: 8rem;
+    width: 8.1rem;
     color: #0b1525;
     border-bottom: 2px solid var(--dark-blue);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
