@@ -1,0 +1,47 @@
+
+    /* BODY AND HEADER SECTION */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2rem;
+  font-family: "Karla";
+  font-weight: 200;
+  background-color: #afcdeb;
+}
+
+header {
+  text-align: center;
+  color: white;
+  padding: 4rem 0;
+}
+
+.github-header-title {
+  color: white;
+  font-size: 8rem;
+}
+
+section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h4 {
+  font-style: italic;
+  font-weight: normal;
+}
+
+button {
+  margin-top: 1.4%;
+}  
+
+
+
+/* Main Section - What is git? */
+
