@@ -6,7 +6,8 @@
 }
 
 body {
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
   font-family: "Karla";
   font-weight: 200;
   background-color: #212529;
@@ -129,4 +130,5 @@ footer {
   left: 50%;
   transform: translate(-50%, 0);
   text-shadow: 1px 3px 4px black;
+  background-color: #49505764;
 }
