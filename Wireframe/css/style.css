@@ -1,6 +1,4 @@
-
-    /* BODY AND HEADER SECTION */
-
+/* BODY AND HEADER SECTION */
 
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap");
 * {
@@ -22,26 +20,85 @@ header {
   padding: 4rem 0;
 }
 
-.github-header-title {
+.github-title {
   color: white;
   font-size: 8rem;
 }
 
-section {
-  width: 80%;
-  margin: 0 auto;
+h5 {
+  color: rgb(218, 252, 157);
+  font-size: 2rem;
+  font-style: normal;
 }
 
-h4 {
+/* Main Section ARTICLE */
+
+main:first-child {
+  margin: 2rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  border-style: dotted;
+}
+
+.what-is-git-img {
+  width: 100%;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+.first-article {
+  padding: 1% 0 1% 1%;
+  margin-top: -4px;
+  margin-bottom: 20px;
+  color: #073b6e;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: beige;
+}
+
+/* BUTTONS SECTION */
+
+.read-more-btn {
+  margin-top: 10px;
+  padding: 8px 15px;
+  font-size: 15px;
+  background-color: #0fa7ee;
+  border: none;
+  color: rgb(255, 250, 250);
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 1.2s, color 1.2s;
+}
+
+.read-more-btn:hover,
+.read-more-btn:active {
+  background-color: #aafab3;
+  color: white;
+}
+
+/* SECOND ARTICLE SECTION */
+
+
+
+
+
+
+
+
+
+
+/* FOOTER SECTION */
+
+footer {
+  padding: 1.8rem 0;
+  text-align: center;
+  color: #dee2e6;
   font-style: italic;
-  font-weight: normal;
+  font-size: 1.8rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-shadow: 1px 3px 4px rgb(228, 19, 19);
 }
-
-button {
-  margin-top: 1.4%;
-}  
-
-
-
-/* Main Section - What is git? */
-
