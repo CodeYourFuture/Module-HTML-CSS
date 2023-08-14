@@ -48,35 +48,69 @@ section:first-child {
     display: grid;
     grid-template-rows: repeat(2, auto);
   
-    background-color: #492c3b;
+    background-color: white;
     border-radius: 16px;
     align-self: center;
 }
 
 .what-is-git-img {
     width: 100%;
+    border-top-left-radius: 20rem;
+    border-bottom-right-radius: 20rem;
 }
 
 .title-desc-btn {
     padding: 1% 0 1% 1%;
-    color: #eceef1;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
+    color: #101010;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .read-more-btn {
     padding: 8px 16px;
     font-size: 18px;
-    background-color: #04921e;
+    background-color: #5ff65f;
     border: none;
-    color: black;
-    border-radius: 6px;
     cursor: pointer;
+    color: rgb(9, 9, 9);
+    border-radius: 3px;
     transition: background-color 1.2s, color 1.2s;
 }
 
 .read-more-btn:hover,
 .read-more-btn:active {
+    background-color: #010202;
+    color: white;
+}
+.read-more-btn-2 {
+    padding: 8px 16px;
+        font-size: 18px;
+        background-color: #5ff65f;
+        border: none;
+        color: black;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 1.2s, color 1.2s;
+}
+.read-more-btn-2:hover,
+.read-more-btn-2:active {
+    background-color: #010202;
+    color: blue;
+}
+
+.read-more-btn-3 {
+    padding: 8px 16px;
+        font-size: 18px;
+        background-color: #5ff65f;
+        border: none;
+        color: black;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 1.2s, color 1.2s;
+}
+
+.read-more-btn-3:hover,
+.read-more-btn-3:active {
     background-color: #010202;
     color: rgb(248, 9, 9);
 }
