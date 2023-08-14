@@ -1,93 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wireframe</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  
-  <body>
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-      <header class="site-header">
-        <h1>Wireframe Exercise</h1>
-        <p>Exploring Git Concepts</p>
-      </header>
-      
-      <main>
-        <section class="main-container ">
-          <div >
-            <article id="box" class="bg-pic">
-            <h2>What is Git?</h2>
-            
-            <p>
-             
-              <b>Git</b> is a distributed version control system that tracks changes in any set of 
-              computer files, usually used for coordinating work among programmers who are 
-              collaboratively developing source code during software development. Its goals include 
-              speed, data integrity, and support for distributed, non-linear workflows (thousands of 
-              parallel branches running on different computers).Git was originally authored by Linus 
-              Torvalds in 2005 for the development of the Linux kernel, with other kernel developers 
-              contributing to its initial development.Since 2005, Junio Hamano has been the core 
-              maintainer. As with most other distributed version control systems, and unlike most 
-              client–server systems, every Git directory on every computer is a full-fledged 
-              repository with complete history and full version-tracking abilities, independent 
-              of network access or a central server. Git is free and open-source software shared 
-              under the <a href="https://en.wikipedia.org/wiki/GNU_General_Public_License" target="_blank" > GPL-2.0-only license.</a> </p>
-            </article>
-              
-              <div class="inner">
-                <h2>Git</h2>
-                <p> Git is a distributed version control system that allows developers to track changes 
-              in their codebase over time.</p><br>
-            <a href="https://en.wikipedia.org/wiki/Git" target="_blank" class="btn">Read more</a>
-              </div>
-          </div>
-        
-            </section>
-        
-        <section class="article-container">
-          <article class="article">
-            <div id="box1">
-            <h3>Why do developers need Git?</h3>
-            <p>Git provides developers with tools to ship better code through command line features,
-              issues (threaded discussions), pull requests, code review, or the use of a collection 
-              of free and for-purchase apps in the GitHub Marketplace.</p><br>
-              </div>
-            <div class="inner1">
-              <h4>developers need Git</h2>
-              <p> Developers use Git to collaborate on projects, track changes, and maintain a history 
-                of their work, enabling easy debugging and teamwork.</p> <br>
-          <a href="https://docs.github.com/en/get-started/using-git/about-git" target="_blank" class="btn">Read more</a>
-            </div>
-          </article>
-          
-          <article class="article">
-            <div id="box1">
-            <h3>What is a branch in Git?</h3>
-            <p> A branch in Git is a separate line of development that allows developers to work 
-              on features or fixes independently from the main codebase. The branch and its code 
-              can represent a new feature, a bug fix, or perhaps a new release candidate (RC) of 
-              an existing product.</p>
-              </div>
-            <div class="inner">
-              <h4>branch in Git</h2>
-                <p>In Git, a branch is a new/separate version of the main repository.</p><br><br>
-              
-          <a href="https://www.w3schools.com/git/git_branch.asp?remote=github" target="_blank" class="btn">Read more</a>
-            </div>
-          </article>
-        </section>
-      </main>
-      
-       <!-- Footer content -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header section -->
+  <header class="site-header">
+    <h1>Wireframe Exercise</h1>
+    <p>Exploring Git Concepts</p>
+  </header>
+
+  <!-- Main content section -->
+  <main>
+    <section class="main-container">
+      <!-- Article with main image -->
+      <article>
+        <img src="images/git.jpg" alt="git photo" class="img-pic">
+        <div class="inner">
+          <h2>Git</h2>
+          <p>Git is a distributed version control system that allows developers to track changes in their codebase over time.</p>
+          <a href="https://en.wikipedia.org/wiki/Git" target="_blank" class="btn" style="margin-top: 9px;">Read more</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- Article container section -->
+    <section class="article-container">
+      <!-- Article 1: Developers Need Git -->
+      <article class="article">
+        <img src="images/git-benefits.jpg" alt="git benefits photo" class="box">
+        <div class="inner">
+          <h4>Developers Need Git</h4>
+          <p>Developers use Git to collaborate on projects, track changes, and maintain a history of their work, enabling easy debugging and teamwork.</p>
+          <a href="https://docs.github.com/en/get-started/using-git/about-git" target="_blank" class="btn" style="margin-top: 19px;">Read more</a>
+        </div>
+      </article>
+
+      <!-- Article 2: Branch in Git -->
+      <article class="article">
+        <img src="images/git-branch.jpg" alt="Git branch photo" class="box">
+        <div class="inner">
+          <h4>Branch in Git</h4>
+          <p>In Git, a branch is a new/separate version of the main repository.</p>
+          <a href="https://www.w3schools.com/git/git_branch.asp?remote=github" target="_blank" class="btn" style="margin-top: 45px;">Read more</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer section -->
   <footer class="footer">
-    <content class="footer_content">
-      <p><strong>
-        This is a Wireframe project made by.</strong></p>
+    <div class="footer_content">
+      <p><strong>This is a Wireframe project made by:</strong></p>
       <a href="#" target="_blank"><p>Abdihamid Ali</p></a>
-    </content>
+    </div>
   </footer>
 </body>
-</html
+</html>
