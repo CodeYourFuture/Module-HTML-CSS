@@ -30,16 +30,29 @@ body{
     width: 80%;
     background-color: blueviolet;
     text-align: center;
+    margin-bottom: 20px;
+ }
+
+ .section{
+    margin: 0;
+    padding: 20px;
+    width: 80%;
+    border: 2px solid white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2 , auto-fit) ;
+    justify-content: center;
+    
  }
 
  .section1:nth-child(1){
     display: block;
     background-color: orangered;
-    align-items: center;
+    /* align-items: center; */
     direction: ltr;
-    width: 80%;
-    margin: 10px auto;
-    padding: 4px;
+    
+    margin: 0  0 10px 0;
+    padding: 10px;
 
  }
 
@@ -48,8 +61,13 @@ body{
     justify-content: space-between;
     
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 3px; 
+    grid-template-columns: repeat(2,45%);
+    grid-gap: 4px; 
+    margin: 0;
+    
+    justify-content: space-between; 
+
+
     
 
 }
@@ -58,13 +76,26 @@ body{
     
     
     background-color: rgb(241, 11, 11);
+    border: 2px solid black;
+    padding: 15px;
+
+
 
  }
 
+ a{
+    text-decoration: none;
+    font-weight: bold;
+ }
+
 .footer{
-    height: 10%;
+    height: 100px;
+   
     background-color: rgb(125, 129, 129);
     width: 100%;
-    margin-bottom: 0;
+    margin:10px 0 0 0;
     text-align: center;
+}
+.footer>*{
+    margin: 0;
 }
