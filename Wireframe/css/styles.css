@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+  font-family: "Karla";
+  font-weight: 200;
+  background-color: #212529;
+}
+
+header {
+  text-align: center;
+  color: white;
+  padding: 4rem 0;
+}
+
+.github-header-title {
+  color: white;
+  font-size: 8rem;
+}
+
+section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h4 {
+  font-style: italic;
+  font-weight: normal;
+}
+
+button {
+  margin-top: 1.4%;
+}
+
+/* Main Section - What is git? */
+
+section:first-child {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  margin-top: 2rem;
+  background-color: #495057;
+  border-radius: 16px;
+  align-self: center;
+}
+
+.what-is-git-img {
+  width: 100%;
+}
+
+.title-desc-btn {
+  padding: 1% 0 1% 1%;
+  color: #f8f9fa;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.read-more-btn {
+  padding: 8px 16px;
+  font-size: 18px;
+  background-color: #40c057;
+  border: none;
+  color: black;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 1.2s, color 1.2s;
+}
+
+.read-more-btn:hover,
+.read-more-btn:active {
+  background-color: #51cf66;
+  color: white;
+}
+
+/* Section 2 - Why do developers need git? */
+
+.why-do-devs-and-branch-container {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1rem;
+  column-gap: 1rem;
+  border-radius: 16px;
+}
+
+.why-do-devs-img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.-title-desc-btn {
+  grid-column: 2 / 1;
+  grid-row: 2 / 3;
+  padding: 1% 0 1% 1%;
+  color: white;
+}
+
+/* Section 2a - What is a branch in Git */
+
+.what-is-branch-img {
+  width: 100%;
+  border-radius: 16px;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+}
+
+.--title-desc-btn {
+  grid-column: 2 / 3;
+  padding: 1% 0 1% 1%;
+  color: white;
+}
+
+/* Fixed Footer section */
+
+footer {
+  padding: 1.8rem 0;
+  border-top: 2px solid #40c057;
+  text-align: center;
+  color: #dee2e6;
+  font-style: italic;
+  font-size: 1.8rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-shadow: 1px 3px 4px black;
+  background-color: #49505764;
+}
