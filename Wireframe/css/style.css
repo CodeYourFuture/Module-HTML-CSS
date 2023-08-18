@@ -46,19 +46,25 @@ body{
 .section2{
     flex-wrap: wrap;
     justify-content: space-between;
-    width: calc(50% , 10px);
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 3px; 
+    
+
 }
 
  .section2>article{
-    display: block;
-    flex-direction: column;
-    background-color: rgb(217, 136, 136);
+    
+    
+    background-color: rgb(241, 11, 11);
 
  }
 
 .footer{
     height: 10%;
-    background-color: aqua;
+    background-color: rgb(125, 129, 129);
     width: 100%;
     margin-bottom: 0;
+    text-align: center;
 }
