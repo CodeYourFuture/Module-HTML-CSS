@@ -1,20 +1,17 @@
 :root{
     --background-color: grey;
     --text-color: white;
+    --link-color: rgb(17, 106, 250);
     
 
 }
 
 body{
-    background-color: var(--background-color);
-    margin: 0;
-    width: 100%;
-    color: var(--text-color);
-    display: grid;
-    grid-gap: 4px;
-    grid-template-columns: repeat(4 , 1fr);
-    grid-template-rows: repeat(4, 20% auto auto 15%);
     height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+
 
 }
 
@@ -23,14 +20,3 @@ body{
     
 }*/
 
-.header{
-    grid-column: 1/-1;
-    grid-row: 1;
-    background-color: aqua;
-    border: 2px solid wheat;
-}
-
-.footer{
-    grid-column: 1/-1;
-    grid-row: 4;
-}
