@@ -100,13 +100,21 @@ body{
  }
 
 .footer{
-    height: 100px;
-   
-    background-color: rgb(125, 129, 129);
+    height: max-content;
     width: 100%;
-    margin:10px 0 0 0;
+    margin:15px 0 0 0 ;
+    padding: 20px;
     text-align: center;
+    border: 1px solid black;
 }
-.footer>*{
-    margin: 0;
+.footer p{
+    font: 36px;
+    margin: 0 auto;
+    
 }
+.footer > a{
+    height: fit-content;
+    width: fit-content;
+    justify-content: space-around;
+}
+
