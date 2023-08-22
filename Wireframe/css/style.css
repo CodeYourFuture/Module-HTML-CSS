@@ -1,8 +1,26 @@
 body{
     font-family: sans-serif;
+    font-family: 'Libre Baskerville', serif;
 }
-
-h1,
-h2 {
-    
+header {
+   text-align: center;
+}
+.article1 {
+    border: 2px black solid;
+}
+.container {
+    display: flex;
+}
+.child1 {
+    border: 2px black solid;
+}
+.child2 {
+    border: 2px black solid;
+}
+footer {
+    text-align: center;
+}
+.footer {
+  display: flex;
+  justify-content: center;
 }
