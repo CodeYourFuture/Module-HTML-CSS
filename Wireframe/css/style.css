@@ -1,24 +1,33 @@
 body{
     font-family: sans-serif;
     font-family: 'Libre Baskerville', serif;
+    margin: 20px 300px;
+}
+img {
+    width: 500px;
+    height: 500px;
 }
 header {
    text-align: center;
+   margin-bottom: 70px;
 }
 .article1 {
     border: 2px black solid;
+    margin-bottom: 30px;
 }
 .container {
     display: flex;
 }
 .child1 {
     border: 2px black solid;
+    margin-right: 30px;
 }
 .child2 {
     border: 2px black solid;
 }
 footer {
     text-align: center;
+    margin-top: 100px;
 }
 .footer {
   display: flex;
