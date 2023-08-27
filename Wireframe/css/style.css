@@ -108,13 +108,21 @@ body{
     border: 1px solid black;
 }
 .footer p{
-    font: 36px;
+    font: 30px;
     margin: 0 auto;
+    text-align: center;
     
 }
-.footer > a{
-    height: fit-content;
-    width: fit-content;
+.footer-link{
     justify-content: space-around;
+    align-items: baseline;
+    align-items: center;
+    
+    height: 50px;
+    width: 50px;
 }
-
+.footer a img{
+    width: inherit;
+    height: inherit;
+    margin: 0;
+}
