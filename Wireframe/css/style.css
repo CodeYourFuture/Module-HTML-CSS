@@ -1,7 +1,60 @@
-body{
-    color: green;
+body {
+  color: green;
+  margin: 10px;
+  font-size: 18px;
+  background-color: rgb(244, 244, 240);
+
 }
 
-header{
-    background-color: darkgray;
+.git-header {
+  background-color: darkgray;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
+img {
+  display: grid;
+  height: 150px;
+  width: 150px;
+  justify-content: center;
+  align-content: center;
+  border-radius: 75px;
+  opacity: 0.5;
+  /* border: 0.14rem solid rgb(105, 103, 103); */
+}
+.main-grid{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 200px 200px 200px;
+}
+
+.main-section{
+  grid-column: 1 / -1;
+  display: flex;
+  padding: 20px;
+
+}
+
+/* .container{ */
+  /* display: grid; */
+  /* border: 1px solid grey; */
+  /* text-align: center; */
+/* } */
+
+/* article {
+  background-image: url(../image/images.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-section{
+  display: grid;
+  border: 2px solid grey;
+  margin-top: 1.5rem;
+}
+h3{
+  text-align: center;
+}
+p{
+  text-align: justify;
+} */
