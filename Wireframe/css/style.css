@@ -3,7 +3,6 @@ body {
   margin: 10px;
   font-size: 18px;
   background-color: rgb(244, 244, 240);
-
 }
 
 .git-header {
@@ -11,6 +10,8 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
+  padding: 10px 20px;
+  font-size: 1em;
 }
 img {
   display: grid;
@@ -22,23 +23,26 @@ img {
   opacity: 0.5;
   /* border: 0.14rem solid rgb(105, 103, 103); */
 }
-.main-grid{
+.main-grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 200px 200px;
+  grid-gap: 5px;
 }
 
-.main-section{
+.main-section {
   grid-column: 1 / -1;
   display: flex;
-  padding: 20px;
-
+  padding: 30px;
+  border: 1px solid grey;
+  margin: 30px;
+  align-items: center;
 }
 
 /* .container{ */
-  /* display: grid; */
-  /* border: 1px solid grey; */
-  /* text-align: center; */
+/* display: grid; */
+/* border: 1px solid grey; */
+/* text-align: center; */
 /* } */
 
 /* article {
