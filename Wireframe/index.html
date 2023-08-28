@@ -1,64 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wireframe</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="index.css" /> -->
+    <title>Document</title>
   </head>
+
   <body>
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!--HEADER SECTION-->
+    <div class="container">
+      <!-- HEADER Section -->
       <header class="header">
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="#">HOME</a>
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#">HOME</a>
+            </li>
+            <li class="nav-item"><a href="#">Current topic: Git</a></li>
+            <li class="nav-item">
+              <a href="#">Other topics</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">LOG OUT</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- MAIN BODY is divided into 3; Menu, major Content, left and right contents -->
+      <div class="menu">
+        <!-- <aside class="sidebar"> -->
+        <ul>
+          <li class="sidebar">
+            <p class="menu-bar">
+              Some key concepts and features are:<u>
+                version control; distributed; branching; merging; history
+                tracking; staging area; pull requests; remote repository (e.g.
+                GitHub); command-line; open source.</u
+              >
+            </p>
           </li>
-          <li class="nav-item">
-            <a href="#">Other topics</a>
+          <!-- </aside>
+        <aside class="sidebar"> -->
+          <li class="sidebar">
+            <p class="menu-bar">
+              Pull requests enable feature updates, bug fixes and review of
+              codes and resolution of conflicts in codes.
+            </p>
           </li>
-          <li class="nav-item">
-            <a href="#">LOG OUT</a>
+          <li class="sidebar">
+            <p class="menu-bar">Branching provides opportunity to work on isolated portion of codes to reduce conflicts.
+            It also allows parallel development, code review before merging,
+            and possible rollback (in case a branch has bug) without affecting other branches.</p>
           </li>
         </ul>
-      </nav>
-    </header>
-
-    <!--CONTENT SECTION-->
-    <section class="content">
-      <main>
-        <div class="alert">
-          <h1>LET's learn about Git</h1>
-        </div>
-        <article class="what_is_git">
-          <h2>What is Git?</h2>
-          <p>Git is a version control tool...</p>
-        </article>
-
-        <article class="why_git">
-          <h2>Why do developers need Git?</h2>
-          <p>Aside version control, Git eases collaborative software development. It enables developers to simultaneously work on the same 
-            projects whereby the main file is submitted to the remote repository while each developer clones the repo copy to their 
-            local system, creates a branch, works on their local copy and then submit it to be merged to the main one on the remote.
-          </p>
-        </article>
-
-        <article class="branch_in_git">
-          <h2>What is a branch in Git?</h2>
-          <p>A branch is a ...</p>
-        </article>
-      </main>
-
-      <div class="sidebar">
-        <p>Important terms in Git are: branching, clone, etc.</p>
+        <!-- </aside> -->
       </div>
-    </section>
 
-    <!--FOOTER Section-->
-    <footer>
+      <!-- SECTION CONTENT -->
+      <section class="content">
+        <h1 class="learn">Let's learn about Git</h1>
+        <h2>What is Git?</h2>
+        <p class="git-text">
+          Git is a version-control system for tracking changes in computer files
+          and coordinating work on those files among multiple people. Git is an
+          essential tool in software development workflows helps developers
+          manage and collaborate on software projects efficiently by tracking
+          changes, enabling branching and merging, and providing a detailed
+          history of project development. It was created by Linus Torvalds in
+          2005 and has since become one of the most widely used tools in the
+          software development industry. Git is designed to help developers
+          collaborate on projects, manage different versions of their code, and
+          track the history of changes made to a codebase.
+          <a
+            href="https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/"
+            >Read more...</a
+          >
+        </p>
+        <div class="diagram">
+          <img
+            src="./images/git-workflow.png"
+            alt="a diagram of git workflow"
+            height="270px"
+            width="300px"
+          />
+          <figcaption><i>Diagram of a simple Git workflow</i></figcaption>
+        </div>
+      </section>
 
-    </footer>
+      <section class="left-cont">
+        <h2>Why do developers need Git?</h2>
+        <p>
+           Git is an essential tool for developers because it provides version
+            control, facilitates collaboration, helps manage code history,
+            enables safe experimentation, and supports various development
+            workflows. It has become a fundamental part of modern software
+            development practices, helping teams and individuals work more
+            efficiently and effectively. With remote repositories, files are
+            stored safely such that work-in-progress are not lost due to loss of
+            or damage to local machines. Developers can collaborate easily with
+            cloning, branching & merging and pull requests. These and others are
+            why developers need to master and use Git.
+            <a href="https://www.nobledesktop.com/learn/git/what-is-git"
+              > Read more ...</a
+            >
+        </p>
+        <div class="diagram">
+            <img src="./images/git-database-workflow.png"
+            alt="database diagram of each developer in a team"
+            height="270px"
+            width="350px">
+            <figcaption><i>Git workflow of remote repository and developers team</i></figcaption>
+
+       
+        
+      </section>
+      <section class="right-cont">
+        <h2>What is a branching in a Git?</h2>
+        <p>Branching in Git is a powerful feature that allows developers to create separate lines of
+            development within a Git repository. Each branch represents a distinct path of code changes.
+            Branching enables developers to work on different features, bug fixes,
+            or experiments simultaneously, without interfering with the main codebase.
+            <a href="https://www.atatus.com/blog/what-is-git-branch-and-how-to-use-it/">Read more ...</a>
+        </p>
+        <div class="diagram">
+            <img src="./images/git-branch-workflow.png" alt="a diagram of branch git workflow"
+            height="300px"
+            width="400px">
+            <figcaption><i>Git Branches and its workflow</i></figcaption>
+        </div>
+
+
+      </section>
+      <footer class="footer">
+        <h5>Designed by Tajudeen Oyehan, &copy;2023
+            <a href="github.org/oyehan-uob"><img src="./images/github2.png" height="35px" width="60px"> </a>
+        </h5>
+        
+            
+      </footer>
+    </div>
   </body>
-</html
+</html>
