@@ -92,5 +92,32 @@ body {
     grid-area: About;
 }
 
+.welcome-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    grid-template-areas: "cake welcome";
+    padding: 1vh 3vw;
+    margin-bottom: 1vh;
+    background-color: var(--bg-color);
+    gap: 20px;
+    margin: 20px;
+    height: 55vh;
+}
 
+.welcome-cake {
+    grid-area: cake;
+    background-image: url("images/welcome-cake.jpg"); 
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: 100%; 
+}
+       
+.welcome-text {
+    grid-area: welcome;
+    text-align: right; 
+    line-height: 1.5;
+}
 
