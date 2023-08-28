@@ -94,30 +94,106 @@ body {
 
 .welcome-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 20px;
     grid-template-areas: "cake welcome";
-    padding: 1vh 3vw;
     margin-bottom: 1vh;
-    background-color: var(--bg-color);
     gap: 20px;
     margin: 20px;
     height: 55vh;
 }
 
-.welcome-cake {
+.welcome-cake{
     grid-area: cake;
-    background-image: url("images/welcome-cake.jpg"); 
-    background-size: 100% 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 100%; 
-    height: 100%; 
+    
+}
+
+.welcome-cake img{
+    width: 40vw;
+    height: 55vh;
+    border-radius: 5px;
 }
        
 .welcome-text {
     grid-area: welcome;
     text-align: right; 
     line-height: 1.5;
+    font-size: clamp(2vh, 1.5vw, 4vh);
 }
 
+.cakes-container {
+    display: grid;
+    grid-template-areas: "cake1 cake2 cake3 cake4";
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 10px;
+  }
+
+  .cake {
+    border-radius: 5px;
+    text-align: center;
+    grid-area: cake1; 
+  }
+
+  .cake img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .cake:nth-child(2) {
+    grid-area: cake2;
+  }
+
+  .cake:nth-child(3) {
+    grid-area: cake3;
+  }
+
+  .cake:nth-child(4) {
+    grid-area: cake4;
+  }
+  .bg-footer{
+    background-color: var(--bg-color);
+  }
+  .cake-footer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: var(--bg-color);
+  }
+
+  .cake-footer-a {
+    display: flex;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 4.5vw;
+    height: 0.5vh;
+    font-size: clamp(1vh, 2vw, 2.5vh);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cake-footer-a:hover {
+    background-color: var(--nav-color);
+    color: var(--bg-color);
+  }
+  .footer_content {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .footer p {
+    text-align: center;
+    font-size: 0.85rem;
+  }
