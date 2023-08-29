@@ -35,6 +35,7 @@ body {
     align-self: end;
     font-style: italic;
     color: var(--accent-color);
+    text-align: left; 
 }
 
 .nav-container {
@@ -97,7 +98,6 @@ body {
     gap: 20px;
     grid-template-areas: "cake welcome";
     margin-bottom: 1vh;
-    gap: 20px;
     margin: 20px;
     height: 55vh;
 }
@@ -128,35 +128,37 @@ body {
     justify-content: center;
     margin: 20px;
     border-radius: 10px;
-  }
+}
 
-  .cake {
+.cake {
     border-radius: 5px;
     text-align: center;
     grid-area: cake1; 
-  }
+}
 
-  .cake img {
+.cake img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
-  }
+}
 
-  .cake:nth-child(2) {
+.cake:nth-child(2) {
     grid-area: cake2;
-  }
+}
 
-  .cake:nth-child(3) {
+.cake:nth-child(3) {
     grid-area: cake3;
-  }
+}
 
-  .cake:nth-child(4) {
+.cake:nth-child(4) {
     grid-area: cake4;
-  }
-  .bg-footer{
+}
+
+.bg-footer{
     background-color: var(--bg-color);
-  }
-  .cake-footer {
+}
+
+.cake-footer {
     display: grid;
     grid-template-columns: repeat(3, auto);
     gap: 10px;
@@ -164,9 +166,9 @@ body {
     align-items: center;
     padding: 20px;
     color: var(--bg-color);
-  }
+}
 
-  .cake-footer-a {
+.cake-footer-a {
     display: flex;
     padding: 10px 20px;
     text-decoration: none;
@@ -182,18 +184,130 @@ body {
     font-size: clamp(1vh, 2vw, 2.5vh);
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .cake-footer-a:hover {
+.cake-footer-a:hover {
     background-color: var(--nav-color);
     color: var(--bg-color);
-  }
-  .footer_content {
+}
+
+.footer_content {
     text-align: center;
     padding: 10px;
-  }
+}
   
-  .footer p {
+.footer p {
     text-align: center;
     font-size: 0.85rem;
-  }
+}
+/* Mobile Navigation Icon */
+.mobile-nav-icon {
+    cursor: pointer;
+    padding: 10px;
+    align-self: center;
+    justify-self: end;
+    display: none; 
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: var(--accent-color);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Show Nav Links on Checkbox Checked */
+#menu-toggle:checked + .nav-container {
+    display: grid;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .logo-text {
+        font-weight: bold;
+        font-size: clamp(3vh, 2vw, 1vh);
+        margin-left: 40vw;
+        margin-top: 20vh;
+        padding-bottom: 2vh;
+    }
+
+    .mobile-nav-icon {
+        display: block; /* Show the label on mobile screens */
+        position: absolute;
+        margin-left: 85vw;
+        margin-top: -140px;
+    }
+
+    .nav-container {
+        display: none; /* Hide the navigation links by default on mobile */
+        position: absolute;
+        right: -4vw;
+        margin-top: 0.5vh;
+        background-color: var(--bg-color);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+        width: 100%;
+    }
+
+    /* Adjust alignment of bars and display navigation links */
+    #menu-toggle:checked ~ .nav-container {
+        display: grid;
+        grid-template-areas:
+            "Home"
+            "Cakes"
+            "Orderin"
+            "Lessons"
+            "About";
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: auto; /* Adjust height as needed */
+        min-height: 25vh; /* Minimum height for consistency */
+        width: 20vw;
+        top: 31vh
+    }
+    
+    #menu-toggle:checked ~ .mobile-nav-icon .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    #menu-toggle:checked ~ .mobile-nav-icon .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked ~ .mobile-nav-icon .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    .welcome-container {
+        grid-template-areas: 
+            "welcome"
+            "cake";
+        height: auto;
+    }
+    
+    .welcome-text {
+        text-align: left; 
+        font-size: clamp(3vh, 1.5vw, 4vh);
+        flex-wrap: wrap;
+    }
+    
+    .welcome-cake img{
+        width: 89vw;
+    }
+    
+    .cakes-container {
+        grid-template-areas: 
+            "cake1 cake2"
+            "cake3 cake4";
+    }
+    
+    .cake-footer {
+        display: block;
+    }
+    
+    .cake-footer-a {
+        margin-bottom: 2vh;
+    }
+}
