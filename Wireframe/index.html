@@ -1,13 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="gridContainer">
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <header class="header">
+      <div class="git-header">
+        <img class="gitImage" src="image/images.png" alt="git logo">
+        <div class="container">
+          <h1>GIT</h1>
+          <p>The acronym "Git" stands for <strong>"Global Information Tracker"</strong>. It was originally created by
+            Linus
+            Torvalds in
+            2005 to manage the development of the Linux kernel, but over time, it has become a widely used version
+            control
+            system
+            for managing code in various software projects.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-grid">
+      <div class="backgroundImage"></div>
+      <section class="main-section">
+        <h3>What is Git?</h3>
+        <p class="about-git"><strong>Git</strong> is a distributed version control system, which means that a local
+          clone of the project
+          is
+          a complete
+          version control
+          repository. These fully functional local repositories make it easy to work offline or remotely. Developers
+          commit their
+          work locally, and then sync their copy of the repository with the copy on the server. This paradigm differs
+          from
+          centralized version control where clients must synchronize code with a server before creating new versions of
+          code.
+        </p>
+        <p class="about-git">
+          It is the most commonly used version control system. Git tracks the changes you make to files, so you have a
+          record of
+          what has been done, and you can revert to specific versions should you ever need to. Git also makes
+          collaboration
+          easier, allowing changes by multiple people to all be merged into one source.
+        </p>
+        <p class="article-readMore">
+          <a href="https://learn.microsoft.com/en-us/devops/develop/git/what-is-git">
+            <span class="read-arrow">Read more</span>
+          </a>
+        </p>
+      </section>
+    </main>
+
+    <section class="left-article">
+      <h3>Why do developers need Git?</h3>
+      <article>
+        <p>
+          <strong>Developers</strong> rely on Git for version control, collaboration, and efficient code management. It
+          enables parallel
+          development through branching and merging, supports code review, offers backup and recovery options,
+          encourages
+          experimentation, and ensures isolated work. Git is vital for open source contributions, maintains a detailed
+          history,
+          and seamlessly integrates with development pipelines. Overall, Git enhances teamwork, accountability, and the
+          overall
+          development process.
+        </p>
+      </article>
+    </section>
+    <section class="right-article">
+      <article>
+        <h3>What is a branch in Git?</h3>
+        <p>
+          <strong>A Git branch</strong> is a separate line of development within a repository. It allows you to work
+          on
+          specific tasks or
+          changes
+          without affecting the main codebase. Each branch has its own set of commits, keeping changes isolated and
+          enabling
+          parallel development. Branches facilitate collaboration, experimentation, and versioning. They're useful
+          for
+          features,
+          bug fixes, testing, and keeping different versions of the project. You can easily switch between branches
+          to
+          work on
+          different aspects of the project.
+        </p>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div class="mediaFoot">
+        <p class="footerConnect">Connect me on;</p>
+        <div class="footer-link">
+          <a class="footerLogo" href="mailto:adenike.sariat@outlook.com" target="_blank" rel="noopener"><img
+              src="./image/microsoft.png" height="20px" width="20px" alt="microsoft" /></a>
+          <a class="footerLogo" href="https:www.twitter.com/adenike_sariat" target="_blank" rel="noopener"><img
+              src="./image/twitter.jpg" height="20px" width="20px" alt="twitter" /></a>
+          <a class="footerLogo" href="https:www.linkedin.com/adenike Awe" target="_blank" rel="noopener"><img
+              src="./image/linkedin.png" height="20px" width="20px" alt="linkedin" /></a>
+          <a class="footerLogo" href="https://github.com/sariat0001"><img src="./image/free-gitImage.png" height="20px"
+              width="20px" alt="gitLogo"></a>
+        </div>
+        <p class="copyright">&copy;SariatAdenike</p>
+      </div>
+    </footer>
+  </div>
+
 </body>
+
 </html
