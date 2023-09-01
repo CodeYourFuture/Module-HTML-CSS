@@ -9,19 +9,54 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Product Pick</h1>
+  <header class="header">
+    <h1>Purchase accomplishment</h1>
   </header>
-  <main>
-  <form>
+  <main class="main">
+  <form class="form">
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
+    
+    <!-- defining form for persnal information of users -->
+    <label for="user-name">Full Name: </label><br>
+    <input type="text" name="name" id="user-name" ><br>
+    <label for="user-email">E-mail Address: </label><br>
+    <input type="email" name="email" id="user-email"><br>
+  </form>
+<!-- t-shirt color radio buttons-->
+  <p>Choose Your T-Shirt Color :</p>
+  <form>
+    <input type="radio" id="red" name="t_shirt_color" value="red">
+    <label for="red" >Red</label><br>
+    <input type="radio" id="green" name="t_shirt_color" value="green">
+    <label for="green">Green</label><br>
+    <input type="radio" id="white" name="t_shirt_color" value="white">
+    <label for="white">White</label><br>
+  </form>
+
+  <!-- T-shirt size choosing -->
+  <p>Please select your proper size :</p>
+  <form>
+    <input type="radio" id="xsmall" name="t_shirt_size" value="xsmall">
+    <label for="xsmall" >X-Small</label><br>
+    <input type="radio" id="small" name="t_shirt_size" value="small">
+    <label for="small" >Small</label><br>
+    <input type="radio" id="medium" name="t_shirt_size" value="medium">
+    <label for="medium" >Medium</label><br>
+    <input type="radio" id="large" name="t_shirt_size" value="large">
+    <label for="large" >Large</label><br>
+    <input type="radio" id="xlarge" name="t_shirt_size" value="xlarge">
+    <label for="xlarge" >X-Large</label><br>
+  </form>
+  <form>
+    <label >Please choose a date to deliver your purchase :</label><br>
+    <input type="date">
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    
   </footer>
 </body>
 
