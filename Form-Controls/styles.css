@@ -48,12 +48,14 @@ body{
     
 
 }
-
+/* styling the form and its content  */
 form{
     padding: 1em;
     border: solid 1px black;
     min-width: fit-content;
 }
+
+/* layout the div containers and feildsets */
 .fieldset-container{
     display: flex;
     justify-content: space-evenly;
@@ -65,20 +67,32 @@ form{
 
 }
 
+/* feild set one includes name and email */
 .fieldset-1{
     display: flex;
     flex-direction: column;
-    /* padding: 1em auto; */
     justify-content: space-around;
 }
 
 .fieldset-1 span input{
-    height: 2em;
+    height: 3em;
     width: min-content;
+    width: 20em;
+    margin-top: 1.1em;
     
 }
 
+/* name and email label resizing */
+.fieldset-1 span label{
+    
+    font-size: 1.4rem;
+}
 
+/* creating an asterics in red color  */
+label::after{
+    content: "**";
+    color:red;
+}
 
 .fieldset-2 select{ 
     width: 8em;
