@@ -19,41 +19,49 @@
     <!-- try writing out the requirements first-->
     
     <!-- defining form for persnal information of users -->
-    <fieldset>
-      <legend>Personal Info</legend>
-      <label for="user-name">Full Name: </label><br>
-      <input type="text" name="name" id="user-name"  minlength="2" maxlength="70" required><br>
-      <label for="user-email">E-mail Address: </label><br>
-      <input type="email" name="email" id="user-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required><br>
-    </fieldset>
+    <div class="fieldset-container">
+      <fieldset class="fieldset-1">
+        <legend>Personal Info</legend>
+        <span>
+          <label for="user-name">Full Name:*  </label><br>
+          <input type="text" name="name" id="user-name"  minlength="2" maxlength="70" required><br>
+        </span>
+
+        <span>
+          <label for="user-email">E-mail Address: </label><br>
+          <input type="email" name="email" id="user-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required><br>
+      </span>
+      </fieldset>
 
     <!-- ///// t-shirt color options ///// -->
-    <fieldset>
-      <legend>delivery Info</legend>
-      <label for="t-shirt-color">Choose your color: </label><br>
-      <select id="t-shirt-color" name="t-shirt-color">
-        <option value="red" >Red</option>
-        <option value="white">White</option>
-        <option value="green">Green</option>
-      </select><br>
+    
+      <fieldset class="fieldset-2 ">
+        <legend>delivery Info</legend>
+        <label for="t-shirt-color">Choose your color: </label><br>
+        <select id="t-shirt-color" name="t-shirt-color">
+          <option value="red" id="red">Red</option>
+          <option value="white" id="blue">White</option>
+          <option value="green" id="green">Green</option>
+        </select><br>
 
 
-      <!-- T-shirt size choosing //////////////////////-->
-      <label for="t-shirt-size">Please choose your size: </label><br>
-      <select id="t-shirt-size" name="t-shirt-size" >
-        <option value="x-small">x-Small</option>
-        <option value="small">Small</option>
-        <option value="medium"> Medium</option>
-        <option value="large">Large</option>
-        <option value="x-large">x-Large</option>
-        <option value="xx-large">xx-Large</option>
+        <!-- T-shirt size choosing //////////////////////-->
+        <label for="t-shirt-size">Please choose your size: </label><br>
+        <select id="t-shirt-size" name="t-shirt-size" >
+          <option value="x-small">x-Small</option>
+          <option value="small">Small</option>
+          <option value="medium"> Medium</option>
+          <option value="large">Large</option>
+          <option value="x-large">x-Large</option>
+          <option value="xx-large">xx-Large</option>
 
-      </select><br>
-      <!-- /////////////delivery date ////////////////////////////-->
-      <label >Please choose a date to deliver your purchase :</label><br>
-      <input type="date" required><br>
-    </fieldset>
-    <input type="submit" value="submit">
+        </select><br>
+        <!-- /////////////delivery date ////////////////////////////-->
+        <label >Please choose a date to deliver your purchase :</label><br>
+        <input type="date" min="" max="" required><br>
+      </fieldset>
+    </div>
+    <input id="submit" type="submit" value="submit">
   </form>
   
 
