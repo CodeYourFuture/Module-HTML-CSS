@@ -94,6 +94,18 @@ label::after{
     color:red;
 }
 
+
+/* styling fieldset-2 which contains deliver info as a felx and other layouts */
+.fieldset-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-left: 1em;
+
+}
+
+
 .fieldset-2 select{ 
     width: 8em;
     height: 2em;
@@ -104,12 +116,22 @@ label::after{
     
 }
 
-label{
+.fieldset-2 label{
     margin: 0;
     font-size: 1.2rem;
     text-align: left;
 }
 
+#date{
+    height: 3em;
+    width: 13em;
+    min-width: fit-content;
+    text-align: center;
+    font-size: 1.05rem;
+    padding: 0;
+    background-color: rgb(255, 255, 0);
+    ;
+}
 
 
 #submit{

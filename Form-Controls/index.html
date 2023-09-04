@@ -37,28 +37,34 @@
     
       <fieldset class="fieldset-2 ">
         <legend>delivery Info</legend>
-        <label for="t-shirt-color">Choose your color:  </label><br>
-        <select id="t-shirt-color" name="t-shirt-color">
-          <option value="red" id="red">Red</option>
-          <option value="white" id="blue">White</option>
-          <option value="green" id="green">Green</option>
-        </select><br>
+        <span>
+          <label for="t-shirt-color">Choose your color:  </label><br>
+          <select id="t-shirt-color" name="t-shirt-color">
+            <option value="red" id="red">Red</option>
+            <option value="white" id="blue">White</option>
+            <option value="green" id="green">Green</option>
+          </select><br>
+        </span>
 
 
         <!-- T-shirt size choosing //////////////////////-->
-        <label for="t-shirt-size">Please choose your size:  </label><br>
-        <select id="t-shirt-size" name="t-shirt-size" >
-          <option value="x-small">x-Small</option>
-          <option value="small">Small</option>
-          <option value="medium"> Medium</option>
-          <option value="large">Large</option>
-          <option value="x-large">x-Large</option>
-          <option value="xx-large">xx-Large</option>
+        <span>
+          <label for="t-shirt-size">Please choose your size:  </label><br>
+          <select id="t-shirt-size" name="t-shirt-size" >
+            <option value="x-small">x-Small</option>
+            <option value="small">Small</option>
+            <option value="medium"> Medium</option>
+            <option value="large">Large</option>
+            <option value="x-large">x-Large</option>
+            <option value="xx-large">xx-Large</option>
 
-        </select><br>
+          </select><br>
+        </span>
         <!-- /////////////delivery date ////////////////////////////-->
-        <label id="date-label">Please choose a date to deliver your purchase :</label><br>
-        <input type="date" min="" max="" required><br>
+        <span>
+          <label for="date">Please choose a date to deliver your purchase :</label><br>
+          <input id="date" type="date" min="" max="" required><br>
+        </span>
       </fieldset>
     </div>
     <input id="submit" type="submit" value="submit">
