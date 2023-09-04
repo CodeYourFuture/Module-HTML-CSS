@@ -24,12 +24,12 @@
         <legend>Personal Info</legend>
         <span>
           <label for="user-name">Full Name:  </label><br>
-          <input type="text" name="name" id="user-name"  minlength="2" maxlength="70" required><br>
+          <input type="text" name="name" id="user-name" placeholder="Full name (required)" minlength="2" maxlength="70" required><br>
         </span>
 
         <span>
           <label for="user-email">E-mail Address: </label><br>
-          <input type="email" name="email" id="user-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required><br>
+          <input type="email" name="email" id="user-email" placeholder="Email address (required)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required><br>
       </span>
       </fieldset>
 
@@ -50,7 +50,7 @@
         <!-- T-shirt size choosing //////////////////////-->
         <span>
           <label for="t-shirt-size">Please choose your size:  </label><br>
-          <select id="t-shirt-size" name="t-shirt-size" >
+          <select id="t-shirt-size" name="t-shirt-size"  >
             <option value="x-small">x-Small</option>
             <option value="small">Small</option>
             <option value="medium"> Medium</option>
@@ -62,8 +62,8 @@
         </span>
         <!-- /////////////delivery date ////////////////////////////-->
         <span>
-          <label for="date">Please choose a date to deliver your purchase :</label><br>
-          <input id="date" type="date" min="" max="" required><br>
+          <label for="date">Select delivery date:</label><br>
+          <input id="date" type="date" min="2023-09-02" max="2023-10-02" required><br>
         </span>
       </fieldset>
     </div>
