@@ -52,11 +52,18 @@ body {
     grid-area: cake; 
 }
 
-.welcome-cake img{
+.welcome-cake img {
     width: 100%;
     height: fit-content;
     border-radius: 5px;
+    transition: all 0.3s ease; 
 }
+
+.welcome-cake img:hover {
+    border: 2px solid var(--nav-color); 
+    transform: scale(1.1); 
+}
+
        
 .welcome-text {
     grid-area: welcome;
@@ -87,7 +94,14 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+    transition: all 0.3s ease; 
 }
+
+.cake img:hover {
+    opacity: 0.7; 
+    transform: scale(1.1); 
+}
+
 
 .cake:nth-child(2) {
     grid-area: cake2;
