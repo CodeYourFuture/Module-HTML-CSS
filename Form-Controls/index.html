@@ -12,9 +12,9 @@
 </head>
 <body>
   <header class="header">
-    <a href="#" id="home"><img  src="icons8-back-sf-black-32.svg" alt="back to home page icon"></a>
+    <a href="#" id="home"><img  src="icons8-back-sf-black-32.svg" alt="back to home page icon" aria-label="Go to your account panel"></a>
     <a href="#"  id="profile">
-      <img id="prof-img" src="abstract-user-flat-4.svg" alt="account icon">
+      <img id="prof-img" src="abstract-user-flat-4.svg" alt="account icon" aria-label="go back to home page">
     </a>
   </header>
 
@@ -32,12 +32,12 @@
         <legend>Personal Info</legend>
         <span>
           <label for="user-name">Full Name:  </label><br>
-          <input type="text" name="name" id="user-name" placeholder="Full name (required)" minlength="2" maxlength="70" required><br>
+          <input type="text" name="name" id="user-name" placeholder="Full name (required)" minlength="2" maxlength="70" required aria-required="true"><br>
         </span>
 
         <span>
           <label for="user-email">E-mail Address: </label><br>
-          <input type="email" name="email" id="user-email" placeholder="Email address (required)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required><br>
+          <input type="email" name="email" id="user-email" placeholder="Email address (required)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required aria-required="true"><br>
       </span>
       </fieldset>
 
