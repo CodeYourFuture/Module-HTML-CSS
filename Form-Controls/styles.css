@@ -2,12 +2,15 @@ body {
     width: 100%;
     height: 100%;
 background-image: url("/Form-Controls/jon-ly-Xn7GvimQrk8-unsplash.jpg");
-/* display: flex;
-justify-content: center;
-align-items: center; */
 background-size: cover;
-background-position: center;
+background-position: 0rem 62rem;
 
+
+}
+/* dots design class */
+
+.design-h {
+    margin-top: 7rem;
 }
 
 h1 {
@@ -17,6 +20,8 @@ h1 {
 .h1-style {
     color: orangered;
 }
+
+/* form style */
 
 .forme-wrapper {
     display: flex;
@@ -36,9 +41,6 @@ h1 {
 
 }
 
-/* .logo:hover{
-    background-color: white;
-} */
 
 .color {
     margin-bottom: 1rem;
@@ -65,11 +67,9 @@ label {
 .input-box {
     width: 100%;
     height: 4rem;
-    /* margin-top: 0.4rem;
-    border-radius: 30px; */
-    /* padding: 0.4rem 0 0.4rem 0.6rem; */
-
 }
+
+
 input {
     width: 100%;
     height: 2rem;
@@ -93,6 +93,41 @@ button {
 }
 button:hover{
     background-color: black;
+}
+
+/* Footer style */
+
+footer {
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    background-color: white;
+    
+}
+
+.logo-wrapper {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+row-gap: 1px;
+}
+
+.my-logo {
+    width: 40px;
+    margin-left: 5px;
+    border-radius: 1.4rem;
+    /* padding-bottom: 4rem; */
+}
+
+h6 {
+    padding-left: 7px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 1px;
+    margin-top: 3px;
+
 }
 
 
