@@ -1,1 +1,400 @@
-/*  Add your styling here */
+/* Add your styling here */
+:root {
+    --bg-color: #e7e5e5;
+    --secondary-color: #f8f8f8;
+    --accent-color: #823a85;
+    --logo-size: 15vh;
+    --nav-color: #120990;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* design using the Mobile First approach */
+.logo-container {
+    display: grid;
+    grid-template-areas: "logo text"; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 3vw;
+    margin-bottom: 1vh;
+    background-color: var(--bg-color);
+}
+
+.svg-container {
+    width: var(--logo-size);
+    height: auto;
+    grid-area: logo; 
+}
+
+.logo-text {
+    font-weight: bold;
+    grid-area: text; 
+    align-self: end;
+    font-style: italic;
+    color: var(--accent-color);
+    text-align: right; 
+    font-size: 1.9rem;
+}
+
+.welcome-container {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "welcome"
+    "cake";
+    margin: 20px;
+}
+
+.welcome-cake{
+    grid-area: cake; 
+}
+
+.welcome-cake img {
+    width: 100%;
+    height: fit-content;
+    border-radius: 5px;
+    transition: all 0.3s ease; 
+}
+
+.welcome-cake img:hover {
+    opacity: 0.8; 
+    transform: scale(0.9); 
+}
+
+       
+.welcome-text {
+    grid-area: welcome;
+    text-align: left; 
+    line-height: 1.5;
+    font-size: clamp(3vh, 2.5vw, 4vh);
+}
+
+.cakes-container {
+    display: grid;
+    grid-template-areas: 
+    "cake1 cake2"
+    "cake3 cake4";
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.cake {
+    border-radius: 5px;
+    text-align: center;
+    grid-area: cake1; 
+}
+
+.cake img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: all 0.3s ease; 
+}
+
+.cake img:hover {
+    opacity: 0.8; 
+    transform: scale(0.9); 
+}
+
+
+.cake:nth-child(2) {
+    grid-area: cake2;
+}
+
+.cake:nth-child(3) {
+    grid-area: cake3;
+}
+
+.cake:nth-child(4) {
+    grid-area: cake4;
+}
+
+.bg-footer{
+    background-color: var(--bg-color);
+}
+
+.cake-footer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: var(--bg-color);
+}
+
+.cake-footer-a {
+    display: flex;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 4.5vw;
+    height: 0.5vh;
+    font-size: clamp(1vh, 2vw, 2.5vh);
+    justify-content: center;
+    align-items: center;
+}
+
+.cake-footer-a:hover {
+    background-color: var(--nav-color);
+    color: var(--bg-color);
+}
+
+.footer_content {
+    text-align: center;
+    padding: 10px;
+}
+  
+.footer p {
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+/* Mobile Navigation Icon */
+.mobile-nav-icon {
+    cursor: pointer;
+    padding: 10px;
+    align-self: center;
+    justify-self: end;
+    display: block; /* Show the label on mobile screens */
+    position: absolute;
+    margin-left: 85vw;
+    top: 7vh;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: var(--accent-color);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Show Nav Links on Checkbox Checked */
+#menu-toggle:checked + .nav-container {
+    display: grid;
+}
+
+/* Mobile nav bar */
+
+.logo-text {
+    font-weight: bold;
+    font-size: clamp(3vh, 2vw, 1vh);
+    margin-left: 40vw;
+    margin-top: 20vh;
+    padding-bottom: 2vh;
+    text-align: right;
+}
+
+.nav-container {
+    display: none; /* Hide the navigation links by default on mobile */
+    position: absolute;
+    right: 1vw;
+    margin-top: 0.5vh;
+    background-color: var(--bg-color);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    width: auto;
+    padding: 2vw 2vh;
+}
+
+#menu-toggle:checked ~ .nav-container {
+    display: grid;
+    grid-template-areas:
+        "Home"
+        "Cakes"
+        "Orderin"
+        "Lessons"
+        "About";
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: auto;
+    min-height: 25vh; /* Minimum height for consistency */
+    width: auto;
+    top: 31vh
+}
+    
+#menu-toggle:checked ~ .mobile-nav-icon .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+#menu-toggle:checked ~ .mobile-nav-icon .bar:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle:checked ~ .mobile-nav-icon .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+    
+.cake-footer {
+    display: block;
+}
+    
+.cake-footer-a {
+    margin-bottom: 2vh;
+}
+
+.hide{
+    display: none !important;
+}
+.nav-link {
+    display: flex;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 4.5vw;
+    height: 2vh;
+    font-size: clamp(1vh, 2vw, 2.5vh);
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link:hover {
+    background-color: var(--nav-color);
+}
+        
+.nav-link-home {
+    grid-area: Home;
+}
+        
+.nav-link-cakes {
+    grid-area: Cakes;
+}
+        
+.nav-link-ordering {
+    grid-area: Orderin;
+}
+        
+.nav-link-lessons {
+    grid-area: Lessons;
+}
+        
+.nav-link-about {
+    grid-area: About;
+}
+
+/* page layout for larger screens using media queries */
+@media (min-width: 540px) {
+
+    .nav-container {
+        display: grid;
+        grid-template-areas: "Home Cakes Orderin Lessons About";
+        align-items: center;
+        justify-content: flex-end;
+        padding: 1vh 3vw;
+        gap: 20px;
+        height: 10vh;
+        right: 0;
+        margin: 20px;
+    }
+            
+    .mobile-nav-icon {
+        display: none !important;  
+    }
+
+    .welcome-container {
+        display: grid;
+        gap: 20px;
+        grid-template-areas: "cake welcome";
+        margin-top: 20vh;
+    }
+
+    .welcome-cake img{
+        width: 47.2vw;
+        height: auto;
+        border-radius: 5px;
+    }
+           
+    .welcome-text {
+        grid-area: welcome;
+        text-align: right; 
+        line-height: 1.5;
+        font-size: clamp(2.5vh, 2vw, 4vh);
+    }
+
+    .cakes-container {
+        display: grid;
+        grid-template-areas: "cake1 cake2 cake3 cake4";
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        border-radius: 10px;
+    }
+
+    .cake-footer {
+        display: flex;
+    }
+}
+
+@media (min-width: 900px) {
+
+    .nav-container {
+        display: grid;
+        grid-template-areas: "Home Cakes Orderin Lessons About";
+        align-items: center;
+        justify-content: flex-end;
+        padding: 1vh 3vw;
+        gap: 20px;
+        height: 10vh;
+        right: 0;
+        margin: 20px;
+    }
+              
+    .mobile-nav-icon {
+        display: none !important; 
+    }
+
+    .welcome-container {
+        display: grid;
+        gap: 20px;
+        grid-template-areas: "cake welcome";
+        margin-top: 20vh;
+    }
+
+    .welcome-cake img{
+        width: 47.2vw;
+        height: auto;
+        border-radius: 5px;
+    }
+           
+    .welcome-text {
+        grid-area: welcome;
+        text-align: right; 
+        line-height: 1.5;
+        font-size: clamp(3vh, 2.5vw, 4vh);
+    }
+
+    .cakes-container {
+        display: grid;
+        grid-template-areas: "cake1 cake2 cake3 cake4";
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        border-radius: 10px;
+    }
+
+    .cake-footer {
+        display: flex;
+    }
+}
