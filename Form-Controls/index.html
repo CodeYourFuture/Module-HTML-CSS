@@ -1,28 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Stylish Mens T-shirt</h1>
+      </header>
+      <form>
+        <div>
+          <label for="fname"><span class="required">*</span> First Name.</label>
+          <br />
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="First Name"
+            required
+            minlength="2"
+          />
+        </div>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+        <div>
+          <label for="lname"><span class="required">*</span> Last Name.</label>
+          <br />
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Last Name"
+            required
+            minlength="2"
+          />
+        </div>
 
+        <div>
+          <label for="email"
+            ><span class="required">*</span> Email Address.</label
+          >
+          <br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="color">Color.</label>
+          <br />
+          <select name="color" id="color">
+            <option value="cream">Cream</option>
+            <option value="black">Black</option>
+            <option value="blue">Blue</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="size">Size.</label>
+          <br />
+          <select for="size" id="size">
+            <option value="xsmall">X-Small</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="x-large">X-Large</option>
+            <option value="XX-Large">XX-Large</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="quantity"> Quantity</label>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            max="4"
+            value="1"
+          />
+        </div>
+
+        <div>
+          <label for="date"
+            ><span class="required">*</span> Delivery date.</label
+          >
+          <br />
+          <input
+            type="date"
+            name="date"
+            id="date"
+            required
+            min="2023-08-23"
+            max="2023-10-30"
+          />
+        </div>
+
+        <div>
+          <input type="submit" id="submit" name="submit" />
+        </div>
+      </form>
+    </main>
+    <img
+      src="/Form-Controls/img/t-shirt.png"
+      class="clothing-image"
+      alt="t-shirt design"
+    />
+    <footer>
+      <!-- change to your name-->
+      <!-- <h2>By HOMEWORK SOLUTION</h2> -->
+    </footer>
+  </body>
 </html>

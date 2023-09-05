@@ -1,0 +1,89 @@
+/* General styles */
+@import url("https://fonts.googleapis.com/css2?family=Jockey+One&family=Manrope:wght@200;300;400;500;600&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #f7fafc;
+  --brand: #1a3647;
+  --font: "Jockey One";
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  max-height: 100vh;
+  grid-template-columns: repeat(2, 50%);
+  background-color: var(--background);
+  color: var(--brand);
+  font-family: var(--font);
+  width: 88vw;
+  margin: 0 auto;
+}
+
+main {
+  align-self: center;
+  padding-left: 2rem;
+}
+
+header {
+  font-size: 2.6rem;
+  padding-bottom: 4rem;
+  color: #2c2c2c;
+  text-shadow: 8px 8px 1px #fbc3cb;
+}
+
+.required {
+  color: #f87171;
+}
+
+/* Form styles */
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  column-gap: 2rem;
+  row-gap: 1.4rem;
+}
+
+form div:nth-child(3) {
+  grid-column: span 2;
+}
+
+input,
+select {
+  width: 100%;
+  height: 3.4rem;
+  margin-top: 0.4rem;
+  border-radius: 30px;
+  padding: 0.4rem 0 0.4rem 0.6rem;
+  border: 2px solid #accce0;
+  color: rgb(55, 55, 55);
+}
+
+label {
+  font-size: 1.4rem;
+  padding-left: 0.4rem;
+}
+
+#submit {
+  transition: all ease-in-out 0.4s;
+  font-size: 1.4rem;
+}
+
+#submit:hover,
+#submit:active {
+  border: 4px solid #accce0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* Clothing image section */
+
+.clothing-image {
+  height: 100vh;
+  align-self: end;
+}
