@@ -89,7 +89,9 @@ button {
     margin-left: 10.3rem;
     margin-right: auto;
     color: orangered;
+    background-color: white;
     font-weight: bold;
+    margin-bottom: 5rem;
 }
 button:hover{
     background-color: black;
