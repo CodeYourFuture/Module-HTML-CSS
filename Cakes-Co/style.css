@@ -1,1 +1,86 @@
 /*  Add your styling here */
+body {
+    width: 100%;
+}
+
+.container>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffeead;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 130px 70px 400px 300px 130px; 
+    grid-gap: 20px;
+}
+
+.container>div:nth-child(1n) {
+    background-color: #96ceb4;
+    grid-column: 1 / -1;
+    row-gap: 30px;
+}
+
+
+.container>div:nth-child(2n) {
+    background-color: #ff6f69;
+    grid-column: 2 / 12;
+    /* grid-template-columns: repeat(2,1fr);
+    column-gap: 10px; */
+}
+
+.container>div:nth-child(3n) {
+    background-color:#96ceb4;
+    grid-column: 2 / 7;
+    /* grid-template-columns: repeat(1,1fr);
+    column-gap: 20px; */
+    column-gap: 4rem;
+}
+.container>div:nth-child(4) {
+    background-color: blue;
+    grid-column: 7 / 12;
+}
+
+.container>div:nth-child(5n) {
+    background-color: #ffcc5c;
+    grid-column: 2 / 12;    
+}
+.container>div:nth-child(6n) {
+    background-color: black;
+    grid-column: 1 / -1;
+}
+
+/* .hero-section {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+} */
+
+/* .hero-section div:nth-child(1) {
+    background-color: blue;
+    grid-columns: repeat(2,1fr);
+    column-gap: 3rem; */
+
+.content-picture {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 20px;
+}
+.content-picture>div:nth-child(1n) {
+ background-color: blue;
+ grid-column: 1 / 2;
+}
+
+.content-picture>div:nth-child(2n) {
+    background-color: yellow;
+}
+
+.content-picture>div:nth-child(3n) {
+    background-color: pink;
+}
+.content-picture>div:nth-child(4n) {
+    background-color: black;
+}
