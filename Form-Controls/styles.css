@@ -1,0 +1,97 @@
+:root {
+    --font-family: Arial, sans-serif;
+    --container-max-width: 600px;
+    --container-padding: 20px;
+    --container-bg-color: #f7f7f7;
+    --container-border: 1px solid #ddd;
+    --container-border-radius: 5px;
+    --container-gap: 10px;
+    --label-font-weight: bold;
+    --input-width: 100%;
+    --input-padding: 10px;
+    --input-border: 1px solid #ccc;
+    --input-border-radius: 3px;
+    --input-margin-bottom: 15px;
+    --select-height: 40px;
+    --submit-bg-color: #08968a;
+    --submit-color: #fff;
+    --submit-padding: 10px 20px;
+    --submit-border-radius: 3px;
+    --submit-cursor: pointer;
+    --submit-hover-bg-color: #2e754e;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+.container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: var(--container-padding);
+    background-color: var(--container-bg-color);
+    border: var(--container-border);
+    border-radius: var(--container-border-radius);
+    display: grid;
+    gap: var(--container-gap);
+    grid-template-areas:
+        "header header"
+        "name email"
+        "color size"
+        "deliveryDate deliveryDate"
+        "submit submit";
+}
+
+label {
+    font-weight: var(--label-font-weight);
+}
+
+input[type="text"], input[type="email"], select, input[type="date"] {
+    width: var(--input-width);
+    padding: var(--input-padding);
+    border: var(--input-border);
+    border-radius: var(--input-border-radius);
+    margin-bottom: var(--input-margin-bottom);
+}
+
+select {
+    height: var(--select-height);
+}
+
+input[type="submit"] {
+    background-color: var(--submit-bg-color);
+    color: var(--submit-color);
+    border: none;
+    padding: var(--submit-padding);
+    border-radius: var(--submit-border-radius);
+    cursor: var(--submit-cursor);
+}
+
+input[type="submit"]:hover {
+    background-color: var(--submit-hover-bg-color);
+}
+
+/* Define grid areas for form elements */
+#name {
+    grid-area: name;
+}
+#email {
+    grid-area: email;
+}
+#color {
+    grid-area: color;
+}
+#size {
+    grid-area: size;
+}
+#deliveryDate {
+    grid-area: deliveryDate;
+}
+#submit {
+    grid-area: submit;
+}
+
+h2 {
+    grid-area: header;
+    text-align: center;
+}
