@@ -2,6 +2,41 @@
 body {
     width: 100%;
 }
+.logo {
+        width: 8rem;
+         height: 8rem;
+         border-radius: 10rem;
+         margin-right: auto;
+         margin-left: 7rem;
+}
+
+.title-shop {
+    margin-top: 5rem;
+        margin-bottom: 0rem;
+        font-size: 1.9rem;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: auto;
+        margin-right: 9rem;
+        color: black;
+}
+
+/* nav bar style section */
+nav {
+    width: 86%;
+    margin: auto;
+    padding-top: 0.75rem;
+    margin-right: auto;
+    margin-left: 36rem;
+}
+a {
+    text-decoration: none;
+    padding: 2.4rem;
+    color: black;
+    font-weight: bolder;
+}
+a:hover{
+    color: brown;
+}
 
 .container>div {
     display: flex;
@@ -14,19 +49,20 @@ body {
 .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 130px 70px 400px 300px 130px; 
+    grid-template-rows: 130px 70px 400px 300px 130px;
+    /* grid-template-rows: 130px 70px 400px 300px 300px 300px 300px 80px;  */
     grid-gap: 20px;
 }
 
 .container>div:nth-child(1n) {
-    background-color: #96ceb4;
+    background-color: white;
     grid-column: 1 / -1;
     row-gap: 30px;
 }
 
 
 .container>div:nth-child(2n) {
-    background-color: #ff6f69;
+    background-color: gainsboro;
     grid-column: 2 / 12;
     /* grid-template-columns: repeat(2,1fr);
     column-gap: 10px; */
@@ -37,18 +73,77 @@ body {
     grid-column: 2 / 7;
     /* grid-template-columns: repeat(1,1fr);
     column-gap: 20px; */
-    column-gap: 4rem;
+    /* column-gap: 4rem; */
 }
-.container>div:nth-child(4) {
-    background-color: blue;
+/* child 3n image */
+.hero-image {
+    width: 43rem;
+    height: 25rem;
+}
+
+.container>div:nth-child(4n) {
+    background-color: white;
     grid-column: 7 / 12;
+}
+/* child 4n content */
+p {
+    font-size: 4rem;
+    color: black;
+    margin-right: auto;
+    margin-left: 25rem;
+    margin-top: 0.1rem;    
+}
+h1 {
+    font-size: 19px;
+    padding: 0.4rem;
+    color: black;
+}
+.hero-content-wrapper {
+    margin-top: 2rem;
+    margin-bottom:10rem;
+    /* display: flex;
+    justify-content: center; */
 }
 
 .container>div:nth-child(5n) {
     background-color: #ffcc5c;
-    grid-column: 2 / 12;    
+    grid-column: 2 / 4;    
 }
+/* child 5n image */
+.content-image-1 {
+    width: 17rem;
+    height: 19rem;
+}
+
 .container>div:nth-child(6n) {
+    background-color: pink;
+    grid-column: 4 / 6;
+}
+/* child 6n image */
+.content-image-2 {
+    width: 17rem;
+    height: 19rem;
+}
+.container>div:nth-child(7n) {
+    background-color: purple;
+    grid-column: 6 / 10;
+}
+/* child 7n image */
+.content-image-3 {
+ width: 35rem;
+ height: 19rem;   
+}
+
+.container>div:nth-child(8n) {
+    background-color: plum;
+    grid-column: 10 / 12;
+}
+/* child 8n image */
+.content-image-4 {
+    width: 17rem;
+    height: 19rem;
+}
+.container>div:nth-child(9n) {
     background-color: black;
     grid-column: 1 / -1;
 }
@@ -63,24 +158,25 @@ body {
     grid-columns: repeat(2,1fr);
     column-gap: 3rem; */
 
-.content-picture {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    column-gap: 20px;
-}
-.content-picture>div:nth-child(1n) {
- background-color: blue;
- grid-column: 1 / 2;
-}
+/* OVERLAY SECTION */
+.overlay {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5);
+        /* Black see-through */
+        color: #f1f1f1;
+        width: 13rem;
+        /* height: 19rem; */
+        transition: .5s ease;
+        opacity: 0;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+    }
 
-.content-picture>div:nth-child(2n) {
-    background-color: yellow;
-}
-
-.content-picture>div:nth-child(3n) {
-    background-color: pink;
-}
-.content-picture>div:nth-child(4n) {
-    background-color: black;
-}
+    /* When you mouse over the container, fade in the overlay title */
+    .content-picture:hover .overlay {
+        opacity: 1;
+    }
