@@ -1,8 +1,9 @@
 :root {
-  --background: #d2e4d8;
-  --brand: #69726c;
-  --brand-accent: #f0b7c5;
-  --transition-effect: ease-in-out 0.2s;
+  --background: #de9bab;
+  --brand: #36000b;
+  --layout-color: #d1758b;
+  --brand-accent: #263600;
+  --transition-effect: ease-in-out 0.4s;
 }
 
 body {
@@ -15,9 +16,12 @@ a {
   text-decoration: none;
 }
 
+.cupcake-logo {
+  border-radius: 100%;
+}
+
 header p {
-  color: var(--brand-accent);
-  text-shadow: 2px 2px 2px #000000b3;
+  color: var(--brand);
 }
 
 main div:nth-child(1) {
@@ -45,36 +49,41 @@ main div:nth-child(1) {
 
   .layout {
     display: grid;
-    grid-template-rows: 350px 780px 350px 140px;
+    grid-template-rows: 200px 780px 350px 140px;
     row-gap: 2rem;
+    margin-top: 2rem;
   }
 
   nav {
     display: none;
   }
 
-  .cupcake-logo {
-    display: none;
-  }
-
   /* HEADER & NAV STYLES - HEADER PICTURE & HAMBURGER MENU */
 
   header {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: space-between;
-    padding-right: 1.4rem;
-    background-image: url("https://images.unsplash.com/photo-1521886580989-e18b74350ba4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2217&q=80");
-    background-size: cover;
-    background-position: left;
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    grid-template-rows: 110px 1fr;
+    row-gap: 1rem;
+    padding: 0 2rem;
+    /* column-gap: 2rem; */
+  }
+
+  .cupcake-logo {
+    width: 100%;
+    height: 100%;
+  }
+
+  header svg {
+    justify-self: end;
   }
 
   header p {
-    font-size: 2.3rem;
+    font-size: 1.2rem;
     padding-bottom: 1rem;
     text-align: end;
     line-height: 0.8;
+    grid-column: 2 / 3;
   }
 
   main,
@@ -167,11 +176,12 @@ main div:nth-child(1) {
   }
 
   header {
-    background-color: var(--brand);
+    background-color: var(--layout-color);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
-    padding: 0 4%;
+    padding: 0 2%;
+    border-bottom-left-radius: 100%;
   }
 
   header p {
@@ -192,11 +202,12 @@ main div:nth-child(1) {
   }
 
   nav {
-    background-color: var(--brand);
+    background-color: var(--background);
     display: flex;
     justify-content: end;
     align-items: center;
     padding-right: 2rem;
+    border-bottom: 2px solid var(--layout-color);
   }
 
   .flex-nav {
@@ -205,20 +216,32 @@ main div:nth-child(1) {
     gap: 2rem;
   }
 
+  .flex-nav a:hover,
+  .flex-nav a:active {
+    border-top-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    opacity: 1;
+  }
+
   .flex-nav a {
     display: flex;
     color: white;
-    background-color: var(--brand-accent);
+    background-color: var(--brand);
     padding: 0.8rem 1.4rem;
-    transition: all var(--transition-effect);
-    opacity: 0.8;
+    transition: border-top-left-radius ease-in-out 0.3s,
+      border-bottom-right-radius ease-in-out 0.6s,
+      border-top-right-radius ease-in-out 0.9s,
+      border-bottom-left-radius ease-in-out 1.2s, opacity ease-in-out 1.2s;
+    opacity: 0.6;
   }
 
-  .flex-nav a:hover,
+  /* .flex-nav a:hover,
   .flex-nav a:active {
     border-radius: 24px;
     opacity: 1;
-  }
+  } */
 
   main {
     display: grid;
@@ -245,7 +268,7 @@ main div:nth-child(1) {
 
   content div img {
     border-radius: 10px;
-    opacity: 0.4;
+    opacity: 0.6;
     transition: opacity var(--transition-effect);
     cursor: pointer;
   }
@@ -301,10 +324,11 @@ main div:nth-child(1) {
 
   .socials-svgs {
     position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
-    bottom: 50px;
-    right: 70px;
+    top: 50%;
+    right: 3%;
     text-align: end;
     gap: 0.6rem;
   }
