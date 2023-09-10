@@ -12,10 +12,6 @@
   margin: 0;
   padding: 0;
 }
-a {
-  color: white;
-  text-decoration: none;
-}
 
 li {
   list-style: none;
@@ -27,7 +23,6 @@ p {
 body {
   min-height: 100vh;
   font-family: var(--ff-lato);
-
 }
 .container {
   min-height: 100vh;
@@ -142,13 +137,17 @@ nav {
   gap: 1rem;
 }
 .nav-link {
-  padding: 1rem;
-  color: black;
+  height: 4rem;
 }
-.nav-link:hover,
-.nav-link:focus {
+.nav-link a {
+  padding: 0.3rem;
   color: white;
-  background-color: black;
+  text-decoration: none;
+}
+.nav-link a:hover,
+.nav-link a:focus {
+  color: white;
+  background-color: rgb(96, 67, 101);
 }
 /*-----------------Overlay--------------------*/
 .overlay {
@@ -182,15 +181,16 @@ main {
   background: url(/main-img.jpeg) no-repeat;
   background-size: cover;
   background-position: center;
- animation:fade-in 1s ease ;
+  animation: fade-in 1s ease;
 }
 @keyframes fade-in {
-  0%{
+  0% {
     transform: scale(1.3);
   }
-  100%{
+  100% {
     transform: translate(1);
-  }}
+  }
+}
 /*-----------------img gallary------------------*/
 
 .img-gallary {
@@ -219,13 +219,22 @@ footer {
   display: grid;
   gap: 1.3rem;
   padding: 1rem;
- 
 }
 .footer-link {
   cursor: pointer;
   display: grid;
   gap: 1rem;
-  margin-left: 1rem;
+}
+.footer-link a {
+  padding: 0.3rem;
+  text-align: center;
+  width: 7rem;
+  text-decoration: none;
+  color: white;
+}
+.footer-link a:hover,
+.footer-link a:focus {
+  background-color: rgb(121, 16, 95);
 }
 .copyright {
   color: white;
@@ -244,12 +253,12 @@ footer {
       "l c"
       "nav nav";
   }
-  .content{
-    width:100%;
+  .content {
+    width: 100%;
     align-items: end;
     justify-content: flex-end;
   }
-  .content-p{
+  .content-p {
     width: 100%;
   }
   .menu {
@@ -279,10 +288,9 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
   .welcome-img {
-    background-position:right ;
-    
+    background-position: right;
   }
-  
+
   .welcome p {
     line-height: max(2vw, 3vw);
     font-size: max(2vw, 2.5vw);
@@ -304,8 +312,8 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
-  .welcome p{
-    font-size: max(1vw,2vw);
+  .welcome p {
+    font-size: max(1vw, 2vw);
   }
 }
 /*---------------Extra lage screen---------------*/
@@ -318,7 +326,7 @@ footer {
     row-gap: min(10vw, 11vw);
   }
 
-  .welcome p{
-    font-size: max(2rem,1.4vw);
+  .welcome p {
+    font-size: max(2rem, 1.4vw);
   }
 }
