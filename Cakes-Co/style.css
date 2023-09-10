@@ -102,6 +102,7 @@ nav {
   transition: 0.5s ease;
 }
 .nav-close {
+  cursor: pointer;
   grid-area: nav;
   position: absolute;
   align-items: center;
@@ -113,6 +114,7 @@ nav {
   transition: 0.5s ease;
 }
 .nav {
+  cursor: pointer;
   position: absolute;
   display: grid;
   align-items: center;
@@ -220,6 +222,7 @@ footer {
  
 }
 .footer-link {
+  cursor: pointer;
   display: grid;
   gap: 1rem;
   margin-left: 1rem;
