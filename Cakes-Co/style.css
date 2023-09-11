@@ -1,9 +1,58 @@
 /*  Add your styling here */
 
+       /* General styles */
+
+:root {
+  --background: #2cbfb8;
+  --text-color: #092625;
+}
 
 body {
-    font-family: 'Montserrat Alternates', sans-serif;
-    text-align: center; 
-    background-color:  rgb(128, 132, 134);
-    color: rgb(220, 220, 233);
+  font-family: "Montserrat Alternates", sans-serif;
+  background: var(--background);
+  color: var(--text-color);
 }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.layout {
+  display: grid;
+  grid-template-rows: 190px 1fr 350px 140px;
+  row-gap: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.flex-nav a {
+  background-color: #002340;
+  color: white;
+}
+
+/* Header section */
+
+
+
+        /* Hamburger Section */
+
+
+
+   /* Footer Section */
+
+
+
+
+        /* Media Query Section */
+
+
+
+
+        /* Image Section */
+
+  
