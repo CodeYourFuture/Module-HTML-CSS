@@ -1,6 +1,6 @@
 /*  Add your styling here */
 
-       /* General styles */
+/* General styles */
 
 :root {
   --background: #2cbfb8;
@@ -37,22 +37,108 @@ a {
 
 /* Header section */
 
+header {
+  padding: 1.8rem 1.2rem;
+}
 
+header p {
+  font-size: 1.6rem;
+}
 
-        /* Hamburger Section */
+main {
+  display: grid;
+  grid-template-rows: 140px 300px;
+  row-gap: 1rem;
+}
 
+content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 50%);
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
 
+content img {
+  height: 100%;
+}
 
-   /* Footer Section */
+main,
+content {
+  padding: 0 1rem;
+}
 
+nav {
+  display: none;
+}
 
+/* Hamburger Section */
 
+.logo-hamburger-container {
+  display: flex;
+  justify-content: space-between;
+}
 
-        /* Media Query Section */
+.cupcake-logo {
+  border-radius: 50%;
+}
 
+.hamburger-menu {
+  position: relative;
+  background-color: black;
+  width: 2rem;
+  height: 0.3rem;
+}
 
+.hamburger-menu::before,
+.hamburger-menu::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 2rem;
+  height: 0.3rem;
+}
 
+.hamburger-menu::after {
+  background-color: black;
+  top: 12px;
+}
 
-        /* Image Section */
+.hamburger-menu::before {
+  background-color: black;
+  top: 24px;
+}
 
-  
+header p {
+  text-align: end;
+}
+
+.welcome-text {
+  text-align: justify;
+  margin-top: 1rem;
+}
+
+/* Footer Section */
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+}
+
+footer {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.4rem 1rem;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.6rem;
+}
+
+/* Media Query Section */
+
