@@ -1,1 +1,45 @@
-/*  Add your styling here */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+/* Style the navigation bar */
+.logo{
+        background-image:
+}
+.navbar {
+        background-color: #f2f2f2;
+        overflow: hidden;
+}
+
+/* Navigation bar links */
+.navbar a {
+        float: left;
+        display: block;
+        color: #333;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+}
+
+/* On hover, the links will change color */
+.navbar a:hover {
+        background-color: #ddd;
+        color: #333;
+}
+
+/* Center the logo and add some styling */
+.navbar .logo {
+        float: left;
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+}
+
+/* Right-aligned elements in the navigation bar */
+.navbar .navbar-right {
+        float: right;
