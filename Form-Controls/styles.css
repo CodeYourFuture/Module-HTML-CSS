@@ -19,10 +19,44 @@
     --submit-border-radius: 3px;
     --submit-cursor: pointer;
     --submit-hover-bg-color: #2e754e;
+    --focus-outline-color: #08968a;
 }
 
 body {
     font-family: var(--font-family);
+}
+
+.order {
+    background-color: var(--container-bg-color);
+    border: var(--container-border);
+    border-radius: var(--container-border-radius);
+    display: grid;
+    gap: var(--container-gap);
+    grid-template-areas: "form T-Shirt";
+    width: auto;
+}
+
+.form {
+    grid-area: form;
+}
+
+.T-Shirt {
+    grid-area: T-Shirt;
+}
+
+.pic {
+    width: 40vw;
+    height: 80vh;
+}
+
+#name:focus,
+#email:focus,
+#deliveryDate:focus {
+    outline: 2px solid var(--focus-outline-color);
+}
+
+#submit:focus {
+    background-color: var(--submit-hover-bg-color);
 }
 
 .container {
@@ -46,7 +80,10 @@ label {
     font-weight: var(--label-font-weight);
 }
 
-input[type="text"], input[type="email"], select, input[type="date"] {
+input[type="text"],
+input[type="email"],
+select,
+input[type="date"] {
     width: var(--input-width);
     padding: var(--input-padding);
     border: var(--input-border);
@@ -71,22 +108,26 @@ input[type="submit"]:hover {
     background-color: var(--submit-hover-bg-color);
 }
 
-/* Define grid areas for form elements */
 #name {
     grid-area: name;
 }
+
 #email {
     grid-area: email;
 }
+
 #color {
     grid-area: color;
 }
+
 #size {
     grid-area: size;
 }
+
 #deliveryDate {
     grid-area: deliveryDate;
 }
+
 #submit {
     grid-area: submit;
 }
