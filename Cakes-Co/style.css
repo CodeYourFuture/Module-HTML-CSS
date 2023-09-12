@@ -34,7 +34,7 @@ main div:nth-child(1) {
   fill: var(--brand);
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   /* GENERAL STYLES */
 
   * {
@@ -156,7 +156,7 @@ main div:nth-child(1) {
   }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1200px) {
+@media only screen and (min-width: 768px) {
   body {
     padding: 0;
     margin: 0;
