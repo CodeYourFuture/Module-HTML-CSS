@@ -52,7 +52,7 @@ header {
   grid-area: l;
   height: 5rem;
   width: 5rem;
-  background: url(/Cakes-Co/615f388b7b27359c78cc73f1af8e66f3.png) no-repeat;
+  background: url(615f388b7b27359c78cc73f1af8e66f3.png) no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -67,7 +67,7 @@ header {
   cursor: pointer;
   width: 3rem;
   height: 3rem;
-  background: url(/Cakes-Co/bars-solid.svg) no-repeat;
+  background: url(bars-solid.svg) no-repeat;
   background-position: center;
   background-size: contain;
   justify-items: right;
@@ -91,7 +91,7 @@ nav {
 .close {
   width: 3rem;
   height: 3rem;
-  background: url(/Cakes-Co/xmark-solid.svg) no-repeat;
+  background: url(xmark-solid.svg) no-repeat;
   background-position: center;
   background-size: contain;
   justify-items: right;
@@ -187,7 +187,7 @@ main {
 }
 .welcome-img {
   margin-inline: 1rem;
-  background: url(/Cakes-Co/main-img.jpeg) no-repeat;
+  background: url(main-img.jpeg) no-repeat;
   background-size: cover;
   background-position: center;
   animation: fade-in 1s ease backwards;
