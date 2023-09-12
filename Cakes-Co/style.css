@@ -52,7 +52,7 @@ header {
   grid-area: l;
   height: 5rem;
   width: 5rem;
-  background: url(/615f388b7b27359c78cc73f1af8e66f3.png) no-repeat;
+  background: url(/Cakes-Co/615f388b7b27359c78cc73f1af8e66f3.png) no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -67,7 +67,7 @@ header {
   cursor: pointer;
   width: 3rem;
   height: 3rem;
-  background: url(/bars-solid.svg) no-repeat;
+  background: url(/Cakes-Co/bars-solid.svg) no-repeat;
   background-position: center;
   background-size: contain;
   justify-items: right;
@@ -91,7 +91,7 @@ nav {
 .close {
   width: 3rem;
   height: 3rem;
-  background: url(/xmark-solid.svg) no-repeat;
+  background: url(/Cakes-Co/xmark-solid.svg) no-repeat;
   background-position: center;
   background-size: contain;
   justify-items: right;
@@ -138,17 +138,22 @@ nav {
   gap: 1rem;
 }
 .nav-link {
-  height: 4rem;
+  border: 2px solid  rgb(96, 67, 101);
+  height: 3rem;
+  width: 10rem;
+  display: flex;justify-content: center;
+  align-items: center;
 }
 .nav-link a {
   padding: 0.3rem;
   color: white;
   text-decoration: none;
+  
 }
 .nav-link a:hover,
 .nav-link a:focus {
   color: white;
-  background-color: rgb(96, 67, 101);
+
 }
 
 
@@ -198,9 +203,9 @@ main {
 
 
 
-/*-----------------img gallary------------------*/
+/*-----------------img gallery------------------*/
 
-.img-gallary {
+.img-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
@@ -265,7 +270,7 @@ footer {
 
 
 
-/*-------------------witdth more than 540px-------------------*/
+/*-------------------width more than 540px-------------------*/
 @media screen and (min-width: 540px) {
   .container {
     row-gap: 3rem;
@@ -305,6 +310,8 @@ footer {
     height: 1rem;
     display: flex;
     align-items: center;
+    width: 5.6rem;
+    height: 2rem;
   }
   .welcome {
     margin-top: 2rem;
@@ -334,15 +341,18 @@ footer {
     display: grid;
     row-gap: min(6vw, 10vw);
   }
-  .img-gallary {
+  .img-gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
   .welcome p {
     font-size: max(1vw, 2vw);
   }
+  .nav-link{
+    width: 9rem;
+  }
 }
-/*---------------Extra lage screen---------------*/
+/*---------------Extra large screen---------------*/
 @media screen and (min-width: 1440px) {
   .container {
     row-gap: 2rem;
@@ -355,4 +365,5 @@ footer {
   .welcome p {
     font-size: max(2rem, 1.4vw);
   }
+ 
 }
