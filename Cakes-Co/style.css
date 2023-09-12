@@ -182,7 +182,7 @@ main {
 }
 .welcome-img {
   margin-inline: 1rem;
-  background: url(/main-img.jpeg) no-repeat;
+  background: url(/Cakes-Co/main-img.jpeg) no-repeat;
   background-size: cover;
   background-position: center;
   animation: fade-in 1s ease backwards;
