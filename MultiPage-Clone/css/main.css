@@ -15,17 +15,18 @@
   width: 100%;
   display: grid;
   /* grid-template-columns: 1fr; */
-  grid-template-rows: 130px 490px 420px;
+  grid-template-rows: 100px 400px 1fr;
 }
 /* nav bar style section */
 nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background-color: blue;
+  background-color: white;
 }
 
 nav p {
   justify-self: center;
+  padding-top: 2rem;
 }
 
 .juiceBar-Burger-wrapper {
@@ -34,11 +35,35 @@ nav p {
 }
 .w-6 {
   width: 50px;
+  padding-top: 1.5rem;
+}
+.order-online-login-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    gap: 4rem;
+}
+.logIn-p {
+    font-size: 20px;
+}
+.logo-svg {
+    margin-top: 2rem;
+}
+.user-logo {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 7px;
+}
+.btn-orderOnline {
+    padding: 10px 60px;
+    font-size: large;
 }
 
+
 main {
-  background-color: yellowgreen;
+  background-color: white;
 }
+
 /* main content and font style */
 .main-content-wrapper {
   display: flex;
@@ -64,7 +89,11 @@ button {
 }
 
 .main-2 {
-  background-color: darkgreen;
+  background-color: pink;
   display: grid;
   grid-row: span;
+}
+.main-image {
+    width: 100%;
+
 }
