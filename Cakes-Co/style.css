@@ -1,3 +1,4 @@
+*/____________________mobile_size____________________*/
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
 h2 {
@@ -139,7 +140,7 @@ body {
         .menu>li:not(:last-child) {
                 border-bottom: 1px solid #444;
         }
-
+*/____________________main____________________*/
 .main_img{
         height:28vh;
         width:auto;
@@ -157,16 +158,23 @@ footer {
         text-align: center;
         margin-top: 6rem;
         border-top: 1px solid rgb(214, 212, 212);
-
+       
+}
+.footer_container{
+background: linear-gradient(to left, #F46B45, #EEA849);
 }
 
 .footer_content {
         margin-top: 2rem;
+        
+        }
+        
 }
 
 .content {
         font-weight: normal;
         font-size: 1rem;
+        text-align: center;
 }
 
 .footer_part {
@@ -191,11 +199,12 @@ footer {
         margin-left: 15px;
 }
 
-.karma_mobality {
+.cakes_mobality {
         margin-top: 10px;
         font-size: smaller;
         font-weight: lighter;
         color: rgb(196, 193, 193);
+        text-align: center;
 }
 
 .input_card {
