@@ -102,6 +102,22 @@ input[type="submit"] {
   padding: var(--submit-padding);
   border-radius: var(--submit-border-radius);
   cursor: var(--submit-cursor);
+  transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:not(:disabled) {
+  background-color: #007b6e; /* Background color */
+  color: #fff; /* Text color */
+}
+
+input[type="submit"]:hover:not(:disabled) {
+  background-color: #005948; /* Hover background color */
+}
+
+input[type="submit"]:disabled {
+  background-color: #ccc; /* Disabled state background color */
+  color: #666; /* Disabled state text color */
+  cursor: not-allowed; /* Change cursor for disabled state */
 }
 
 input[type="submit"]:hover {
