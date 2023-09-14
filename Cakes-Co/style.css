@@ -10,14 +10,49 @@
   gap: 20px;
 }
 
-header {
-  background-color: yellowgreen;
-  color: aliceblue;
+/* header section */
+.header-logo {
+  display: block;
+width: 89px;
+    /* height: 75px; */
+    height: 74px;
+    border-radius: 36px;
 }
 
-nav {
-  background-color: black;
+header {
+  background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
+
+h1 {
+  color: darkgoldenrod;
+    padding-top: 27px;
+    margin-left: 182px;
+}
+/* nav bar section */
+
+nav {
+  background-color: white;
+    display: flex;
+    gap: 3rem;
+    flex-direction: row;
+    justify-content: flex-end;
+  
+}
+
+  
+a {
+    text-decoration: solid;
+    padding: 1.4rem;
+    color: black;
+    font-weight: bolder;
+}
+a:hover{
+    color: darkgoldenrod;
+}
+
 
 main {
   display: grid;
@@ -28,7 +63,18 @@ main div:nth-child(1) {
   background-color: blue;
 }
 main div:nth-child(2) {
-  background-color: black;
+  background-color: white;
+}
+p {
+  font-size: xxx-large;
+    text-align: end;
+}
+h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: aquamarine;
+  padding: 20px;
+  font-size: 1rem;
+  
 }
 
 /* content section style */
@@ -56,25 +102,14 @@ footer {
   background-color: plum;
 }
 
-nav,
-main,
-content {
-  margin: 0 2rem;
-}
+
 
 /* image section */
 .main-image {
   width: 100%;
   height: 100%;
 }
-h1 {
-  color: rgb(233, 30, 99);
-    font-size: 101%;
-    font-size: 141%;
-    text-align: center;
-    padding: 89px;
-    font-family: ui-sans-serif;
-}
+
 
 .content-image1 {
   width: 100%;
