@@ -1,28 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1 class="heading">Product Pick</h1>
+    <div class="menu"></div>
+    <ul class="list">
+      <li class="nav-link"><a href="#">Men</a></li>
+      <li class="nav-link"><a href="#">Women</a></li>
+      <li class="nav-link"><a href="#">New</a></li>
+    </ul>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <section class="img"></section>
+    <form class="form">
+      <label for="full-name"> Full Name *
+        <input type="text" name="full-name" id="full-name" required />
+      </label>
+      <label for="email">Email *
+        <input type="email" name="email" id="email" required />
+      </label>
+      <section class="colors">
+        <h1>Choose the color of the T-Shirt</h1>
+        <section class="color-flex">
+          <section class="orange-radio">
+            <input type="radio" name="color" id="orange"  required />
+            <label for="orange" class=" orange">Orange</label>
 
+          </section>
+
+          <section class="red-radio"> 
+            <input type="radio" name="color" id="red" />
+            <label for="red" class="red">Red</label>
+          </section>
+
+          <section class="grey-radio">
+            <input type="radio" name="color" id="grey" required />
+            <label for="grey" class="grey">Grey
+            </label>
+          </section>
+
+
+        </section>
+      </section>
+      <select name="size" id="size">
+         <option value="disable" disabled hidden required>
+        Select the size
+        </option>
+        <option value="xs">XS</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+      </select>
+      <label for="date" > Choose Delivery date *
+        <input class="date" type="date" name="date" id="date" value="2023-09-21" min="2023-09-21" max="2023-10-13" required>
+      </label>
+      <input type="submit" value="Submit" id="submit">
+    </form>
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>Adniya Yousaf</h2>
   </footer>
 </body>
-
 </html>
