@@ -97,11 +97,9 @@ h1 {
     font-size: 19px;
     padding: 0.4rem;
     color: black;
+    font-family: sans-serif
 }
-.hero-content-wrapper {
-    margin-top: 2rem;
-    margin-bottom:10rem;
-}
+
 
 .container>div:nth-child(5n) {
     background-color: #ffcc5c;
