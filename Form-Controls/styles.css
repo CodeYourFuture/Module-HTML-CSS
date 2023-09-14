@@ -64,7 +64,7 @@ main {
 }
 .img {
   width: 50%;
-  background: url(/Form-Controls/t-shirt.jpeg) no-repeat;
+  background: url(/Form-Controls/t-shirt.webp) no-repeat;
   background-position: center;
   background-size: cover;
 }
