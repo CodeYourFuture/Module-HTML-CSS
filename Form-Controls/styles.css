@@ -20,6 +20,9 @@
   --submit-cursor: pointer;
   --submit-hover-bg-color: #2e754e;
   --focus-outline-color: #08968a;
+  --required-color: #ff0000;
+  --valid-color: #ccc;
+  --disabled-color: #666;
 }
 
 body {
@@ -57,6 +60,41 @@ body {
 
 #submit:focus {
   background-color: var(--submit-hover-bg-color);
+}
+
+/* Style for required fields */
+.required + input:required,
+.required + select:required {
+  border-color: var(
+    --required-color
+  ); /* Change the border color for required fields */
+}
+
+/* Style for required labels */
+.required::after {
+  content: "*"; /* Add an asterisk to required labels */
+  color: var(--required-color); /* Set the asterisk color to red */
+}
+
+/* Style for the submit button when any required fields are empty */
+form:has(
+    .required + input:required:invalid,
+    .required + select:required:invalid
+  )
+  #submit {
+  background-color: var(
+    --valid-color
+  ); /* Change submit button background color when required fields are empty */
+  color: var(
+    --disabled-color
+  ); /* Change submit button text color when required fields are empty */
+  cursor: not-allowed; /* Change cursor for the submit button when required fields are empty */
+}
+input:required:valid,
+select:required:valid {
+  border-color: var(
+    --valid-color
+  ); /* Change border color to a neutral color for valid input */
 }
 
 .container {
@@ -106,17 +144,17 @@ input[type="submit"] {
 }
 
 input[type="submit"]:not(:disabled) {
-  background-color: #007b6e; /* Background color */
-  color: #fff; /* Text color */
+  background-color: var(--submit-bg-color); /* Background color */
+  color: var(--submit-color); /* Text color */
 }
 
 input[type="submit"]:hover:not(:disabled) {
-  background-color: #005948; /* Hover background color */
+  background-color: var(--submit-hover-bg-color); /* Hover background color */
 }
 
 input[type="submit"]:disabled {
-  background-color: #ccc; /* Disabled state background color */
-  color: #666; /* Disabled state text color */
+  background-color: var(--valid-color); /* Disabled state background color */
+  color: var(--disabled-color); /* Disabled state text color */
   cursor: not-allowed; /* Change cursor for disabled state */
 }
 
