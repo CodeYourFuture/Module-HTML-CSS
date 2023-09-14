@@ -18,6 +18,9 @@ body {
         margin: 0;
         padding: 0;
         }
+ */____________________main____________________*/
+
+
         .container {
                 min-height: 100vh;
                 display: flex;
@@ -118,7 +121,7 @@ body {
         .menu-button-container {
                 display: flex;
         }
-
+}
         .menu {
                 position: absolute;
                 top: 0;
@@ -161,13 +164,14 @@ body {
 */____________________main____________________*/
 main {
         display: grid;
-        gap: 2rem;
+        gap: .5rem;
 }
 
 .welcome {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
-        height: 35rem;
+        height: 34.5rem;
+        margin-top:0px;
 }
 
 .card {
@@ -183,24 +187,25 @@ main {
         animation: fade-in 1s ease;
 }
  */____________________show_img____________________*/
-.show_img {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+ 
+.show-img {
+        display: flex;
+        justify-content: space-evenly;
         gap: 1rem;
+      
 }
 
-.img_item {
-        display: grid;
+.img-item {
         justify-content: center;
         align-items: center;
         height: auto;
-        width: 80%;
-        margin: 1rem;
-        border: 1px solid rgb(204, 70, 92);
-        padding: 1rem;
-        cursor: pointer;
+        width: 42.5%;
+        margin:.8rem;
+       
+        border: 1px solid rgb(253, 131, 0);
+       cursor: pointer;
 }
-.img_item img {
+.img-item img {
         height: 7rem;
         transition: transform 0.5s ease-in-out;
 }
