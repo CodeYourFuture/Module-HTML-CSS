@@ -18,6 +18,14 @@ width: 89px;
     height: 74px;
     border-radius: 36px;
 }
+/* svg hamburger style */
+.hb {
+  background-color:blue;
+  color: black;
+  width: 100px;
+  margin: 0 auto;
+  display: block;
+}
 
 header {
   background-color: whitesmoke;
