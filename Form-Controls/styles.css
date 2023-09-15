@@ -23,8 +23,17 @@
   --required-color: #ff0000;
   --valid-color: #666; /* Darkened valid color for better contrast */
   --disabled-color: #888; /* Adjusted disabled color for better contrast */
+  /* Updated color values for specific elements */
+  --required-note-color: var(--required-color);
+  --container-form-bg-color: #f7f7f7; /* Adjusted background color */
+  --container-form-text-color: #333; /* Dark text for better contrast */
+  --submit-button-bg-color: var(
+    --submit-bg-color
+  ); /* Adjusted background color */
+  --submit-button-text-color: var(
+    --submit-color
+  ); /* White text for better contrast */
 }
-
 
 body {
   font-family: var(--font-family);
@@ -82,7 +91,7 @@ body {
 }
 
 .required-note {
-  color: var(--required-color);
+  color: var(--required-note-color);
 }
 
 /* Style for the submit button when any required fields are empty */
@@ -122,6 +131,12 @@ select:required:valid {
     "deliveryDate deliveryDate"
     "submit submit";
 }
+div.container.form {
+  background-color: var(
+    --container-form-bg-color
+  ); /* Adjusted background color */
+  color: var(--container-form-text-color); /* Dark text for better contrast */
+}
 
 label {
   font-weight: var(--label-font-weight);
@@ -143,8 +158,8 @@ select {
 }
 
 input[type="submit"] {
-  background-color: var(--submit-bg-color);
-  color: var(--submit-color);
+  background-color: var(--submit-button-bg-color);
+  color: var(--submit-button-text-color);
   border: none;
   padding: var(--submit-padding);
   border-radius: var(--submit-border-radius);
