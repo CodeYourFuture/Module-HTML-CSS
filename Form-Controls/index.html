@@ -1,28 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <!-- write your html here-->
+      <!-- try writing out the requirements first-->
+      <div class="order">
+        <div class="T-Shirt">
+          <img src="images/products.svg" class="pic" alt="T-Shirt image List" />
+        </div>
 
+        <div class="container form">
+          <h2>T-Shirt Order Form</h2>
+          <form>
+            <div class="note">
+              <p>
+                Fields marked with <span class="required-note">Red</span> are required.
+              </p>
+            </div>
+            <label for="name" class="required"
+              >Customer's Name <span></span>:</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              pattern="[A-Za-z -]+"
+              title="Only letters, spaces, and hyphens are allowed"
+            />
+
+            <label for="email" class="required"
+              >Customer's Email <span></span>:</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              title="Only valid emails are allowed"
+            />
+
+            <label for="color" class="required"
+              >T-Shirt Color <span></span>:</label
+            >
+            <select id="color" name="color" required>
+              <option value="" disabled selected>Select a color...</option>
+              <option value="Gray" data-image="Gray">Gray</option>
+              <option value="Blue" data-image="Blue">Blue</option>
+              <option value="Dark Green" data-image="Dark Green">
+                Dark Green
+              </option>
+            </select>
+
+            <label for="size" class="required"
+              >T-Shirt Size <span></span>:</label
+            >
+            <select id="size" name="size" required>
+              <option value="" disabled selected>Select a size...</option>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
+            </select>
+
+            <label for="deliveryDate" class="required"
+              >Delivery Date (within next 4 weeks) <span></span>:</label
+            >
+            <input
+              type="date"
+              id="deliveryDate"
+              name="deliveryDate"
+              required
+              min="2023-09-07"
+              max="2023-10-05"
+            />
+
+            <label for="Submit Order">
+              <input type="submit" value="Submit Order" id="submit" />
+            </label>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By ABDIHAMID ALI</h2>
+    </footer>
+  </body>
 </html>
