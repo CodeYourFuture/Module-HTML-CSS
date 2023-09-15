@@ -140,6 +140,26 @@ footer {
     display: grid;
     grid-column: 1 /-1;
   }
+  .header-logo {
+  /* display: block;
+width: 89px;
+    height: 74px;
+    border-radius: 36px; */
+    margin: 17px
+}
+
+header {
+  background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h1 {
+  color: darkgoldenrod;
+    padding-top: 27px;
+    font-size: 12px;
+}
 
 
   /* nav section */
@@ -157,6 +177,20 @@ footer {
     display: flex;
     flex-direction: column-reverse;
   }
+  /* main content */
+
+p {
+  font-size: 39px;
+    text-align: inherit;
+    padding-left: 14px;
+}
+h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: aquamarine;
+  padding: 19px;
+  font-size: 11px;
+  
+}
 
   
 
@@ -187,11 +221,6 @@ footer {
   height: 100%;
 }
 
-h1 {
-  color: #E91E63;
-    font-size: 76%;
-    text-align: center;
-    padding: 28px;
-}
+
   
 }
