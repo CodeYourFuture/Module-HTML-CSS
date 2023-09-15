@@ -1,5 +1,9 @@
 
 @import url(https://fonts.googleapis.com/css?family=Raleway);
+:root {
+        --font-primary: "Roboto", sans-serif;
+        --white: white;
+}
 
 h2 {
         vertical-align: center;
@@ -15,8 +19,8 @@ body {
 * {
         font-family: “Raleway”;
         box-sizing: border-box;
-        margin: 0;
-        padding: 0;
+        margin:0;
+        padding:0;
         }
  */____________________main____________________*/
 
@@ -29,10 +33,18 @@ body {
                 gap: 1rem;
                 line-height: clamp(1.5rem, 2vw, 2rem);
                 font-size: clamp(1rem, 2vw, 1.5rem);
-                display: grid;
-                grid-template-columns: ;
-                grid-template-rows: ;
+                
         }
+                header {
+                        position: relative;
+                        display: 
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-template-areas:
+                               
+                        padding: 1rem;
+                        row-gap: 1rem;
+                        
+                }
         
 
        
@@ -47,7 +59,7 @@ body {
         align-items: center;
         justify-content: space-between;
         background-color: #00BAF0;
-        background: linear-gradient(to left, #F46B45, #EEA849);
+        background: linear-gradient(to left, #e487c5, #e7c8f8);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         color: #FFF;
         height:50px;
@@ -161,6 +173,9 @@ body {
         .menu>li:not(:last-child) {
                 border-bottom: 1px solid #444;
         }
+        .logo{
+
+        }
 */____________________main____________________*/
 main {
         display: grid;
@@ -185,6 +200,7 @@ main {
         background-size: cover;
         background-position: center;
         animation: fade-in 1s ease;
+        margin-top: -6rem;
 }
  */____________________show_img____________________*/
  
@@ -199,10 +215,10 @@ main {
         justify-content: center;
         align-items: center;
         height: auto;
-        width: 42.5%;
+        width: 44.3%;
         margin:.8rem;
        
-        border: 1px solid rgb(253, 131, 0);
+        border: 1px solid rgb(216, 112, 180);
        cursor: pointer;
 }
 .img-item img {
@@ -218,7 +234,7 @@ footer {
        
 }
 .footer_container{
-background: linear-gradient(to left, #F46B45, #EEA849);
+background: linear-gradient(to left, #e487c5, #e7c8f8);
 }
 
 .footer_content {
