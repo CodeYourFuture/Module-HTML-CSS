@@ -1,7 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Bevan&family=Poiret+One&display=swap");
+@font-face {
+    font-family: 'Bevan';
+    src: url(/Form-Controls/Bevan-Regular.ttf) format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poiret One';
+    src: url(/Form-Controls/PoiretOne-Regular.ttf) format('truetype');
+    font-display: swap;
+}
 :root {
-  --ff-poiret: "Poiret One", cursive;
-  --ff-bevan: "Bevan", serif;
+  --ff-poiret: "Poiret One";
+  --ff-bevan: "Bevan";
 }
 * {
   box-sizing: border-box;
@@ -13,7 +22,7 @@ a {
 }
 body {
   min-height: 100vh;
-  font-family: var(--ff-poiret);
+  font-family:var(--ff-poiret);
 }
 header {
   width: 100%;
@@ -26,7 +35,7 @@ header {
 }
 .heading {
   font-size: 2rem;
-  font-family: var(--ff-bevan);
+  font-family:var(--ff-bevan);
 }
 
 .list {
