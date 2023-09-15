@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     width: 100%;
     height: 100%;
@@ -40,6 +46,14 @@ h1 {
 
 
 }
+.color-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.size-wrapper {
+    display: flex;
+    flex-direction: column;
+}
 
 
 .color {
@@ -51,7 +65,8 @@ h1 {
 }
 
 label {
-    color: white;
+    color: whitesmoke;
+    font-size: x-large;
     padding: 5px;
 
 }
@@ -76,10 +91,10 @@ input {
     border-radius: 0.3rem;
     border: none;
     padding: 3px 0px 3px 8px;
-    color: black;
+    color: lightgray;
 } 
 input::placeholder {
-    color: black;
+    color: lightgray;
 }
 
 button {
@@ -96,6 +111,8 @@ button {
 button:hover{
     background-color: black;
 }
+
+
 
 /* Footer style */
 
