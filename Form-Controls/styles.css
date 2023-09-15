@@ -72,8 +72,16 @@ body {
 
 /* Style for required labels */
 .required::after {
-  content: "*"; /* Add an asterisk to required labels */
   color: var(--required-color); /* Set the asterisk color to red */
+}
+
+.note {
+  text-align: left;
+  font-weight: bold;
+}
+
+.required-note {
+  color: var(--required-color);
 }
 
 /* Style for the submit button when any required fields are empty */

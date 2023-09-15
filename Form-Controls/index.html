@@ -24,8 +24,13 @@
         <div class="container form">
           <h2>T-Shirt Order Form</h2>
           <form>
+            <div class="note">
+              <p>
+                Fields marked with <span class="required-note">Red</span> are required.
+              </p>
+            </div>
             <label for="name" class="required"
-              >Customer's Name <span class="required"></span>:</label
+              >Customer's Name <span></span>:</label
             >
             <input
               type="text"
@@ -37,7 +42,7 @@
             />
 
             <label for="email" class="required"
-              >Customer's Email <span class="required"></span>:</label
+              >Customer's Email <span></span>:</label
             >
             <input
               type="email"
@@ -49,7 +54,7 @@
             />
 
             <label for="color" class="required"
-              >T-Shirt Color <span class="required"></span>:</label
+              >T-Shirt Color <span></span>:</label
             >
             <select id="color" name="color" required>
               <option value="" disabled selected>Select a color...</option>
@@ -61,7 +66,7 @@
             </select>
 
             <label for="size" class="required"
-              >T-Shirt Size <span class="required"></span>:</label
+              >T-Shirt Size <span></span>:</label
             >
             <select id="size" name="size" required>
               <option value="" disabled selected>Select a size...</option>
@@ -74,8 +79,7 @@
             </select>
 
             <label for="deliveryDate" class="required"
-              >Delivery Date (within next 4 weeks)
-              <span class="required"></span>:</label
+              >Delivery Date (within next 4 weeks) <span></span>:</label
             >
             <input
               type="date"
