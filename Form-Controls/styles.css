@@ -2,7 +2,7 @@
   --font-family: Arial, sans-serif;
   --container-max-width: 600px;
   --container-padding: 20px;
-  --container-bg-color: #f7f7f7;
+  --container-bg-color: #ffffff; /* Changed to white background */
   --container-border: 1px solid #ddd;
   --container-border-radius: 5px;
   --container-gap: 10px;
@@ -21,9 +21,10 @@
   --submit-hover-bg-color: #2e754e;
   --focus-outline-color: #08968a;
   --required-color: #ff0000;
-  --valid-color: #ccc;
-  --disabled-color: #666;
+  --valid-color: #666; /* Darkened valid color for better contrast */
+  --disabled-color: #888; /* Adjusted disabled color for better contrast */
 }
+
 
 body {
   font-family: var(--font-family);
