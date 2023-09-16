@@ -1,7 +1,10 @@
 body{
     font-family: sans-serif;
     font-family: 'Libre Baskerville', serif;
-    margin: 20px 300px;
+    margin: 20px 100px;
+    background-color: rgb(233, 237, 240);
+ 
+    
 }
 
 header {
@@ -9,6 +12,7 @@ header {
 }
 
 h1 {
+    font-size: 5rem;
     text-align: center;
 }
 .article1 {
@@ -21,9 +25,10 @@ h1 {
 
 
 article{
+    background-color: rgb(190, 199, 207);
     display: flex;
     height: auto;
-    width: 30rem;
+    width: 40rem;
     flex-direction: column;
     border: 2px black solid;
     padding: 1rem;
@@ -36,10 +41,27 @@ article{
     margin-bottom: 5rem;
 }
 
+.button-link{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #7fe2e68d; 
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 footer {
     text-align: center;
 }
 .footer {
+    background-color: rgb(113, 115, 117);
     display: flex;
     justify-content: center;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
 }
