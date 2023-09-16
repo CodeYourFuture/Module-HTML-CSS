@@ -1,0 +1,348 @@
+
+ /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/**
+ * Add your custom styles below
+ * 
+ * Remember: 
+ * - Be organised, use comments and separate your styles into meaningful chunks
+ *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+ * 
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ */
+
+/* Navigation styles */
+.top-navigation {
+    display: flex; /* Set the container to flex */
+    justify-content: space-between; /* Space items apart */
+    background-color: #fff;
+    padding: 5px;
+    align-items: center;  /* Vertically center the flex items (logo and navigation menu) */
+}
+
+.logo {
+    margin-top: 10px;
+    margin-left: 10%;  /* Add 20% margin to the left of the logo */
+    size-adjust: 200px;
+    width: 75px; /* Adjust this value to increase/decrease the logo size */
+}
+
+.links {
+    display: flex; /* Make the links display horizontally */
+    list-style: none;
+    gap: 40px;
+    font-size: 15px;  /* Increase the font size */
+    margin-right: 5%;
+}
+
+.links a {
+    text-decoration: none;  /* Removes the default underline of anchor tags */
+    color: inherit;         /* Makes the anchor tag take the color of its parent */
+    cursor: pointer;        /* Changes the cursor to a pointer when hovering */
+}
+
+.links a {
+    color: grey;  
+}
+
+.links .active a {
+    color: black;
+}
+
+.links a:hover {
+    color: darkorange; /* Adds an underline to the anchor tag when hovering */
+}
+
+/* Hero styles */
+.introduction {
+    display: grid;
+    place-items: center;
+    background-image: url('img/first-background.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+    margin:  auto;
+}
+
+.introduction .content {
+    display: grid;
+    color: white;
+    gap: 20px;
+    text-align: center;
+    place-items: center; /* This ensures that the items inside are centered */
+    font-weight: normal;  /* Makes it not bold */
+}
+
+.introduction button {
+    padding: 6px 8px;  /* Add padding to top/bottom and left/right */
+    background-color: #e55b00;
+    color: white; /* optional: if you want to ensure the text color is white */
+    cursor: pointer; /* optional: to indicate the button is clickable */
+    font-size: 1.5em;  /* Adjust as needed */
+    border: none
+}
+
+.introduction button:hover {
+    background-color: orange; /* slightly darker shade for hover effect */
+}
+
+.introduction h1 {
+    font-size: 3em;  /* Adjust as needed */
+    font-weight: normal;  /* Makes it not bold */
+}
+
+.introduction h3 {
+    font-size: 2em;  /* Adjust as needed */
+    font-weight: normal;  /* Makes it not bold */
+}
+
+/* Cases styles */
+
+.cases > div > ul.devices {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 90px;
+    list-style: none;
+    font-size: 80px;
+}
+
+.cases > div > h2 {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.cases > div:first-child > h2 {
+    font-size: 40px;  /* Adjust as needed */
+    font-weight: normal;  /* Makes it not bold */
+}
+
+.cases .devices li {
+    display: grid;
+    gap: 55px;
+    align-items: center;
+    justify-items: center;
+    font-size: 25px;
+}
+
+.cases .devices li img {
+    width: 100px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.split-section {
+    display: flex;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left img {
+    width: 100%;
+    height: auto;
+}
+
+.right {
+    flex: 1;
+    background-color: rgba(255, 218, 185, 0.451) !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px !important;
+    font-size: 60px;
+}
+
+.right p {
+    color: black;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 55px;
+}
+
+.quote {
+    color: darkorange;
+}
+
+.cta-button {
+    padding: 20px 50px;
+    font-size: 20px;
+    background-color: darkorange;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: orange;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.separator-line {
+    height: 1px;
+    width: 90%;  /* 90% of the full page width */
+    background-color: #D3D3D3;  /* Light grey color */
+    margin: 20px auto 20px auto;  /* 20px top and bottom margin to add a gap */
+}
+
+.socials {
+    display: flex;
+    list-style: none;  /* Removes the default bullet points */
+    padding: 1px;        /* Removes the default padding */
+    gap: 10px;         /* Optional: Adds some space between the items */
+    justify-content: center;
+}
+
+.socials li img {
+    width: 20px;  /* Adjust this value to change the size of the social icons */
+    border: 2px solid #cac6c6;
+    border-radius: 50%;
+    padding: 5px;
+    display: inline-block;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally center the items */
+}
+
+footer h2 {
+    font-size: 10px; /* Adjust this value to your desired size */
+    font-weight: normal;  /* Makes it not bold */
+}
+
+.copyright {
+    color: grey;
+}
+
+.order-section {
+    display: flex;
+    width: 100vw;
+}
+
+.order-title {
+    margin-top: 30px;
+    margin-left: 170px;
+    font-size: 30px;
+    color:darkorange    
+}
+
+.order-left, .order-right {
+    flex-basis: 50%;  /* Take up 50% of the parent's width */
+}
+
+.order-right {
+    flex: 1;
+    flex-basis: 100%;
+}
+
+.order-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 100px;
+}
+
+.order-left {
+    flex-basis: 100%;
+    box-sizing: border-box;
+}
+
+.order-left form {
+    display: grid;
+    gap: 15px;
+    margin-top: 180px;
+    margin-left: 00px;
+}
+
+.order-form-container {
+    margin: 0px; 
+}
+
+.order-left form label, .order-left form p {
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.order-left form input[type="text"], .order-left form select {
+    padding: 0px 0px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.order-button {
+    padding: 10px;
+    background-color: darkorange;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+}
+
+.order-terms-link {
+    color: darkorange;
+}
+
+.order-fieldset {
+    padding: 10px;
+    gap: 10px;
+}
+
+.order-left form input[type="checkbox"] + label {
+    display: flex;
+    align-items: start;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.order-left form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.name-container, .address-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.name-field, .city-field, .postcode-field {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.name-field:last-child, .postcode-field {
+    margin-right: 0;
+}
+
+/* Add your styling for the date input here */
+#delivery-date {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 1em;
+}
+
