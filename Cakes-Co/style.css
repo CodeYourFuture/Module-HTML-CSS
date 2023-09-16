@@ -1,1 +1,12 @@
 /*  Add your styling here */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-image: url(./images/Rate-cake.webp);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+}
