@@ -1,12 +1,14 @@
 @font-face {
     font-family: 'Bevan';
-    src: url(/Form-Controls/Bevan-Regular.ttf) format('truetype');
+    src: url(Bevan-Regular.ttf) format('truetype');
     font-display: swap;
+    font-weight: normal;
 }
 @font-face {
     font-family: 'Poiret One';
-    src: url(/Form-Controls/PoiretOne-Regular.ttf) format('truetype');
+    src: url(PoiretOne-Regular.ttf) format('truetype');
     font-display: swap;
+    font-weight: normal;
 }
 :root {
   --ff-poiret: "Poiret One";
