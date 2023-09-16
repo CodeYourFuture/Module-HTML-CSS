@@ -212,6 +212,19 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 180px 180px;
   }
+  /* footer section style */
+
+  a {
+    display: none;
+  }
+  .hb-footer {
+    background-color: blue;
+    color: black;
+  }
+  .svg-footer {
+    display: flex;
+    justify-content: center;
+  }
 
   /* image section */
   .main-image {
