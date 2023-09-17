@@ -120,7 +120,7 @@ input:focus {
 .orange-radio,
 .red-radio,
 .grey-radio {
-  height: 2rem;
+  height: 1.9rem;
   display: flex;
 }
 
