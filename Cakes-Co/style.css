@@ -8,6 +8,7 @@
   display: grid;
   grid-template-rows: 90px 59px 1fr 1fr 66px;
   gap: 20px;
+  background-color: black;
 }
 
 /* header section */
@@ -36,8 +37,8 @@ header {
 
 h1 {
   color: darkgoldenrod;
-  padding-top: 27px;
-  margin-left: 182px;
+  padding-top: 46px;
+ 
 }
 /* nav bar section */
 
@@ -65,20 +66,24 @@ main {
   column-gap: 29px;
 }
 main div:nth-child(1) {
-  background-color: blue;
+  /* background-color: blue; */
 }
 main div:nth-child(2) {
-  background-color: white;
+  background-color: black;
 }
 p {
+  color: white;
   font-size: xxx-large;
   text-align: end;
+  margin-right: 4rem;
 }
 h2 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: aquamarine;
+  font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif;
+/* font-family: 'Tangerine', cursive; */
+  color: white;
   padding: 20px;
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 /* content section style */
@@ -89,22 +94,22 @@ content {
 }
 
 content div:nth-child(1) {
-  background-color: orange;
+  /* background-color: orange; */
 }
 content div:nth-child(2) {
-  background-color: indianred;
+  /* background-color: indianred; */
 }
 content div:nth-child(3) {
-  background-color: red;
+  /* background-color: red; */
 }
 content div:nth-child(4) {
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
 }
 /* footer section */
 
 footer {
   color: black;
-  background-color: plum;
+  background-color: whitesmoke;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -154,8 +159,7 @@ footer {
   }
   /* svg hamburger section */
   .hb {
-    background-color: blue;
-    color: black;
+    background-color: black;
     display: flex;
     margin-right: 3px;
   }
@@ -173,7 +177,7 @@ footer {
   }
 
   h1 {
-    color: darkgoldenrod;
+    color: black;
     padding-top: 27px;
     font-size: 12px;
   }
@@ -200,7 +204,7 @@ footer {
   }
   h2 {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: aquamarine;
+    color: white;
     padding: 19px;
     font-size: 11px;
   }
@@ -218,7 +222,7 @@ footer {
     display: none;
   }
   .hb-footer {
-    background-color: blue;
+    background-color: black;
     color: black;
   }
   .svg-footer {
