@@ -1,0 +1,253 @@
+@font-face {
+    font-family: 'Bevan';
+    src: url(Bevan-Regular.ttf) format('truetype');
+    font-display: swap;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Poiret One';
+    src: url(PoiretOne-Regular.ttf) format('truetype');
+    font-display: swap;
+    font-weight: normal;
+}
+:root {
+  --ff-poiret: "Poiret One";
+  --ff-bevan: "Bevan";
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+body {
+  min-height: 100vh;
+  font-family:var(--ff-poiret);
+}
+header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e9cfa9;
+  padding-left: 6rem;
+}
+.heading {
+  font-size: 2rem;
+  font-family:var(--ff-bevan);
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin-right: 8rem;
+}
+.nav-link {
+  font-size: 1.5rem;
+  height: 2.5rem;
+  font-weight: 500;
+}
+.nav-link a {
+  padding: 0.7rem;
+  padding-block: 1rem;
+}
+.nav-link:hover,
+.nav-link:focus {
+  transition: 1s ease;
+  border-bottom: 2px solid black;
+  background-color: rgb(194, 179, 142);
+}
+.menu{
+    display: none;
+}
+main {
+  overflow: hidden;
+  height: 60rem;
+  display: flex;
+  margin-block: 3rem;
+  margin-inline: 6rem;
+  background: rgb(209, 201, 191);
+}
+.img {
+  width: 50%;
+  background: url(/Form-Controls/t-shirt.webp) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+form {
+  width: 50%;
+  display: grid;
+  padding: 2rem;
+  height: 100%;
+  gap: 2rem;
+  background: white;
+}
+label {
+  display: grid;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  gap: 1rem;
+}
+input {
+  height: 4rem;
+  width: 100%;
+  border: 1px solid rgb(215, 185, 142);
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+input:hover,
+input:focus {
+  border: 2px solid rgb(181, 154, 121);
+}
+.date {
+  margin-top: 1rem;
+}
+.colors {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.color-flex {
+  display: flex;
+  gap: 4rem;
+}
+.orange-radio,
+.red-radio,
+.grey-radio {
+  height: 2rem;
+  display: flex;
+}
+
+#orange {
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 0 0 1px rgb(249 209 178);
+  appearance: none;
+  border-radius: 50%;
+  height: 2rem;
+  background-color: #fff;
+  transition: all ease-in 0.2s;
+  margin-right: 1rem;
+}
+
+#orange:checked {
+  background-color: orange;
+}
+#red {
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 0 0 1px rgb(238, 9, 9);
+  appearance: none;
+  border-radius: 50%;
+  height: 2rem;
+  background-color: #fff;
+  transition: all ease-in 0.2s;
+  margin-right: 1rem;
+}
+#red:checked {
+  background-color: red;
+}
+#grey {
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 0 0 1px rgba(122, 121, 121, 0.308);
+  appearance: none;
+  border-radius: 50%;
+  height: 2rem;
+  background-color: #fff;
+  transition: all ease-in 0.2s;
+  margin-right: 1rem;
+}
+#grey:checked {
+  background-color: rgb(154, 154, 154);
+}
+select {
+  cursor: pointer;
+  height: 4rem;
+  border: 1px solid rgb(148, 70, 70);
+  padding: 1rem;
+  font-size: 1.3rem;
+  background-color: transparent;
+}
+option {
+  height: 3rem;
+  padding: 1rem;
+}
+input[type="submit"] {
+  cursor: pointer;
+  height: 5rem;
+  font-size: 2rem;
+  font-family: var(--ff-bevan);
+  font-weight: 500;
+  background: white;
+  color: #cbb390;
+  border-radius: 1rem;
+  border: 2px solid rgb(215, 185, 142);
+  margin-top: 5rem;
+  transition: 1s ease;
+}
+#submit:hover {
+  color: black;
+  border: 2px solid black;
+}
+footer {
+  height: 7rem;
+  display: grid;
+  align-items: end;
+  justify-content: center;
+  padding-bottom: 1rem;
+  margin-inline: 7rem;
+  border-top: 1px solid grey;
+}
+@media  (max-width:768px) {
+    body{
+        min-height: auto;
+    }
+header{
+   padding-inline:0.5rem;
+}
+    .heading{
+        font-size: 1.5rem;
+        
+    }
+    .list{
+        display: none;
+    }
+    .menu{
+        display: block;
+        height: 3rem;
+        width: 3rem;
+        background: url(/Form-Controls/bars-solid.svg) no-repeat;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 99rem;
+        background: transparent;
+        padding: 0;
+        margin: 0;
+
+    }
+    .img{
+        height: 40rem;
+        width: 93%;
+        margin: 1rem;
+    }
+    .form{
+        width: 100%;
+        height: 50rem;
+    }
+    .color-flex{
+        gap: 1rem;
+    }
+  #orange, #red, #grey{
+    margin-right: 0.5rem;
+   
+  }
+}
