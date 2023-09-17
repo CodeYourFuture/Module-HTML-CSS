@@ -1,37 +1,243 @@
 @font-face {
-    font-family: 'Outfit';
-    src: url(fonts/Outfit-Regular.ttf) format(truetype);
-    font-display: swap;
-    font-weight: normal;
+  font-family: "Outfit";
+  src: url("/MultiPage-Clone/fonts/Outfit-Regular.ttf") format("truetype");
+  font-display: swap;
+  font-weight: normal;
 }
 @font-face {
-    font-family: 'Outfit';
-    src: url(fonts/Outfit-ExtraLight.ttf) format(truetype);
-    font-display: swap;
-    font-weight: 200;
+  font-family: "Outfit";
+  src: url("/MultiPage-Clone/fonts/Outfit-ExtraLight.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 200;
 }
 @font-face {
-    font-family: 'Fjalla One';
-    src: url(fonts/FjallaOne-Regular.ttf) format(truetype);
-    font-display: swap;
-    font-weight: normal;
+  font-family: "Fjalla One";
+  src: url("/MultiPage-Clone/fonts/FjallaOne-Regular.ttf") format("truetype");
+  font-display: swap;
 }
 
-:root{
-    --red-brown:#A05941;
-    --green-black:#133032;
-    --light-grey: #EDEDEE;
-    --white:#FFF;
-    --transparent-white: rgba(0,0,0,0.75);
-    --ff-outfit-reg:'Outfit';
-    --ff-fjalla:'Fjalla One';
+:root {
+  --red-brown: #a05941;
+  --green-black: #133032;
+  --light-grey: #ededee;
+  --white: #fff;
+  --transparent-white: rgba(0, 0, 0, 0.75);
+  --ff-outfit-reg: "Outfit";
+  --ff-fjalla: "Fjalla One";
 }
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-html,body{
-    min-height: 100vh;
+html,
+body {
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--light-grey);
+  margin-inline: 2rem;
+  font-family: var(--ff-outfit-reg);
+  font-weight: 400;
+  font-size: 1rem;
+}
+.msg{
+    position: fixed;
+    height: 3rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    gap: 1rem;
+    right: 1vw;
+    bottom: 1rem;
+    font-family: var(--ff-fjalla);
+    background-color: var(--red-brown);
+    z-index: 1000;
+   
+}
+.msg svg{
+fill: var(--white);
+}
+header {
+  position: sticky;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+}
+/*----------------------Top Nav------------------------------*/
+.top-nav {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  padding: 1rem;
+}
 
+.input {
+  display: flex;
+  width: 20%;
+  position: relative;
+  font-family: var(--ff-outfit-reg);
+}
+.input svg {
+  fill: var(--red-brown);
+}
+.search {
+  border: none;
+  height: 3rem;
+  padding: 1rem;
+  padding-left: 2.5rem;
+  width: 100%;
+}
+.search::placeholder {
+  font-size: 1rem;
+  font-family: var(--ff-outfit-reg);
+  font-weight: 200;
+  color: var(--red-brown);
+}
+#search-icon {
+  position: absolute;
+  left: 0.5rem;
+  top: 0.9rem;
+  margin-right: 2rem;
+  color: #a05941;
+}
+.search:hover,
+.search:active {
+  border: 1px solid var(--red-brown);
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.log-in {
+  cursor: pointer;
+  display: flex;
+  gap: 0.7rem;
+}
+.log-in svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: white;
+  padding-top: 0.2rem;
+  border: 1px solid var(--red-brown);
+  border-radius: 50%;
+  background-color: var(--red-brown);
+}
+
+.login {
+  color: var(--red-brown);
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+.cart {
+  cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: var(--red-brown);
+}
+.log-in svg:hover {
+  fill: var(--red-brown);
+  background-color: var(--white);
+}
+
+/*---------------------------Navbar--------------------------------*/
+.nav {
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-list {
+  display: flex;
+  gap: 2rem;
+}
+.list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-links {
+  text-decoration: none;
+  font-weight: 200;
+  color: var(--red-brown);
+}
+.nav-links:hover {
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid var(--red-brown);
+}
+.logo {
+  font-family: var(--ff-fjalla);
+  font-size: 1.4rem;
+  color: var(--red-brown);
+}
+.nav-description {
+  font-family: var(--ff-fjalla);
+  color: var(--red-brown);
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+}
+/*------------------------------Hero section-----------------*/
+.hero {
+  color: var(--white);
+  height: 45rem;
+  width: 100%;
+  background: url(/MultiPage-Clone/img/hero-bg.webp) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero-card {
+  width: 100%;
+  height: 100%;
+  padding-block: 7rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  backdrop-filter: brightness(70%) contrast(64%) sepia(5%) saturate(2)
+    hue-rotate(102deg);
+}
+.hero-logo {
+  display: flex;
+  align-items: center;
+}
+.hero-logo span {
+  font-weight: 200;
+  letter-spacing: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid white;
+}
+
+.flower {
+  height: 4.5rem;
+  fill: var(--white);
+}
+
+.heading {
+  font-size: 6.5rem;
+  letter-spacing: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  font-family: var(--ff-fjalla);
+}
+.hero-card-p {
+  font-size: 1.3rem;
+  font-weight: 200;
+  letter-spacing: 0.3rem;
+}
+.hero-btn {
+  height: 2.6rem;
+  width: 13rem;
+  font-size: 1.1rem;
+  font-family: var(--ff-outfit-reg);
+  font-weight: 200;
+  background-color: var(--red-brown);
+  border: none;
+  color: white;
 }
