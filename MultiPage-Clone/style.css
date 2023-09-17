@@ -1,0 +1,239 @@
+/* General styles */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --headings-font: "Questrial";
+  --buttons-font: "Raleway";
+  --body-font: "Roboto";
+
+  /* Colors */
+  --Black: #000;
+  --White: #fff;
+  --Lylac: #f5e8ff;
+  --Light-Green: #e6fac0;
+  --Medium-Green: #5e7d1f;
+  --Dark-Green: #394b2a;
+
+  /* Layout design */
+  --Mobile-layout: 1fr 60px 490px 1fr 1fr 100px 100px 100px 100px 100px 100px;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--Black);
+}
+
+.layout {
+  display: grid;
+  grid-template-rows: var(--Mobile-layout);
+}
+
+a {
+  text-decoration: none;
+}
+
+/*  */
+
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.6rem;
+}
+
+nav p {
+  font-size: 2.2rem;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.hamburger-menu::before,
+.hamburger-menu input {
+  content: "";
+  width: 1.2rem;
+  height: 0.1rem;
+  background-color: black;
+  transition: rotate ease-in-out 0.3s, translate ease-in-out 0.6s;
+}
+
+.hamburger-menu input {
+  appearance: none;
+  outline: none;
+  pointer-events: none;
+}
+
+.hamburger-menu:has(input:checked)::before {
+  translate: 0 0.3rem;
+  rotate: 45deg;
+  transition: translate ease-in-out 0.3s, rotate ease-in-out 0.6s;
+}
+
+.hamburger-menu input:checked {
+  translate: 0 -0.2rem;
+  rotate: -45deg;
+  transition: translate ease-in-out 0.3s, rotate ease-in-out 0.6s;
+}
+
+/* transition: rotate ease-in-out 0.6s; */
+
+/* @keyframes rotate45 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.2rem);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+} */
+
+/* @keyframes rotate-45 {
+  from {
+    rotate: 0;
+  }
+
+  to {
+    rotate: -45deg;
+  }
+} */
+
+/* .hamburger-menu .move:checked {
+  translate: 0 -0.2rem;
+}
+
+.hamburger-menu .rotate:checked {
+  rotate: 45deg;
+} */
+/* 
+.hamburger-menu:has(input:checked)::before {
+  transform: translate(0rem, 0.3rem);
+  animation: rotate-45 2s forwards;
+} */
+
+main {
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.4rem;
+}
+
+main h1 {
+  font-size: 3.2rem;
+}
+
+main p {
+  font-size: 2.2rem;
+}
+
+.explore-flavours-btn {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  border: var(--Black) 3px solid;
+  padding: 1.4rem 2.8rem;
+  color: var(--Black);
+}
+
+.juice-img-main {
+  height: 100%;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+/*  */
+
+.small-section-under-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--Lylac);
+  font-size: 1.6rem;
+  padding: 1rem 0;
+}
+
+.try-now {
+  text-decoration: underline;
+  color: var(--Black);
+}
+
+.content-1 {
+  text-align: center;
+}
+
+.content-1 h1 {
+  font-size: 3.2rem;
+  margin-top: 3rem;
+}
+
+.component-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.component-1 h2 {
+  font-size: 2.2rem;
+}
+
+.component-1 p {
+  font-size: 1.5rem;
+  width: 58%;
+  line-height: 1.6;
+}
+
+.content-2 {
+  background-color: orange;
+}
+
+.content-3 {
+  background-color: purple;
+}
+
+.content-4 {
+  background-color: pink;
+}
+
+.content-5 {
+  background-color: silver;
+}
+
+.content-6 {
+  background-color: gold;
+}
+
+footer {
+  background-color: coral;
+}
