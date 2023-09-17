@@ -1,3 +1,37 @@
-/* Add your CSS here */
+@font-face {
+    font-family: 'Outfit';
+    src: url(fonts/Outfit-Regular.ttf) format(truetype);
+    font-display: swap;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url(fonts/Outfit-ExtraLight.ttf) format(truetype);
+    font-display: swap;
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Fjalla One';
+    src: url(fonts/FjallaOne-Regular.ttf) format(truetype);
+    font-display: swap;
+    font-weight: normal;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+:root{
+    --red-brown:#A05941;
+    --green-black:#133032;
+    --light-grey: #EDEDEE;
+    --white:#FFF;
+    --transparent-white: rgba(0,0,0,0.75);
+    --ff-outfit-reg:'Outfit';
+    --ff-fjalla:'Fjalla One';
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    min-height: 100vh;
+
+}
