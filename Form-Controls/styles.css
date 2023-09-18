@@ -11,7 +11,7 @@ body {
 .order-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50px 50px 50px 300px;
+  grid-template-rows: 50px 50px 50px 100px;
   gap: 10px;
   background-color: aqua;
 }
@@ -26,4 +26,23 @@ body {
 .form-row input {
   font-size: 1.2rem;
   height: 5vh;
+}
+.half-form{
+   grid-column: 1/2;
+}
+.select{
+  height: 5vh;
+  width: 241px;
+}
+.size{
+  height: 5vh;
+  width: 241px;
+}
+.date{
+ height: 7vh;
+  width: 241px; 
+}
+.button{
+  height: 7vh;
+  width: 241px; 
 }

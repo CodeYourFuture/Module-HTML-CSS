@@ -28,10 +28,10 @@
           <input type="email" id="email" class="email">
           </div>
 
-          <div>
+          <div class="half-form">
             <!-- T-Shirt Color -->
         <label>Choose your color t-shirt</label>
-        <select name="color" required>
+        <select name="color" required class="select">
             <option value="gray">Gray</option>
             <option value="blue">Blue</option>
             <option value="red">Red</option>
@@ -40,7 +40,7 @@
           <div>
             <!-- T-Shirt Size -->
         <label>T-shirt size</label>
-        <select name="size" required>
+        <select name="size" required class="size">
             <option value="XS">XS</option>
             <option value="S">S</option>
             <option value="M">M</option>
@@ -52,14 +52,17 @@
           <div>
             <!-- Delivery Date -->
         <label for="delivery-date">Delivery Date (Within the next four weeks)</label>
-        <input type="date" id="delivery-date" name="delivery-date" required
+        <input type="date" id="delivery-date" name="delivery-date" required class="date"
                min="<?php echo date('Y-m-d'); ?>"
                max="<?php echo date('Y-m-d', strtotime('+4 weeks')); ?>">
+          </div>
+          <div>
+            
           </div>
 
           <div>
             <!-- Submit Button -->
-        <button type="submit">Place Order</button>
+        <button type="submit" class="button">Place Order</button>
           </div>
          
 
