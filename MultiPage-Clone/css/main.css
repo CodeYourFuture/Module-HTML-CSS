@@ -619,7 +619,7 @@ footer {
     width: 70%;
   }
   .wrapper span {
-  left: 1rem;
+    left: 1rem;
     top: 8.1rem;
     font-size: 1rem;
   }
@@ -649,6 +649,9 @@ footer {
   }
   #search-icon {
     top: 1rem;
+  }
+  .search{
+    width: 15rem;
   }
   .card-container {
     display: flex;
