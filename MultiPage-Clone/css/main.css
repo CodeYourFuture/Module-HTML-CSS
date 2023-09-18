@@ -18,6 +18,38 @@ body {
 h1 {
   font-family: var(--heading-font);
 }
+.container-name {
+  display: block;
+  align-items: center;
+}
+
+.blue-square {
+  width: 50px;
+  height: 50px;
+  background-color: var(--royal-blue);
+  margin-right: 10px;
+  border: 1px solid var(--black);
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-top: -37px;
+  margin-left: 38px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: var(--heading-font);
+}
+
+.occupation {
+  margin-left: -20px;
+  font-family: var(--body-font);
+}
+
 .header {
   display: grid;
   grid-template-areas: "name occupation nav";
@@ -25,10 +57,8 @@ h1 {
   padding: 20px;
 }
 .mobile-header {
-  display: grid;
-  grid-template-areas:
-    "name"
-    "occupation";
+  display: inline-block;
+  margin: 0 !important;
 }
 .blue-square {
   width: 10px;
@@ -39,14 +69,6 @@ h1 {
   margin: 15px;
 }
 
-.name {
-  grid-area: name;
-  margin-left: 35px;
-  margin-top: 5px;
-}
-.occupation {
-  grid-area: occupation;
-}
 #nav {
   display: none;
 }
@@ -119,7 +141,6 @@ h1 {
   width: 15px;
 }
 
-/* Define the grid container with named areas */
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -127,7 +148,7 @@ h1 {
     "title"
     "buttons"
     "footer";
-  gap: 20px; /* Adjust the gap as needed */
+  gap: 20px;
   align-items: center;
   justify-content: center;
   background-color: var(--light-beige);
@@ -159,23 +180,18 @@ h1 {
   object-fit: cover; /* Maintain aspect ratio and cover the circle */
 }
 
-/* Style the title area */
 .title {
   grid-area: title;
-  background-color: var(
-    --light-beige
-  ); /* Change the background color as needed */
+  background-color: var(--light-beige);
   text-align: center;
   margin-top: -20px;
 }
 
-/* Style the blue underline in the title */
 .blue-underline {
   text-decoration: underline;
   color: var(--royal-blue);
 }
 
-/* Style the anchor buttons */
 .buttons {
   grid-area: buttons;
   display: grid;
@@ -188,12 +204,10 @@ h1 {
 .RESUME {
   grid-area: RESUME;
   padding: 10px 20px;
-  background-color: var(
-    --royal-blue
-  ); /* Change button background color as needed */
-  color: var(--white); /* Change button text color as needed */
+  background-color: var(--royal-blue);
+  color: var(--white);
   text-decoration: none;
-  margin-right: 10px; /* Adjust button margin as needed */
+  margin-right: 10px;
   border-radius: 50px;
   max-width: 12vw;
   font-size: small;
@@ -202,19 +216,17 @@ h1 {
 .PROJECTS {
   grid-area: PROJECTS;
   padding: 10px 20px;
-  background-color: var(
-    --light-beige
-  ); /* Change button background color as needed */
-  color: var(--black); /* Change button text color as needed */
+  background-color: var(--light-beige);
+  color: var(--black);
   text-decoration: none;
-  margin-right: 10px; /* Adjust button margin as needed */
+  margin-right: 10px;
   border-radius: 50px;
   max-width: 12vw;
   font-size: small;
   font-weight: bold;
   border: 1px solid black;
 }
-/* Define the grid layout for the footer using grid-template-areas */
+
 .footer {
   background-color: var(--white);
   grid-area: footer;
@@ -223,13 +235,12 @@ h1 {
   padding: 10px;
 }
 
-/* Style the social icons (placeholders for the actual icons) */
 .social-icons {
   width: 24px;
   height: 24px;
   display: grid;
   grid-template-areas: "facebook twitter instagram linkedin";
-  gap: 10px; /* Adjust the gap as needed */
+  gap: 10px;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -239,7 +250,6 @@ h1 {
   height: auto;
 }
 
-/* Assign grid areas to each social icon */
 .facebook {
   grid-area: facebook;
 }
@@ -254,4 +264,143 @@ h1 {
 
 .linkedin {
   grid-area: linkedin;
+}
+.bg-color {
+  background: linear-gradient(
+    to bottom,
+    var(--white) 30%,
+    var(--white) 30%,
+    var(--dark-beige) 70%,
+    var(--dark-beige) 70%
+  );
+}
+.intro {
+  padding: 20px;
+  line-height: 1.5;
+}
+
+/* page layout for larger screens using media queries */
+@media (min-width: 540px) {
+  #nav {
+    display: grid;
+  }
+  .mobile-nav-icon {
+    display: none;
+  }
+  .info {
+    flex-direction: row;
+    font-size: clamp(2vh, 1vw, 1vh) !important;
+  }
+  .name {
+    font-size: clamp(3vh, 1vw, 1vh) !important;
+  }
+  .occupation {
+    margin: 8px;
+  }
+  .occupation::before {
+    content: " / ";
+  }
+  .nav {
+    font-size: clamp(2vh, 1vw, 1vh) !important;
+  }
+  .bg-color {
+    background: var(--dark-beige);
+    width: 50vw;
+  }
+  #intro {
+    display: grid;
+    grid-template-areas: "grid-container intro";
+  }
+  .grid-container {
+    grid-area: grid-container;
+    width: 40vw;
+    margin-left: 150px;
+    margin-bottom: 100px;
+    padding: -20px;
+  }
+  .intro {
+    grid-area: intro;
+  }
+  .show-content {
+    font-size: 20px;
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 200px;
+  }
+  .show-content::before {
+    content: "Hello,";
+    grid-area: intro;
+    font-family: var(--heading-font);
+    font-size: 50px;
+  }
+  .buttons {
+    display: none;
+  }
+  .hide {
+    display: none;
+  }
+
+  .footer {
+    width: 35vw;
+  }
+
+  .social-icons {
+    width: 10px;
+  }
+  .buttons2 {
+    grid-area: buttons;
+    display: grid;
+    grid-template-areas: "RESUME PROJECTS";
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .RESUME1 {
+    grid-area: RESUME;
+    padding: 10px 20px;
+    background-color: var(--royal-blue);
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 50px;
+    max-width: 12vw;
+    font-size: small;
+    font-weight: bold;
+  }
+  .PROJECTS1 {
+    grid-area: PROJECTS;
+    padding: 10px 20px;
+    background-color: var(--white);
+    color: var(--black);
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 50px;
+    max-width: 12vw;
+    font-size: small;
+    font-weight: bold;
+    border: 1px solid black;
+  }
+}
+
+@media (min-width: 900px) {
+  #nav {
+    display: grid;
+  }
+  .mobile-nav-icon {
+    display: none;
+  }
+  .info {
+    flex-direction: row;
+    font-size: clamp(2.5vh, 1vw, 1vh) !important;
+  }
+  .name {
+    font-size: clamp(3vh, 1vw, 1vh) !important;
+  }
+  .occupation {
+    margin: 4px;
+  }
+  .occupation::before {
+    content: " / ";
+  }
 }
