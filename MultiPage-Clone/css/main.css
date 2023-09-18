@@ -39,24 +39,24 @@ body {
   font-weight: 400;
   font-size: 1rem;
 }
-.msg{
-    position: fixed;
-    height: 3rem;
-    width: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--white);
-    gap: 1rem;
-    right: 1vw;
-    bottom: 1rem;
-    font-family: var(--ff-fjalla);
-    background-color: var(--red-brown);
-    z-index: 1000;
-   
+.msg {
+  cursor: pointer;
+  position: fixed;
+  height: 3rem;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  gap: 1rem;
+  right: 1vw;
+  bottom: 1rem;
+  font-family: var(--ff-fjalla);
+  background-color: var(--red-brown);
+  z-index: 1000;
 }
-.msg svg{
-fill: var(--white);
+.msg svg {
+  fill: var(--white);
 }
 header {
   position: fixed;
@@ -197,7 +197,6 @@ header {
   background-size: cover;
   background-attachment: fixed;
   padding-top: 8rem;
-
 }
 .hero-card {
   width: 100%;
@@ -248,18 +247,19 @@ header {
   border: none;
   color: white;
 }
-.hero-btn:hover{
+.hero-btn:hover {
   opacity: 0.8;
   color: black;
 }
-.card-container{
+/*----------------------Cards Section--------------------------------*/
+.card-container {
   height: 35rem;
   display: flex;
   justify-content: space-between;
   gap: 1rem;
   padding-top: 3rem;
 }
-.card{
+.card {
   height: 100%;
   width: 30%;
   text-align: center;
@@ -267,22 +267,22 @@ header {
   background-position: top;
   padding: 2rem;
 }
-.card-1{
+.card-1 {
   background: url(/MultiPage-Clone/img/card-img-1.webp);
   background-size: cover;
   background-position: top;
 }
-.card-2{
+.card-2 {
   background: url(/MultiPage-Clone/img/card-img-2.webp);
   background-size: cover;
   background-position: top;
 }
-.card-3{
+.card-3 {
   background: url(/MultiPage-Clone/img/card-img-3.webp);
   background-size: cover;
   background-position: top;
 }
-.card-heading{
+.card-heading {
   position: relative;
   color: var(--red-brown);
   letter-spacing: 0.6rem;
@@ -290,9 +290,8 @@ header {
   font-family: var(--ff-fjalla);
   font-weight: 300;
   margin-bottom: 3rem;
-
 }
-.card-heading::after{
+.card-heading::after {
   position: absolute;
   content: "";
   height: 0.2rem;
@@ -301,20 +300,22 @@ header {
   top: 3rem;
   left: 45%;
 }
-.columns{
+/*--------------------------Columns------------------------------------*/
+.columns {
   display: flex;
   flex-direction: column;
 }
-.about-us{
+/*--------------------------About US------------------------------------*/
+.about-us {
   display: flex;
-  height: 25rem;
+  height: 30rem;
 }
-.about-us-card{
+.about-us-card {
   flex: 50%;
   padding: 5rem;
   background-color: var(--white);
 }
-.about-us-heading{
+.about-us-heading {
   position: relative;
   color: var(--red-brown);
   letter-spacing: 0.6rem;
@@ -324,7 +325,7 @@ header {
   margin-bottom: 3rem;
   text-align: center;
 }
-.about-us-heading::after{
+.about-us-heading::after {
   position: absolute;
   content: "";
   height: 0.2rem;
@@ -333,23 +334,118 @@ header {
   top: 3rem;
   left: 45%;
 }
-.about-us-p{
-color: var(--red-brown);
-font-family:var(--ff-outfit-reg);
-font-weight: 200;
-text-align: center;
-line-height: 1.4rem;
+.about-us-p {
+  color: var(--red-brown);
+  font-family: var(--ff-outfit-reg);
+  font-weight: 200;
+  text-align: center;
+  line-height: 1.4rem;
 }
-.about-us-img-1, .about-us-img-2{
- flex: 25%;
+.about-us-img-1,
+.about-us-img-2 {
+  flex: 25%;
+  .about-us-img-1 {
+    background: url(/MultiPage-Clone/img/about-img-1.webp);
+    background-position: center;
+    background-size: cover;
+  }
 }
-.about-us-img-1{
-background: url(/MultiPage-Clone/img/about-img-1.webp);
-background-position: center;
-background-size: cover;
+.about-us-img-1 {
+  background: url(/MultiPage-Clone/img/about-img-1.webp);
+  background-position: center;
+  background-size: cover;
 }
-.about-us-img-2{
+.about-us-img-2 {
   background: url(/MultiPage-Clone/img/about-img-2.webp);
   background-position: center;
   background-size: cover;
-  }
+}
+/*--------------------------Buy Online---------------------------------*/
+.buy-online {
+  height: 35rem;
+  display: flex;
+}
+.buy-online-img {
+  flex: 50%;
+  background: url(/MultiPage-Clone/img/girl-img.webp);
+  background-position: center;
+  background-size: cover;
+}
+.buy-online-card {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-inline: 7rem;
+  background-color: var(--green-black);
+}
+.buy-online-p {
+  font-size: 5rem;
+  color: white;
+  font-family: var(--ff-fjalla);
+  text-align: center;
+}
+.buy-online-btn {
+  background-color: var(--white);
+  color: black;
+}
+/*--------------------------Contact Us------------------------------------*/
+.contact-us {
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/MultiPage-Clone/img/form-bg-img.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.95;
+}
+.contact-form {
+  height: 80%;
+  width: 65%;
+  background: var(--white);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  padding-block: 2rem;
+  padding-inline: 1rem;
+  font-family: var(--ff-outfit-reg);
+ 
+}
+.contact-form input{
+  width: 100%;
+  height: 3rem;
+  margin-top: 1rem;
+  border: 1px solid black;
+  outline: none;
+}
+.contact-form input:focus,
+.contact-form input:hover,
+textarea:hover,textarea:focus{
+  border: 3px solid black;
+}
+.contact-form label{
+  font-family: var(--ff-outfit-reg);
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: black;
+}
+.name {
+  display: flex;
+ gap: 1rem;
+}
+.name input{
+  flex: 40%;
+}
+textarea{
+  width: 100%;
+  margin-top: 1rem;
+  border: 1px solid black;
+}
+.form-btn{
+ width: 100%;
+}
