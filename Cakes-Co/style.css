@@ -1,58 +1,43 @@
 
 @import url(https://fonts.googleapis.com/css?family=Raleway);
-:root {
-        --font-primary: "Roboto", sans-serif;
-        --white: white;
-}
-
-h2 {
-        vertical-align: center;
-        text-align: center;
-}
-
-html,
-body {
-        margin: 0;
-        height: 100%;
-}
-
 * {
         font-family: “Raleway”;
         box-sizing: border-box;
         margin:0;
         padding:0;
         }
- */____________________main____________________*/
 
-
-        .container {
-                min-height: 100vh;
-                display: flex;
-                flex-direction: column;
-                background-color: var(--white);
-                gap: 1rem;
-                line-height: clamp(1.5rem, 2vw, 2rem);
-                font-size: clamp(1rem, 2vw, 1.5rem);
-                
-        }
-                header {
-                        position: relative;
-                        display: 
-                        grid-template-columns: repeat(2, 1fr);
-                        grid-template-areas:
-                               
-                        padding: 1rem;
-                        row-gap: 1rem;
-                        
-                }
-        
-
-       
-.content-p{
-        text-align: end;
+html{
+        font-size: 62.5%;
+}
+body{
+        font-size:2.2 rem ;
+}
+h1{
+       font-size:2.5 rem ; 
 }
 
 
+h2 {
+
+        vertical-align: center;
+        text-align: center;
+}
+
+
+
+ /*____________________main____________________*/
+
+header {
+        position: relative;
+        display: 
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        padding: 1rem;
+        row-gap: 1rem;
+                        
+}
+        
 .top-nav {
         display: flex;
         flex-direction: row;
@@ -106,12 +91,12 @@ body {
 }
 
 .menu-button::before {
-        content: '';
+        content: "";
         margin-top: -8px;
 }
 
 .menu-button::after {
-        content:'';
+        content:"";
         margin-top: 8px;
 }
 
@@ -129,64 +114,14 @@ body {
         transform: rotate(-405deg);
 }
 
-@media (max-width: 700px) {
-        .menu-button-container {
-                display: flex;
-        }
-}
-        .menu {
-                position: absolute;
-                top: 0;
-                margin-top: 50px;
-                left: 0;
-                flex-direction: column;
-                width: 100%;
-                justify-content: center;
-                align-items: center;
-        }
 
-        #menu-toggle~.menu li {
-                height: 0;
-                margin: 0;
-                padding: 0;
-                border: 0;
-                transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-        }
-
-        #menu-toggle:checked~.menu li {
-                border: 1px solid #333;
-                height: 2.5em;
-                padding: 0.5em;
-                transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-        }
-
-        .menu>li {
-                display: flex;
-                justify-content: center;
-                margin: 0;
-                padding: 0.5em 0;
-                width: 100%;
-                color: white;
-                background-color: #222;
-        }
-
-        .menu>li:not(:last-child) {
-                border-bottom: 1px solid #444;
-        }
-        .logo{
-
-        }
-*/____________________main____________________*/
-main {
-        display: grid;
-        gap: .5rem;
-}
+     
+/*____________________main____________________*/
 
 .welcome {
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-        height: 34.5rem;
-        margin-top:0px;
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: end;
 }
 
 .card {
@@ -195,93 +130,170 @@ main {
 }
 
 .img_main {
-        margin-inline: 1rem;
-        background: url(/Cakes-Co/design/Naked-Cake-Recipe-Card.jpg) no-repeat;
-        background-size: cover;
+        background-size:cover;
         background-position: center;
-        animation: fade-in 1s ease;
         margin-top: -6rem;
+        height: 50vh;
+        width: auto;
 }
- */____________________show_img____________________*/
- 
-.show-img {
-        display: flex;
-        justify-content: space-evenly;
-        gap: 1rem;
+ /*____________________show_img____________________*/
+ .image{
+        width: 100%;
+        height: 15em;
+
+ }
+
+ .img-item {
+        float: left;
+        width: 20%;
+        padding: 2em;
+        
       
 }
+.showing-img{
+    flex-wrap: wrap;   
+    width:100%;
+    display: flex; 
+    grid-template-columns: repeat(2 1fr);
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+}
 
-.img-item {
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        width: 44.3%;
-        margin:.8rem;
+.showing-img::after{
+        content: "";
+        clear: both;
+        display: table;
+
+}
+
        
-        border: 1px solid rgb(216, 112, 180);
-       cursor: pointer;
+      
+
+
+/*
+.menu {
+                position: absolute;
+                top: 0;
+                margin-top: 50px;
+                left: 0;
+                flex-direction: column;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+        }*/
+@media (max-width: 1280px) {
+  .img_main {
+    height: 30vh;
+    width: auto;
+  }
+
+  .img-item {
+    float: left;
+    width: 33%;
+    padding: 1em;
+  }
 }
-.img-item img {
-        height: 7rem;
-        transition: transform 0.5s ease-in-out;
+
+@media (max-width: 720px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+  .top-nav {
+    height: 70px;
+  }
+  header {
+    margin-right: 20px;
+  }
+  .img_main {
+    height: 20vh;
+    width: auto;
+  }
+  .welcome {
+    display: block;
+    text-align: center;
+  }
+  .card {
+    text-align: left;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+  }
+    footer {
+    height: 15rem;
+  }
 }
-*/____________________footer____________________*/
+
+ 
+
+
+/*____________________footer____________________*/
 footer {
-        margin-top: 5rem;
-        text-align: center;
-        margin-top: 6rem;
-        border-top: 1px solid rgb(214, 212, 212);
-       
+  height: 10rem;
+  background: linear-gradient(to left, #e487c5, #e7c8f8);
+  display: grid;
+  gap: 1.3rem;
+  padding: 0;
 }
-.footer_container{
-background: linear-gradient(to left, #e487c5, #e7c8f8);
+.footer-link {
+  cursor: pointer;
+  display: grid;
+  gap: 1rem;
 }
-
-.footer_content {
-        margin-top: 2rem;
-        
-        }
-        
-
-
-.content {
-        font-weight: normal;
-        font-size: 1rem;
-        text-align: center;
-        margin-top: 1rem;
+.footer-link a {
+  padding: 0.3rem;
+  text-align: center;
+  width: 9rem;
+  text-decoration: none;
+  color: white;
 }
-
-.footer_part {
-        display: flex;
-        justify-content: center;
-
+.footer-link a:hover,
+.footer-link a:focus {
+  background-color: rgb(121, 16, 95);
+}
+.copyright {
+  color: white;
+  text-align: center;
 }
 
-.footer_icon {
-        height: 1.9rem;
-        display: flex;
-        justify-content: space-evenly;
-        padding: 0.5rem;
-        border: 1px solid rgb(220, 217, 217);
-        border-radius: 50%;
-        margin-top: 2rem;
 
-}
-
-#facebook-icon {
-        margin-right: 15px;
-        margin-left: 15px;
-}
-
-.cakes_mobality {
-        margin-top: 10px;
-        font-size: smaller;
-        font-weight: lighter;
-        color: rgb(196, 193, 193);
-        text-align: center;
-}
-
-.input_card {
+/*.input_card {
         display: flex;
 }
 
@@ -302,4 +314,4 @@ background: linear-gradient(to left, #e487c5, #e7c8f8);
 
 .note_info {
         margin-top: 10rem;
-}
+}*/
