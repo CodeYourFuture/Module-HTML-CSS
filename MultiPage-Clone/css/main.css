@@ -588,7 +588,9 @@ footer {
     display: flex;
     flex-direction: column;
     height: 7rem;
-    padding: 1rem;
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
+
   }
 
   .list {
@@ -619,7 +621,7 @@ footer {
     width: 70%;
   }
   .wrapper span {
-    left: 1rem;
+    left: 1.5rem;
     top: 8.1rem;
     font-size: 1rem;
   }
