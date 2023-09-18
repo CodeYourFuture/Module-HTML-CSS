@@ -160,6 +160,9 @@ header {
   display: flex;
   gap: 2rem;
 }
+.menu {
+  display: none;
+}
 .list {
   display: flex;
   list-style: none;
@@ -187,36 +190,37 @@ header {
   font-size: 1.3rem;
   letter-spacing: 0.2rem;
 }
-.wrapper{
-  display:block;
+.wrapper {
+  display: block;
   height: 2rem;
 }
-.wrapper span{
+.wrapper span {
   position: absolute;
   width: 20rem;
   right: 7rem;
   overflow: hidden;
-  animation: changeText 10s infinite ;
+  animation: changeText 10s infinite;
 }
-.wrapper span:nth-child(1){
+.wrapper span:nth-child(1) {
   animation-delay: 0s;
 }
-.wrapper  span:nth-child(2){
+.wrapper span:nth-child(2) {
   animation-delay: 7s;
 }
 @keyframes changeText {
-  0%, 100% {
+  0%,
+  100% {
     visibility: hidden;
   }
-  50%{
+  50% {
     visibility: hidden;
   }
-  75%{
-   visibility: hidden;
-   }
-   100%{
-   visibility: visible;
-   }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
 /*------------------------------Hero section-----------------*/
@@ -433,7 +437,6 @@ header {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
- 
 }
 .contact-form {
   height: 80%;
@@ -487,37 +490,36 @@ textarea {
   margin-top: 2rem;
 }
 /*----------------------------------Footer---------------------------------*/
-footer{
+footer {
   padding-block: 2rem;
   height: 30rem;
   background-color: var(--green-black);
   display: flex;
   flex-direction: column;
-
 }
-.list-container{
+.list-container {
   height: 50%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.footer-list{
+.footer-list {
   width: 100%;
   color: var(--white);
   list-style: none;
   font-weight: 200;
   text-align: center;
 }
-.footer-list-heading{
+.footer-list-heading {
   margin-bottom: 2rem;
   font-family: var(--ff-outfit-reg);
   font-weight: 200;
   letter-spacing: 0.8rem;
 }
-.footer-li{
+.footer-li {
   margin-bottom: 0.3rem;
 }
-.subscribe{
+.subscribe {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -525,45 +527,175 @@ footer{
   color: var(--white);
   gap: 1rem;
 }
-.subscribe-form{
+.subscribe-form {
   width: 50%;
   display: flex;
   gap: 1rem;
   justify-content: center;
   align-items: end;
 }
-.subscribe-form label{
-display: flex;
-flex-direction: column;
-font-weight: 200;
+.subscribe-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 200;
 }
-.subscribe-form input{
+.subscribe-form input {
   margin-top: 1rem;
   height: 2.5rem;
   width: 15rem;
 }
-.subscribe-heading{
+.subscribe-heading {
   font-family: var(--ff-outfit-reg);
   font-weight: 200;
   letter-spacing: 0.5rem;
 }
-.subscribe-btn{
+.subscribe-btn {
   color: black;
   background-color: var(--white);
   width: 10rem;
 }
-.subscribe-icon{
+.subscribe-icon {
   margin-top: 1rem;
   display: flex;
   gap: 1.5rem;
 }
-.subscribe-icon svg{
+.subscribe-icon svg {
   cursor: pointer;
   fill: var(--white);
   transition: 0.5s ease;
 }
 .subscribe-icon svg:hover,
-.subscribe-icon svg:focus{
+.subscribe-icon svg:focus {
   fill: var(--red-brown);
   transform: scale(1.2);
+}
+
+/*------------------------------Mobile Design---------------------------*/
+@media (max-width: 700px) {
+  body,
+  html {
+    margin: 0;
+    width: 100vw;
+ 
+  }
+  header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: static;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    height: 7rem;
+  }
+  .hero {
+    width: 100%;
+    background-attachment: scroll;
+    height: 45rem;
+  }
+  .hero-card {
+    width: 100%;
+  }
+  .heading{
+    font-size: 2rem;
+  }
+  .nav-links {
+    display: none;
+  }
+  .cart {
+    display: none;
+  }
+  .input {
+    width: 50%;
+  }
+  #search-icon {
+    top: 1.5rem;
+  }
+  .logo-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100;
+  }
+  .menu {
+    display: block;
+  }
+  .open {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    height: 120rem;
+  }
+  .card{
+    width: 100%;
+  }
+  .about-us {
+    flex-direction: column;
+    height: 80rem;
+  }
+  
+  .buy-online {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-us {
+    background-attachment: scroll;
+  }
+  .about-us-card {
+    flex: 25%;
+    width: 100%;
+    padding: 2rem;
+  }
+  .buy-online{
+    flex-direction: column;
+    height: 70rem;
+  }
+  .buy-online-card{
+  width: 100%;
+  padding: 1rem;
+  }
+  .contact-form{
+    width: 96%;
+    height: 90%;
+  }
+  .contact-form h2::after{
+    margin-top: 3rem;
+  }
+  footer{
+    height: auto;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .list-container{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer-list-heading{
+    margin-bottom: 0.5rem;
+  }
+  .subscribe-form{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    padding-inline: 1rem;
+  }
+  .subscribe-btn{
+    width: 100%;
+  }
+  .subscribe-form label,
+  .subscribe-form input{
+    width: 100%;
+  }
+  .msg{
+    width: 3rem;
+  }
+.msg-span{
+  display: none;
+}
 }
