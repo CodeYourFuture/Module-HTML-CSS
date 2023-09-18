@@ -619,8 +619,9 @@ footer {
     width: 70%;
   }
   .wrapper span {
-    right: -0.5rem;
+  left: 1rem;
     top: 8.1rem;
+    font-size: 1rem;
   }
   .hero {
     width: 100%;
