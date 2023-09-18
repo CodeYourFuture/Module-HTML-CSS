@@ -278,6 +278,9 @@ h1 {
   padding: 20px;
   line-height: 1.5;
 }
+.buttons2 {
+  display: none;
+}
 
 /* page layout for larger screens using media queries */
 @media (min-width: 540px) {
