@@ -409,14 +409,12 @@ header {
   background: var(--white);
   display: grid;
   align-items: center;
-  justify-content: center;
   opacity: 0.8;
   padding-block: 2rem;
   padding-inline: 1rem;
   font-family: var(--ff-outfit-reg);
- 
 }
-.contact-form input{
+.contact-form input {
   width: 100%;
   height: 3rem;
   margin-top: 1rem;
@@ -425,10 +423,11 @@ header {
 }
 .contact-form input:focus,
 .contact-form input:hover,
-textarea:hover,textarea:focus{
+textarea:hover,
+textarea:focus {
   border: 3px solid black;
 }
-.contact-form label{
+.contact-form label {
   font-family: var(--ff-outfit-reg);
   font-weight: 300;
   font-size: 1.2rem;
@@ -436,16 +435,22 @@ textarea:hover,textarea:focus{
 }
 .name {
   display: flex;
- gap: 1rem;
+  gap: 1rem;
+  width: 100%;
 }
-.name input{
-  flex: 40%;
+.name label {
+  flex: 50%;
 }
-textarea{
+
+textarea {
   width: 100%;
   margin-top: 1rem;
   border: 1px solid black;
 }
-.form-btn{
- width: 100%;
+.form-btn {
+  width: 100%;
+}
+footer{
+  height: 20rem;
+  background-color: var(--green-black);
 }
