@@ -194,7 +194,7 @@ header {
 .wrapper span{
   position: absolute;
   width: 20rem;
-  right: 6.5rem;
+  right: 7rem;
   overflow: hidden;
   animation: changeText 10s infinite ;
 }
