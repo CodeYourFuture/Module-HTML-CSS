@@ -278,8 +278,13 @@ h1 {
   padding: 20px;
   line-height: 1.5;
 }
-.show-content {
+.buttons2 {
   display: none;
+}
+@media (max-width: 539px) {
+  .show-content {
+    display: none;
+  }
 }
 
 /* page layout for larger screens using media queries */
