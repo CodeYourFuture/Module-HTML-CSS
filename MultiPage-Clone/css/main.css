@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Outfit";
-  src: url("fonts/Outfit-Regular.ttf") format("truetype");
+  src: url("/fonts/Outfit-Regular.ttf") format("truetype");
   font-display: swap;
   font-weight: normal;
 }
 @font-face {
   font-family: "Outfit";
-  src: url("fonts/Outfit-ExtraLight.ttf") format("truetype");
+  src: url("/fonts/Outfit-ExtraLight.ttf") format("truetype");
   font-display: swap;
   font-weight: 200;
 }
 @font-face {
   font-family: "Fjalla One";
-  src: url("fonts/FjallaOne-Regular.ttf") format("truetype");
+  src: url("/fonts/FjallaOne-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -726,7 +726,6 @@ footer {
     width: 100%;
   }
   .msg {
-    right: 0.5rem;
     width: 3rem;
     border-radius: 50%;
   }
