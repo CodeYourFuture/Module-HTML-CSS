@@ -1,3 +1,257 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+:root {
+  --dark-beige: #e6dacd;
+  --light-beige: #f4ece6;
+  --royal-blue: #0150fd;
+  --black: #000;
+  --white: #fff;
+  --body-font: "Quicksand", sans-serif;
+  --heading-font: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--body-font);
+}
+
+h1 {
+  font-family: var(--heading-font);
+}
+.header {
+  display: grid;
+  grid-template-areas: "name occupation nav";
+  height: 10vh;
+  padding: 20px;
+}
+.mobile-header {
+  display: grid;
+  grid-template-areas:
+    "name"
+    "occupation";
+}
+.blue-square {
+  width: 10px;
+  height: 10px;
+  background-color: var(--royal-blue);
+  grid-area: name;
+  padding: 2px;
+  margin: 15px;
+}
+
+.name {
+  grid-area: name;
+  margin-left: 35px;
+  margin-top: 5px;
+}
+.occupation {
+  grid-area: occupation;
+}
+#nav {
+  display: none;
+}
+
+.nav {
+  font-size: 20px;
+  list-style: none;
+  padding: 0;
+  grid-area: nav;
+  justify-self: end;
+  display: grid;
+  grid-template-areas: "about resume projects contact";
+  grid-gap: 10px;
+}
+
+.nav li:nth-child(1) {
+  grid-area: about;
+}
+
+.nav li:nth-child(2) {
+  grid-area: resume;
+}
+
+.nav li:nth-child(3) {
+  grid-area: projects;
+}
+
+.nav li:nth-child(4) {
+  grid-area: contact;
+}
+
+.nav li {
+  display: inline;
+  padding: 10px;
+}
+
+.nav a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: var(--royal-blue);
+}
+.mobile-nav-icon {
+  cursor: pointer;
+  padding: 10px;
+  align-self: center;
+  justify-self: end;
+  display: block;
+  position: absolute;
+  margin-left: 85vw;
+  top: 7vh;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: var(--royal-blue);
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius: 2px;
+}
+.bar:nth-child(1) {
+  width: 15px;
+}
+
+.bar:nth-child(3) {
+  margin-left: 15px;
+  width: 15px;
+}
+
+/* Define the grid container with named areas */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "image"
+    "title"
+    "buttons"
+    "footer";
+  gap: 20px; /* Adjust the gap as needed */
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-beige);
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  margin-top: 20vh;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+/* Style the image area */
+.image {
+  grid-area: image;
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  border-radius: 50%; /* Create a circular shape */
+  overflow: hidden; /* Hide any parts of the image that extend beyond the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* Style the image within the circle */
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the circle */
+}
+
+/* Style the title area */
+.title {
+  grid-area: title;
+  background-color: var(
+    --light-beige
+  ); /* Change the background color as needed */
+  text-align: center;
+  margin-top: -20px;
+}
+
+/* Style the blue underline in the title */
+.blue-underline {
+  text-decoration: underline;
+  color: var(--royal-blue);
+}
+
+/* Style the anchor buttons */
+.buttons {
+  grid-area: buttons;
+  display: grid;
+  grid-template-areas: "RESUME PROJECTS";
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+}
+.RESUME {
+  grid-area: RESUME;
+  padding: 10px 20px;
+  background-color: var(
+    --royal-blue
+  ); /* Change button background color as needed */
+  color: var(--white); /* Change button text color as needed */
+  text-decoration: none;
+  margin-right: 10px; /* Adjust button margin as needed */
+  border-radius: 50px;
+  max-width: 12vw;
+  font-size: small;
+  font-weight: bold;
+}
+.PROJECTS {
+  grid-area: PROJECTS;
+  padding: 10px 20px;
+  background-color: var(
+    --light-beige
+  ); /* Change button background color as needed */
+  color: var(--black); /* Change button text color as needed */
+  text-decoration: none;
+  margin-right: 10px; /* Adjust button margin as needed */
+  border-radius: 50px;
+  max-width: 12vw;
+  font-size: small;
+  font-weight: bold;
+  border: 1px solid black;
+}
+/* Define the grid layout for the footer using grid-template-areas */
+.footer {
+  background-color: var(--white);
+  grid-area: footer;
+  height: 7vh;
+  width: 75vw;
+  padding: 10px;
+}
+
+/* Style the social icons (placeholders for the actual icons) */
+.social-icons {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  grid-template-areas: "facebook twitter instagram linkedin";
+  gap: 10px; /* Adjust the gap as needed */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.social-icons img {
+  width: 30px;
+  height: auto;
+}
+
+/* Assign grid areas to each social icon */
+.facebook {
+  grid-area: facebook;
+}
+
+.twitter {
+  grid-area: twitter;
+}
+
+.instagram {
+  grid-area: instagram;
+}
+
+.linkedin {
+  grid-area: linkedin;
+}
