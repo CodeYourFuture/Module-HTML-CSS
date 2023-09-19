@@ -155,7 +155,10 @@ html, body {
 }
 .card-icons {
   margin-top: 1rem;
-  margin-right: 2rem;
+  margin-right: 1rem;
+}
+.contact-info {
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -208,7 +211,7 @@ html, body {
     margin: 0;
     padding: 0.5em 0;
     width: 100%;
-    color: white;
+    color: #fff;
     background-color: #222;
   }
   .menu > li:not(:last-child) {
@@ -254,6 +257,14 @@ html, body {
 }
 .card-icons {
   margin-top: 1rem;
-  margin-right: 2rem;
+  margin-right: 1rem;
+}
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.mini-footer {
+    display: flex;
+    justify-content: space-between;
 }
 }
