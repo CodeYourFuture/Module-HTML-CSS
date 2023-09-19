@@ -49,26 +49,12 @@ input[type="date"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-
 }
 
-.details .email-box {
-    grid-column: 1/2;
-}
 
 .color-box{
     grid-column: 1/2;
     align-items: center;
-}
-
-.select{
-    height: 5vh;
-    width: 240px;
-}
-
-.size{
-    height: 5vh;
-    width: 240px;
 }
 
 .date{
@@ -78,7 +64,6 @@ width: 241px;
 
 .submit{
     grid-row: 4/4;
-
 }
 .butt {
     background-color: #007BFF;
