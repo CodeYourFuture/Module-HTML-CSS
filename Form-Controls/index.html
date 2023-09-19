@@ -10,19 +10,58 @@
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
+     <h1>Fashionable T.Shirt</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <section class="container">
+        <div class="form">
+          <div class="details">
+          <label for="name">Name*</label>
+          <input type="text" id="name" name="name" required pattern="[A-Za-z\s]{2,}" title="Please enter a valid name (at least 2 characters of letters and spaces only).">
 
+          <div class="email">
+          <label for="email">Email Address*</label>
+            <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+          </div>
+
+          <div class="color">
+          <label>Color</label>
+          <select name="color" required>
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+          </select>
+            </div>
+
+                <div>
+                <label>Size*</label>
+                <select name="size" required>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+                </div>
+
+                <div class="date">
+                <label for="deliveryDate">Delivery Date Request:*</label>
+                <input type="date" id="deliveryDate" name="deliveryDate" required min="<?php echo date('Y-m-d', strtotime('+1 day')); ?>" max="<?php echo date('Y-m-d', strtotime('+4 weeks')); ?>">
+                </div>
+
+                      
+        <button type="submit" class="butt">Submit</button>
+        
+        </div>
+        <div class="img">
+          <img src="images/tshirt.jpg" width="500" height="500" />
+        </div>
+      </section>
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+  
+    <h2>By Zahra Style</h2>
   </footer>
 </body>
-
 </html>

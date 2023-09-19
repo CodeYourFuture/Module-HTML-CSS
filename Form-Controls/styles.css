@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(236, 236, 236);
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 50px 50px 100px;
+  gap: 10px;
+  background-color: blue;
+}
+
+.details input{
+    font-size: 1rem;
+
+}
+
+.email{
+    height: 5vh;
+    width: 540px;
+}
+
+.color{
+    grid-column: 1/2;
+}
+
+.select{
+    height: 5vh;
+    width: 240px;
+}
+
+.size{
+    height: 5vh;
+    width: 240px;
+}
+
+.date{
+    height: 7vh;
+
+}
+.butt{
+
+}

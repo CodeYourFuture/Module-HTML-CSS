@@ -148,7 +148,7 @@ main {
 }
 .main_img {
   margin-inline: 1rem;
-  background: url("images/cupcake.jpg") no-repeat;
+  background: url("images/cake.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   animation: fade-in 1s ease;
@@ -174,15 +174,134 @@ main {
   border: 1px solid rgb(204, 70, 92);
   padding: 1rem;
 }
-.img-1{
-  background: url(images/cupcake.jpg) no-repeat;
+.img-1 {
+  background: url(images/img-1.jpg) no-repeat;
   background-position: center;
   background-size: contain;
 }
 
+.img-2 {
+  background: url(images/img-2.jpg) no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.img-3 {
+  background: url(images/img-3.jpg) no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.img-4 {
+  background: url(images/img-4.jpg) no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+ 
+footer {
+  height: 10rem;
+  background-color: rgb(201, 94, 169);
+  display: grid;
+  gap: .5rem;
+}
+.footer-link {
+  cursor: pointer;
+  display: grid;
+  gap: 1rem;
+}
+.footer-link a {
+  padding: 0.3rem;
+  text-align: center;
+  width: 9rem;
+  text-decoration: none;
+  color: white;
+}
+.footer-link a:hover,
+.footer-link a:focus {
+  background-color: rgb(121, 16, 95);
+}
+.copyright {
+  color: white;
+  text-align: center;
+}
 
 
-
+-------media coury------
+@media (max-width: 1280px) {
+  .img_main {
+    height: 30vh;
+    width: auto;
+  }
+  .img-item {
+    float: left;
+    width: 33%;
+    padding: 1em;
+  }
+}
+@media (max-width: 720px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+  .top-nav {
+    height: 70px;
+  }
+  header {
+    margin-right: 20px;
+  }
+  .img_main {
+    height: 20vh;
+    width: auto;
+  }
+  .welcome {
+    display: block;
+    text-align: center;
+  }
+  .card {
+    text-align: left;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+  }
+    footer {
+    height: 15rem;
+  }
+}
 
 
 
