@@ -4,7 +4,7 @@ The objective of this exercise is to create a responsive webpage showcasing your
 
 ## Learning Objectives
 
-- Translate wireframe designs to a fully featured web page.
+- Translate wireframe designs to a fully featured web page. 
 - Implement a responsive design using the Mobile First approach
 - Adapt the page layout for larger screens using media queries
 - Select appropriate fonts and color schemes to create an aesthetically pleasing design

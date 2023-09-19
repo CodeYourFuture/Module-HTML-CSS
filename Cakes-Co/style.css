@@ -1,1 +1,317 @@
-/*  Add your styling here */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+* {
+        font-family: “Raleway”;
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+        }
+
+html{
+        font-size: 62.5%;
+}
+body{
+        font-size:2.2 rem ;
+}
+h1{
+       font-size:2.5 rem ; 
+}
+
+
+h2 {
+
+        vertical-align: center;
+        text-align: center;
+}
+
+
+
+ /*____________________main____________________*/
+
+header {
+        position: relative;
+        display: 
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        padding: 1rem;
+        row-gap: 1rem;
+                        
+}
+        
+.top-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #00BAF0;
+        background: linear-gradient(to left, #e487c5, #e7c8f8);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: #FFF;
+        height:50px;
+        padding: 1em;
+}
+
+.menu {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+}
+
+.menu>li {
+        margin: 0 1rem;
+        overflow: hidden;
+}
+
+.menu-button-container {
+        display: none;
+        height: 100%;
+        width: 30px;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+#menu-toggle {
+        display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        height: 4px;
+        width: 30px;
+        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        border-radius: 2px;
+}
+
+.menu-button::before {
+        content: "";
+        margin-top: -8px;
+}
+
+.menu-button::after {
+        content:"";
+        margin-top: 8px;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+        margin-top: 0px;
+        transform: rotate(405deg);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
+        background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+        margin-top: 0px;
+        transform: rotate(-405deg);
+}
+
+
+     
+/*____________________main____________________*/
+
+.welcome {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: end;
+}
+
+.card {
+        padding: 2rem;
+        text-align: justify;
+}
+
+.img_main {
+        background-size:cover;
+        background-position: center;
+        margin-top: -6rem;
+        height: 50vh;
+        width: auto;
+}
+ /*____________________show_img____________________*/
+ .image{
+        width: 100%;
+        height: 15em;
+
+ }
+
+ .img-item {
+        float: left;
+        width: 20%;
+        padding: 2em;
+        
+      
+}
+.showing-img{
+    flex-wrap: wrap;   
+    width:100%;
+    display: flex; 
+    grid-template-columns: repeat(2 1fr);
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.showing-img::after{
+        content: "";
+        clear: both;
+        display: table;
+
+}
+
+       
+      
+
+
+/*
+.menu {
+                position: absolute;
+                top: 0;
+                margin-top: 50px;
+                left: 0;
+                flex-direction: column;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+        }*/
+@media (max-width: 1280px) {
+  .img_main {
+    height: 30vh;
+    width: auto;
+  }
+
+  .img-item {
+    float: left;
+    width: 33%;
+    padding: 1em;
+  }
+}
+
+@media (max-width: 720px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+  .top-nav {
+    height: 70px;
+  }
+  header {
+    margin-right: 20px;
+  }
+  .img_main {
+    height: 20vh;
+    width: auto;
+  }
+  .welcome {
+    display: block;
+    text-align: center;
+  }
+  .card {
+    text-align: left;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+  }
+    footer {
+    height: 15rem;
+  }
+}
+
+ 
+
+
+/*____________________footer____________________*/
+footer {
+  height: 10rem;
+  background: linear-gradient(to left, #e487c5, #e7c8f8);
+  display: grid;
+  gap: 1.3rem;
+  padding: 0;
+}
+.footer-link {
+  cursor: pointer;
+  display: grid;
+  gap: 1rem;
+}
+.footer-link a {
+  padding: 0.3rem;
+  text-align: center;
+  width: 9rem;
+  text-decoration: none;
+  color: white;
+}
+.footer-link a:hover,
+.footer-link a:focus {
+  background-color: rgb(121, 16, 95);
+}
+.copyright {
+  color: white;
+  text-align: center;
+}
+
+
+/*.input_card {
+        display: flex;
+}
+
+.note_container {
+        display: flex;
+        margin-top: 10rem;
+
+}
+
+.note {
+        background-color: rgb(250, 233, 233);
+        width: 70vw;
+        text-align: center;
+
+        font-size: larger;
+
+}
+
+.note_info {
+        margin-top: 10rem;
+}*/
