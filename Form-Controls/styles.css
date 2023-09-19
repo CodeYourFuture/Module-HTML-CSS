@@ -76,10 +76,14 @@ height: 7vh;
 width: 241px;
 }
 
+.submit{
+    grid-row: 4/4;
+
+}
 .butt {
     background-color: #007BFF;
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 30px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
