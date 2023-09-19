@@ -1,10 +1,9 @@
 body {
   background-color: rgb(236, 236, 236);
 }
-h1, 
-h2{
-  color:chocolate
-
+h1,
+h2 {
+  color: #FF9800;
 }
 
 .container {
@@ -32,30 +31,30 @@ h2{
   font-size: 1.2rem;
   height: 5vh;
 }
-.half-form{
-   grid-column: 1/2;
+.half-form {
+  grid-column: 1/2;
 }
-.select{
+.select {
   height: 5vh;
   width: 241px;
 }
-.size{
+.size {
   height: 5vh;
   width: 241px;
 }
-.date{
- height: 7vh;
-  width: 241px; 
-}
-.button{
+.date {
   height: 7vh;
-  width: 150px;
-  border:3px solid rgb(40, 0, 160);
-  border-radius: 5px;
-  font-size: 1rem;
-  color:blanchedalmond;
-  background-color: rgb(205, 199, 248);
-  padding:25px 10px;
-  
-
+  width: 241px;
+}
+.button {
+  background-color: #FFCC80;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 30px;
+  cursor: pointer;
 }
