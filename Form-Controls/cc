@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My form exercise</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+     <h1>Form T.Shirt Order</h1>
+  </header>
+  <main>
+    <section class="container">
+        <div class="order-form">
+          <div class="form-row">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" >
+          </div>
+           <div class="form-row">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name">
+          </div>
+          <div class="form-big">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" class="email">
+          </div>
+          <div class="half-form">
+            <!-- T-Shirt Color -->
+        <label>Choose your color t-shirt</label>
+        <select name="color" required class="select">
+            <option value="gray">Gray</option>
+            <option value="blue">Blue</option>
+            <option value="red">Red</option>
+        </select>
+          </div>
+          <div>
+            <!-- T-Shirt Size -->
+        <label>T-shirt size</label>
+        <select name="size" required class="size">
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+        </select>
+          </div>
+          <div>
+            <!-- Delivery Date -->
+        <label for="delivery-date">Delivery Date (Within the next four weeks)</label>
+        <input type="date" id="delivery-date" name="delivery-date" required class="date"
+               min="<?php echo date('Y-m-d'); ?>"
+               max="<?php echo date('Y-m-d', strtotime('+4 weeks')); ?>">
+          </div>
+          <div>
+          </div>
+          <div>
+            <!-- Submit Button -->
+        <button type="submit" class="button">Place Order</button>
+          </div>
+        </div>
+        <div class="img">
+          <img src="https://images.squarespace-cdn.com/content/v1/5bad1042a9ab954dcdd216d5/1565380761940-ZJCPQYHKRWFOUW5FPQN2/00-Graphic-tee-ALL-Natural-1.png" alt="T-Shirt Image" width="500" height="500" />
+        </div>
+      </section>
+  </main>
+  <footer>
+    <!-- change to your name-->
+    <h2>By Elmira Zangeneh</h2>
+  </footer>
+</body>
+</html>
