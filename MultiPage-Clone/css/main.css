@@ -1,6 +1,6 @@
 :root {
     font-family: 'Poppins', sans-serif;
-    font-family: 'Quicksand', sans-serif;
+    font-family:'Quicksand', sans-serif;
     --color: Dark beige: #E6DACD
              Light beige: #F4ECE6
              Royal blue: #0150FD
@@ -8,7 +8,7 @@
              White: #FFF;
 }
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family:'Quicksand', sans-serif;
     margin: 20px;
     background: linear-gradient(
     to right,
@@ -22,7 +22,8 @@ h1, h2, h3, h4 {
     font-family: 'Poppins', sans-serif;
 }
 h2 {
-  font-family: 'Quicksand', sans-serif;
+  font-family:'Quicksand', sans-serif;
+  font-size: 1.4rem;
 }
 html, body {
   height: 100%;
