@@ -161,6 +161,7 @@ header {
   margin-right: 3vw;
   margin-top: 1vw;
   text-align: justify;
+  color: salmon;
 }
 
 .big-cake {
@@ -181,7 +182,6 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-template-rows: repeat(2, auto);
-  /* margin: 3vw 1.5vw; */
 }
 .cake-images img {
   width: 43vw;
@@ -269,11 +269,11 @@ footer {
     grid-template-areas: "h c o l a";
     align-items: center;
     justify-content: flex-end;
-    padding: 1vh 2vh 2vh 30vw;
-    gap: 4vh;
+    padding: 1vh 2vh 1vh 10vw;
+    gap: 2vh;
     height: 6vh;
     right: 3;
-    margin: 10px;
+    margin: 8px;
     background-color: aliceblue;
     box-shadow: 0px 5px 8px #023047;
   }
@@ -281,37 +281,38 @@ footer {
   .hamburger {
     display: none !important;
   }
-  */
 
-/* HERO and sub styling for min 540px screen */
- .hero {
+  /* HERO and sub styling for min 540px screen */
+  .hero {
     grid-column: 2;
     display: flex;
     flex-direction: row-reverse;
   }
   .big-cake {
-    width: 44vw;
-    height: 44vw;
+    width: 42vw;
+    height: 42vw;
+    margin-top: 10vw;
   }
 
   .welcome-text h1 {
     font-size: 3rem;
     text-align: right;
-    margin: 3rem 0 1rem 0;
+    margin: 10vw 0 0 0;
   }
   .welcome-text p {
     font-size: 1rem;
     text-align: right;
-    margin: 3rem 0 1rem 0;
-    color: salmon;
+    margin: 1vw 0;
   }
 
-  .welcome-text .cake {
+  .cake-images {
     grid-column: 4;
+    margin: 2vw 3vw 0vw 3vw;
   }
   .cake-images img {
-    width: 21vw;
-    height: 21vw;
+    width: 18vw;
+    height: 18vw;
+    /* margin: 1vw; */
   }
 
   .foot-sidebar {
@@ -378,7 +379,7 @@ footer {
     display: none !important;
   }
 
-  /* HERO and sub styling for min 900px screen */
+  /*HERO and sub styling for min 900px screen */
   .hero {
     grid-column: 2;
     display: flex;
@@ -386,8 +387,8 @@ footer {
     margin-top: 6vw;
   }
   .big-cake {
-    width: 44vw;
-    height: 44vw;
+    width: 45vw;
+    height: 45vw;
   }
 
   .welcome-text h1 {
