@@ -1,1 +1,456 @@
 /*  Add your styling here */
+body {
+  margin: 0;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: repeat(1, 100px); */
+  background-color: aliceblue;
+}
+.header p {
+  margin: 0 1.5rem 1.2rem 7.5rem;
+  text-align: right;
+  color: salmon;
+  font-size: clamp(2.6vh, 3.4vw, 4.5vh);
+  font-weight: 600;
+  align-items: flex-end;
+}
+.header img {
+  width: 7rem;
+  height: 7rem;
+  margin: 1.2rem 0 0.5rem 2rem;
+  border-radius: 1rem;
+}
+.hamburger {
+  cursor: pointer;
+  padding: 10px;
+  align-self: center;
+  justify-self: end;
+  display: block; /* Show the label on mobile screens */
+  position: absolute;
+  margin-left: 80vw;
+  top: 1vh;
+}
+
+.hamburger-bar {
+  width: 50px;
+  height: 8px;
+  background-color: goldenrod;
+  border-radius: 6px;
+  margin: 8px 0;
+  transition: 0.4s;
+  align-items: flex-end;
+}
+
+#menu:checked + .menu-items {
+  display: grid;
+}
+
+.menu-items {
+  display: none; /* Hide the navigation links by default on mobile */
+  position: absolute;
+  right: 1vw;
+  margin-top: 0.5vh;
+  box-shadow: 1px 4px 10px #023047;
+  z-index: 10;
+  width: auto;
+  padding: 2vw 15vw;
+  margin-right: 5vw;
+  background-color: aliceblue;
+}
+/* .menu-items:hover {
+  transform: scale3d(1, , 1.2);
+} */
+#menu-bar:checked ~ .menu-items {
+  display: grid;
+  grid-template-areas:
+    "h"
+    "c"
+    "o"
+    "l"
+    "a";
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: auto;
+  min-height: 25vh; /* Minimum height for consistency */
+  width: auto;
+  top: 5vh;
+}
+.nav-link:hover {
+  transform: scale3d(1.2, 1.3, 2);
+  background-color: aqua;
+  color: salmon;
+  box-shadow: 0 2px 6px #023047;
+}
+.menu-home {
+  grid-area: h;
+}
+.menu-cakes {
+  grid-area: c;
+}
+.menu-orderin {
+  grid-area: o;
+}
+.menu-lessons {
+  grid-area: l;
+}
+.menu-about {
+  grid-area: a;
+}
+
+#menu-bar:checked ~ .hamburger .hamburger-bar:nth-child(1) {
+  transform: rotate(145deg) translate(-5px, 6px);
+}
+
+#menu-bar:checked ~ .hamburger .hamburger-bar:nth-child(2) {
+  transform: rotate(90deg) translate(-5px, 6px);
+  /* opacity: 0; */
+}
+
+#menu-bar:checked ~ .hamburger .hamburger-bar:nth-child(3) {
+  transform: rotate(60deg) translate(-5px, -6px);
+}
+
+.show {
+  display: none !important;
+}
+
+/* NAV link Menus */
+
+.nav-link {
+  display: flex;
+  padding: 10px 40px;
+  text-decoration: none;
+  background-color: #023047;
+  color: goldenrod;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: #ebaeba 0.2s ease;
+  width: 4.5vw;
+  height: 2vh;
+  font-size: clamp(1.8vh, 2.5vw, 2.5vh);
+  justify-content: center;
+  align-items: start;
+}
+
+/* HERO Section styling */
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  margin: 3vw 2.5vw 0.5vw 3vw;
+  justify-items: center;
+}
+.welcome-text h1 {
+  font-weight: 600;
+  font-size: 8vw;
+  color: salmon;
+  text-align: start;
+  margin: 0 3vw;
+}
+.welcome-text {
+  align-items: center;
+  text-align: center;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-top: 1vw;
+}
+
+.big-cake {
+  width: 90vw;
+  height: 90vw;
+  margin: 3vw;
+  align-items: center;
+  border-radius: 1rem;
+}
+.big-cake:hover {
+  opacity: 0.8;
+  transform: scale3d(1.1, 1, 1.2);
+}
+
+/* Sub-Hero main content styling */
+
+.cake-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: repeat(2, auto);
+  /* margin: 3vw 1.5vw; */
+}
+.cake-images img {
+  width: 43vw;
+  height: 43vw;
+  margin: 3vw;
+  border-radius: 1rem;
+}
+.cake-1:hover,
+.cake-2:hover,
+.cake-3:hover,
+.cake-4:hover {
+  transform: scale3d(0.9, 0.9, 2.4);
+}
+footer {
+  background-color: beige;
+}
+.foot-sidebar {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5vw;
+  margin-top: 5vw;
+}
+
+.quick,
+.track,
+.chat {
+  background-color: #023047;
+  width: 20vw;
+  padding: 4px;
+  border-radius: 3px;
+  margin-top: 2.5vw;
+  text-align: center;
+}
+.quick a,
+.track a,
+.chat a {
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: goldenrod;
+  text-decoration: none;
+  text-align: center;
+}
+
+.quick:hover,
+.track:hover,
+.chat:hover {
+  transform: scale3d(1.2, 1.3, 2);
+  background-color: aqua;
+  color: salmon;
+  box-shadow: 0 2px 6px #023047;
+}
+.contact-logo {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 0 0.3rem;
+}
+.contacts,
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copyright {
+  font-size: 4vw;
+  font-weight: 400;
+  color: #a5a5a5;
+  margin-top: 0;
+  font-style: italic;
+}
+
+/*  - breakpoint 2 --> 540px (adjustment to another bigger screen) */
+
+@media screen and (min-width: 540px) {
+  .header img {
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem 0 2rem 4rem;
+    border-radius: 1rem;
+  }
+
+  .menu-items {
+    display: grid;
+    grid-template-areas: "h c o l a";
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1vh 2vh 2vh 30vw;
+    gap: 4vh;
+    height: 6vh;
+    right: 3;
+    margin: 10px;
+    background-color: aliceblue;
+    box-shadow: 0px 5px 8px #023047;
+  }
+
+  .hamburger {
+    display: none !important;
+  }
+  */
+
+/* HERO and sub styling for min 540px screen */
+ .hero {
+    grid-column: 2;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .big-cake {
+    width: 44vw;
+    height: 44vw;
+  }
+
+  .welcome-text h1 {
+    font-size: 3rem;
+    text-align: right;
+    margin: 3rem 0 1rem 0;
+  }
+  .welcome-text p {
+    font-size: 1rem;
+    text-align: right;
+    margin: 3rem 0 1rem 0;
+    color: salmon;
+  }
+
+  .welcome-text .cake {
+    grid-column: 4;
+  }
+  .cake-images img {
+    width: 21vw;
+    height: 21vw;
+  }
+
+  .foot-sidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 2.5vw;
+  }
+  .quick,
+  .track,
+  .chat {
+    background-color: #023047;
+    width: 20vw;
+    padding: 5px;
+    border-radius: 2px;
+    margin-left: 2vw;
+    text-align: center;
+  }
+  .quick a,
+  .track a,
+  .chat a {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: goldenrod;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .contact-logo {
+    width: 2vw;
+    height: 2vw;
+  }
+  .copyright {
+    font-size: 1vw;
+    font-style: normal;
+  }
+}
+
+/*  - breakpoint 2 --> 900px (adjustment to another bigger screen) */
+
+@media screen and (min-width: 900px) {
+  .header img {
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem 0 2rem 4rem;
+    border-radius: 1rem;
+  }
+
+  .menu-items {
+    display: grid;
+    grid-template-areas: "h c o l a";
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1vh 2vh 2vh 30vw;
+    gap: 4vh;
+    height: 6vh;
+    right: 3;
+    margin: 10px;
+    background-color: aliceblue;
+    box-shadow: 0px 5px 8px #023047;
+  }
+
+  .hamburger {
+    display: none !important;
+  }
+
+  /* HERO and sub styling for min 900px screen */
+  .hero {
+    grid-column: 2;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 6vw;
+  }
+  .big-cake {
+    width: 44vw;
+    height: 44vw;
+  }
+
+  .welcome-text h1 {
+    font-size: 3rem;
+    text-align: right;
+    margin: 3rem 0 1rem 0;
+  }
+  .welcome-text p {
+    font-size: 1rem;
+    text-align: right;
+    margin: 3rem 0 1rem 0;
+    color: salmon;
+  }
+
+  .welcome-text .cake {
+    grid-column: 4;
+  }
+  .cake-images img {
+    width: 21vw;
+    height: 21vw;
+  }
+  .cake-images {
+    margin-right: 3vw;
+  }
+
+  .foot-sidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 30vw;
+  }
+
+  .foot-sidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 3vw;
+  }
+  .quick,
+  .track,
+  .chat {
+    background-color: #023047;
+    width: 20vw;
+    padding: 4px;
+    border-radius: 2.5px;
+    margin-left: 2vw;
+    text-align: center;
+  }
+  .quick a,
+  .track a,
+  .chat a {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: goldenrod;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .contact-logo {
+    width: 2vw;
+    height: 2vw;
+  }
+  .copyright {
+    font-size: 1vw;
+    font-style: normal;
+  }
+}
