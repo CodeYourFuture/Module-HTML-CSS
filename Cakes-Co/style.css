@@ -5,8 +5,6 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-template-rows: repeat(1, 100px); */
   background-color: aliceblue;
 }
 .header p {
@@ -28,7 +26,7 @@ header {
   padding: 10px;
   align-self: center;
   justify-self: end;
-  display: block; /* Show the label on mobile screens */
+  display: block;
   position: absolute;
   margin-left: 80vw;
   top: 1vh;
@@ -49,7 +47,7 @@ header {
 }
 
 .menu-items {
-  display: none; /* Hide the navigation links by default on mobile */
+  display: none;
   position: absolute;
   right: 1vw;
   margin-top: 0.5vh;
@@ -60,9 +58,7 @@ header {
   margin-right: 5vw;
   background-color: aliceblue;
 }
-/* .menu-items:hover {
-  transform: scale3d(1, , 1.2);
-} */
+
 #menu-bar:checked ~ .menu-items {
   display: grid;
   grid-template-areas:
@@ -75,7 +71,7 @@ header {
   justify-content: center;
   gap: 20px;
   height: auto;
-  min-height: 25vh; /* Minimum height for consistency */
+  min-height: 25vh;
   width: auto;
   top: 5vh;
 }
@@ -107,7 +103,6 @@ header {
 
 #menu-bar:checked ~ .hamburger .hamburger-bar:nth-child(2) {
   transform: rotate(90deg) translate(-5px, 6px);
-  /* opacity: 0; */
 }
 
 #menu-bar:checked ~ .hamburger .hamburger-bar:nth-child(3) {
@@ -307,12 +302,12 @@ footer {
 
   .cake-images {
     grid-column: 4;
+    display: flex;
     margin: 2vw 3vw 0vw 3vw;
   }
   .cake-images img {
     width: 18vw;
     height: 18vw;
-    /* margin: 1vw; */
   }
 
   .foot-sidebar {
@@ -389,12 +384,13 @@ footer {
   .big-cake {
     width: 45vw;
     height: 45vw;
+    margin-top: 6vw;
   }
 
   .welcome-text h1 {
     font-size: 3rem;
     text-align: right;
-    margin: 3rem 0 1rem 0;
+    margin: 6vw 0 1vw 0;
   }
   .welcome-text p {
     font-size: 1rem;
