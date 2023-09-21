@@ -1,28 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Fashionable T.Shirt</h1>
+    </header>
+    <main>
+      <section class="container">
+        <div class="order-form">
+          <!-- Customer Name -->
+          <p>
+          <label for="FirstName">First Name*</label>
+          <input
+            type="text"
+            id="FirstName"
+            name="FirstName"
+            required
+            minlength="2"
+          />
+          </p>
+          <p>
+          <label for="LastName">Last Name*</label>
+          <input type="text" id="LastName" name="FirstName" required />
+          <br />
+          </p>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+          <!-- Customer Email -->
+          <p class="email">
+          <label for="customerEmail">Email*</label>
+          <input
+            type="email"
+            id="customerEmail"
+            name="customerEmail"
+            required
+          />
+          <br />
+          </p>
 
+          <!-- T-Shirt Color -->
+          <p>
+          <label for="tShirtColor">Color:</label>
+          <select id="tShirtColor" name="tShirtColor" required>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+          </select>
+          </p>
+
+          <!-- T-Shirt Size -->
+          <p>
+          <label for="tShirtSize">Size:</label>
+          <select id="tShirtSize" name="tShirtSize" required>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <br />
+          </p>
+          <!-- Quantity -->
+          <p>
+          <label for="Quantity">Quantity</label>
+          <input type="number" id="Quantity" name="Quantity" required min="1" />
+          </p>
+          <!-- Delivery Date -->
+          <p>
+          <label for="deliveryDate">Delivery Date*</label>
+          <input
+            type="date"
+            id="deliveryDate"
+            name="deliveryDate"
+            required
+            min="2023-09-15"
+            max="2023-10-15"
+          />
+          <br />
+          </p>
+
+          <!-- Submit Button -->
+          <input type="submit" value="Submit" />
+        </div>
+        <div class="img">
+          <img src="t.shirt.jpg" alt="T-Shirt Image" width="500" height="500" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By BerwinE Ltd</h2>
+    </footer>
+  </body>
 </html>
