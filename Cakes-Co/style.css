@@ -151,3 +151,45 @@ header {
   background-color: brown;
   color: whitesmoke;
 }
+
+/* main area styling */
+/* main-article styling */
+
+.main-image {
+  width: 90vw;
+  height: 70vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 10vw;
+}
+.main-article {
+  display: grid;
+  grid-gap: 0.3rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto;
+  transition: all 0.3s ease;
+}
+.main-image:hover {
+  opacity: 0.7;
+  transform: scale(0.8);
+}
+.welcome {
+  font-family: "Lato", sans-serif;
+  text-align: justify;
+  line-height: 1.3;
+  font-size: clamp(2.25vh, 2.5vw, 3.5vh);
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 0;
+}
+.welcome h1 {
+  text-shadow: 1px 2px 2.5px darkslategrey;
+}
+.read-more {
+  font-size: clamp(2vh, 2.5vw, 3.5vh);
+  background-color: brown;
+  color: whitesmoke;
+  font-style: italic;
+  text-decoration: none;
+  padding: 0 .2rem;
+}
