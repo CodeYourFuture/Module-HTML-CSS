@@ -384,7 +384,9 @@ header {
   .show-article img {
     width: 22vw;
     height: 22vw;
-    margin: 1.3rem 2vw 0 1vw;
+    /* margin: 1.3vw 1vw 0 1vw; */
+    margin-left: 1vw;
+    margin-right: 1vw;
     border-radius: 4px;
     transition: all 0.3s ease;
   }
@@ -441,8 +443,8 @@ header {
 
 @media screen and (min-width: 900px) {
   .founded {
-    top: 8rem;
-    margin-left: 1rem;
+    top: 13.5vw;
+    margin-left: 1.5vw;
   }
   .menu-bar {
     font-size: clamp(1vh, 2.5vw, 3vh);
