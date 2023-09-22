@@ -77,3 +77,77 @@ header {
   margin-left: 85vw;
   top: .1vh;
 }
+.ham-bar {
+  width: 2rem;
+  height: 0.2rem;
+  background-color: grey;
+  margin: 0.31rem 0;
+  transition: 0.3s;
+  border-radius: 0.4rem;
+}
+#menu-toggle:checked + .menu {
+  display: grid;
+}
+.menu {
+  display: none;
+  position: absolute;
+  right: 1vw;
+  margin-top: 0.5vh;
+  background-color: blanchedalmond;
+  box-shadow: 0px 4px 10px #270327;
+  border-radius: 0.25rem;
+  z-index: 10;
+  width: auto;
+  padding: 2vh 2vw;
+}
+#menu-toggle:checked ~ .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  height: auto;
+  min-height: 25vh;
+  width: 50vw;
+  margin-right: 4rem;
+  top: 0;
+}
+#menu-toggle:checked ~ .hamburger .menu-bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+#menu-toggle:checked ~ .hamburger .menu-bar:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle:checked ~ .hamburger .menu-bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+.hidden {
+  display: none !important;
+}
+.menu-bar {
+  display: flex;
+  padding: 0.63rem 5rem;
+  background-color: brown;
+  color: #270327;
+  border: none;
+  border-radius: 0.5;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.6s ease;
+  width: 4vw;
+  height: 2vh;
+  font-size: clamp(1.5vh, 2.5vw, 3vh);
+  justify-content: center;
+  align-items: center;
+}
+.menu-bar a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 500;
+}
+.menu-bar:hover {
+  background-color: brown;
+  color: whitesmoke;
+}
