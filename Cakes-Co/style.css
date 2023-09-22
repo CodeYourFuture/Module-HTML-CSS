@@ -217,3 +217,34 @@ header {
   opacity: 0.7;
   transform: scale(0.8);
 }
+/* new-menu section styling */
+.new-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: repeat(2, auto);
+  gap: 0.2rem;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  margin-bottom: 6vw;
+}
+.new h3 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 0.2rem;
+}
+.new-article img {
+  width: 40vw;
+  height: 40vw;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.new-article p {
+  font-size: 1rem;
+  font-weight: 550;
+  margin-top: 0.2rem;
+}
+.new-article img:hover {
+  opacity: 0.7;
+  transform: scale(0.8);
+}
