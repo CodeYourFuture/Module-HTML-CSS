@@ -472,18 +472,7 @@ header {
   .hamburger {
     display: none;
   }
-  /* .menu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    right: 1;
-    margin: 4px;
-    height: 8vh;
-    gap: 20px;
-    background-color: #afa595;
-    padding: 1vh 10vw;
-    box-shadow: 0px 4px 10px;
-  } */
+  
   .header-image {
     width: 6vw;
     height: 6vw;
