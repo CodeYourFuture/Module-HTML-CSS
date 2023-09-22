@@ -66,3 +66,14 @@ header {
   padding-bottom: 0.1vw;
   color: rgb(38, 5, 5);
 }
+/* Nav styling with hamburger */
+.hamburger {
+  cursor: pointer;
+  padding: 10px;
+  align-self: center;
+  justify-self: end;
+  display: block;
+  position: absolute;
+  margin-left: 85vw;
+  top: .1vh;
+}
