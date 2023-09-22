@@ -413,7 +413,6 @@ header {
     border-radius: 4px;
     transition: all 0.3s ease;
   }
-
   .new-article p {
     font-size: 0.8rem;
     font-weight: 550;
@@ -441,5 +440,38 @@ header {
 /* Media query for 900px responsive design */
 
 @media screen and (min-width: 900px) {
-
+  .founded {
+    top: 8rem;
+    margin-left: 1rem;
+  }
+  .menu-bar {
+    font-size: clamp(1vh, 2.5vw, 3vh);
+    padding: 0.7rem 3rem;
+  }
+  .menu {
+    margin: 4px;
+    padding: 1vh 1vw 1vw 28vw;
+  }
+  .welcome {
+    line-height: 1.5;
+    font-size: clamp(3vh, 2vw, 3vh);
+  }
+  .read-more {
+    font-size: 1rem;
+    padding: 0.4rem 0.5rem;
+  }
+  .show-article p {
+    font-size: 1.25rem;
+  }
+  .new-article p {
+    font-size: 1.25rem;
+  }
+  .new h3 {
+    font-size: 1.5rem;
+  }
+  .location,
+.mobile,
+.mail {
+  padding: 0.5rem 6.5rem;
+}
 }
