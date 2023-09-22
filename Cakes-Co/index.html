@@ -13,138 +13,112 @@
 <body>
     <!-- Add your markup here -->
     <header>
-        <img src="./images/cakehouse-icon.jpeg" alt="cake-icon" height="40" width="40">
-        <h2>My Halal bakery<span>est. since 2000</span></h2>
-        <p>Elevating sweetness into a whole new level</p>
-
-        <nav>
-            <ul>
-                <li class="nav-item"><a href="#">Home</a></li>
-                <li class="nav-item"><a href="#">About</a></li>
-                <li class="nav-item"><a href="#">Our Products</a></li>
-                <li class="nav-item"><a href="#">News</a></li>
-                <li class="nav-item"><a href="#">Contact Us</a></li>
-                <li class="nav-item"><a href="#">Help</a></li>
-            </ul>
-        </nav>
+        <div class="cake-header">
+            <img src="./images/cakehouse-icon.jpeg" alt="A cake house icon" class="header-image">
+            <div class="founded">
+                <h1>Halal bakery</h1><span class="cake-span">est. since 2000</span>
+            </div>
+            <div class="slogan">
+                <p>Elevating sweetness into a whole new level</p>
+            </div>
+        </div>
+    
+    <nav class="nav-bar">
+        <input type="checkbox" id="menu-toggle" class="hidden">
+        <label for="menu-toggle" class="hamburger">
+            <div class="ham-bar"></div>
+            <div class="ham-bar"></div>
+            <div class="ham-bar"></div>
+        </label>
+        <ul class="menu">
+            <li class="menu-bar home"><a href="#">Home</a></li>
+            <li class="menu-bar"><a href="#">Cakes</a></li>
+            <li class="menu-bar"><a href="#">Ordering</a></li>
+            <li class="menu-bar"><a href="#">Lessons</a></li>
+            <li class="menu-bar"><a href="#">About</a></li>
+        </ul>
+    </nav>
     </header>
     <main>
-        <section>
-            <h2>Pleasure and taste in one place</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultricies rutrum orci. Nulla
-                placerat, metus vel
-                fermentum suscipit, lacus nisi tempus lacus, sit amet commodo quam urna in libero. Maecenas at eros
-                malesuada, lacinia
-                turpis a, congue felis. Duis eu purus nisi. Cras mi ligula, mollis eget ullamcorper eu, elementum ut
-                risus. Nullam
-                pretium vitae tellus id molestie.</p>
-            <p>Making sure that the muslim community feed their bellies with halal pastries</p>
-        </section>
-        <section>
-            <img src="./images/chocolate cake.jpg" alt="chocolate-cake" height="500px" width="500px">
-            <h3>Chocolate cake</h3>
-            <p>Duis sit amet rhoncus dui, sit amet feugiat magna. Curabitur eu ligula in orci eleifend dictum nec quis
-                augue. Vivamus
-                sit amet felis sodales augue condimentum cursus. Quisque sem erat, congue vel dui a, aliquam porta est.
-                Phasellus quis
-                orci turpis. Morbi pellentesque nisl vitae justo mattis sodales. Suspendisse sagittis et leo eget
-                rhoncus.</p>
-        </section>
-        <section>
-            <section>
-                <img src="./images/fruit-cake.avif" alt="chocolate-cake" height="500px" width="500px">
-                <h3>fruit cake</h3>
-                <p>Duis sit amet rhoncus dui, sit amet feugiat magna. Curabitur eu ligula in orci eleifend dictum nec
-                    quis augue.
-                    Vivamus
-                    sit amet felis sodales augue condimentum cursus. Quisque sem erat, congue vel dui a, aliquam porta
-                    est. Phasellus
-                    quis
-                    orci turpis. Morbi pellentesque nisl vitae justo mattis sodales. Suspendisse sagittis et leo eget
-                    rhoncus.</p>
-            </section>
-            <section>
-                <img src="./images/pistachio layer cake.jpg" alt="chocolate-cake" height="500px" width="500px">
-                <h3>Pistachio layer cake</h3>
-                <p>Duis sit amet rhoncus dui, sit amet feugiat magna. Curabitur eu ligula in orci eleifend dictum nec
-                    quis augue.
-                    Vivamus
-                    sit amet felis sodales augue condimentum cursus. Quisque sem erat, congue vel dui a, aliquam porta
-                    est. Phasellus
-                    quis
-                    orci turpis. Morbi pellentesque nisl vitae justo mattis sodales. Suspendisse sagittis et leo eget
-                    rhoncus.</p>
-            </section>
-            <section>
-                <img src="./images/Pound-Cake_.jpg" alt="chocolate-cake" height="500px" width="500px">
-                <h3>Pound cake</h3>
-                <p>Duis sit amet rhoncus dui, sit amet feugiat magna. Curabitur eu ligula in orci eleifend dictum nec
-                    quis augue.
-                    Vivamus
-                    sit amet felis sodales augue condimentum cursus. Quisque sem erat, congue vel dui a, aliquam porta
-                    est.
-                    Phasellus
-                    quis
-                    orci turpis. Morbi pellentesque nisl vitae justo mattis sodales. Suspendisse sagittis et leo eget
-                    rhoncus.</p>
-            </section>
-        </section>
-        <section class="news">
-            <h2>Latest News</h2>
-            <section>
-                <img src="./images/diary-free.jpg" alt="diary-free" width="500px" height="500px">
-                <h3>Pound cake</h3>
-                <p>Duis sit amet rhoncus dui, sit amet feugiat magna. Curabitur eu ligula in orci eleifend dictum nec
-                    quis augue.</p>
-                <label for="read-more-toggle" class="read-more-label">Read More</label>
-            </section>
-            <section>
-                <img src="./images/sugar_free_carrot_cake.jpg" alt="sugar_free_carrot_cake" width="500px"
-                    height="500px">
-                <h3>Pound cake</h3>
-                <p>Duis sit amet rhoncus dui, sit amet feugiat magna. Curabitur eu ligula in orci eleifend dictum nec
-                    quis augue.</p>
-                <label for="read-more-toggle" class="read-more-label">Read More</label>
-            </section>
-            <section>
-                <img src="./images/Sugarfreebanana-cake.jpg" alt="Sugarfreebanana-cake" width="500px" height="500px">
-                <h3>Pound cake</h3>
-                <p>Duis sit amet rhoncus dui, sit amet feugiat magna. Curabitur eu ligula in orci eleifend dictum nec
-                    quis augue.</p>
-                <label for="read-more-toggle" class="read-more-label">Read More</label>
-            </section>
-            <section>
-                <img src="./images/coconut cake.jpg" alt="diary-free" width="500px" height="500px">
-                <h3>Pound cake</h3>
-                <p>Duis sit amet rhoncus dui, sit amet feugiat magna. Curabitur eu ligula in orci eleifend dictum nec
-                    quis augue.</p>
-                <label for="read-more-toggle" class="read-more-label">Read More</label>
-            </section>
-        </section>
-    </main>
+        <article class="main-article">
+            <div class="welcome">
+                <h1>Welcome</h1>
+                <p>Making sure that the muslim community feed their bellies with halal pastries. Our passion for baking is matched only by our commitment to quality and freshness. We use the finest ingredients and
+                time-honored recipes to create cakes that are as beautiful as they are delicious.<br> A trial will convince you.<br><a href="#" class="read-more">Read More</a></p>
+                
+            </div>
+            <img class="main-image" src="./images/Rate-cake.webp"
+                alt="picture of different size of cake with fruits topping">
 
-    <footer>
-        <section>
-            <h4>Our Location</h4>
-            <p>Duis sit amet rhoncus dui, sit amet feugiat magna.</p>
-            <p>call for description <span>+44700000118</span></p>
-            <p>E-mail: <span>adenike.sariat@gmail.com</span></p>
-            <div class="icon-footer">
-                <span class="footer-right">&copy;2023 Adenike Sariat&trade;</span>
-                <a href="https://www.twitter.com/adenike_sariat" target="_blank" rel="noopener"><img
-                        src="https://i.postimg.cc/YqYp59V0/580b57fcd9996e24bc43c53e.png" height="20" width="25"
-                        alt="twitterLogo"></a>
-                <a href="mailto:adenike.sariat@gmail.com" target="_blank"><img
-                        src="https://i.postimg.cc/T1FmswKf/Gmail-Logo-PNG-Transparent-Image.png" height="20" width="25"
-                        alt="GmailLogo"></a>
-                <a href="mailto:adenike.sariat@outlook.com" target="_blank"><img
-                        src="https://i.postimg.cc/J4tL8Qhp/transparent-outlook-icon-2.png" height="20" width="25"
-                        alt="OutlookLogo"></a>
-                <a href="https://www.linkedin.com/in/sariat-oyehan/" target="_blank" rel="noopener"><img
-                        src="https://i.postimg.cc/7hpJg2Ws/Linked-In-logo-initials.png" height="20" width="25"
-                        alt="linkedinLogo"></a>
+        </article>
+        <section class="show-menu">
+            <article class="show-article">
+                <img src="./images/chocolate cake.jpg" alt="A picture of chocolate-cake" class="show-image">
+                <p>Chocolate cake</p>
+                <!-- <a href="#" class="read-more">Read More</a> -->
+            </article>
+            <article class="show-article">
+                <img src="./images/VanillaCupCakes.jpeg" alt="A picture of Vanilla cake" class="show-image">
+                <p>Vanilla cup cake</p>
+                <!-- <a href="#" class="read-more">Read More</a> -->
+            </article>
+            <article class="show-article">
+                <img src="./images/pistachio layer cake.jpg" alt="A picture Pistachio cake" class="show-image">
+                <p>Pistachio layer cake</p>
+                <!-- <a href="#" class="read-more">Read More</a> -->
+            </article>
+            <article class="show-article">
+                <img src="./images/Pound-Cake_.jpg" alt="A picture of sliced pound cake loaf" class="show-image">
+                <p>Pound cake</p>
+                <!-- <a href="#" class="read-more">Read More</a> -->
+            </article>
+        </section>
+        <section class="new">
+            <h3>New menu</h3>
+            <div class="new-menu">
+                <article class="new-article">
+                    <img src="./images/diary-free.jpg" alt="diary free cup-cakes" class="new-image">
+                    <p>Diary-Free Cup-cake<p>
+                    <!-- <a href="#" class="read-more">Read More</a> -->
+                </article>
+                <article class="new-article">
+                    <img src="./images/sugar_free_carrot_cake.jpg" alt="sugar free carrot cake" class="new-image">
+                    <p>Sugar-free Carrot cake</p>
+                    <!-- <a href="#" class="read-more">Read More</a> -->
+                </article>
+                <article class="new-article">
+                    <img src="./images/Sugarfreebanana-cake.jpg" alt="Sugarfree banana cake" class="new-image">
+                    <p>Sugar-free Banana-cake</p>
+                    <!-- <a href="#" class="read-more">Read More</a> -->
+                </article>
+                <article class="new-article">
+                    <img src="./images/coconut cake.jpg" alt="coconut cake" class="new-image">
+                    <p>Coconut cake</p>
+                    <!-- <a href="#" class="read-more">Read More</a> -->
+                </article>
             </div>
         </section>
+    </main>
+    <footer class="cake-footer">
+        <article class="footer-article">
+            <div class="location">Location</div>
+            <div class="mobile">Hotline</div>
+            <div class="mail">Mail us</div>
+        </article>
+        <div class="icon-footer">
+            <a href="https://www.twitter.com/adenike_sariat" target="_blank" rel="noopener"><img
+                    src="https://i.postimg.cc/YqYp59V0/580b57fcd9996e24bc43c53e.png" 
+                    alt="twitterLogo"></a>
+            <a href="mailto:adenike.sariat@outlook.com" target="_blank"><img
+                    src="https://i.postimg.cc/J4tL8Qhp/transparent-outlook-icon-2.png"
+                    alt="OutlookLogo"></a>
+            <a href="https://www.linkedin.com/in/sariat-oyehan/" target="_blank" rel="noopener"><img
+                    src="https://i.postimg.cc/7hpJg2Ws/Linked-In-logo-initials.png"
+                    alt="linkedinLogo"></a>
+        </div>
+        <div class="copy">
+            <span class="footer-copy">&copy;2023 Adenike Sariat&trade;</span>
+        </div>
     </footer>
 </body>
 
