@@ -112,15 +112,15 @@ header {
   margin-right: 4rem;
   top: 0;
 }
-#menu-toggle:checked ~ .hamburger .menu-bar:nth-child(1) {
+#menu-toggle:checked ~ .hamburger .ham-bar:nth-child(1) {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
 
-#menu-toggle:checked ~ .hamburger .menu-bar:nth-child(2) {
+#menu-toggle:checked ~ .hamburger .ham-bar:nth-child(2) {
   opacity: 0;
 }
 
-#menu-toggle:checked ~ .hamburger .menu-bar:nth-child(3) {
+#menu-toggle:checked ~ .hamburger .ham-bar:nth-child(3) {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 .hidden {
