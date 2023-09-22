@@ -193,3 +193,27 @@ header {
   text-decoration: none;
   padding: 0 .2rem;
 }
+/* show-menu section styling */
+.show-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: repeat(2, auto);
+  margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+  text-align: center;
+  border-radius: 5px;
+}
+.show-article img {
+  width: 40vw;
+  height: 40vw;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.show-article p {
+  font-size: 1rem;
+  font-weight: 550;
+  margin-top: 0.2rem;
+}
+.show-article img:hover {
+  opacity: 0.7;
+  transform: scale(0.8);
+}
