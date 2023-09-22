@@ -248,3 +248,54 @@ header {
   opacity: 0.7;
   transform: scale(0.8);
 }
+/* footer styling */
+.cake-footer {
+  background-color: beige;
+  margin-top: 1rem;
+}
+.location,
+.mobile,
+.mail {
+  background: rgb(90, 6, 6);
+  color: whitesmoke;
+  padding: 0.5rem 2.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 0.2rem;
+  margin-top: 0.5rem;
+  margin-left: 2vw;
+  margin-right: 3vw;
+  width: fit-content;
+}
+.footer-article {
+  display: flex;
+  flex-direction: column;
+}
+.icon-footer img {
+  gap: 0.2rem;
+  height: 7vw;
+  width: 7vw;
+  border-radius: 5vw;
+  border: 2px solid #c0bcbc;
+  padding: 0.28rem;
+  justify-content: center;
+  align-content: space-around;
+  margin: 0.5rem;
+}
+.icon-footer {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  margin: 2rem 1rem 0 0;
+}
+.copy {
+  font-size: 1rem;
+  text-align: center;
+  font-style: italic;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+}
+.footer-article div:hover {
+  background: whitesmoke;
+  color: rgb(90, 6, 6);
+}
