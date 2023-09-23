@@ -16,9 +16,15 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 main {
-    background-color: #E6DACD;
+    /* background-color: #E6DACD; */
     margin-bottom: 2rem;
+    /* background: linear-gradient(
+          90deg,
+          var(--dark-beige) 50%,
+          var(--white) 50%
+        ); */
   }
+
 
 h1, h2, h3, h4 {
     font-family: 'Poppins', sans-serif;
@@ -115,7 +121,7 @@ h2 {
   width: 40%;
   text-align: center;
   padding: 5px 8px;
-  background-color: #F4ECE6;
+  /* background-color: #F4ECE6; */
   margin-top: 2rem;
 }
 .card:hover {
