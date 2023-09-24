@@ -1,28 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Aisha's form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1> AISHA'S PENGUIN SHOP</h1>
+    </header>
+    <main>
+      <h2> 🐧 Product Pick 🐧</h2>
+      <div class="container">
+      <form>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" minlength="3" />
+        <br /><br />
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" minlength="3" />
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+        <br /><br />
 
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" />
+
+        <br /><br />
+        <p>Choose a colour:</p>
+        <input type="radio" id="blue" name="colour" value="blue" />
+        <label for="blue">Blue</label><br />
+        <input type="radio" id="green" name="colour" value="green" />
+        <label for="green">Green</label><br />
+        <input type="radio" id="red" name="colour" value="red" />
+        <label for="red">Red</label>
+
+        <br /><br />
+
+        <p>Choose your size:</p>
+        <input type="radio" id="xs" name="size" value="xs" />
+        <label for="xs">xs</label><br />
+        <input type="radio" id="s" name="size" value="s" />
+        <label for="s">s</label><br />
+        <input type="radio" id="m" name="size" value="m" />
+        <label for="m">m</label><br />
+        <input type="radio" id="l" name="size" value="l" />
+        <label for="l">l</label><br />
+        <input type="radio" id="xl" name="size" value="xl" />
+        <label for="xl">xl</label><br />
+        <input type="radio" id="xxl" name="size" value="xxl" />
+        <label for="xxl">xxl</label>
+
+        <br /><br />
+
+        <label for="delivery">Choose a preferred delivery date:</label>
+        <input type="date" id="delivery" name="delivery" value="2023-10-2" min="2023-10-02" max="2024-05-01"/>
+
+        <input type="submit" value="Submit" />
+      </form>
+      <img src="https://m.media-amazon.com/images/I/61Gb5FZHcgL._AC_UY580_.jpg" alt="A green shirt with a penguin picture on the upper right side"/>
+      </div>
+    </main>
+    <footer>
+      <h3>By: Aisha Athman Lali</h3>
+    </footer>
+  </body>
 </html>
