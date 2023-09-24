@@ -10,6 +10,7 @@ h2 {
 html, body {
   margin: 0;
   height: 100%;
+  background-color: #fab1a0;
 }
 
 * {
@@ -22,7 +23,7 @@ html, body {
   align-items: center;
   justify-content: space-between;
   background-color: #00BAF0;
-  background: linear-gradient(to left, #F46B45, #EEA849);
+  background: #ff7675;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #FFF;
   height: 50px;
@@ -199,15 +200,16 @@ main {
 }
  
 footer {
-  height: 10rem;
-  background-color: rgb(201, 94, 169);
+  margin-top: 90px;
+  height: 15rem;
   display: grid;
-  gap: .5rem;
+  gap: .1rem;
+  background-color: #ff7675;
 }
 .footer-link {
   cursor: pointer;
   display: grid;
-  gap: 1rem;
+  gap: .1rem;
 }
 .footer-link a {
   padding: 0.3rem;
@@ -218,108 +220,9 @@ footer {
 }
 .footer-link a:hover,
 .footer-link a:focus {
-  background-color: rgb(121, 16, 95);
+  background-color: rgb(215, 183, 207);
 }
 .copyright {
   color: white;
   text-align: center;
 }
-
-
--------media coury------
-@media (max-width: 1280px) {
-  .img_main {
-    height: 30vh;
-    width: auto;
-  }
-  .img-item {
-    float: left;
-    width: 33%;
-    padding: 1em;
-  }
-}
-@media (max-width: 720px) {
-  .menu-button-container {
-    display: flex;
-  }
-  .menu {
-    position: absolute;
-    top: 0;
-    margin-top: 50px;
-    left: 0;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  #menu-toggle ~ .menu li {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  #menu-toggle:checked ~ .menu li {
-    border: 1px solid #333;
-    height: 2.5em;
-    padding: 0.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  .menu > li {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0.5em 0;
-    width: 100%;
-    color: white;
-    background-color: #222;
-  }
-  .menu > li:not(:last-child) {
-    border-bottom: 1px solid #444;
-  }
-  .top-nav {
-    height: 70px;
-  }
-  header {
-    margin-right: 20px;
-  }
-  .img_main {
-    height: 20vh;
-    width: auto;
-  }
-  .welcome {
-    display: block;
-    text-align: center;
-  }
-  .card {
-    text-align: left;
-  }
-  .image {
-    width: 100%;
-    height: auto;
-  }
-    footer {
-    height: 15rem;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
