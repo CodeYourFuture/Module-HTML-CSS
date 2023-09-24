@@ -37,7 +37,7 @@ h1 {
   height: 50px;
   background-color: var(--royal-blue);
   margin-right: 10px;
-  border: 1px solid var(--black);
+  border: 1px solid var(--royal-blue);
   text-align: center;
 }
 
@@ -108,13 +108,17 @@ h1 {
   padding: 10px;
 }
 
-.nav a {
+.nav li {
   color: var(--black);
   text-decoration: none;
 }
 
-.nav a:hover {
+.nav li:hover {
   color: var(--royal-blue);
+  cursor: pointer;
+}
+.nav label:hover {
+  cursor: pointer;
 }
 
 .mobile-nav-icon {
