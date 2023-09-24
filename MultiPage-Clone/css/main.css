@@ -18,9 +18,18 @@ body {
 h1 {
   font-family: var(--heading-font);
 }
-.container-name {
-  display: block;
+.header {
+  display: grid;
+  grid-template-areas: "name nav";
+  height: 10vh;
+  padding: 20px;
   align-items: center;
+}
+
+.container-name {
+  grid-area: name;
+  align-items: center;
+  margin-top: -10px;
 }
 
 .blue-square {
@@ -32,10 +41,10 @@ h1 {
   text-align: center;
 }
 
-.info {
+.information {
   display: flex;
   flex-direction: column;
-  margin-top: -37px;
+  margin-top: -35px;
   margin-left: 38px;
 }
 
@@ -50,12 +59,6 @@ h1 {
   font-family: var(--body-font);
 }
 
-.header {
-  display: grid;
-  grid-template-areas: "name occupation nav";
-  height: 10vh;
-  padding: 20px;
-}
 .mobile-header {
   display: inline-block;
   margin: 0 !important;
@@ -84,19 +87,19 @@ h1 {
   grid-gap: 10px;
 }
 
-.nav li:nth-child(1) {
+.about {
   grid-area: about;
 }
 
-.nav li:nth-child(2) {
+.resume {
   grid-area: resume;
 }
 
-.nav li:nth-child(3) {
+.projects {
   grid-area: projects;
 }
 
-.nav li:nth-child(4) {
+.contact {
   grid-area: contact;
 }
 
@@ -113,6 +116,7 @@ h1 {
 .nav a:hover {
   color: var(--royal-blue);
 }
+
 .mobile-nav-icon {
   cursor: pointer;
   padding: 10px;
@@ -141,26 +145,49 @@ h1 {
   width: 15px;
 }
 
-.grid-container {
+#about {
+  display: grid;
+  grid-template-areas:
+    "card"
+    "info";
+  width: 350px;
+  height: 50vh;
+  margin: 0 auto;
+}
+
+#card {
+  grid-area: card;
   display: grid;
   grid-template-areas:
     "image"
-    "title"
+    "f-name"
+    "l-name"
+    "lines"
     "buttons"
     "footer";
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
+  gap: 2px;
   background-color: var(--light-beige);
-  width: 80vw;
-  height: 80vh;
-  margin: 0 auto;
+  width: auto;
+  height: auto;
   margin-top: 20vh;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   padding: 10px;
 }
+#card > * {
+  justify-self: center;
+  align-self: center;
+}
+.info {
+  grid-area: info;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-beige);
+  width: auto;
+  height: auto;
+  padding: 10px;
+}
 
-/* Style the image area */
 .image {
   grid-area: image;
   width: 150px; /* Adjust the width as needed */
@@ -170,28 +197,32 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin-top: 30px;
 }
-
-/* Style the image within the circle */
 .image img {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Maintain aspect ratio and cover the circle */
 }
-
-.title {
-  grid-area: title;
-  background-color: var(--light-beige);
+.f-name {
+  grid-area: f-name;
   text-align: center;
-  margin-top: -20px;
 }
-
-.blue-underline {
-  text-decoration: underline;
-  color: var(--royal-blue);
+.l-name {
+  grid-area: l-name;
+  text-align: center;
+  margin-top: -40px;
 }
-
+.line {
+  grid-area: lines;
+}
+.blue-line {
+  width: 150px;
+  height: 1px;
+  background-color: var(--royal-blue);
+  border: 1px solid var(--royal-blue);
+  text-align: center;
+}
 .buttons {
   grid-area: buttons;
   display: grid;
@@ -199,7 +230,9 @@ h1 {
   gap: 10px;
   justify-content: center;
   align-items: center;
-  margin-top: -20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: auto;
 }
 .RESUME {
   grid-area: RESUME;
@@ -207,11 +240,16 @@ h1 {
   background-color: var(--royal-blue);
   color: var(--white);
   text-decoration: none;
-  margin-right: 10px;
+  text-align: center;
   border-radius: 50px;
-  max-width: 12vw;
+  width: 90px;
   font-size: small;
   font-weight: bold;
+  border: 2px solid var(--royal-blue);
+}
+.RESUME:hover {
+  background-color: var(--white);
+  color: var(--black);
 }
 .PROJECTS {
   grid-area: PROJECTS;
@@ -219,22 +257,27 @@ h1 {
   background-color: var(--light-beige);
   color: var(--black);
   text-decoration: none;
-  margin-right: 10px;
+  text-align: center;
   border-radius: 50px;
-  max-width: 12vw;
+  width: 90px;
   font-size: small;
   font-weight: bold;
-  border: 1px solid black;
+  border: 1px solid var(--black);
 }
-
+.PROJECTS:hover {
+  background-color: var(--royal-blue);
+  color: var(--white);
+  border: 2px solid var(--royal-blue);
+}
 .footer {
-  background-color: var(--white);
   grid-area: footer;
+  background-color: var(--white);
   height: 7vh;
-  width: 75vw;
-  padding: 10px;
+  width: 350px;
+  padding-top: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
-
 .social-icons {
   width: 24px;
   height: 24px;
@@ -265,28 +308,16 @@ h1 {
 .linkedin {
   grid-area: linkedin;
 }
-.bg-color {
-  background: linear-gradient(
-    to bottom,
-    var(--white) 30%,
-    var(--white) 30%,
-    var(--dark-beige) 70%,
-    var(--dark-beige) 70%
-  );
+#background {
+  background: linear-gradient(180deg, var(--white) 50%, var(--dark-beige) 50%);
+  height: 200vh;
 }
-.intro {
-  padding: 20px;
-  line-height: 1.5;
-}
-.buttons2 {
+.show {
   display: none;
 }
-@media (max-width: 539px) {
-  .show-content {
-    display: none;
-  }
+.add-info {
+  display: none;
 }
-
 /* page layout for larger screens using media queries */
 @media (min-width: 540px) {
   #nav {
@@ -295,99 +326,69 @@ h1 {
   .mobile-nav-icon {
     display: none;
   }
-  .info {
-    flex-direction: row;
+  .container-name {
+    width: 45vw;
     font-size: clamp(2vh, 1vw, 1vh) !important;
   }
   .name {
-    font-size: clamp(3vh, 1vw, 1vh) !important;
+    font-size: 16px;
+  }
+  .information {
+    flex-direction: row;
   }
   .occupation {
-    margin: 8px;
+    margin-left: 10px;
+    margin-top: 5px;
+    text-transform: uppercase;
   }
   .occupation::before {
-    content: " / ";
+    content: "/ ";
   }
   .nav {
     font-size: clamp(2vh, 1vw, 1vh) !important;
   }
-  .bg-color {
-    background: var(--dark-beige);
-    width: 50vw;
+  #background {
+    background: linear-gradient(90deg, var(--dark-beige) 50%, var(--white) 50%);
+    height: 120vh;
   }
-  #intro {
-    display: grid;
-    grid-template-areas: "grid-container intro";
+  #about {
+    grid-template-areas: "card info";
+    width: 90vw;
+    height: 20vh;
   }
-  .grid-container {
-    grid-area: grid-container;
-    width: 40vw;
-    margin-left: 150px;
-    margin-bottom: 100px;
-    padding: -20px;
-  }
-  .intro {
-    grid-area: intro;
-  }
-  .show-content {
-    font-size: 20px;
-    width: 200px;
-    margin-left: 20px;
-    margin-top: 200px;
-  }
-  .show-content::before {
-    content: "Hello,";
-    grid-area: intro;
-    font-family: var(--heading-font);
-    font-size: 50px;
-  }
-  .buttons {
-    display: none;
+  .info {
+    background-color: var(--white);
+    margin-top: 100px;
   }
   .hide {
     display: none;
   }
+  .show {
+    display: inline;
+    font-size: clamp(2.5vh, 1vw, 1vh) !important;
+    padding: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .f-name {
+    font-size: 12px !important;
+    margin-top: 15px;
+  }
+  .l-name {
+    font-size: 12px !important;
+  }
 
+  .blue-line {
+    width: 100px;
+  }
   .footer {
-    width: 35vw;
+    margin-bottom: -20px;
   }
-
-  .social-icons {
-    width: 10px;
+  .add-info {
+    display: block;
   }
-  .buttons2 {
-    grid-area: buttons;
-    display: grid;
-    grid-template-areas: "RESUME PROJECTS";
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
-  .RESUME1 {
-    grid-area: RESUME;
-    padding: 10px 20px;
-    background-color: var(--royal-blue);
-    color: var(--white);
-    text-decoration: none;
-    margin-right: 10px;
-    border-radius: 50px;
-    max-width: 12vw;
-    font-size: small;
-    font-weight: bold;
-  }
-  .PROJECTS1 {
-    grid-area: PROJECTS;
-    padding: 10px 20px;
+  .PROJECTS {
     background-color: var(--white);
-    color: var(--black);
-    text-decoration: none;
-    margin-right: 10px;
-    border-radius: 50px;
-    max-width: 12vw;
-    font-size: small;
-    font-weight: bold;
-    border: 1px solid black;
   }
 }
 
@@ -398,17 +399,83 @@ h1 {
   .mobile-nav-icon {
     display: none;
   }
-  .info {
-    flex-direction: row;
-    font-size: clamp(2.5vh, 1vw, 1vh) !important;
+  .container-name {
+    width: 55vw;
+    font-size: clamp(2vh, 1vw, 1vh) !important;
   }
   .name {
-    font-size: clamp(3vh, 1vw, 1vh) !important;
+    font-size: 25px;
+    margin-top: -7px;
+  }
+  .blue-square {
+    width: 12px;
+    height: 12px;
+  }
+  .information {
+    flex-direction: row;
   }
   .occupation {
-    margin: 4px;
+    margin-left: 10px;
+    margin-top: 1px;
+    text-transform: uppercase;
+    font-size: 18px;
   }
   .occupation::before {
-    content: " / ";
+    content: "/ ";
+  }
+  .nav {
+    font-size: clamp(2.5vh, 2vw, 2vh) !important;
+  }
+  #background {
+    background: linear-gradient(90deg, var(--dark-beige) 50%, var(--white) 50%);
+    height: 120vh;
+    max-width: 80vw;
+  }
+  #about {
+    grid-template-areas: "card info";
+    width: 60vw;
+    height: 20vh;
+    margin-left: 20vw;
+  }
+  #card {
+    width: 25vw;
+  }
+  .info {
+    background-color: var(--white);
+    margin-top: 120px;
+    margin-bottom: -5px;
+    padding: 20px;
+  }
+  .hide {
+    display: none;
+  }
+  .show {
+    display: inline;
+    font-size: clamp(2.5vh, 1vw, 1vh) !important;
+    padding: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .f-name {
+    font-size: 12px !important;
+    margin-top: 15px;
+  }
+  .l-name {
+    font-size: 12px !important;
+  }
+
+  .blue-line {
+    width: 100px;
+  }
+  .footer {
+    margin-bottom: -20px;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.2);
+    width: 26.5vw;
+  }
+  .add-info {
+    display: block;
+  }
+  .PROJECTS {
+    background-color: var(--white);
   }
 }
