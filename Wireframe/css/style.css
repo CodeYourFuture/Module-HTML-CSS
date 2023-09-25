@@ -114,14 +114,13 @@ main {
 
 article {
     background-color: var(--foreground-color);
-    padding: 0rem 1rem 1rem;
+    padding: 1rem;
     border-radius: 12px;
-    box-shadow: 2px 2px 10px var(--shadow-color);
+    box-shadow: 2px 2px 6px var(--shadow-color), inset -2px -2px 6px var(--shadow-color);
 }
 
 article img {
     width: 100%;
-    margin-top: 1rem;
     border-radius: 12px;
 }
 
