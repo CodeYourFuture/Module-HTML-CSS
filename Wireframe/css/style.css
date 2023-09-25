@@ -60,11 +60,11 @@ p {
 a {
   font-size: var(--fs-link);
   text-decoration: none;
-  color: var(--foreground-color);
+  color: var(--primary-color);
 }
 
 a:visited {
-  color: var(--foreground-color);
+  color: var(--primary-color);
 }
 
 /* HEADER */
@@ -120,4 +120,14 @@ footer {
   align-items: center;
 }
 
+footer a, footer a:visited {
+  color: var(--foreground-color);
+}
+
 /* contacts */
+
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  width: 45%;
+}
