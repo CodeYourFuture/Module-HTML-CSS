@@ -20,4 +20,46 @@
     --spacing: 0.75rem;
     --spacing-small: 0.5rem;
     --spacing-large: 1.5rem;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: var(--secondary-color);
+    background-color: var(--background-color);
+}
+
+h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+    color: var(--primary-color);
+    text-align: center;
+}
+h2 {
+    font-size: var(--fs-h2);
+}
+h3 {
+    font-size: var(--fs-h3);
+}
+p {
+    font-size: var(--fs-p);
+}
+a {
+    font-size: var(--fs-a);
+    text-decoration: none;
+}
+
+.git-logo {
+    width: 20vw;
+}
+
+.page-description {
+    text-align: center;
+    margin: 0;
 }
