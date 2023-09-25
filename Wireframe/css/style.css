@@ -1,3 +1,23 @@
 :root {
+    --primary-color: #e88931;
+    --secondary-color: #2d2d2d;
+    --background-color: #f4ecde;
+    --foreground-color: #ffebc9;
+    --border-color: var(--primary-color);
+    --text-color: var(--secondary-color);
+    --shadow-color: var(--secondary-color);
+    --focus-color: var(--primary-color);
+ 
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-p: 1rem;
+    --fs-a: 1rem;
+    --fs-button: 1rem;
+    --fs-button-small: 0.75rem;
+    --fs-button-large: 1.5rem;
     
+    --spacing: 0.75rem;
+    --spacing-small: 0.5rem;
+    --spacing-large: 1.5rem;
 }
