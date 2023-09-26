@@ -179,10 +179,33 @@ header {
   padding-bottom: 0.3rem;
   border-bottom: 2px solid var(--red-brown);
 }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:var(--light-grey);
+  min-width: 50px;
+  z-index: 1;
+  
+}
+.dropdown-content a {
+  text-decoration: none;
+  display: block;
+  color: var(--red-brown);
+  font-weight: 300;
+  margin-block: 0.6rem;
+  margin-inline: 1rem;
+}
+.dropdown-content a:hover{
+  color: var(--green-black);
+}
+.list:hover .dropdown-content {
+  display: block;
+}
 .logo {
   font-family: var(--ff-fjalla);
   font-size: 1.4rem;
   color: var(--red-brown);
+  text-decoration: none;
 }
 .nav-description {
   font-family: var(--ff-fjalla);
@@ -221,6 +244,25 @@ header {
   100% {
     visibility: visible;
   }
+}
+/*------tabs-------------*/
+
+ul.tabs {
+  list-style: none;
+}
+li.tab {
+  display: inline-block;
+  margin-right: 10px;
+}
+.tab-content {
+  display: none;
+}
+/* Show active tab content */
+.active{
+  display: block;
+}
+#contact, #about{
+  display: block;
 }
 
 /*------------------------------Hero section-----------------*/
@@ -380,7 +422,6 @@ header {
 .about-us-img-1,
 .about-us-img-2 {
   flex: 25%;
-  
 }
 .about-us-img-1 {
   background: url(/MultiPage-Clone/img/about-img-1.webp);
@@ -586,7 +627,6 @@ footer {
     height: 7rem;
     padding-inline: 1.5rem;
     padding-block: 1rem;
-
   }
 
   .list {
@@ -648,7 +688,7 @@ footer {
   #search-icon {
     top: 1rem;
   }
-  .search{
+  .search {
     width: 15rem;
   }
   .card-container {

@@ -72,21 +72,29 @@
       </section>
       <nav class="nav">
         <section class="logo-list">
-          <div class="logo">PRICKLES & CO.</div>
+      
           <div class="menu">
             <span></span>
             <span></span>
             <span></span>
           </div>
-          <ul class="list">
-            <li>
-              <a class="nav-links" href="#">
+          <ul class="list tabs">
+            <li class="tab active"><a class="logo" href="#tab1">PRICKLES & CO.</a></li>
+            <li class="tab ">
+              <a class="nav-links dropdown" href="#tab2">
                 Shop
+                <div class="dropdown-content">
+                  <a href="#">Cacti</a>
+                  <a href="#">Plants</a>
+                  <a href="#">Succulents</a>
+                </div>
               </a>
             </li>
-            <li><a class="nav-links" href="#about">About</a></li>
-            <li><a class="nav-links" href="#">FAQ</a></li>
-            <li><a class="nav-links" href="#contact">Contact</a></li>
+            <li class="tab"><a class="nav-links" href="#about">About</a></li>
+            <li class="tab"><a class="nav-links" href="#tab3">FAQ</a></li>
+            <li class="tab">
+              <a class="nav-links" href="#contact">Contact</a>
+            </li>
           </ul>
         </section>
         <div class="nav-description">
@@ -98,142 +106,148 @@
       </nav>
     </header>
     <main>
-      <div class="msg">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          viewBox="0 0 32 32"
-          style="
-            border-radius: 0px;
-            fill: rgb(255, 255, 255);
-            width: 26px;
-            height: 26px;
-            flex-shrink: 0;
-          "
-        >
-          <path
-            d="M16 2C8.28 2 2 7.8 2 14.93a12.144 12.144 0 001.696 6.15l-1.668 7.51A1.16 1.16 0 003.63 29.9l6.914-3.072A14.835 14.835 0 0016 27.861c7.72 0 14-5.8 14-12.93S23.72 2 16 2zm4.508 16.32h-9.016a1.16 1.16 0 010-2.32h9.016a1.16 1.16 0 010 2.32zm0-4.638h-9.016a1.16 1.16 0 010-2.318h9.016a1.16 1.16 0 110 2.318z"
-            fill="currentColor"
-            fill-rule="nonzero"
-          ></path>
-        </svg>
-        <span class="msg-span">Let's chat!</span>
-      </div>
-      <section class="hero">
-        <div class="hero-card">
-          <div class="hero-logo">
-            <span>ESTB</span>
-            <svg
-              class="flower"
-              preserveAspectRatio="xMidYMid meet"
-              data-bbox="10.326 50.3 180.129 101.208"
-              xmlns="http://www.w3.org/2000/svg"
-              width="200"
-              height="200"
-              viewBox="10.326 50.3 180.129 101.208"
-              role="presentation"
-              aria-hidden="true"
-            >
-              <g>
-                <path
-                  d="M105.6 52.7c-1.8-1.5-3.5-2.4-5.1-2.4-1.6.1-3.3 1-5.1 2.4-11.2 9.2-16.3 21-17 35.2-.4 7.5-1.3 14.8 10.2 12.6 1.3-.2 3.1-.2 4.3.6 1 .6 1.9 1.4 2.6 2.4 3 4.3 2.2 9.1 1 13.9-1.8 7-2.5 14.2-1.6 21.3.6 4.9-.6 13.1 5.6 12.8 6.3.3 5-7.9 5.6-12.8.9-7.2.2-14.3-1.6-21.3-1.2-4.8-2.1-9.7 1-13.9.7-.9 1.6-1.7 2.6-2.4 1.2-.8 3-.8 4.3-.6 11.5 2.1 10.6-5.2 10.2-12.6-.7-14.2-5.8-26-17-35.2z"
-                ></path>
-                <path
-                  d="M57.6 128.4c1.5-2.3 3.7-6.5 3.6-11.2-.2-5.8-4-10.6-5.4-12.2-.3-.3-.7-.3-1 0-1.2 1.5-4.4 6.1-4.2 11.8.1 3.7 3 8.4 4.8 10.8-.2 2-.2 4 0 5.5v.2c-4.4-2.4-8.9-5.5-12.9-9.7-.1-.2-.2-.3-.4-.4-1.5-1.6-2.9-3.2-4.1-5.1-.3-.4-.5-.8-.8-1.2-.8-2.6-.5-5.5.9-7.9 2.7-.7 6.4-2.2 9.1-5.2 4-4.3 4.6-10.5 4.7-12.5 0-.4-.3-.6-.7-.6-2 .3-8 1.5-12 5.8-2.6 2.7-3.4 8.2-3.2 11.6-.7 1.3-1.2 2.8-1.4 4.2-2.5-5-4.2-10.6-4.9-16.6.1-3 1.7-5.7 3.9-6.9 2.1-.1 5.5-.6 8.1-2.7 3.2-2.6 4.2-6.9 4.5-8.7.1-.4-.2-.8-.7-.8-1.7 0-6.2.1-9.3 2.7-2.8 2.3-3.9 5.9-4.3 8-1 .7-1.9 1.6-2.5 2.6-.2-5.6.4-11.7 1.6-18.1 1.8-.5 5.6-2.1 8.1-5 3.2-3.6 3.8-8.4 3.8-10.3 0-.4-.4-.7-.8-.7-1.9.4-5.9 1.8-9.4 5.2-2.6 2.6-3.4 6.4-3.6 8.5-2 9.5-2.6 18.2-1.6 26.1v.2c-1.1-1.4-2.3-2.7-3.4-3.8-.1-2.4-.7-6.2-3.1-9.2-3.1-3.9-8.2-5.1-9.9-5.4-.3-.1-.6.2-.7.5-.1 1.7 0 6.6 3 10.4 1.8 2.3 5.7 3.9 8.3 4.6 2.5 1.7 6 6.4 6.9 9.1 1.3 5.7 3.5 10.9 6.6 15.6v.1c.3.5.6 1 .9 1.4l.9 1.2c-1.3-.4-2.7-.8-4.1-.8-.1-.2-.1-.4-.3-.6-1.9-2.3-5.4-5.6-9.1-6.2-5.6-1-10.9 1.6-12.8 2.7-.4.2-.5.8-.2 1.2 1.5 1.7 5.6 5.8 11.2 6.8 3.8.6 7.5-.4 10.1-1.4.1-.1.2-.2.3-.2 3.2-.3 7.5 2 8.4 2.7 5.5 5.9 11.9 9.8 17.6 12.4-.6.4-1.6.8-3.1 1.1-5-3.4-12.7-4-16.4-3.2-7.8 1.8-12.9 7.4-14.5 9.6-.3.4-.2.9.3 1.1 2.4 1.2 10.2 4.6 18 2.8 5.8-1.4 10.3-5.2 12.9-8.1v-.1c1.2-.2 2.3-.5 3.2-.9.9-.4 1.5-.9 1.9-1.3 7.5 3.1 13.4 4 13.9 4l.3-2.2c-.1 0-7.7-1.1-16.5-5.4-.2 0-.8-2.1-.5-5.9z"
-                ></path>
-                <path
-                  d="M190.1 115.9c-1.9-1.1-7.3-3.7-12.8-2.7-3.7.7-7.2 3.9-9.1 6.2l-.3.6c-1.4 0-2.8.3-4.1.8l.9-1.2c.3-.5.6-1 .9-1.4v-.1c3-4.7 5.2-9.9 6.6-15.6.9-2.6 4.4-7.4 6.9-9.1 2.5-.7 6.4-2.3 8.3-4.6 3-3.8 3.1-8.7 3-10.4 0-.3-.3-.6-.7-.5-1.7.3-6.8 1.5-9.9 5.4-2.4 3-3 6.8-3.1 9.2-1.2 1-2.4 2.3-3.4 3.8v-.2c.9-7.9.4-16.6-1.6-26.1-.2-2.1-1-5.9-3.6-8.5-3.5-3.4-7.5-4.9-9.4-5.2-.4-.1-.8.2-.8.7 0 1.9.6 6.7 3.8 10.3 2.6 2.9 6.3 4.4 8.1 5 1.3 6.4 1.8 12.4 1.6 18.1-.7-1.1-1.5-2-2.5-2.6-.4-2-1.5-5.6-4.3-8-3.2-2.6-7.6-2.8-9.3-2.7-.4 0-.7.4-.7.8.3 1.7 1.3 6 4.5 8.7 2.6 2.1 6 2.6 8.1 2.7 2.2 1.2 3.7 3.9 3.9 6.9-.7 6.1-2.4 11.6-4.9 16.6-.2-1.5-.7-2.9-1.4-4.2.2-3.4-.6-8.9-3.2-11.6-4-4.2-10-5.5-12-5.8-.4-.1-.7.2-.7.6.1 2 .7 8.2 4.7 12.5 2.7 3 6.4 4.4 9.1 5.2 1.4 2.4 1.7 5.2.9 7.9-.3.4-.5.8-.8 1.2-1.3 1.8-2.7 3.5-4.1 5.1l-.4.4c-4 4.2-8.5 7.4-12.9 9.7v-.2c.2-1.6.2-3.5 0-5.5 1.8-2.4 4.7-7 4.8-10.8.2-5.7-3-10.3-4.2-11.8-.2-.3-.7-.3-1 0-1.4 1.6-5.2 6.3-5.4 12.2-.2 4.7 2.1 8.9 3.6 11.2.3 3.7-.2 5.8-.5 6.4-8.9 4.3-16.5 5.4-16.6 5.4l.3 2.2c.5-.1 6.4-.9 13.9-4 .4.4.9.9 1.9 1.3.9.4 2 .7 3.2.9v.1c2.6 2.8 7.1 6.7 12.9 8.1 7.8 1.8 15.6-1.6 18-2.8.4-.2.5-.7.3-1.1-1.6-2.2-6.7-7.8-14.5-9.6-3.7-.8-11.3-.2-16.4 3.2-1.5-.3-2.5-.7-3.1-1.1 5.7-2.6 12.1-6.6 17.6-12.4.9-.8 5.1-3 8.4-2.7.1.1.2.2.3.2 2.6 1.1 6.3 2.1 10.1 1.4 5.6-.9 9.8-5.1 11.2-6.8.4-.9.3-1.4-.1-1.7z"
-                ></path>
-              </g>
-            </svg>
-            <span>2035</span>
-          </div>
-          <h1 class="heading">PRICKLES & CO</h1>
-          <p class="hero-card-p">BRING NATURE INDOORS</p>
-          <button class="hero-btn">Shop Now</button>
+      <div class="tab-content active" id="tab1">
+        <div class="msg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            style="
+              border-radius: 0px;
+              fill: rgb(255, 255, 255);
+              width: 26px;
+              height: 26px;
+              flex-shrink: 0;
+            "
+          >
+            <path
+              d="M16 2C8.28 2 2 7.8 2 14.93a12.144 12.144 0 001.696 6.15l-1.668 7.51A1.16 1.16 0 003.63 29.9l6.914-3.072A14.835 14.835 0 0016 27.861c7.72 0 14-5.8 14-12.93S23.72 2 16 2zm4.508 16.32h-9.016a1.16 1.16 0 010-2.32h9.016a1.16 1.16 0 010 2.32zm0-4.638h-9.016a1.16 1.16 0 010-2.318h9.016a1.16 1.16 0 110 2.318z"
+              fill="currentColor"
+              fill-rule="nonzero"
+            ></path>
+          </svg>
+          <span class="msg-span">Let's chat!</span>
         </div>
-      </section>
-      <section class="container">
-        <section class="card-container">
-          <div class="card card-1">
-            <h2 class="card-heading">CACTI</h2>
-            <button class="hero-btn">Shop Collection</button>
-          </div>
-          <div class="card card-2">
-            <h2 class="card-heading">PLANTS</h2>
-            <button class="hero-btn">Shop Collection</button>
-          </div>
-          <div class="card card-3">
-            <h2 class="card-heading">SUCCULENTS</h2>
-            <button class="hero-btn">Shop Collection</button>
+        <section class="hero">
+          <div class="hero-card">
+            <div class="hero-logo">
+              <span>ESTB</span>
+              <svg
+                class="flower"
+                preserveAspectRatio="xMidYMid meet"
+                data-bbox="10.326 50.3 180.129 101.208"
+                xmlns="http://www.w3.org/2000/svg"
+                width="200"
+                height="200"
+                viewBox="10.326 50.3 180.129 101.208"
+                role="presentation"
+                aria-hidden="true"
+              >
+                <g>
+                  <path
+                    d="M105.6 52.7c-1.8-1.5-3.5-2.4-5.1-2.4-1.6.1-3.3 1-5.1 2.4-11.2 9.2-16.3 21-17 35.2-.4 7.5-1.3 14.8 10.2 12.6 1.3-.2 3.1-.2 4.3.6 1 .6 1.9 1.4 2.6 2.4 3 4.3 2.2 9.1 1 13.9-1.8 7-2.5 14.2-1.6 21.3.6 4.9-.6 13.1 5.6 12.8 6.3.3 5-7.9 5.6-12.8.9-7.2.2-14.3-1.6-21.3-1.2-4.8-2.1-9.7 1-13.9.7-.9 1.6-1.7 2.6-2.4 1.2-.8 3-.8 4.3-.6 11.5 2.1 10.6-5.2 10.2-12.6-.7-14.2-5.8-26-17-35.2z"
+                  ></path>
+                  <path
+                    d="M57.6 128.4c1.5-2.3 3.7-6.5 3.6-11.2-.2-5.8-4-10.6-5.4-12.2-.3-.3-.7-.3-1 0-1.2 1.5-4.4 6.1-4.2 11.8.1 3.7 3 8.4 4.8 10.8-.2 2-.2 4 0 5.5v.2c-4.4-2.4-8.9-5.5-12.9-9.7-.1-.2-.2-.3-.4-.4-1.5-1.6-2.9-3.2-4.1-5.1-.3-.4-.5-.8-.8-1.2-.8-2.6-.5-5.5.9-7.9 2.7-.7 6.4-2.2 9.1-5.2 4-4.3 4.6-10.5 4.7-12.5 0-.4-.3-.6-.7-.6-2 .3-8 1.5-12 5.8-2.6 2.7-3.4 8.2-3.2 11.6-.7 1.3-1.2 2.8-1.4 4.2-2.5-5-4.2-10.6-4.9-16.6.1-3 1.7-5.7 3.9-6.9 2.1-.1 5.5-.6 8.1-2.7 3.2-2.6 4.2-6.9 4.5-8.7.1-.4-.2-.8-.7-.8-1.7 0-6.2.1-9.3 2.7-2.8 2.3-3.9 5.9-4.3 8-1 .7-1.9 1.6-2.5 2.6-.2-5.6.4-11.7 1.6-18.1 1.8-.5 5.6-2.1 8.1-5 3.2-3.6 3.8-8.4 3.8-10.3 0-.4-.4-.7-.8-.7-1.9.4-5.9 1.8-9.4 5.2-2.6 2.6-3.4 6.4-3.6 8.5-2 9.5-2.6 18.2-1.6 26.1v.2c-1.1-1.4-2.3-2.7-3.4-3.8-.1-2.4-.7-6.2-3.1-9.2-3.1-3.9-8.2-5.1-9.9-5.4-.3-.1-.6.2-.7.5-.1 1.7 0 6.6 3 10.4 1.8 2.3 5.7 3.9 8.3 4.6 2.5 1.7 6 6.4 6.9 9.1 1.3 5.7 3.5 10.9 6.6 15.6v.1c.3.5.6 1 .9 1.4l.9 1.2c-1.3-.4-2.7-.8-4.1-.8-.1-.2-.1-.4-.3-.6-1.9-2.3-5.4-5.6-9.1-6.2-5.6-1-10.9 1.6-12.8 2.7-.4.2-.5.8-.2 1.2 1.5 1.7 5.6 5.8 11.2 6.8 3.8.6 7.5-.4 10.1-1.4.1-.1.2-.2.3-.2 3.2-.3 7.5 2 8.4 2.7 5.5 5.9 11.9 9.8 17.6 12.4-.6.4-1.6.8-3.1 1.1-5-3.4-12.7-4-16.4-3.2-7.8 1.8-12.9 7.4-14.5 9.6-.3.4-.2.9.3 1.1 2.4 1.2 10.2 4.6 18 2.8 5.8-1.4 10.3-5.2 12.9-8.1v-.1c1.2-.2 2.3-.5 3.2-.9.9-.4 1.5-.9 1.9-1.3 7.5 3.1 13.4 4 13.9 4l.3-2.2c-.1 0-7.7-1.1-16.5-5.4-.2 0-.8-2.1-.5-5.9z"
+                  ></path>
+                  <path
+                    d="M190.1 115.9c-1.9-1.1-7.3-3.7-12.8-2.7-3.7.7-7.2 3.9-9.1 6.2l-.3.6c-1.4 0-2.8.3-4.1.8l.9-1.2c.3-.5.6-1 .9-1.4v-.1c3-4.7 5.2-9.9 6.6-15.6.9-2.6 4.4-7.4 6.9-9.1 2.5-.7 6.4-2.3 8.3-4.6 3-3.8 3.1-8.7 3-10.4 0-.3-.3-.6-.7-.5-1.7.3-6.8 1.5-9.9 5.4-2.4 3-3 6.8-3.1 9.2-1.2 1-2.4 2.3-3.4 3.8v-.2c.9-7.9.4-16.6-1.6-26.1-.2-2.1-1-5.9-3.6-8.5-3.5-3.4-7.5-4.9-9.4-5.2-.4-.1-.8.2-.8.7 0 1.9.6 6.7 3.8 10.3 2.6 2.9 6.3 4.4 8.1 5 1.3 6.4 1.8 12.4 1.6 18.1-.7-1.1-1.5-2-2.5-2.6-.4-2-1.5-5.6-4.3-8-3.2-2.6-7.6-2.8-9.3-2.7-.4 0-.7.4-.7.8.3 1.7 1.3 6 4.5 8.7 2.6 2.1 6 2.6 8.1 2.7 2.2 1.2 3.7 3.9 3.9 6.9-.7 6.1-2.4 11.6-4.9 16.6-.2-1.5-.7-2.9-1.4-4.2.2-3.4-.6-8.9-3.2-11.6-4-4.2-10-5.5-12-5.8-.4-.1-.7.2-.7.6.1 2 .7 8.2 4.7 12.5 2.7 3 6.4 4.4 9.1 5.2 1.4 2.4 1.7 5.2.9 7.9-.3.4-.5.8-.8 1.2-1.3 1.8-2.7 3.5-4.1 5.1l-.4.4c-4 4.2-8.5 7.4-12.9 9.7v-.2c.2-1.6.2-3.5 0-5.5 1.8-2.4 4.7-7 4.8-10.8.2-5.7-3-10.3-4.2-11.8-.2-.3-.7-.3-1 0-1.4 1.6-5.2 6.3-5.4 12.2-.2 4.7 2.1 8.9 3.6 11.2.3 3.7-.2 5.8-.5 6.4-8.9 4.3-16.5 5.4-16.6 5.4l.3 2.2c.5-.1 6.4-.9 13.9-4 .4.4.9.9 1.9 1.3.9.4 2 .7 3.2.9v.1c2.6 2.8 7.1 6.7 12.9 8.1 7.8 1.8 15.6-1.6 18-2.8.4-.2.5-.7.3-1.1-1.6-2.2-6.7-7.8-14.5-9.6-3.7-.8-11.3-.2-16.4 3.2-1.5-.3-2.5-.7-3.1-1.1 5.7-2.6 12.1-6.6 17.6-12.4.9-.8 5.1-3 8.4-2.7.1.1.2.2.3.2 2.6 1.1 6.3 2.1 10.1 1.4 5.6-.9 9.8-5.1 11.2-6.8.4-.9.3-1.4-.1-1.7z"
+                  ></path>
+                </g>
+              </svg>
+              <span>2035</span>
+            </div>
+            <h1 class="heading">PRICKLES & CO</h1>
+            <p class="hero-card-p">BRING NATURE INDOORS</p>
+            <button class="hero-btn">Shop Now</button>
           </div>
         </section>
-        <section class="columns">
-          <section class="about-us" id="about">
-            <div class="about-us-card">
-              <h2 class="about-us-heading">About US</h2>
-              <p class="about-us-p">
-                I'm a paragraph. Click here to add your own text and edit me.
-                It’s easy. Just click “Edit Text” or double click me to add your
-                own content and make changes to the font. Feel free to drag and
-                drop me anywhere you like on your page. I’m a great place for
-                you to tell a story and let your users know a little more about
-                you.<br />
-                <br /><br />
+        <section class="container">
+          <section class="card-container">
+            <div class="card card-1">
+              <h2 class="card-heading">CACTI</h2>
+              <button class="hero-btn">Shop Collection</button>
+            </div>
+            <div class="card card-2">
+              <h2 class="card-heading">PLANTS</h2>
+              <button class="hero-btn">Shop Collection</button>
+            </div>
+            <div class="card card-3">
+              <h2 class="card-heading">SUCCULENTS</h2>
+              <button class="hero-btn">Shop Collection</button>
+            </div>
+          </section>
+          <section class="columns">
+            <section class="about-us" id="about">
+              <div class="about-us-card">
+                <h2 class="about-us-heading">About US</h2>
+                <p class="about-us-p">
+                  I'm a paragraph. Click here to add your own text and edit me.
+                  It’s easy. Just click “Edit Text” or double click me to add
+                  your own content and make changes to the font. Feel free to
+                  drag and drop me anywhere you like on your page. I’m a great
+                  place for you to tell a story and let your users know a little
+                  more about you.<br />
+                  <br /><br />
 
-                This is a great space to write long text about your company and
-                your services. You can use this space to go into a little more
-                detail about your company. Talk about your team and what
-                services you provide.
-              </p>
-            </div>
-            <div class="about-us-img-1"></div>
-            <div class="about-us-img-2"></div>
-          </section>
-          <section class="buy-online">
-            <div class="buy-online-img"></div>
-            <div class="buy-online-card">
-              <p class="buy-online-p">BUY ONLINE NOW & GET 10% OFF !</p>
-              <button class="hero-btn buy-online-btn">Shop Now</button>
-            </div>
+                  This is a great space to write long text about your company
+                  and your services. You can use this space to go into a little
+                  more detail about your company. Talk about your team and what
+                  services you provide.
+                </p>
+              </div>
+              <div class="about-us-img-1"></div>
+              <div class="about-us-img-2"></div>
+            </section>
+            <section class="buy-online">
+              <div class="buy-online-img"></div>
+              <div class="buy-online-card">
+                <p class="buy-online-p">BUY ONLINE NOW & GET 10% OFF !</p>
+                <button class="hero-btn buy-online-btn">Shop Now</button>
+              </div>
+            </section>
           </section>
         </section>
-      </section>
-      <section class="contact-us" id="contact">
-        <form class="contact-form">
-          <h2 class="about-us-heading">FOR SPECIAL REQUESTS & ORDERS</h2>
-          <div class="name">
-            <label for="first-name"
-              >First Name
-              <input type="text" name="first-name" id="f-name" />
+        <section class="contact-us" id="contact">
+          <form class="contact-form">
+            <h2 class="about-us-heading">FOR SPECIAL REQUESTS & ORDERS</h2>
+            <div class="name">
+              <label for="first-name"
+                >First Name
+                <input type="text" name="first-name" id="f-name" />
+              </label>
+              <label for="last-name"
+                >Last Name
+                <input type="text" name="last-name" id="l-name" />
+              </label>
+            </div>
+            <label for="email"
+              >Email
+              <input type="email" name="email" id="email" />
             </label>
-            <label for="last-name"
-              >Last Name
-              <input type="text" name="last-name" id="l-name" />
+            <label for="phone"
+              >Phone Number
+              <input type="number" name="phone" id="phone" />
             </label>
-          </div>
-          <label for="email"
-            >Email
-            <input type="email" name="email" id="email" />
-          </label>
-          <label for="phone"
-            >Phone Number
-            <input type="number" name="phone" id="phone" />
-          </label>
-          <label for="Massage"
-            >Massage
-            <textarea
-              name="Massage"
-              id="massage"
-              cols="30"
-              rows="10"
-            ></textarea>
-          </label>
-          <button class="hero-btn form-btn">Send</button>
-        </form>
-      </section>
+            <label for="Massage"
+              >Massage
+              <textarea
+                name="Massage"
+                id="massage"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </label>
+            <button class="hero-btn form-btn">Send</button>
+          </form>
+        </section>
+      </div>
+      <div class="tab-content" id="tab2">
+        <h1>hello</h1>
+      </div>
     </main>
+
     <footer>
       <section class="list-container">
         <section class="footer-list">
@@ -305,5 +319,6 @@
         </section>
       </section>
     </footer>
+    <script src="/MultiPage-Clone/tabs.js"></script>
   </body>
 </html>
