@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Outfit";
-  src: url("/fonts/Outfit-Regular.ttf") format("truetype");
+  src: url("/MultiPage-Clone/fonts/Outfit-Regular.ttf") format("truetype");
   font-display: swap;
   font-weight: normal;
 }
 @font-face {
   font-family: "Outfit";
-  src: url("/fonts/Outfit-ExtraLight.ttf") format("truetype");
+  src: url("/MultiPage-Clone/fonts/Outfit-ExtraLight.ttf") format("truetype");
   font-display: swap;
   font-weight: 200;
 }
 @font-face {
   font-family: "Fjalla One";
-  src: url("/fonts/FjallaOne-Regular.ttf") format("truetype");
+  src: url("/MultiPage-Clone/fonts/FjallaOne-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -228,7 +228,7 @@ header {
   color: var(--white);
   height: 65rem;
   width: 100%;
-  background: url(/img/hero-bg.webp) no-repeat;
+  background: url(/MultiPage-Clone/img/hero-bg.webp) no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -304,17 +304,17 @@ header {
   padding: 2rem;
 }
 .card-1 {
-  background: url(/img/card-img-1.webp);
+  background: url(/MultiPage-Clone/img/card-img-1.webp);
   background-size: cover;
   background-position: top;
 }
 .card-2 {
-  background: url(/img/card-img-2.webp);
+  background: url(/MultiPage-Clone/img/card-img-2.webp);
   background-size: cover;
   background-position: top;
 }
 .card-3 {
-  background: url(/img/card-img-3.webp);
+  background: url(/MultiPage-Clone/img/card-img-3.webp);
   background-size: cover;
   background-position: top;
 }
@@ -380,19 +380,15 @@ header {
 .about-us-img-1,
 .about-us-img-2 {
   flex: 25%;
-  .about-us-img-1 {
-    background: url(/img/about-img-1.webp);
-    background-position: center;
-    background-size: cover;
-  }
+  
 }
 .about-us-img-1 {
-  background: url(/img/about-img-1.webp);
+  background: url(/MultiPage-Clone/img/about-img-1.webp);
   background-position: center;
   background-size: cover;
 }
 .about-us-img-2 {
-  background: url(/img/about-img-2.webp);
+  background: url(/MultiPage-Clone/img/about-img-2.webp);
   background-position: center;
   background-size: cover;
 }
@@ -403,7 +399,7 @@ header {
 }
 .buy-online-img {
   flex: 50%;
-  background: url(/img/girl-img.webp);
+  background: url(/MultiPage-Clone/img/girl-img.webp);
   background-position: center;
   background-size: cover;
 }
@@ -433,7 +429,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(/img/form-bg-img.webp);
+  background: url(/MultiPage-Clone/img/form-bg-img.webp);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
