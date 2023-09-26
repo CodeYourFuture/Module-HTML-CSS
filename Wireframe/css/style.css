@@ -24,6 +24,8 @@
   --spacing-large: 1.5rem;
   --page-width: 60vw;
 
+  --radius: 1rem;
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -111,9 +113,10 @@ main {
 article {
   background-color: var(--foreground-color);
   padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 2px 2px 6px var(--shadow-color),
-    inset -2px -2px 6px var(--shadow-color);
+  border-radius: var(--radius);
+  box-shadow: 2px 2px 6px var(--shadow-color)
+    /* ,inset -2px -2px 6px var(--shadow-color) */
+    ;
 
   display: flex;
   flex-direction: column;
@@ -132,7 +135,7 @@ article {
 
 article img {
   width: 100%;
-  border-radius: 12px;
+  border-radius: var(--radius);
 }
 
 /* FOOTER */
