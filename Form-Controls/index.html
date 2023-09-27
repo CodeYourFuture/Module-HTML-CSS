@@ -3,26 +3,66 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
+  <title>Form control</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
+     <h1>Zar Style Shop</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <section class="container">
+        <div class="form">
+          <div class="details">
+          <label for="name">Name*</label>
+          <input type="text" id="name" name="name" required pattern="[A-Za-z\s]{2,}" title="Please enter a valid name (at least 2 characters of letters and spaces only).">
+          </div>
 
+          <div class="email-box">
+          <label for="email">Email Address*</label>
+            <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+          </div>
+
+          <div class="color-box">
+          <label>Color*</label>
+          <select name="color" required>
+              <option value="gray">Gray</option>
+              <option value="pink">Pink</option>
+              <option value="purple">Purple</option>
+          </select>
+            </div>
+
+                <div>
+                <label>Size*</label>
+                <select name="size" required>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+                </div>
+
+                <div class="date">
+                <label for="deliveryDate">Delivery Date Request:*</label>
+                <input type="date" id="deliveryDate" name="deliveryDate" required min="<?php echo date('Y-m-d', strtotime('+1 day')); ?>" max="<?php echo date('Y-m-d', strtotime('+4 weeks')); ?>">
+                </div>
+
+         <div class="submit">            
+        <button type="submit" class="butt">Submit</button>
+         </div>
+        
+        </div>
+        <div class="img">
+          <img src="images/tshirt.jpg" width="500" height="500" />
+        </div>
+      </section>
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Zar Style</h2>
   </footer>
 </body>
-
 </html>
