@@ -1,1 +1,369 @@
-/*  Add your styling here */
+@font-face {
+  font-family: "Lato", sans-serif;
+  src: url(/Lato/Lato-Regular.ttf);
+}
+:root {
+  --ff-roboto: "Roboto", sans-serif;
+  --ff-lato: "Lato", sans-serif;
+  --white: white;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+p {
+  line-height: 1.5rem;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--ff-lato);
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  gap: 1rem;
+  line-height: clamp(1.5rem, 2vw, 2rem);
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+/*----------------Header---------------------*/
+
+header {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "l m"
+    "c c";
+  padding: 1rem;
+  row-gap: 1rem;
+  background-image: linear-gradient(rgb(216, 144, 174), white);
+}
+
+.logo {
+  grid-area: l;
+  height: 5rem;
+  width: 5rem;
+  background: url(615f388b7b27359c78cc73f1af8e66f3.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/*-----------------Mobile Navigation----------------------*/
+.menu {
+  grid-area: m;
+  width: 100%;
+  display: grid;
+  justify-content: flex-end;
+}
+.open {
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  background: url(bars-solid.svg) no-repeat;
+  background-position: center;
+  background-size: contain;
+  justify-items: right;
+  transition: 0.5s ease;
+  z-index: 1000;
+}
+nav {
+  grid-area: nav;
+  display: none;
+
+}
+.content {
+  grid-area: c;
+  width: 100%;
+  display: grid;
+  justify-items: flex-end;
+}
+.content-p {
+  width: 50%;
+}
+.close {
+  width: 3rem;
+  height: 3rem;
+  background: url(xmark-solid.svg) no-repeat;
+  background-position: center;
+  background-size: contain;
+  justify-items: right;
+  transition: 0.5s ease;
+}
+.nav-close {
+  cursor: pointer;
+  grid-area: nav;
+  position: absolute;
+  align-items: center;
+  width: 70%;
+  height: 25rem;
+  top: 5rem;
+  left: 3.1rem;
+  background-color: rgb(163, 124, 154);
+  transition: 0.5s ease;
+}
+.nav {
+  cursor: pointer;
+  position: absolute;
+  display: grid;
+  align-items: center;
+  width: 70%;
+  height: 25rem;
+  left: 3.1rem;
+  background-color: rgb(210, 194, 207);
+  border-radius: 0.5rem;
+  animation: fade 1s 1 forwards alternate;
+  z-index: 1000;
+  color: black;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.list {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+.nav-link {
+  border: 2px solid  rgb(96, 67, 101);
+  height: 3rem;
+  width: 10rem;
+  display: flex;justify-content: center;
+  align-items: center;
+}
+.nav-link a {
+  padding: 0.3rem;
+  color: white;
+  text-decoration: none;
+  
+}
+.nav-link a:hover,
+.nav-link a:focus {
+  color: white;
+
+}
+
+
+/*-----------------Overlay--------------------*/
+.overlay {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(94, 91, 84, 0.668);
+}
+.nav.nav + .overlay {
+  display: block;
+}
+
+/*------------------Welcome Section------------------------*/
+main {
+  display: grid;
+  gap: 2rem;
+}
+.welcome {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  height: 35rem;
+}
+.card {
+  padding: 2rem;
+  text-align: justify;
+}
+.welcome-img {
+  margin-inline: 1rem;
+  background: url(main-img.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: fade-in 1s ease backwards;
+}
+@keyframes fade-in {
+  0% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+/*-----------------img gallery------------------*/
+
+.img-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 1rem;
+}
+.img-item {
+  cursor: pointer;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 80%;
+  margin: 1rem;
+  border: 1px solid rgb(204, 70, 92);
+  padding: 1rem;
+}
+.img-item:hover{
+box-shadow:0 0 10px inset rgb(204, 70, 92) ;
+}
+.img-item img {
+  height: 7rem;
+  width: 7rem;
+  transition: transform 0.5s ease-in-out;
+}
+.img-item img:hover{
+  transform:scale(1.2);
+}
+
+
+
+/*---------------------footer------------------*/
+
+footer {
+  height: 10rem;
+  background-color: rgb(201, 94, 169);
+  display: grid;
+  gap: 1.3rem;
+  padding: 1rem;
+}
+.footer-link {
+  cursor: pointer;
+  display: grid;
+  gap: 1rem;
+}
+.footer-link a {
+  padding: 0.3rem;
+  text-align: center;
+  width: 9rem;
+  text-decoration: none;
+  color: white;
+}
+.footer-link a:hover,
+.footer-link a:focus {
+  background-color: rgb(121, 16, 95);
+}
+.copyright {
+  color: white;
+  text-align: center;
+}
+
+
+
+
+
+/*-------------------width more than 540px-------------------*/
+@media screen and (min-width: 540px) {
+  .container {
+    row-gap: 3rem;
+  }
+  header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "l c"
+      "nav nav";
+  }
+  .content {
+    width: 100%;
+    align-items: end;
+    justify-content: flex-end;
+  }
+  .content-p {
+    width: 100%;
+  }
+  .menu {
+    display: none;
+  }
+  .nav-close {
+    display: grid;
+    height: 3rem;
+    width: 100%;
+    top: 1rem;
+    left: 0;
+    padding-right: 1rem;
+    transition: 1s ease-in;
+  }
+  .list {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav-link {
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    width: 5.6rem;
+    height: 2rem;
+  }
+  .welcome {
+    margin-top: 2rem;
+    height: 20rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .welcome-img {
+    background-position: right;
+  }
+
+  .welcome p {
+    line-height: max(2vw, 3vw);
+    font-size: max(2vw, 2.5vw);
+  }
+  footer {
+    height: 15rem;
+  }
+}
+/*-------------------large Screen----------------*/
+@media screen and (min-width: 900px) {
+  .container {
+    row-gap: 2rem;
+  }
+  main {
+    display: grid;
+    row-gap: min(6vw, 10vw);
+  }
+  .img-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .welcome p {
+    font-size: max(1vw, 2vw);
+  }
+  .nav-link{
+    width: 9rem;
+  }
+}
+/*---------------Extra large screen---------------*/
+@media screen and (min-width: 1440px) {
+  .container {
+    row-gap: 2rem;
+  }
+  main {
+    display: grid;
+    row-gap: min(10vw, 11vw);
+  }
+
+  .welcome p {
+    font-size: max(2rem, 1.4vw);
+  }
+ 
+}
