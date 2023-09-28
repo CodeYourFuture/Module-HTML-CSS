@@ -36,9 +36,14 @@ h3{
 }
 
 .headerList{
-    width: 35%;
+    width: 30%;
     margin: auto;
     color: #ffffff;
+}
+
+.aList{
+    color: #ffffff;
+    font-size: 20px;
 }
 
 /* Article 1 */
@@ -74,10 +79,10 @@ h3{
 }
 
 /* Article 2 */
-
 .article2{
     display: flex;
     justify-content: space-between;
+    height: 50%;
 }
 
 .article2Img{
@@ -86,13 +91,13 @@ h3{
     text-align: center;
     margin-top: 0%;
     border-right: solid 5px white;
-    padding-right: 45px;
+    padding-right: 50px;
     
 }
 
 .article3Img{
     width: 45%;
-    height: 220.46px;
+    height: 45%;
     text-align: center;
     margin-top: 0%;
 }
@@ -114,7 +119,8 @@ h3{
     cursor: pointer;
     background-color: #ffffff;
     color: #ff7b00;
-    border: solid 2px #ff7b00;    
+    border: solid 2px #ff7b00;   
+    font-size: 15px; 
 }
 
 .article3Btn:hover{
@@ -122,4 +128,19 @@ h3{
     background-color: #ffffff;
     color: #ff7b00;
     border: solid 2px #ff7b00;    
+    font-size: 15px;
+}
+
+/* Footer */
+footer{
+    font-size: 17px;
+    font-weight: lighter;
+    color: #ff7b00;
+    margin-top: 60px;
+    border-top: solid 5px #ffffff;
+}
+
+.aFooter{
+    color: #ffffff;
+    font-weight: bold;
 }
