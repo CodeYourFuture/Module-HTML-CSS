@@ -29,6 +29,10 @@ h3{
     color: #ff7b00;
 }
 
+li{
+    padding-bottom: 15px;
+}
+
 /* Header */
 .pHeader{
     text-align: left;
@@ -102,7 +106,7 @@ h3{
 }
 
 .h3Branch{
-    margin-top: 36px;
+    margin-top: 41px;
 }
 
 /* Button */
