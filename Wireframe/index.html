@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Wireframe (From sketch to webpage)</title>
   </head>
   <body>
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-</body>
-</html
+    <header>
+      <h1>Discovering Git: The Version Control Marvel</h1>
+      <p>Unleashing the Power of Distributed Collaboration</p>
+    </header>
+
+    <article id="git-article">
+      <img src="githublogo.jpg" alt="a picture of GitHub logo" />
+      <h2>What is Git?</h2>
+      <p>
+        Git is a distributed version control system that tracks changes in any
+        set of computer files, usually used for coordinating work among
+        programmers who are collaboratively developing source code during
+        software development. Its goals include speed, data integrity, and
+        support for distributed, non-linear workflows (thousands of parallel
+        branches running on different computers). <br /><br />
+        <a href="https://en.wikipedia.org/wiki/Git';" class="orange-btn"
+          >Read More <i class="fa fa-arrow-right"></i
+        ></a>
+      </p>
+    </article>
+
+    <!-- Articles container for the two articles in one row -->
+    <div class="articles-container">
+      <div class="article">
+        <img src="git small.png" alt="a picture of a young programmer lady" />
+
+        <article>
+          <h2>Why do developers need Git?</h2>
+          <p>
+            Git is an immensely popular Version Control System, which allows
+            developers to create a history of changes that occur over time in
+            their code. <br /><br />
+            <a
+              href="https://careerfoundry.com/en/blog/web-development/what-do-developers-use-github-for-heres-why-its-vital/#:~:text=Git%20is%20an%20immensely%20popular,over%20time%20in%20their%20code."
+              class="orange-btn"
+              >Read More <i class="fa fa-arrow-right"></i
+            ></a>
+          </p>
+        </article>
+      </div>
+
+      <div class="article">
+        <img src="gitsmall2.png" alt="a drawing explaining branch" />
+
+        <article>
+          <h2>What is a branch in Git?</h2>
+          <p>
+            A branch represents an independent line of development. Branches
+            serve as an abstraction for the edit/stage/commit process. You can
+            think of them as a way to request a brand new working directory,
+            staging area, and project history.
+
+            <br /><br />
+            <a
+              href="https://www.atlassian.com/git/tutorials/using-branches#:~:text=A%20branch%20represents%20an%20independent,staging%20area%2C%20and%20project%20history."
+              class="orange-btn"
+              >Read More <i class="fa fa-arrow-right"></i
+            ></a>
+          </p>
+        </article>
+      </div>
+    </div>
+
+    <footer>
+      <p>Code Your Future</p>
+      <p>Tech-Edd</p>
+      <p>Sprint 1</p>
+    </footer>
+  </body>
+</html>
