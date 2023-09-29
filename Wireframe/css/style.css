@@ -1,10 +1,19 @@
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: rgb(243, 243, 226);
 }
 
 header {
     font-size: 25px;
     text-align: center;   
+}
+
+footer {
+    margin-top: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 h1{
