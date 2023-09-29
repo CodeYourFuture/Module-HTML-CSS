@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(243, 243, 226);
+}
+
+header {
+    font-size: 25px;
+    text-align: center;   
+}
+
+h1{
+    font-size: 35px;
+    color: rgba(36, 83, 85, 0.836);
+}
+
+h2{
+    font-size: 20px;
+    color: rgb(79, 175, 179);
+}
+
+p {
+    font-size: 20px;
+    color: rgb(16, 38, 39);
+}
+
+.container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: 
+    "a1 a1"
+    "a2 a3";
+}
+
+#a1 {
+    grid-area: a1;
+}
+
+#a2 {
+    grid-area: a2;
+}
+
+#a3 {
+    grid-area: a3;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 30px;
+}
+
+.read-more {
+    margin: 10px;
+    padding: 5px;
+    background-color: rgba(11, 129, 129, 0.63);
+    border: 0.1px solid rgba(11, 129, 129, 0.63);
+    border-radius: 6px;
+    color: aliceblue;
+}
+
