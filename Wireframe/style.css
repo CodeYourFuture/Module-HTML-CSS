@@ -1,0 +1,65 @@
+body {
+  margin: 30px;
+  font-family: sans-serif;
+  background: #264653;
+  color: white;
+}
+h1 {
+  text-align: center;
+}
+.git {
+  padding-left: 40%;
+}
+
+button {
+  padding: 7px 10px;
+  /* text-align: center; */
+  border-radius: 6px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+header {
+  text-align: center;
+}
+.sec {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.sect1 img {
+  width: 300px;
+  height: 300px;
+}
+.sect1,
+.head {
+  border: 2px solid #264653;
+  margin: 20px;
+  padding: 20px;
+}
+.head {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+p {
+  font-size: 25px;
+}
+h1 {
+  font-size: 35px;
+}
+article:first-child {
+  background: rgb(34, 34, 16);
+}
+footer {
+  text-align: center;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background: rgb(34, 34, 16);
+}
+footer a {
+  color: white;
+  padding: 20px;
+}
