@@ -1,3 +1,4 @@
+/*--------Custom fonts----------*/
 @font-face {
     font-family: 'Bevan';
     src: url(Bevan-Regular.ttf) format('truetype');
@@ -10,6 +11,7 @@
     font-display: swap;
     font-weight: normal;
 }
+/*-------Reset--------*/
 :root {
   --ff-poiret: "Poiret One";
   --ff-bevan: "Bevan";
@@ -22,6 +24,8 @@ a {
   color: black;
   text-decoration: none;
 }
+
+/*------------Main------------*/
 body {
   min-height: 100vh;
   font-family:var(--ff-poiret);
