@@ -1,0 +1,63 @@
+:root {
+  --color-primary: #023047;
+  --color-secondary: #ffb703;
+  --color-fg: #8ecae6;
+  --color-bg: #219ebc;
+  --color-highlight: #fb8500;
+  --color-dark: #181818;
+  --color-light: #eeeeee;
+
+  --fs-title: 3.5rem;
+  --fs-subtitle: 2.5rem;
+  --fs-body: 1.5rem;
+  --fs-caption: 1.25rem;
+  --fs-button: 1.25rem;
+  --fs-nav: 1.25rem;
+
+  --fw-bold: 700;
+  --fw-normal: 400;
+
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 2.5rem;
+
+  --border-radius: 0.5rem;
+}
+
+body {
+  width: 100%;
+
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+
+  font-size: var(--fs-body);
+}
+
+#banner {
+  display: flex;
+
+
+  background-color: var(--color-fg);
+}
+
+#logo {
+}
+
+#banner h1{
+  font-family: "Cookie", cursive;
+  font-size: var(--fs-title);
+}
+
+#banner p {
+  font-size: var(--fs-caption);
+}
+
+#menu {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  gap: var(--spacing-xs);
+  margin-right: var(--spacing-sm);
+}

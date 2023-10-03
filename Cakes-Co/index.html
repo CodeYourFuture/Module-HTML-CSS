@@ -7,9 +7,12 @@
 
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Schibsted+Grotesk:wght@400;600;700&display=swap"
+    rel="stylesheet">
 
   <title>Responsive Cake webpage</title>
-  <!-- Add a link to your css file here -->
 
   <link rel="stylesheet" href="css/normalise.css">
   <link rel="stylesheet" href="css/style.css">
@@ -18,16 +21,23 @@
 <body>
   <header>
     <section id="banner">
-      <h1 id="company"></h1>
-      <p id="slogan"></p>
+      <img src="assets/bee-logo.png" alt="bee-logo" id="logo">
+      <div>
+        <h1 id="company">Bee Sweetie</h1>
+        <p id="slogan">Hail to the Cake Queen!</p>
+      </div>
     </section>
     <nav>
-      <ul id="nav__list">
-        <li class="nav__item"><a href="" class="nav__item-link"></a></li>
-        <li class="nav__item"><a href="" class="nav__item-link"></a></li>
-        <li class="nav__item"><a href="" class="nav__item-link"></a></li>
-        <li class="nav__item"><a href="" class="nav__item-link"></a></li>
-        <li class="nav__item"><a href="" class="nav__item-link"></a></li>
+      <input type="checkbox" id="menu-toggle">
+      <label id="menu-button-container" for="menu-toggle">
+        <div id="menu-button"></div>
+      </label>
+      <ul id="menu">
+        <li class="menu__item"><a href="" class="menu__item-link">Home</a></li>
+        <li class="menu__item"><a href="" class="menu__item-link">Cakes</a></li>
+        <li class="menu__item"><a href="" class="menu__item-link">Ordering</a></li>
+        <li class="menu__item"><a href="" class="menu__item-link">Lessons</a></li>
+        <li class="menu__item"><a href="" class="menu__item-link">About</a></li>
       </ul>
     </nav>
   </header>
@@ -60,7 +70,9 @@
       <a href="" class="contacts__item"></a>
       <a href="" class="contacts__item"></a>
     </section>
-    <p id="copyright"></p>
+    <p id="copyright">
+      <a href="https://www.freepik.com/free-vector/cute-hand-drawn-bee-with-honey-jar_4630834.htm#query=queen%20bee&position=2&from_view=search&track=ais">Bee logo by coolvector</a> on Freepik
+    </p>
   </footer>
 </body>
 
