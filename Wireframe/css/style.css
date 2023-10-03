@@ -1,0 +1,89 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+.button{ 
+    margin: 0;
+    padding: 0;
+}
+
+/* Define a consistent color scheme */
+body {
+    background-color: #ede3e3;
+    font-family: Arial, sans-serif;
+}
+
+header {
+   color: #080707;
+   text-align: center;
+   padding: 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.article1, .article2, .article3{
+    border: double 0.5rem #666;
+    border-radius: 0.5rem;
+    padding: 3rem;
+    margin: 1rem;
+}
+.article{
+    font-weight: bolder;
+    font-size: large;
+}
+.article1{
+    display: inline-block;
+    text-align: center;
+}
+.article2, .article3{
+    align-items: center;
+    justify-content: center;
+}
+.section1{
+width: 100%;
+clear: both;
+padding: 0px;
+margin: 0px;
+}
+.section2{
+    display: flex;
+    margin: 0;
+}
+
+.article:first-child {
+    background-color: #e0c5c5;
+    color: #362e2e;
+    border-radius: 1rem;
+}
+.info{
+    text-indent: 0.5rem;
+    text-align: justify;
+    line-height: 2rem;
+    font-size: small;
+    mso-hyphenate:none;
+
+}
+.button{
+    font-size: medium;
+    background-color: #e0c5c5;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.footer {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    width: 100%;
+    color: #666;
+
+
+}
