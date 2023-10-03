@@ -1,17 +1,18 @@
 body {
   text-align: center;
+  margin: 0;
 }
 
 header {
   color: #000000;
   text-align: center;
   padding: 20px 0;
+  margin-bottom: 20px;
   background-color: rgba(179, 240, 245, 0.973); /* to see the footer */
 }
 header h1 {
   color: #8e41e7f8;
   text-decoration: none;
-  margin: 0 10px;
 }
 
 section {
