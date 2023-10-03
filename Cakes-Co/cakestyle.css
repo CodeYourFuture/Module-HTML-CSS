@@ -1,0 +1,315 @@
+/*  Add your styling here */
+:root{
+    /* body */
+
+    /* header */
+    --headerHeight: ;
+    --headerWidht: 100%;
+    --HlogoSectionHeight: 120px;
+    --HimgSectionHeight: 100px;
+    --HmLheaderTextDiv: 500px;
+    --HmTtextH2: 20px;
+    --HmTtextH3: 10px;
+    --HfontSizeH2: 3.5rem;
+    --HfontSizeH3: 1.5rem;
+    --HfontSizeNav: 1.5rem;
+    --HnavigatorHeight: 30px;
+
+    /* section main 1 */
+    --sm1height: 350px;
+    --sm1width: 350px;
+    --sm1fontSizeH1: 60px;
+    --sm1widthDivImg: 450px;
+    --sm1fontSizeP: 28px;
+    --sm1MarginRight: 60px;
+    --sm1MarginTop: 80px;
+
+    /* section main 2 */
+    --sm2MarginTop: 80px;
+
+    /* section main 3 */
+    --sm3MarginTop: 60px;
+    --sm3FontSizeH3: 45px;
+    --sm3FontSizeP: 20px;
+    --sm3imgWidhtSection: 500px;
+    --sm3MarginRightImg: 80px;
+    --sm3MarginLeftH3: 40px;
+    --sm3MarginRightH3: 40px;
+    --sm3MarginTopH3: 10px;
+    --sm3MarginBottomP: 40px;
+
+    /* section main 4 */
+    --sm4MarginBottomH3: 40px;
+    --sm4MarginBottomP: 20px;
+    --sm4PaddingTop: 40px;
+    --sm4PaddingBottom: 40px;
+    --sm4MarginRight:80px;
+    --sm4MarginLeft:80px;
+    --sm4WidthInput: 290px;
+    --sm4HeightInput: 20px;
+    --sm4heightInputEnquiry: 50px;
+    --sm4heightButton: 50px;
+    --sm4widhtButton: 100px;
+    --sm4fontSizeButton: 15px;
+    --sm4MarginLeftButton: 100px;
+
+    /* footer */
+    --fPaddingTop: 20px;
+    --fWidth: 1000px;
+
+
+
+
+}
+
+body{
+background-color: #523535;
+font-weight: bolder;
+}
+
+header{
+}
+
+/* Header */
+.logoSection{
+ display: flex;
+ flex-direction: row; 
+ height: var(--HlogoSectionHeight);
+ width: var(--headerWidht);
+ align-items: center;
+
+}
+
+.imgLogoDiv{
+}
+
+.imgSection{
+    height: var(--HimgSectionHeight);
+    margin-top: var(--HmTtextH2)/2;
+}
+
+.headerTextDiv{
+    margin-left: var(--HmLheaderTextDiv);
+    color: #fffefe;
+    font-weight: bolder;
+}
+
+.headerH2{
+    font-size: var(--HfontSizeH2);
+    margin-top: var(--HmTtextH2);
+    margin-bottom: 0;
+}
+
+.headerH3{
+    margin-top: var(--HmTtextH3);
+    font-size: var(--HfontSizeH3);
+    color: #ffda35;
+}
+
+/* Navigation */
+.navigator{
+    margin-top: var(--HmTtextH2);
+    height: var(--HnavigatorHeight);
+    background-color: #ae9595;
+}
+
+.navigationList {
+    display: flex;
+    list-style: none; 
+    justify-content: space-evenly;    
+    padding: 0;
+  }
+  
+  .navigationItem {
+  }
+
+  .navigation_link1 {
+    color: #402828;    
+    font-size: var(--HfontSizeNav);
+    text-decoration: none;
+  }
+
+  .navigation_link1:hover{    
+    color: #271818;  
+    background-color: #dfc3c3;
+  }
+  
+  /* Main */
+  .sectionMain1{
+    display: flex;
+    margin-top: var(--sm1MarginTop) ;
+  }
+
+  .sectionMain1Img{
+    height: var(--sm1height);
+    width: var(--sm1width);
+  }
+
+  .divMain1img{
+    width: var(--sm1widthDivImg);
+    margin: 0 80px 0 80px;
+  }
+
+  .sectionMain1h1{
+    font-size: var(--sm1fontSizeH1) ;
+    text-align: center;
+    margin-right: var(--sm1MarginRight);
+  }
+
+  .sectionMain1p{
+    font-size: var(--sm1fontSizeP);
+    margin-right: var(--sm1MarginRight);
+    margin-bottom: 0px;
+  }
+
+  .sectionMain2{
+    margin-top: var(--sm2MarginTop);
+  }
+
+  .divMain2img{
+    display: grid;
+    grid-template-columns: repeat(4, 1.5fr);
+    grid-template-rows: auto;
+    justify-items: center;  
+    align-items: center;  
+    background-color: #ae9595;
+    height: 100px;
+  }
+
+  /* Section Main 3 */
+
+  .sectionMain3{
+    margin-top: var(--sm3MarginTop) ;
+  }
+
+  .imgMainSection2{
+    border: solid 4px #402828;
+    border-radius: 50%;
+  }
+
+  .divSectionMain3{
+    display: flex;
+    flex-direction: row;
+
+  }
+ .textSectionMain3H3{
+    font-size: var(--sm3FontSizeH3);
+    margin-right: var(--sm3MarginRightH3);
+    margin-left: var(--sm3MarginLeftH3);
+    margin-bottom: 0px;
+    margin-top: var(--sm3MarginTopH3);
+ }
+
+ .imgSectionMain3{
+    widht: var(--sm3imgWidhtSection);
+    margin-right: var(--sm3MarginRightImg);
+    border: solid 5px #231b1b;
+    border-radius: 60%;
+ }
+
+ .textSectionMain3p{
+    font-size: var(--sm3FontSizeP);
+    margin-right: var(--sm3MarginRightH3);
+    margin-left: var(--sm3MarginRightH3);
+    margin-top: 0px;    
+    margin-bottom: var(--sm3MarginBottomP) ;
+ }
+
+ .textSectionMain3p1{
+    font-size: var(--sm3FontSizeP);
+    margin-right: var(--sm3MarginRightH3);
+    margin-left: var(--sm3MarginRightH3);
+    margin-top: 0;  
+    margin-bottom: 0;
+ }
+
+ /* Section Main 4 */
+ .sectionMain4{
+    display: flex;
+    justify-content: center;
+    margin-top: var(--sm3MarginTop) ;
+    background-color: #271818;
+    color: #fffefe;
+    padding-bottom: var(--sm4PaddingBottom);
+  }
+
+  .divSectionMain4{
+    margin-right: var(--sm4MarginRight);
+  }
+  .divSectionMain4a{
+    margin-left: var(--sm4MarginLeft);
+  }
+
+  .textSectionMain4H3{
+    font-size: var(--sm3FontSizeH3);
+    margin-right: var(--sm3MarginRightH3);
+    margin-left: var(--sm3MarginLeftH3);
+    margin-bottom: var(--sm4MarginBottomH3);
+    margin-top: var(--sm4MarginTopH3);
+    padding-top: var(--sm4PaddingTop);
+  }
+
+  .textSectionMain4H4{
+    font-size: var(--sm3FontSizeH3);
+    margin-right: var(--sm3MarginRightH3);
+    margin-left: var(--sm3MarginLeftH3);
+    margin-bottom: 0;
+    margin-top: var(--sm4MarginTopH3);
+    padding-top: var(--sm4PaddingTop);
+  }
+
+  .textSectionMain4p{
+    font-size: var(--sm3FontSizeP);
+    margin-right: var(--sm3MarginRightH3);
+    margin-left: var(--sm3MarginRightH3);
+    margin-top: 0px;    
+    margin-bottom: var(--sm4MarginBottomP) ;
+ }
+
+ .inputSectionMain4{
+    width: var(--sm4WidthInput);
+    height: var(--sm4HeightInput);
+    justify-content: center;
+    justify-items: center;
+    border: solid 2px #ffda35;
+    border-radius: 2px;
+ }
+
+ .inputSectionMain4Enquiry{
+    width: var(--sm4WidthInput);
+    height: var(--sm4heightInputEnquiry);
+    text-align:initial;
+    border: solid 2px #ffda35;
+    border-radius: 5px;
+ }
+
+ .inputSectionMain4Enquiry{
+    width: var(--sm4WidthInput);
+    height: var(--sm4heightInputEnquiry);
+    text-align:initial;
+    border: solid 2px #ffda35;
+    border-radius: 5px;
+
+ }
+
+ .btnSectionMain4{
+    width: var(--sm4widhtButton);
+    height: var(--sm4heightButton);
+    font-size: var(--sm4fontSizeButton);
+    font-weight: bolder;
+    color: #402828;
+    background-color: #ae9595;
+    cursor: pointer;
+    border: solid 4px #ffda35;
+    border-radius: 40px;
+    margin-left: var(--sm4MarginLeftButton);
+ }
+
+.footerH4{
+    border-top: solid 3px#ffda35;
+    margin-top: 0;
+    padding-top: var(--fPaddingTop);
+    width: var(--fWidth);
+    margin-right: auto;
+    margin-left: auto;
+}
