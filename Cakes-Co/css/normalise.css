@@ -5,6 +5,8 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Schibsted Grotesk', sans-serif;
+
+    box-sizing: border-box;
 }
 
 a:hover, a:focus, a:visited {

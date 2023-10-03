@@ -208,6 +208,24 @@ body {
 
 #hero-img {
   border: 2px solid var(--color-primary);
-  box-shadow: 0px 0px 2px 2px var(--color-primary);
+
   border-radius: var(--border-radius);
+}
+
+#products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xs);
+
+  margin: var(--spacing-xs) var(--spacing-md)
+}
+
+.products__item {
+  aspect-ratio: 1 / 1;
+}
+
+#products img {
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
 }
