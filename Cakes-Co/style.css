@@ -63,8 +63,6 @@
 }
 
 body{
-height: var(--headerHeight);
-width: var(--headerWidht);
 background-color: #523535;
 font-weight: bolder;
 }
