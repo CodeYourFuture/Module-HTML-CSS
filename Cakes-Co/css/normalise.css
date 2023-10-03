@@ -10,3 +10,7 @@
 a:hover, a:focus, a:visited {
     color: inherit;
 }
+
+img {
+    width: 100%;
+}
