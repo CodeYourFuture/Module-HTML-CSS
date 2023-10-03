@@ -1,1 +1,83 @@
 /*  Add your styling here */
+:root{
+    /* body */
+
+    /* header */
+    --headerHeight: ;
+    --headerWidht: 100%;
+    --HlogoSectionHeight: 120px;
+    --HimgSectionHeight: 100px;
+    --HmLheaderTextDiv: 500px;
+    --HmTtextH2: 20px;
+    --HfontSizeH1: 2rem;
+    --HfontSizeH2: 1.3rem;
+    --HfontSizeNav: 16rem;
+
+
+}
+
+body{
+margin: 0 20px 0 20px;
+height: var(--headerHeight);
+width: var(--headerWidht);
+}
+
+header{
+}
+
+/* Header */
+.logoSection{
+ display: flex;
+ flex-direction: row; 
+ height: var(--HlogoSectionHeight);
+
+}
+
+.imgLogoDiv{
+}
+
+.imgSection{
+    height: var(--HimgSectionHeight);
+    margin-top: var(--HmTtextH2)/2;
+}
+
+.headerTextDiv{
+    margin-left: var(--HmLheaderTextDiv);
+}
+
+.headerH1{
+    font-size: var(--HfontSizeH1);
+    margin-top: var(--HmTtextH2);
+    margin-bottom: 0;
+}
+
+.headerH2{
+    margin-top: var(--HmTtextH2);
+    font-size: var(--HfontSizeH2);
+}
+
+/* Navigation */
+.navigator{
+    margin-top: var(--HmTtextH2);
+}
+
+.navigationList {
+    display: flex;
+    list-style: none; 
+    justify-content: space-evenly;    
+    padding: 0;
+  }
+  
+  .navigationItem {
+  }
+
+  .navigationLink1 {
+    color: #414040;
+    text-decoration: none;
+  }
+  
+  .navigationLink {
+    color: #6e6d6d;
+    font-size: var(--HfontSizeNav);
+    text-decoration: none;
+  }
