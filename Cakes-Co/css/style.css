@@ -37,15 +37,23 @@ body {
 
 #banner {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  background: linear-gradient(
+    to right bottom,
+    var(--color-fg),
+    var(--color-light)
+  );
 
-  background-color: var(--color-fg);
+  padding: var(--spacing-md) var(--spacing-xs);
 }
 
 #logo {
+  width: 35%;
 }
 
-#banner h1{
+#banner h1 {
   font-family: "Cookie", cursive;
   font-size: var(--fs-title);
 }
@@ -60,4 +68,104 @@ body {
   justify-content: flex-end;
   gap: var(--spacing-xs);
   margin-right: var(--spacing-sm);
+}
+
+/* Hamburger */
+
+#menu-toggle {
+  display: none;
+}
+
+.menu__item {
+  margin: 0 var(--spacing-sm);
+  overflow: hidden;
+}
+
+#menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-button,
+#menu-button::before,
+#menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border: 2px;
+}
+
+#menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+
+#menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + #menu-button-container #menu-button::before {
+  margin-top: 0;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + #menu-button-container #menu-button {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + #menu-button-container #menu-button::after {
+  margin-top: 0;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 700px) {
+  #menu-button-container {
+    display: flex;
+  }
+  #menu {
+    top: 0;
+    margin-top: var(--spacing-md);
+    right: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu__item {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  #menu-toggle:checked ~ #menu .menu__item {
+    border: 1px solid var(--color-light);
+    height: 2.5em;
+    padding: var(--spacing-xs);
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .menu__item {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: var(--color-light);
+    background-color: var(--color-primary);
+  }
+
+  .menu__item:not(:last-child) {
+    border-bottom: 1px solid var(--color-light);
+  }
 }
