@@ -60,10 +60,12 @@ body {
 #company-name {
   font-family: "Cookie", cursive;
   font-size: var(--fs-title);
+  line-height: var(--fs-title);
 }
 
 #slogan {
   font-size: var(--fs-caption);
+  text-align: right;
 }
 
 #menu {
@@ -191,6 +193,7 @@ body {
     height: 100%;
     text-align: center;
     padding: var(--spacing-xs);
+    font-size: var(--fs-nav);
   }
 }
 

@@ -1,74 +1,69 @@
 @media screen and (min-width: 1000px) {
-    :root {
-      --fs-title: 7.5rem;
-      --fs-caption: 1.75rem;
-    }
-  
-    #banner {
-      justify-content: space-around;
-    }
-  
-    #menu {
-      gap: var(--spacing-md);
-      padding: var(--spacing-sm) 0;
-      padding-right: var(--spacing-lg);
-    }
-  
-    .menu__item {
-      margin: 0;
-      overflow: initial;
-    }
-  
-    .menu__item-link {
-      padding: var(--spacing-sm);
-    }
-  
-    .menu__item-link:hover,
-    .menu__item-link:focus {
-      background-color: var(--color-primary);
-      color: var(--color-secondary);
-    }
-  
-    #hero {
-      flex-direction: column-reverse;
-      gap: var(--spacing-md);
-      padding: var(--spacing-sm) var(--spacing-lg);
-    }
-  
-    #products {
-      gap: var(--spacing-sm);
-      margin: 0 var(--spacing-md) var(--spacing-lg);
-      padding: 0;
-    }
-  
-    .products__item {
-      aspect-ratio: 1 / 0.8;
-      max-width: calc((100vw - 2 * var(--spacing-xl) - var(--spacing-sm)) / 2);
-    }
-  
-    #products img {
-      max-width: 100%;
-      height: 100%;
-      border-radius: var(--border-radius);
-  
-      overflow: hidden;
-      object-fit: cover;
-    }
-  
-    #contacts {
-      width: 80%;
-    }
-  
-    .contacts__item {
-      justify-content: center;
-    }
-  
-    .contacts__item svg {
-      max-width: 30px;
-    }
-  
-    .contacts__item p {
-      display: inline-block;
-    }
+  :root {
+    --fs-title: 7.5rem;
+    --fs-caption: 2.25rem;
+    --spacing-xl: 21vw;
+    --fs-nav: 1.5rem;
   }
-  
+
+  #banner {
+    max-height: 35vh;
+    justify-content: space-evenly;
+  }
+
+  #logo {
+    height: 28vh;
+    width: auto;
+  }
+
+  #menu {
+    margin: var(--spacing-lg) var(--spacing-xl);
+    padding-right: var(--spacing-sm);
+  }
+
+  #hero {
+    flex-direction: row-reverse;
+    padding: 0;
+    margin: var(--spacing-lg) var(--spacing-xl);
+  }
+
+  #hero-img {
+    max-width: 20vw;
+  }
+
+  #welcome {
+    padding: 0;
+    margin: 0;
+    gap: var(--spacing-lg);
+  }
+
+  #welcome h2 {
+    text-align: right;
+  }
+
+  #products {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-sm);
+    margin: 0 var(--spacing-xl) var(--spacing-lg);
+    padding: 0;
+  }
+
+  .products__item {
+    aspect-ratio: 1 / 1;
+    max-width: calc(
+      (100vw - (2 * var(--spacing-xl)) - (var(--spacing-sm) * 4)) / 4
+    );
+  }
+
+  #contacts {
+    width: 40%;
+  }
+
+  .contacts__item {
+    justify-content: center;
+  }
+
+  .contacts__item svg {
+    max-width: 35px;
+  }
+}

@@ -26,7 +26,7 @@
   .menu__item-link:hover,
   .menu__item-link:focus {
     background-color: var(--color-primary);
-    color: var(--color-secondary);
+    color: var(--color-bg);
   }
 
   #hero {
@@ -69,5 +69,6 @@
 
   .contacts__item p {
     display: inline-block;
+    font-size: var(--fs-nav);
   }
 }
