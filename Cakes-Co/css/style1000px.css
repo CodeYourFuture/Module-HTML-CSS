@@ -1,0 +1,74 @@
+@media screen and (min-width: 1000px) {
+    :root {
+      --fs-title: 7.5rem;
+      --fs-caption: 1.75rem;
+    }
+  
+    #banner {
+      justify-content: space-around;
+    }
+  
+    #menu {
+      gap: var(--spacing-md);
+      padding: var(--spacing-sm) 0;
+      padding-right: var(--spacing-lg);
+    }
+  
+    .menu__item {
+      margin: 0;
+      overflow: initial;
+    }
+  
+    .menu__item-link {
+      padding: var(--spacing-sm);
+    }
+  
+    .menu__item-link:hover,
+    .menu__item-link:focus {
+      background-color: var(--color-primary);
+      color: var(--color-secondary);
+    }
+  
+    #hero {
+      flex-direction: column-reverse;
+      gap: var(--spacing-md);
+      padding: var(--spacing-sm) var(--spacing-lg);
+    }
+  
+    #products {
+      gap: var(--spacing-sm);
+      margin: 0 var(--spacing-md) var(--spacing-lg);
+      padding: 0;
+    }
+  
+    .products__item {
+      aspect-ratio: 1 / 0.8;
+      max-width: calc((100vw - 2 * var(--spacing-xl) - var(--spacing-sm)) / 2);
+    }
+  
+    #products img {
+      max-width: 100%;
+      height: 100%;
+      border-radius: var(--border-radius);
+  
+      overflow: hidden;
+      object-fit: cover;
+    }
+  
+    #contacts {
+      width: 80%;
+    }
+  
+    .contacts__item {
+      justify-content: center;
+    }
+  
+    .contacts__item svg {
+      max-width: 30px;
+    }
+  
+    .contacts__item p {
+      display: inline-block;
+    }
+  }
+  
