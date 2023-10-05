@@ -78,9 +78,6 @@ font-weight: bolder;
   src: url(Satisfy-Regular.ttf);
 }
 
-header{
-}
-
 /* Header */
 .logoSection{
  display: flex;
@@ -90,9 +87,6 @@ header{
  width: var(--headerWidht);
  align-items: center;
 
-}
-
-.imgLogoDiv{
 }
 
 .imgSection{
@@ -130,10 +124,7 @@ header{
     justify-content: space-evenly;    
     padding: 0;
   }
-  
-  .navigationItem {
-  }
-
+ 
   .navigation_link1 {
     color: #402828;    
     font-size: var(--HfontSizeNav);
@@ -221,7 +212,6 @@ header{
  }
 
  .imgSectionMain3{
-    widht: var(--sm3imgWidhtSection);
     margin-right: var(--sm3MarginRightImg);
     border: solid 5px #231b1b;
     border-radius: 60%;
