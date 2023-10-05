@@ -333,19 +333,19 @@ header {
     height: 5vw;
     padding: 5vh;
     border: 1px solid none;
-    margin-left: 5vw;
+    margin-left: 3vw;
     border-radius: 4vw;
   }
 
   .founded {
-    top: 10vw;
+    top: 11vw;
     text-align: center;
   }
   .founded h1 {
-    font-size: 4vw;
+    font-size: clamp(4vh, 3vw, 2.5vh);
   }
   .cake-span {
-    font-size: 2vw;
+    font-size: clamp(2vh, 3vw, 2.5vh);
   }
   .slogan {
     font-weight: bold;
@@ -364,7 +364,7 @@ header {
     width: 45vw;
     height: 35vw;
     margin-top: 4vw;
-    margin-left: 2vw;
+    margin-left: 3vw;
     margin-right: 1vw;
     margin-bottom: 5vw;
     border-radius: 1vw;
@@ -387,8 +387,8 @@ header {
   .show-article img {
     width: 22vw;
     height: 22vw;
-    margin-left: 2vw;
-    margin-right: 1vw;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
     border-radius: 4px;
     transition: all 0.3s ease;
   }
@@ -453,18 +453,18 @@ header {
 /* Media query for 900px responsive design */
 
 @media screen and (min-width: 900px) {
-  .header-image {
-    margin-left: 3.5vw;
-  }
+  /* .header-image {
+    margin-left: 6vw;
+  } */
   .founded {
-    top: 10vw;
+    top: 9.5vw;
   }
-  .founded h1 {
-    font-size: 3vw;
-  }
-  .cake-span {
-    font-size: 1.5vw;
-  }
+  /* .founded h1 { */
+    /* font-size: clamp(2.5vh, 4vw, 3.5vh); */
+  /* } */
+  /* .cake-span { */
+    /* font-size: 1.5vw; */
+  /* } */
   .menu-bar {
     font-size: clamp(1.6vh, 2.5vw, 3vh);
     align-content: left;
