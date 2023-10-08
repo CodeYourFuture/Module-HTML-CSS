@@ -1,1 +1,158 @@
 /*  Add your styling here */
+body{margin: 0;
+    padding: 0;
+    font-family: sans-serif, serif;
+    background-color: rgb(245, 235, 236);
+ }
+
+/*header*/
+.header{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(240, 228, 229);
+    margin-bottom: 0px;
+   
+}
+
+.logo-img{
+    
+    width: 20%;
+     object-fit: contain;
+   
+}
+.header-description{
+align-self: last baseline;
+
+}
+.header-description h5{
+    margin-bottom: 1em;
+    }
+
+.button{margin: 1em;
+    cursor: pointer;}
+
+.nav{background-color: black;
+    margin-left: 2em;
+   
+
+    }
+.nav ul{display: flex;
+    justify-content: flex-end;
+    margin-right: 4em;
+
+    
+  
+}
+.nav ul li{ list-style: none;
+    padding: 1em;
+    color: white;
+    cursor: pointer;
+
+ }
+ 
+ .nav ul li:hover{ 
+  color: red;
+ }
+
+ 
+
+/*main */
+main{margin-top: 0px;
+    background-color: rgb(245, 235, 236);}
+p{ 
+   
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+.h2{margin: 0px;}
+
+/*cake-section */
+.first-cake{
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+.img-cake{
+    min-width:100%;
+     padding-bottom: 2em;
+     margin-left: 4em;
+    height: auto;
+    cursor: pointer;
+   }
+
+
+
+/*img-div*/
+.div-one{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 5%;
+    margin: 2em 2em;
+
+}
+.column img {
+    width: 100%;
+    cursor: pointer;
+    }
+.column p {text-align: center;
+          
+           font-weight: bold;}
+.column p:hover{
+    color: red;
+    cursor: pointer;
+}   
+/*  */
+   
+
+
+.footer{padding: 0.3em 0; 
+        background-color: rgb(26, 24, 24);
+    }
+.footer h4{ color: white;
+            cursor: pointer;
+        }
+.footer h4:hover{
+    color: red;
+}
+   /*media*/
+    @media (min-width: 900px) {
+        .article{ display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            padding-left: 3em;
+            padding-top: 5em;
+            float: right;
+             }
+            
+             .button{display: none;}
+            
+           .div-one{display: flex;
+             justify-content: space-around;} 
+             
+           .column{ width: 20%}  
+           .footer{ display: flex;
+            justify-content: center;
+            }
+          .footer h4{padding-left: 1em;}          
+        } 
+
+        @media (min-width: 540px) {
+            
+                
+        }
+
+        @media (max-width: 540px) {
+            .nav{display: none;}
+            .header{ margin-bottom: 1em;}
+            .article{margin-left: 2em;}
+            .footer h4{ padding-left: 1em;}
+        }
+
+        
+
+
+
+
+
