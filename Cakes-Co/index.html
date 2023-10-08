@@ -1,79 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&display=swap" rel="stylesheet">
-    <!-- Add a link to your css file here --><link rel="stylesheet" type="text/css" href="style.css" />
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Add a link to your css file here -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
-<body>
-    <Header>
-      <h1>Cakes Co</h1>
-        <img class="logo" src="images/cake-logo.png" alt="Cakes Co Logo">
-        <p>The best cakes in your town delivered to your door</p>
+  <body>
+    <header class="header">
+      <img class="logo" src="images/cake-logo.png" alt="Cakes Co Logo" />
+      <h1 class="title">Cakes Co</h1>
+      <section class="nav-text">
+        <label for="trigger">
+          <input type="checkbox" class="trigger" id="trigger" />
+          <div class="hamburger">
+            <span id="bar1"></span>
+            <span id="bar2"></span>
+            <span id="bar3"></span>
+          </div>
         <nav class="nav-list">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Home</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Cakes</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Ordering</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Lessons</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">About</a>
-          </li>
-        </ul>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Home</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Cakes</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Ordering</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Lessons</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">About</a>
+            </li>
+          </ul>
         </nav>
-    </Header>
+        </label>
+        <p class="header-text">
+          The best cakes in your town delivered to your door
+        </p>
+      </section>
+    </header>
     <main class="container">
-        <section class="hero">
+      <section class="hero">
         <section>
-          <img class="img-hero" src="images/cake-hero.jpg" alt="A cheesecake with strawberries">
+          <img
+            class="img-hero"
+            src="images/cake-hero.jpg"
+            alt="A cheesecake with strawberries"
+          />
         </section>
         <article class="brief">
           <h2>Welcome</h2>
-          <p>At Cakes Co, we're passionate about creating delicious and beautifully crafted cakes that add a touch of magic to every occasion. Our talented bakers and cake artists pour their heart and soul into each creation, using the finest ingredients and their creative flair to ensure every cake is a masterpiece. </p>
+          <p class="brief-text">
+            At Cakes Co, we're passionate about creating delicious and
+            beautifully crafted cakes that add a touch of magic to every
+            occasion. Our talented bakers and cake artists pour their heart and
+            soul into each creation, using the finest ingredients and their
+            creative flair to ensure every cake is a masterpiece.
+          </p>
         </article>
-        </section>
-        <section class="small-images">
-          <div class="s-images" id="img-1">
-            <img src="images/cake-1.jpg" alt="Cake topped with strawberries and blueberries">
-          </div>
-          <div class="s-images" id="img-2">
-            <img src="images/cake-2.jpg" alt="cheesecake slice with strawberries and blueberries in plate">
-          </div>
-          <div class="s-images" id="img-3">
-            <img src="images/cake-3.jpg" alt="Chocolate cupcake">
-          </div>
-          <div class="s-images" id="img-4">
-            <img src="images/cake-4.jpg" alt="Cupcakes in blue color">
-          </div>
-        </section>
+      </section>
+      <section class="small-images">
+        <div class="s-images" id="img-1">
+          <img
+            src="images/cake-1.jpg"
+            alt="Cake topped with strawberries and blueberries"
+          />
+        </div>
+        <div class="s-images" id="img-2">
+          <img
+            src="images/cake-2.jpg"
+            alt="cheesecake slice with strawberries and blueberries in plate"
+          />
+        </div>
+        <div class="s-images" id="img-3">
+          <img src="images/cake-3.jpg" alt="Chocolate cupcake" />
+        </div>
+        <div class="s-images" id="img-4">
+          <img src="images/cake-4.jpg" alt="Cupcakes in blue color" />
+        </div>
+      </section>
     </main>
-    <hr>
-        <footer class="footer">
+    <hr />
+    <footer class="footer">
       <h4>Find us on</h4>
-      <Section class="social-icons">
-      <a class="social"><img src="images/twitter-icon.svg" alt="Twitter icon"></a>
-      <a class="social"><img src="images/facebook-icon.svg" alt="Facebook icon"></a>
-      <a class="social"><img src="images/instagram-icon.svg" alt="Instagram icon"></a>
-      </Section>
-      
-      <h5>©Cakes Co.</h5>
+      <section class="social-icons">
+        <a class="social"
+          ><img src="images/twitter-icon.svg" alt="Twitter icon"
+        /></a>
+        <a class="social"
+          ><img src="images/facebook-icon.svg" alt="Facebook icon"
+        /></a>
+        <a class="social"
+          ><img src="images/instagram-icon.svg" alt="Instagram icon"
+        /></a>
+      </section>
+
+      <h5 class="copyright">©Cakes Co.</h5>
     </footer>
     <!-- Add your markup here -->
-</body>
-
+  </body>
 </html>
