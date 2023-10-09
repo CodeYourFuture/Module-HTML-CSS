@@ -1,0 +1,16 @@
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.full-content {
+    display: none;
+}
+
+.read-more {
+    background-color: #00d9b5;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+}
