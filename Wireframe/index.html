@@ -1,13 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-</body>
-</html
+
+    <header>
+      <h1 class="git-header-title">Git</h1>
+      <img
+        class="git-logo"
+        src="https://wac-cdn.atlassian.com/dam/jcr:f6948a92-f446-466f-8783-1dd1cbcc661a/hero.svg?cdnVersion=1228"
+        alt="git-logo"
+      />
+      <h2>A distributed version control system</h2>
+      <p>
+        Git is a powerful tool that makes coding safer, more organized, and
+        better for collaboration, whether you're working on a small personal
+        project or a large software development team.
+      </p>
+    </header>
+    <main>
+      <section>
+        <!-- What is Git?  -->
+        <article class="article">
+          <img
+            class="what-is-git-img"
+            src="https://media.giphy.com/media/kH6CqYiquZawmU1HI6/giphy.gif"
+            alt="git logo"
+          />
+          <h2>What is git?</h2>
+          <p>
+            Git is a free and open source distributed version control system
+            designed to handle everything from small to very large projects with
+            speed and efficiency. It was created by Linus Torvalds in 2005, and
+            has been maintained by Junio Hamano since then. It is used for:
+            <li>Tracking code changes</li>
+            <li>Tracking who made changes</li>
+            <li>Coding collaboration</li>
+          </p>
+          <a href="https://www.atlassian.com/git/tutorials/what-is-git">
+            <button class="read-more-btn">Read More</button>
+          </a>
+        </article>
+        <!-- Why do developers need Git? -->
+        <section class="main-container">
+          <article class="article">
+            <img
+              class="why-do-devs-img"
+              src="https://i.giphy.com/media/PI3QGKFN6XZUCMMqJm/giphy.webp"
+              alt="two-developers-working"
+            />
+            <h2>Why do developers need Git?</h2>
+            <p>
+              Developers need Git because it provides a structured and efficient
+              way to manage code, collaborate with others, maintain code
+              quality, and streamline the development process. It is a
+              fundamental tool for modern software development, whether working
+              on personal projects, within a team, or contributing to
+              open-source communities.
+            </p>
+            <a
+              href="https://www.atlassian.com/git/tutorials/why-git#git-for-developers"
+              ><button class="read-more-btn">Read More</button></a
+            >
+          </article>
+          <!-- What is a branch in Git? -->
+          <article class="article">
+            <img
+              class="what-is-a-branch-img"
+              src="https://wac-cdn.atlassian.com/dam/jcr:a905ddfd-973a-452a-a4ae-f1dd65430027/01%20Git%20branch.svg?cdnVersion=1227"
+              alt="git-branch"
+            />
+            <h2>What is a branch in Git?</h2>
+            <p>
+              A branch represents an independent line of development. Branches
+              serve as an abstraction for the edit/stage/commit process. You can
+              think of them as a way to request a brand new working directory,
+              staging area, and project history. New commits are recorded in the
+              history for the current branch, which results in a fork in the
+              history of the project.
+            </p>
+            <a
+              href="https://www.atlassian.com/git/tutorials/using-branches#:~:text=A%20branch%20represents%20an%20independent,staging%20area%2C%20and%20project%20history."
+              ><button class="read-more-btn">Read More</button></a
+            >
+          </article>
+        </section>
+      </section>
+    </main>
+    <footer>
+      c2023 Wireframe - Rabia Avci
+      <a
+        href="https://www.linkedin.com/in/rabia-avci-5231032b/"
+        id="footer_name"
+        >Linkedin</a
+      >
+      <a href="https://github.com/RbAvci" id="footer_name">Github</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+body {
+  box-sizing: border-box;
+  padding: 10%;
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  background-color: #fff5e0;
+  justify-content: left;
+}
+
+header {
+  justify-content: space-between;
+  text-align: center;
+  color: #141e46;
+}
+
+.git-logo {
+  width: 30%;
+  height: auto;
+}
+.git-header-title {
+  color: #141e46;
+  font-size: 4rem;
+  margin: 0;
+}
+
+section {
+  display: grid;
+  margin-top: 2rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.article:first-child {
+  border: #141e46 solid 10px;
+  border-radius: 5ex;
+  border-style: dotted;
+  padding: 30px;
+}
+
+li {
+  list-style: none;
+}
+
+.what-is-git-img {
+  width: 10%;
+  height: auto;
+}
+
+.read-more-btn {
+  padding: 8px 16px;
+  font-size: 18px;
+  background-color: #141e46;
+  border: none;
+  color: rgb(255, 255, 255);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 1.5s, color 1.5s;
+}
+
+.read-more-btn:hover,
+.read-more-btn:active {
+  background-color: #141e46;
+  color: peru;
+}
+
+/* Section 2 - Why do developers need git? */
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+  margin-top: 1rem;
+  column-gap: 1rem;
+  text-align: left;
+}
+
+.article {
+  border: #141e46 solid 10px;
+  border-radius: 5ex;
+  padding: 30px;
+  border-style: dotted;
+}
+
+.why-do-devs-img {
+  width: 50%;
+  height: 50%;
+}
+
+.what-is-a-branch-img {
+  width: 50%;
+  height: 50%;
+}
+
+footer {
+  background-color: #141e46;
+  opacity: 0.7;
+  padding: 1rem;
+  border-top: 2px solid peru;
+  text-align: center;
+  color: #fff5e0;
+  font-style: italic;
+  font-size: 1.2rem;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+#footer_name {
+  color: beige;
+}
