@@ -1,1 +1,108 @@
-/*  Add your styling here */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(203, 255, 238);
+}
+
+
+header {
+    font-family: 'Princess Sofia', cursive;
+    background-color: #FFC0CB; /* Rosa claro para o cabeçalho */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+}
+
+
+nav {
+    background-color: #c0a7f0; /* Rosa médio para o menu de navegação */
+    text-align: center;
+    padding: 10px;
+    font-size: large;
+}
+
+nav ul {
+    font-family: 'Princess Sofia', cursive;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+    font-size: xx-large;
+    padding: 50px;
+
+}
+
+nav ul li a:hover {
+    color: #8307f0; /* Rosa mais escuro para o efeito de hover */
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #FFC0CB; /* Rosa claro para o rodapé */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos para dispositivos móveis (até 768px de largura) */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilos adicionais para dispositivos maiores */
+@media (min-width: 769px) {
+    header {
+        padding: 40px;
+    }
+}
+
+
+
+
+.image-container {
+    font-family: 'Princess Sofia', cursive;
+    font-size: x-large;
+       width: 40%; /* Define a largura para ocupar cerca de 30% da largura da página */
+    margin: auto /* Adiciona margem para separar as imagens */
+  }
+
+
+
+
+.image-container a {
+    display: inline-block; /* Exibe os elementos 'a' em linha */
+    width: 40%; /* Define a largura para ocupar cerca de 30% do contêiner */
+    margin: 10px; /* Adiciona margem para separar as imagens */ 
+    max-width: 200%; /* Garante que as imagens não ultrapassem o espaço designado */
+   
+   
+
+}
+
+/* Estilo para as imagens */
+.image-container img {
+    display: inline;
+    max-width: 200%; /* Garante que as imagens não ultrapassem o espaço designado */
+ border-radius: 10px; /* Adiciona bordas arredondadas com um raio de 10px */
+text-decoration: none; /* Remove sublinhado padrão de links */ 
+box-shadow: 5px 5px 10px rgba(150, 100, 200, 0.7); /* Adiciona uma sombra lilás (cor: rgba(150, 100, 200, 0.7)) */
+}
