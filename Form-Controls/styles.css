@@ -1,0 +1,115 @@
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+
+body,
+button {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  color: var(--grey-dark);
+  font-size: 1rem;
+  object-fit: contain;
+  padding: 1.5rem 4rem;
+  background-image: url("https://images.unsplash.com/photo-1485218126466-34e6392ec754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80");
+}
+
+header {
+  font-size: 2rem;
+}
+main {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(14, 9, 9);
+}
+
+.name-part {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.part-1 {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+/* .part-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+} */
+.gap {
+  padding-top: 1rem;
+}
+
+input[type="text"] {
+  width: 95%;
+  padding: 12px 20px;
+  border: 2px solid rgb(230, 223, 223);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="address"] {
+  width: 23%;
+  padding: 12px 20px;
+  border: 2px solid rgb(230, 223, 223);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="last name"] {
+  width: 110%;
+  padding: 12px 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="radio"] {
+  appearance: none;
+  border: 2px solid gray;
+  padding: 8px;
+  border-radius: 50%;
+}
+input[type="radio"]:checked {
+  background-color: rgb(171, 122, 63);
+  border-color: rgb(203, 210, 216);
+}
+input[type="email"] {
+  width: 29%;
+  padding: 12px 20px;
+  border: 2px solid rgb(193, 182, 182);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+select {
+  width: 37%;
+  padding: 12px 20px;
+  border: 2px solid #c4b7b7;
+  border-radius: 4px;
+  background-color: border-box;
+  color: gray;
+  font-size: 1rem;
+  font-style: italic;
+}
+input[type="date"] {
+  width: 23%;
+  padding: 12px 20px;
+  border: 2px solid rgb(230, 223, 223);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="file"] {
+  width: 23%;
+  padding: 12px 20px;
+  border: 2px solid rgb(230, 223, 223);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+footer {
+  padding-top: 3rem;
+  color: rgb(14, 9, 9);
+  font-size: 1rem;
+}
