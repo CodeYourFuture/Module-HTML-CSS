@@ -33,11 +33,6 @@ main {
   gap: 1rem;
   flex-direction: column;
 }
-/* .part-2 {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-} */
 .gap {
   padding-top: 1rem;
 }
@@ -50,22 +45,6 @@ input[type="text"] {
   box-sizing: border-box;
 }
 
-input[type="address"] {
-  width: 23%;
-  padding: 12px 20px;
-  border: 2px solid rgb(230, 223, 223);
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type="last name"] {
-  width: 110%;
-  padding: 12px 20px;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
 input[type="radio"] {
   appearance: none;
   border: 2px solid gray;
@@ -73,7 +52,7 @@ input[type="radio"] {
   border-radius: 50%;
 }
 input[type="radio"]:checked {
-  background-color: rgb(171, 122, 63);
+  background-color: rgb(53, 34, 10);
   border-color: rgb(203, 210, 216);
 }
 input[type="email"] {
@@ -89,7 +68,7 @@ select {
   border: 2px solid #c4b7b7;
   border-radius: 4px;
   background-color: border-box;
-  color: gray;
+  color: rgb(49, 47, 47);
   font-size: 1rem;
   font-style: italic;
 }
