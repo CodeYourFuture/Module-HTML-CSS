@@ -93,6 +93,10 @@ main {
 
 /* form */
 
+input[type="text"] {
+  padding-left: var(--gap-xs);
+}
+
 input[type="text"],
 input[type="email"],
 input[type="date"],
@@ -172,6 +176,8 @@ form {
   gap: var(--gap-xs);
 }
 
+/* form t-shirt colour */
+
 #tshirt-colour__container {
   display: grid;
   grid-template-rows: 1fr;
@@ -222,9 +228,11 @@ form {
   background-color: var(--colour-highlight);
 }
 
+/* form t-shirt size */
+
 #tshirt-size__container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   justify-items: center;
   padding: var(--gap-s) var(--gap-s) var(--gap-m);
 }
