@@ -95,6 +95,7 @@ main {
 
 input[type="text"],
 input[type="email"],
+input[type="date"],
 button {
   height: var(--fs-l);
   border: none;
@@ -124,6 +125,8 @@ button {
   height: var(--fs-xl);
   font-weight: 700;
   transition: all 0.1s ease-in-out;
+
+  margin-top: var(--gap-m);
 }
 
 button:hover,
@@ -227,27 +230,67 @@ form {
 }
 
 .tshirt-size {
+  position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
   gap: var(--gap-xs);
 
-  background-color: var(--colour-primary);
-  color: white;
+  border: transparent 1px var(--colour-primary);
+  color: var(--colour-font);
   padding: var(--gap-xs);
-  border-radius: var(--border-radius-xs);
-  box-shadow: 0 0 3px var(--colour-font);
 
-  border: solid 1px var(--colour-background);
   transition: all 0.1 ease-in-out;
 }
 
-.tshirt-size:hover {
-  background-color: var(--colour-secondary);
-  transform: scale(1.01, 1.05);
+.tshirt-size:hover,
+.tshirt-size:focus {
+  border: solid 1px var(--colour-primary);
+  border-radius: var(--border-radius-xs);
 
-  border: solid 2px var(--colour-primary);
-  transition: all 0.1 ease-in-out;
+  transition: all 0.3 ease-in-out;
+}
+
+.tshirt-size:hover .tshirt-size__chart,
+.tshirt-size:focus .tshirt-size__chart {
+  display: grid;
+  filter: opacity(1);
+
+  transition: all 0.3 ease-in-out;
+
+  top: var(--fs-xl);
+}
+
+.tshirt-size__chart {
+  display: none;
+  filter: opacity(0);
+
+  position: absolute;
+  color: white;
+  font-size: var(--fs-xs);
+  background-color: var(--colour-primary);
+  padding: var(--gap-xs);
+
+  box-shadow: 0 0 3px var(--colour-font);
+  border-radius: var(--border-radius-xs);
+
+  gap: var(--gap-xs);
+  grid-template-columns: 2fr 1.5fr;
+  grid-template-rows: 1.2fr 1fr;
+
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+
+  transition: all 0.3 ease-in-out;
+}
+
+.tshirt-size__chart h3 {
+  color: white;
+  width: 80px;
+  font-size: var(--fs-xs);
+  text-align: center;
 }
 
 .tshirt-size__label {
@@ -272,6 +315,38 @@ form {
   color: red;
   padding-left: 2px;
   line-height: var(--fs-m);
+}
+
+/* form delivery date */
+
+#delivery-date__container {
+  display: grid;
+  gap: var(--gap-xs);
+  width: 220px;
+}
+
+#delivery-date__container input {
+  position: relative;
+  padding: var(--gap-s) var(--gap-xs);
+  text-align: center;
+}
+
+#delivery-date__container input:hover,
+#delivery-date__container input:focus {
+  border: solid 1px var(--colour-secondary);
+}
+
+#delivery-date__container input::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
 }
 
 /* main image background */
