@@ -88,7 +88,7 @@ header svg {
 main {
   background-color: var(--colour-background);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.3fr 1fr;
 }
 
 /* form */
@@ -141,7 +141,7 @@ button:active {
   background-color: var(--colour-foreground);
 
   border-radius: var(--border-radius-s);
-    box-shadow: 0 0 3px var(--colour-font);
+  box-shadow: 0 0 3px var(--colour-font);
 }
 
 form {
@@ -180,7 +180,6 @@ form {
 
 .tshirt-colour {
   box-sizing: border-box;
-  appearance: none;
   background: var(--colour-background);
   outline: 2px solid #333;
   border: 3px solid var(--colour-background);
@@ -218,6 +217,61 @@ form {
 
 #tshirt-colour__red {
   background-color: var(--colour-highlight);
+}
+
+#tshirt-size__container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  padding: var(--gap-s) var(--gap-s) var(--gap-m);
+}
+
+.tshirt-size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-xs);
+
+  background-color: var(--colour-primary);
+  color: white;
+  padding: var(--gap-xs);
+  border-radius: var(--border-radius-xs);
+  box-shadow: 0 0 3px var(--colour-font);
+
+  border: solid 1px var(--colour-background);
+  transition: all 0.1 ease-in-out;
+}
+
+.tshirt-size:hover {
+  background-color: var(--colour-secondary);
+  transform: scale(1.01, 1.05);
+
+  border: solid 2px var(--colour-primary);
+  transition: all 0.1 ease-in-out;
+}
+
+.tshirt-size__label {
+  cursor: pointer;
+}
+
+.tshirt-size__radio {
+  box-sizing: border-box;
+  background: white;
+  width: var(--fs-m);
+  height: var(--fs-m);
+  border: var(--colour-foreground);
+
+  border-radius: var(--border-radius-xs);
+  cursor: pointer;
+}
+
+.tshirt-size__radio:checked::before {
+  content: "\2713";
+  font-size: var(--fs-m);
+  display: inline-block;
+  color: red;
+  padding-left: 2px;
+  line-height: var(--fs-m);
 }
 
 /* main image background */

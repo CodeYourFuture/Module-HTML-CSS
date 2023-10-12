@@ -25,3 +25,7 @@ a, a:hover, a:focus, a:visited, a:active {
   text-decoration: none;
   transition: all 0.1s ease-in-out;
 }
+
+input[type="radio"] {
+  appearance: none;
+}
