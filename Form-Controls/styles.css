@@ -104,6 +104,7 @@ button {
   border-radius: var(--border-radius-xs);
 
   border: solid 1px var(--colour-background);
+  box-shadow: 0 0 3px var(--colour-font);
 
   transition: all 0.1s ease-in-out;
 }
@@ -117,7 +118,7 @@ input[type="email"]:focus {
 
 button {
   background-color: var(--colour-primary);
-  color: var(--colour-background);
+  color: white;
   cursor: pointer;
 
   height: var(--fs-xl);
@@ -135,11 +136,12 @@ button:active {
 }
 
 #form__container {
-  margin: var(--gap-l) 0 var(--gap-l) var(--page-margin);
+  margin: var(--gap-l) var(--gap-xs) var(--gap-l) var(--page-margin);
   padding: var(--gap-m);
   background-color: var(--colour-foreground);
 
   border-radius: var(--border-radius-s);
+    box-shadow: 0 0 3px var(--colour-font);
 }
 
 form {
@@ -167,8 +169,55 @@ form {
   gap: var(--gap-xs);
 }
 
+#tshirt-colour__container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: var(--gap-m);
+  padding: var(--gap-s);
+}
+
 .tshirt-colour {
-  
+  box-sizing: border-box;
+  appearance: none;
+  background: var(--colour-background);
+  outline: 2px solid #333;
+  border: 3px solid var(--colour-background);
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  transition: all 0.1 ease-in-out;
+  cursor: pointer;
+}
+
+.tshirt-colour:focus,
+.tshirt-colour:hover {
+  outline: 2px solid var(--colour-secondary);
+  transition: all 0.1 ease-in-out;
+}
+
+.tshirt-colour:focus,
+.tshirt-colour:hover {
+  transform: scale(1.02);
+  transition: all 0.1 ease-in-out;
+}
+
+.tshirt-colour:checked {
+  border: 4px solid var(--colour-background);
+  outline: 3px solid var(--colour-highlight);
+}
+
+#tshirt-colour__white {
+  background-color: white;
+}
+
+#tshirt-colour__black {
+  background-color: black;
+}
+
+#tshirt-colour__red {
+  background-color: var(--colour-highlight);
 }
 
 /* main image background */
