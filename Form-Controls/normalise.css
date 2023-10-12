@@ -20,3 +20,8 @@ h2,
 h3 {
   font-family: "Quando", serif;
 }
+
+a, a:hover, a:focus, a:visited, a:active {
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+}
