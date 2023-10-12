@@ -89,10 +89,12 @@ main {
   position: relative;
   z-index: 1;
 
-    background: right 50% / 50% no-repeat url(assets/form-background.jpg);
+  background: right bottom 30% / 50% no-repeat url(assets/form-background.jpg);
   padding: var(--gap-l) var(--gap-xl);
   padding-left: var(--gap-xl);
 }
+
+
 
 main::before {
   content: "";
@@ -102,9 +104,24 @@ main::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, var(--colour-background) 50%, rgba(0,0,0,0));
+  background: linear-gradient(
+    to right,
+    var(--colour-background) 50%,
+    rgba(0, 0, 0, 0)
+  );
 }
 
+@media screen and (max-width: 1400px) {
+  main {
+    background: right top 50% / 60% no-repeat url(assets/form-background.jpg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    background: contain center no-repeat url(assets/form-background.jpg);
+  }
+}
 
 /* form */
 
