@@ -86,10 +86,25 @@ header svg {
 /* Main */
 
 main {
-  background-color: var(--colour-background);
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
+  position: relative;
+  z-index: 1;
+
+    background: right 50% / 50% no-repeat url(assets/form-background.jpg);
+  padding: var(--gap-l) var(--gap-xl);
+  padding-left: var(--gap-xl);
 }
+
+main::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, var(--colour-background) 50%, rgba(0,0,0,0));
+}
+
 
 /* form */
 
@@ -143,9 +158,11 @@ button:active {
 }
 
 #form__container {
-  margin: var(--gap-l) var(--gap-xs) var(--gap-l) var(--page-margin);
+  width: 50%;
   padding: var(--gap-m);
   background-color: var(--colour-foreground);
+
+  margin-left: var(--gap-xl);
 
   border-radius: var(--border-radius-s);
   box-shadow: 0 0 3px var(--colour-font);
