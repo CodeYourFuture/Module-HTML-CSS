@@ -104,3 +104,40 @@ footer {
   background-color: #fad3f8;
   color: #9b5de5; /* text color */
 }
+
+@media screen and (min-width: 900px) {
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+  }
+  main {
+    margin: 2.6em 0;
+    padding: 1.3rem;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr 1fr;
+
+    gap: 2em;
+  }
+
+  .hero {
+    grid-row: 1/2;
+    grid-column: 2/-1;
+    text-align: end;
+    align-content: flex-start;
+
+    gap: 2em;
+  }
+
+  .img-area {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .cake-section {
+    grid-row: 2/-1;
+    grid-column: 1/-1;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 15vw);
+  }
+}
