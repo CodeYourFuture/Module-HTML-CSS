@@ -21,7 +21,7 @@ h3 {
   font-family: "Quando", serif;
 }
 
-a, a:hover, a:focus, a:visited, a:active {
+a, a:hover, a:focus, a:visited, a:active, a:visited {
   text-decoration: none;
   transition: all 0.1s ease-in-out;
 }

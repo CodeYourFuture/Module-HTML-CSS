@@ -3,12 +3,12 @@ html {
 }
 
 :root {
-  --colour-primary: #2c8097;
+  --colour-primary: #512c97;
   --colour-secondary: #017fce;
-  --colour-highlight: #d7263d;
-  --colour-background: #e9e8ec;
+  --colour-background: #f4e8ff;
   --colour-foreground: #d8d4ea;
   --colour-font: #36393b;
+  --colour-red: #d7263d;
 
   --fs-xxl: 3.75rem;
   --fs-xl: 2.5rem;
@@ -59,15 +59,20 @@ img {
   object-fit: cover;
 }
 
+a:any-link {
+  color: var(--colour-font);
+}
+
 a:focus,
 a:hover,
 a:active {
-  color: var(--colour-highlight);
+  color: var(--colour-secondary);
 }
 
 /* Header */
 
 header {
+  position: relative;
   background-color: var(--colour-foreground);
   padding: var(--gap-xs) var(--page-margin);
 
@@ -76,16 +81,23 @@ header {
   align-items: center;
 
   fill: var(--colour-primary);
+  box-shadow: 0 0 3px var(--colour-font);
+
+  z-index: 2;
 }
 
 header svg {
-  max-height: 40px;
-  max-width: 60px;
+  height: 40px;
+  width: 70px;
 }
 
 /* Main */
 
 main {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: var(--gap-s);
+
   position: relative;
   z-index: 1;
 
@@ -93,8 +105,6 @@ main {
   padding: var(--gap-l) var(--gap-xl);
   padding-left: var(--gap-xl);
 }
-
-
 
 main::before {
   content: "";
@@ -111,16 +121,16 @@ main::before {
   );
 }
 
-@media screen and (max-width: 1400px) {
-  main {
-    background: right top 50% / 60% no-repeat url(assets/form-background.jpg);
-  }
-}
+/* slogan */
 
-@media screen and (max-width: 768px) {
-  main {
-    background: contain center no-repeat url(assets/form-background.jpg);
-  }
+#slogan {
+  font-size: var(--fs-xxl);
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  color: white;
+  text-shadow: 2px 2px 0 var(--colour-primary), -2px 2px 0 var(--colour-primary), -2px -2px 0 var(--colour-primary),
+    2px -2px 0 var(--colour-primary);
 }
 
 /* form */
@@ -156,9 +166,10 @@ input[type="email"]:focus {
 button {
   background-color: var(--colour-primary);
   color: white;
+  font-size: var(--fs-m);
   cursor: pointer;
 
-  height: var(--fs-xl);
+  height: var(--fs-xxl);
   font-weight: 700;
   transition: all 0.1s ease-in-out;
 
@@ -175,7 +186,6 @@ button:active {
 }
 
 #form__container {
-  width: 50%;
   padding: var(--gap-m);
   background-color: var(--colour-foreground);
 
@@ -247,7 +257,7 @@ form {
 
 .tshirt-colour:checked {
   border: 4px solid var(--colour-background);
-  outline: 3px solid var(--colour-highlight);
+  outline: 3px solid var(--colour-secondary);
 }
 
 #tshirt-colour__white {
@@ -259,7 +269,7 @@ form {
 }
 
 #tshirt-colour__red {
-  background-color: var(--colour-highlight);
+  background-color: var(--colour-red);
 }
 
 /* form t-shirt size */
@@ -410,9 +420,17 @@ form {
 /* Footer */
 
 footer {
+  position: relative;
+  z-index: 2;
+
   background-color: var(--colour-foreground);
   padding: var(--gap-xs) 0;
   text-align: center;
 
   font-size: var(--fs-xs);
+  box-shadow: 0 0 3px var(--colour-font);
+}
+
+footer h3 {
+  margin-bottom: var(--gap-xs);
 }

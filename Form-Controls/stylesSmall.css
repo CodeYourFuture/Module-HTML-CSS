@@ -1,0 +1,25 @@
+@media screen and (max-width: 768px) {
+  :root {
+    --fs-xxl: 3rem;
+    --fs-xl: 2rem;
+    --fs-l: 1.25rem;
+    --fs-m: 1.175rem;
+    --fs-s: 1rem;
+  }
+
+  header {
+    justify-content: space-around;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    padding: var(--gap-xs);
+  }
+
+  #slogan {
+    order: -1;
+    margin-bottom: var(--gap-m);
+  }
+
+  
+}
