@@ -1,20 +1,5 @@
-@media screen and (max-width: 768px) {
-  main {
-    grid-template-columns: 1fr;
-    padding: var(--gap-xs);
-
-    background: top -250px left 70% / 120% no-repeat url(assets/form-background.jpg);
-  }
-
-  main::before {
-    background: linear-gradient(
-      to top,
-      var(--colour-background) 50%,
-      #f4e8ff59
-    );
-  }
-
-    :root {
+@media screen and (max-width: 400px) {
+  :root {
     --fs-xxl: 3rem;
     --fs-xl: 2rem;
     --fs-l: 1.25rem;
@@ -24,6 +9,21 @@
 
   header {
     justify-content: space-around;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    padding: var(--gap-xs);
+
+    background: top -20% left 30% / 120% no-repeat url(assets/form-background.jpg);
+  }
+
+  main::before {
+    background: linear-gradient(
+      to top,
+      var(--colour-background) 50%,
+      #f4e8ff59
+    );
   }
 
   #slogan {
