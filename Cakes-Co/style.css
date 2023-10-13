@@ -11,6 +11,8 @@ img {
   height: 10vh;
 }
 
+/* header styles */
+
 header {
   width: 100vw;
   height: 25vh;
@@ -37,12 +39,68 @@ header {
 .hamburger-menu {
   height: 3em;
 }
-
 .right h3 {
   font-size: 1.1em;
-
   font-weight: 200;
 }
 #name {
   text-align: right;
+}
+
+/* main styles */
+
+main {
+  margin: 2.6em 0;
+  padding: 1.3rem;
+
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+
+  gap: 2em;
+}
+
+/* image area styles */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.hero p {
+  text-align: justify;
+}
+
+/* image area styles */
+
+main img {
+  border-radius: 1em;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.img-big {
+  width: 100%;
+  height: auto;
+}
+
+.cake-section {
+  display: grid;
+  gap: 1.3em;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, 30vw);
+}
+
+.grid-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* footer styles */
+
+footer {
+  width: 100vw;
+  height: 25vh;
+  padding: 1.3rem;
+  background-color: #fad3f8;
+  color: #9b5de5; /* text color */
 }
