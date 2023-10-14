@@ -4,6 +4,7 @@
 }
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 4vw;
 }
 h1 {
   font-size: 2.4em;
@@ -13,7 +14,6 @@ h4 {
   font-size: 1.2em;
   font-weight: 400;
   font-style: italic;
-  width: 19ch;
 }
 h6 {
   font-size: 0.7em;
@@ -57,8 +57,11 @@ header {
   text-align: end;
 }
 .nav-area img {
-  width: 50px;
-  fill: var(--white);
+  height: 30%;
+  width: auto;
+}
+.nav-area p {
+  width: 19ch;
 }
 
 main {
@@ -106,4 +109,56 @@ footer {
 footer h6 {
   align-self: center;
   color: var(--white);
+}
+
+@media screen and (min-width: 540px) {
+  body {
+    font-size: 2vw;
+  }
+  header {
+    height: 10vw;
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+  .nav-area {
+    justify-content: flex-end;
+  }
+  .nav-area img {
+    display: none;
+  }
+  .nav-area p {
+    width: auto;
+  }
+  #intro-sctn {
+    grid-column: 2/-1;
+    text-align: right;
+  }
+  #hero-sctn {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  #images-sctn {
+    grid-column: 1/-1;
+    display: grid;
+    gap: var(--generalPadding);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+  }
+
+  footer {
+    height: 10vw;
+    gap: var(--sectionGap);
+    justify-content: center;
+    align-items: center;
+  }
+
+  #nav-footer {
+    display: flex;
+    flex-direction: row;
+    gap: calc(var(--generalPadding) * 2);
+  }
 }
