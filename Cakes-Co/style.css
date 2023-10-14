@@ -105,11 +105,7 @@ footer {
   color: #9b5de5; /* text color */
 }
 
-@media screen and (min-width: 900px) {
-  body {
-    font-family: Arial, sans-serif;
-    font-size: 2em;
-  }
+@media screen and (min-width: 540px) {
   main {
     margin: 2.6em 0;
     padding: 1.3rem;
