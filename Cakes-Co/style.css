@@ -1,4 +1,9 @@
 /*  Add your styling here */
+:root {
+  --blue : #a8d7de;
+  --cream: #f6df7e;
+}
+
 html {
   margin: 0 auto;
   max-width: 900px;
@@ -8,7 +13,7 @@ html {
   text-wrap: nowrap;
   position: fixed;
   margin-left: 7rem;
-  color: hotpink;
+  color: var(--blue);
 }
 
 body {
@@ -19,7 +24,7 @@ body {
 
 .header {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  background-color: rgb(255, 204, 95);
+  background-color: var(--cream);
   width: 100%;
   top: 0;
   position: sticky;
@@ -59,11 +64,12 @@ body {
 }
 
 .nav-list {
-  display: flex;
-  padding: 0px 60px;
+  display: none;
+  margin-right: 50px;
+  /* padding: 0px 60px;
   position: absolute;
   right: -100vw;
-  transition: right 0.3s ease-in-out;
+  transition: right 0.3s ease-in-out; */
 }
 
 .trigger:checked ~ .hamburger {
@@ -74,15 +80,17 @@ body {
 }
 
 .trigger:checked ~ .nav-list {
-  right: 0;
-  position: sticky;
+  display: flex;
+  flex-direction: column;
+  /* right: 0; */
+  /* position: sticky; */
   transition: right 0.3s ease-in-out;
 }
 
 .navigation__item {
   padding: 0.4rem;
   margin-bottom: 5px;
-  background-color: rgb(201, 146, 43);
+  background-color: #a8d7de;
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
@@ -192,25 +200,41 @@ body {
 }
 
 @media (min-width: 900px) {
-  html {
+  /* html {
   margin: 0 auto;
   max-width: none;
-}
+} */
 
-.hamburger {
+.hamburger{
   display: none;
 }
 
-header .nav-list {
-  display: block;
-  padding: 0px 60px;
+.trigger:checked ~ .hamburger {
+  display: none;
+}
+
+.nav-list {
+  display: flex!important;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0px 15px;
+  right: -5.5vw;
   position: absolute;
+  transition: right 0.3s ease-in-out;
+  margin-top: 60px;
+  background-color: var(--cream);
+  width: 100%;
+  max-width: 850px;
 }
 
 .navigation__item {
   display: inline-block;
   margin: 1rem;
   font-size: 1.4rem;
+}
+
+.container {
+  margin-top: 130px;
 }
 
   .hero {
