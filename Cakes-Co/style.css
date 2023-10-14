@@ -15,14 +15,18 @@ h4 {
   font-style: italic;
   width: 19ch;
 }
+h6 {
+  font-size: 0.7em;
+  font-weight: 200;
+}
 p {
   font-size: 1em;
   font-weight: 300;
   line-height: 1.4em;
 }
 img {
-    width: 100%;
-  }
+  width: 100%;
+}
 
 :root {
   --backgroundColor: rgb(153, 177, 233);
@@ -38,10 +42,12 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  color: var(--white);
 }
 .logo-img {
   margin-top: var(--generalPadding);
   height: 70%;
+  width: auto;
 }
 .nav-area {
   display: flex;
@@ -52,28 +58,52 @@ header {
 }
 .nav-area img {
   width: 50px;
+  fill: var(--white);
 }
 
 main {
-    margin: var(--sectionGap) 0;
-    padding: var(--generalPadding);
-    display: flex;
-    flex-direction: column;
-    gap: var(--sectionGap);
-  }
-  
-  #intro-sctn {
-    display: flex;
-    flex-direction: column;
-    gap: var(--sectionGap);
-  }
-  
-  #images-sctn {
-    display: grid;
-    gap: var(--generalPadding);
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-  }
-  
+  margin: var(--sectionGap) 0;
+  padding: var(--generalPadding);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sectionGap);
+}
 
+#intro-sctn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sectionGap);
+}
 
+#images-sctn {
+  display: grid;
+  gap: var(--generalPadding);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+
+footer {
+  height: 40vw;
+  padding: var(--generalPadding);
+  background-color: var(--backgroundColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#nav-footer {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--generalPadding) / 2);
+}
+#nav-footer a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1em;
+  font-weight: 400;
+}
+
+footer h6 {
+  align-self: center;
+  color: var(--white);
+}
