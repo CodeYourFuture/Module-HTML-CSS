@@ -96,7 +96,7 @@ input[type="submit"] {
   font-weight: bold;
 }
 
-/* Hover effect  */
+/* Hover effect   */
 input[type="submit"]:hover {
   background-color: #044e61;
 }
