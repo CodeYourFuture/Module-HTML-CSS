@@ -54,6 +54,26 @@ header {
   width: 50px;
 }
 
-
+main {
+    margin: var(--sectionGap) 0;
+    padding: var(--generalPadding);
+    display: flex;
+    flex-direction: column;
+    gap: var(--sectionGap);
+  }
+  
+  #intro-sctn {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sectionGap);
+  }
+  
+  #images-sctn {
+    display: grid;
+    gap: var(--generalPadding);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+  
 
 
