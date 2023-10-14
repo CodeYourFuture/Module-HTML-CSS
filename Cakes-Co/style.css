@@ -1,1 +1,59 @@
-/*  Add your styling here */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-size: 2.4em;
+  font-weight: 500;
+}
+h4 {
+  font-size: 1.2em;
+  font-weight: 400;
+  font-style: italic;
+  width: 19ch;
+}
+p {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+img {
+    width: 100%;
+  }
+
+:root {
+  --backgroundColor: rgb(153, 177, 233);
+  --generalPadding: 1em;
+  --sectionGap: 2em;
+  --white: white;
+}
+
+header {
+  height: 40vw;
+  padding: var(--generalPadding);
+  background-color: var(--backgroundColor);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logo-img {
+  margin-top: var(--generalPadding);
+  height: 70%;
+}
+.nav-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: end;
+}
+.nav-area img {
+  width: 50px;
+}
+
+
+
+
