@@ -15,18 +15,22 @@
   </head>
   <body>
     <header>
-      <img class="logo-img" src="img/logo.png" alt="Logo" />
+      <div class="header-top">
+        <img class="logo-img" src="img/logo.png" alt="Logo" />
 
-      <div class="right">
-        <img
-          class="hamburger-menu"
-          src="img/icons8-hamburger-menu-100.svg"
-          alt="Hamburger Menu"
-        />
-        <h3 id="name">The best cakes in town<br />delivered to your door</h3>
+        <div class="right">
+          <label for="menu-icon">
+            <img
+              class="hamburger-menu"
+              src="img/icons8-hamburger-menu-100.svg"
+              alt="Hamburger Menu"
+          /></label>
+
+          <h3 id="name">The best cakes in town<br />delivered to your door</h3>
+        </div>
       </div>
-
-      <!-- <nav>
+      <input type="checkbox" id="menu-icon" />
+      <nav>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Cakes</a></li>
@@ -34,7 +38,7 @@
           <li><a href="#">Lessons</a></li>
           <li><a href="#">About</a></li>
         </ul>
-      </nav> -->
+      </nav>
     </header>
 
     <main>
