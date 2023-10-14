@@ -104,7 +104,13 @@ footer {
   background-color: #fad3f8;
   color: #9b5de5; /* text color */
 }
-
+.copyright {
+  text-align: center;
+}
+.footer-links {
+  display: block;
+  margin-bottom: 1rem;
+}
 @media screen and (min-width: 540px) {
   main {
     margin: 2.6em 0;
