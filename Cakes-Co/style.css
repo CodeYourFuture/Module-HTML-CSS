@@ -29,47 +29,22 @@ p {
   margin: 0 auto;
 }
 
-/*New Code*/
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  height: 5rem;
-  margin-bottom: 3px;
-  background-color: rgb(99, 83, 62);
-  margin-top: 3em;
-  width: 93%;
-  height: 5rem;
+.main-image {
+  width: 60%;
+  padding-bottom: 1em;
 }
 
-.nav-list {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-  align-items: center;
-}
+/*Hamburger Section*/
 
-.nav__item {
-  padding: 0.5% 0;
-}
-
-.nav__link {
-  color: gray;
-  font-weight: 600;
-  text-transform: capitalize;
-  text-decoration: none;
-  background-color: pink;
-  padding: 0.5rem 1rem;
-}
-
-.nav__link:hover {
-  color: orange;
+#hamnav label,
+#hamburger,
+#hamitems {
+  display: none;
 }
 
 .on-top {
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(3, auto);
 }
 
 .header__style {
@@ -78,34 +53,30 @@ p {
 }
 
 .logo__text {
-  justify-content: flex-end;
+  justify-content: end;
   font-size: 1.4em;
   align-items: end;
   font-style: italic;
   font-weight: bold;
   color: #4d4332;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
 }
 
 /*img*/
 
 .logo {
-  margin: 3rem;
-  max-width: 30%;
-  max-height: 4rem;
+  margin: 2em;
+  max-width: 55%;
+  max-height: 5rem;
 }
 
 .main-img {
   margin: 1rem;
-  width: 85%;
   height: 20rem;
   border: 8px solid rgb(118, 102, 81);
-  margin-top: 3rem;
 }
-.main-image {
-  width: 60%;
-}
+
 /*CSS for 4 images*/
 
 .article__img {
@@ -131,19 +102,11 @@ p {
   flex-direction: row;
 }
 
-.main {
-  width: 50%;
-  padding-bottom: 4.5rem;
-}
-
 .welcome {
   align-content: flex-end;
   text-align: end;
   margin: 0.9rem;
   font-size: 1.5rem;
-  padding-top: 2rem;
-
-  padding-bottom: 1.8em;
 }
 
 .welcome h1 {
@@ -153,8 +116,6 @@ p {
   color: #4d4332;
   font-style: italic;
 }
-
-/*Footer Section*/
 
 /*Button*/
 
@@ -170,6 +131,8 @@ button {
 button:hover {
   background-color: gainsboro;
 }
+
+/*footer button*/
 
 .footer__button {
   margin-top: 2rem;
@@ -224,6 +187,63 @@ a:hover {
     grid-template-columns: auto auto auto auto;
   }
 
+  .main {
+    width: 50%;
+    padding-bottom: 4em;
+  }
+
+  .main-image {
+    width: 60%;
+    padding-bottom: 2em;
+  }
+
+  #hamnav {
+    background-color: rgb(99, 83, 62);
+    width: 93%;
+    margin-left: 3em;
+    margin-top: 1em;
+  }
+
+  #hamnav label,
+  #hamburger {
+    display: none;
+  }
+
+  #hamitems {
+    margin-left: 3em;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2em;
+    padding: 10px;
+  }
+  #hamitems a {
+    padding: 25px;
+    color: #2c261d;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  #hamitems a:hover {
+    background-color: aliceblue;
+  }
+
+  .nav__link {
+    background-color: lightpink;
+    font-weight: 600;
+  }
+
+  .main-img {
+    margin: 1rem;
+    width: 85%;
+    height: 20rem;
+    border: 8px solid rgb(118, 102, 81);
+    margin-top: 3rem;
+  }
+
+  .welcome {
+    padding-top: 2rem;
+  }
+
   .footer {
     margin-top: 3rem;
     text-align: center;
@@ -237,14 +257,65 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .content {
     display: flex;
-    align-items: center;
     border-radius: 1em;
-    margin-bottom: 2em;
     flex-direction: column-reverse;
   }
+
+  #hamitems {
+    display: block;
+  }
+
+  #hamitems a {
+    display: block;
+    width: 15%;
+    box-sizing: border-box;
+    border: 2px solid rgb(117, 105, 105);
+    border-radius: 3px;
+    text-decoration: none;
+  }
+
+  .nav__link {
+    background-color: lightpink;
+    font-weight: 600;
+    padding: 0.3em;
+  }
+
+  #hamnav label {
+    display: inline-block;
+    color: rgb(35, 26, 18);
+    font-size: 1.2em;
+    font-style: normal;
+    padding: 10px;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  #hamitems {
+    display: none;
+  }
+
+  #hamnav input:checked ~ #hamitems {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-img {
+    margin: 1rem;
+    border: 8px solid rgb(118, 102, 81);
+  }
+
+  .welcome {
+    align-content: flex-end;
+    text-align: start;
+    margin: 0.9rem;
+    font-size: 1.5rem;
+  }
+
   .footer {
     background-color: pink;
     border-top: 4px solid #4d4332;
@@ -255,12 +326,5 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     gap: 1em;
-  }
-  .welcome {
-    align-content: flex-end;
-    text-align: start;
-    margin: 0.9rem;
-    font-size: 1.5rem;
-    /* padding-bottom: 1.8em; */
   }
 }
