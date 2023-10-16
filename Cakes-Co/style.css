@@ -163,6 +163,7 @@ footer h6 {
   }
 
   .nav-nav {
+    margin: var(--generalPadding) var(--generalPadding) 0;
     display: flex;
     width: auto;
     border-radius: 0;
@@ -185,6 +186,7 @@ footer h6 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
+    padding: 0 var(--generalPadding);
   }
   .nav-area {
     justify-content: flex-end;
