@@ -1,28 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Product Selection Form</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+    <main>
+      <section class="container">
+        <!--  Name and Last Name -->
+        <section class="names-row">
+          <section class="couple-column">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </section>
+          <section class="couple-column">
+            <label for="lastname">Lastname:</label>
+            <input type="text" id="lastname" name="lastname" required />
+          </section>
+        </section>
 
+        <!-- T-Shirt Colour and Size -->
+        <section class="choices-row">
+          <section class="couple-column">
+            <label for="color">T-Shirt Color:</label>
+            <select id="color" name="color" required>
+              <option value="" disabled selected>Select</option>
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+            </select>
+          </section>
+          <section class="couple-column">
+            <label for="size">T-Shirt Size:</label>
+            <select id="size" name="size" required>
+              <option value="" disabled selected>Select</option>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
+            </select>
+          </section>
+        </section>
+
+        <!-- Email and the Delivery Date -->
+        <section class="delivery-row">
+          <section class="couple-column">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </section>
+          <section class="couple-column">
+            <label for="deliveryDate"
+              >Delivery Date
+              <span class="small-text">(within the next 4 weeks):</span>
+            </label>
+            <input
+              type="date"
+              id="deliveryDate"
+              name="deliveryDate"
+              required
+              min="2023-10-13"
+              max="2023-11-10"
+            />
+          </section>
+        </section>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit" />
+      </section>
+    </main>
+    <footer>
+      <!-- My name -->
+      <h2>By Fathi Kahin</h2>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font and background color for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0e0e0;
+  margin: 0;
+  padding: 20px;
+}
+
+/* the header */
+header {
+  text-align: center;
+  background-color: #f7941d
+  color: #1d1d1b
+  padding: 10px;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+/* The main content */
+main {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* The form container */
+.container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px; /*  padding for Inside the container*/
+}
+
+/* Style  for the form elements */
+.names-row,
+.choices-row,
+.delivery-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.couple-column {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+label {
+  font-weight: bold;
+  padding: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.small-text {
+  font-size: 0.7rem;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("down-arrow.png") no-repeat;
+  background-position: right center;
+  padding-right: 30px; /* Space for the arrow icon */
+  cursor: pointer;
+}
+
+/* Center the submit button */
+input[type="submit"] {
+  display: block;
+  margin: 20px auto;
+  background-color: #1d1d1b;
+  color: #f7941d;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Hover effect */
+input[type="submit"]:hover {
+  background-color: #7c9521;
+}
+
+footer {
+  text-align: center;
+}
