@@ -7,9 +7,6 @@ body {
   font-family: Arial, sans-serif;
   font-size: 1em;
 }
-img {
-  height: 10vh;
-}
 
 /* header styles */
 
@@ -19,19 +16,22 @@ header {
   display: flex;
   flex-direction: column;
   background-color: #fad3f8;
-  color: #9b5de5; /* text color */
+  color: #b60a7d; /* text color */
+
+  box-shadow: rgb(153, 161, 153) -5px 20px 30px -10px;
 }
+
 .header-top {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   padding: 1.3rem;
 }
 nav ul {
   display: none;
   column-gap: 40px;
-  font-size: 32px;
+  font-size: 1.2em;
   list-style-type: none;
   justify-content: center;
   margin: 20px 0;
@@ -40,13 +40,13 @@ nav ul {
 }
 ul li a {
   text-decoration: none;
+  color: rgb(35, 130, 194);
+  font-weight: 300;
 }
 .logo-img {
-  /* height: 80%; */
-  /* margin-top: 0.5em; */
-
-  /*Hamburger menu*/
+  height: 7em;
 }
+
 .right {
   height: 100%;
   display: flex;
@@ -69,6 +69,9 @@ ul li a {
 }
 #name {
   text-align: right;
+  color: #c221a7;
+  font-weight: bold;
+  text-shadow: #f5f5f5;
 }
 
 /* main styles */
@@ -76,11 +79,16 @@ ul li a {
 main {
   margin: 2.6em 0;
   padding: 1.3rem;
-
   display: grid;
   grid-template-rows: repeat(3, auto);
-
   gap: 2em;
+
+  background: linear-gradient(
+    135deg,
+    #e1afebd3 0%,
+    #f5f5f5 30%,
+    #83dac465 100%
+  );
 }
 
 /* image area styles */
@@ -93,6 +101,9 @@ main {
 
 .hero p {
   text-align: justify;
+}
+h1 {
+  color: #c221a7;
 }
 
 /* image area styles */
@@ -146,13 +157,20 @@ footer {
     gap: 2em;
   }
 
+  .logo-img {
+    height: 15em;
+  }
+
   .hero {
     grid-row: 1/2;
     grid-column: 2/-1;
     text-align: end;
     align-content: flex-start;
-
     gap: 2em;
+  }
+  .hero p {
+    margin-bottom: 2em;
+    font-size: 1.5em;
   }
 
   .img-area {
@@ -170,7 +188,6 @@ footer {
     display: flex;
     flex-direction: row;
     column-gap: 40px;
-    font-size: 32px;
     list-style-type: none;
     justify-content: center;
     margin: 20px 0;
