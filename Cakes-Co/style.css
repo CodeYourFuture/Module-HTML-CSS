@@ -1,1 +1,198 @@
 /*  Add your styling here */
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+header {
+  background-color: #00a6d4;
+  color: #1d1d1b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Initially hide the hamburger menu */
+/* Initially hide the hamburger menu */
+/* Position the menu container to the top right corner */
+.menu-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Style the hamburger icon */
+/* Style the hamburger icon */
+.burger-icon {
+  display: none;
+}
+
+/* Hide the checkbox */
+.checkbox-burger {
+  display: none;
+}
+
+/* Default styles for the navigation */
+nav {
+  background-color: #f5f5f5;
+  color: #00a6d4;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-nav {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+  column-gap: 5px;
+  /* Align items vertically in the navigation */
+}
+
+.flex-nav a {
+  border: solid;
+  border-radius: 2px;
+  padding: 10px 20px 20px;
+  text-decoration: none;
+}
+
+.flex-nav a {
+  border: solid;
+  border-radius: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #00a6d4;
+  font-weight: bold;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+a:hover {
+  color: black;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  padding: 20px;
+}
+
+p {
+  font-size: 24px;
+  color: #1d1d1b;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+h2 {
+  font-family: "Poppins", Arial, sans-serif;
+  color: #1d1d1b;
+  font-size: 14px;
+}
+
+/* Default styles */
+main {
+  display: flex;
+  flex-direction: row; /* Display text and image side by side by default */
+}
+
+.main-image {
+  width: 100%; /* Ensure the image doesn't overflow */
+}
+
+content {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Media query for responsive design (e.g., for cell phones) */
+
+/* footer */
+footer {
+  background-color: #00a6d4;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+}
+
+.contact-info > div {
+  margin: 20px;
+}
+
+.copy {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  header img {
+    max-width: 40%;
+  }
+
+  .burger-icon {
+    display: flex;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 0; /* Adjust the top position as needed */
+    right: 0; /* Adjust the right position as needed */
+  }
+
+  img {
+    height: auto;
+  }
+
+  figure {
+    padding: 0;
+    margin: 0;
+  }
+
+  content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+  }
+
+  .flex-nav {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #burger:checked + .flex-nav {
+    display: flex;
+  }
+  .flex-nav {
+    display: none; /* to hide the navigation links */
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+  }
+
+  main {
+    flex-direction: column-reverse; /* To display text under the image on smaller screens */
+  }
+
+  .main-image {
+    height: auto; /* To allow the image to scale proportionally */
+  }
+
+  content {
+    flex-direction: column; /* to display text under the image on smaller screens */
+  }
+
+  .content-image {
+    height: auto; /* To allow the image to scale proportionally */
+  }
+}
