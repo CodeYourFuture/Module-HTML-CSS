@@ -12,10 +12,7 @@ button {
   font-size: 1rem;
 }
 
-h1 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+h1,
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -137,12 +134,6 @@ button:hover {
   padding-left: 30rem;
 }
 
-.footer__content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 1em;
-}
 a {
   color: rgb(26, 23, 23);
 }
@@ -168,6 +159,22 @@ a:hover {
 .text {
   padding-top: 1.5em;
   color: rgb(67, 48, 48);
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1em;
+}
+
+.img__footer {
+  text-align: center;
+  width: 3%;
+  border: 1px solid gray;
+  border-radius: 80%;
+  padding: 12px;
+  overflow: hidden;
 }
 
 /*For computer view*/
