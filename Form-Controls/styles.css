@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-align: center;
 }
 
 @font-face {
@@ -31,44 +30,144 @@ body {
 }
 
 h1 {
-  font-size: 240%;
-  padding-bottom: 5%;
+  font-size: 300%;
+  padding-bottom: 3%;
+  text-align: center;
 }
 
 h2 {
-  font-size: 120%;
+  font-size: 160%;
   padding-bottom: 3%;
+  text-align: center;
 }
 
 h3 {
-  font-size: 100%;
+  font-size: 90%;
+}
+
+h4 {
+  font-size: 90%;
+  text-align: center;
+}
+
+h5 {
+  text-align: end;
+  padding-right: 2%;
+}
+
+p {
+  font-size: 115%;
+  accent-color: #000000;
+}
+
+.form {
+  background-color: #f4f3f1;
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+  border-right: solid 5px #676767;
+  border-left: solid 5px #676767;
+  border-top: solid 5px #676767;
 }
 
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-}
-
-.form {
-  background-color: #ffffff;
-  margin: auto;
-  width: 90%;
-  max-width: 400px;
+  justify-content: space-evenly;
+  text-align: left;
 }
 
 .inputNames {
   display: flex;
   flex-direction: column;
+  margin-bottom: 3%;
 }
+
+.formControl {
+  height: 30px;
+  padding-left: 10px;
+}
+
+.formEmail {
+  height: 30px;
+  width: 260px;
+  padding-left: 10px;
+}
+
 .tShirt {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 3%;
+}
+
+.tShirtColours {
+  font-size: 130%;
 }
 
 .radio {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+.blue {
+  color: #0303fd;
+  font-size: 115%;
+  accent-color: #0303fd;
+}
+
+.red {
+  color: #fe0000;
+  font-size: 115%;
+  accent-color: #fe0000;
+}
+
+.green {
+  color: #007512;
+  font-size: 115%;
+  accent-color: #007512;
+}
+
+.size {
+  padding-bottom: 3%;
+}
+
+.h4date {
+  font-size: 100%;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.timeTable {
+  height: 40px;
+  font-size: 20px;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+}
+
+.inputSubmit {
+  height: 40px;
+  width: 80px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: #3b3b3b;
+  border: solid 4px #fff709;
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+
+.inputSubmit:hover {
+  cursor: pointer;
 }

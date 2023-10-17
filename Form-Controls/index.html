@@ -16,7 +16,7 @@
       <form class="form">
         <!-- write your html here-->
         <!-- try writing out the requirements first-->
-        <h2>Please insert your First name and Last name:</h2>
+        <h2>- Please insert your Name:</h2>
         <div class="container">
           <div class="inputNames">
             <h3>First Name:</h3>
@@ -41,26 +41,24 @@
           </div>
         </div>
 
-        <h2>Please insert your Email:</h2>
-        <div>
-          <h3>eMail: <input type="email" placeholder="example@gmail.com" required></h3>
-          
+        <h2>- Please insert your Email:</h2>
+        <div class="inputNames">
+          <h4>
+            eMail:
+            <input
+              type="email"
+              placeholder="example@gmail.com"
+              class="formEmail"
+              required
+            />
+          </h4>
         </div>
 
-
-        <h2>Please Select your T-Shirt Colour:</h2>
+        <h2>- Please Select your Colour:</h2>
         <div class="tShirt">
-          <h3>T-Shirt Colours</h3>
+          <h4 class="tShirtColours">T-Shirt Colours</h4>
           <div class="radio">
-            <p>
-              <input
-                type="radio"
-                name="T-ShirtColour"
-                value="b"
-                class="inputRadio"
-              />Blue
-            </p>
-            <p>
+            <p class="red">
               <input
                 type="radio"
                 name="T-ShirtColour"
@@ -68,46 +66,54 @@
                 class="inputRadio"
               />Red
             </p>
-            <p>
+            <p class="blue">
+              <input
+                type="radio"
+                name="T-ShirtColour"
+                value="b"
+                class="inputRadio"
+              />Blue
+            </p>
+            <p class="green">
               <input
                 type="radio"
                 name="T-ShirtColour"
                 value="y"
                 class="inputRadio"
-              />Yellow
+              />Green
             </p>
           </div>
         </div>
 
-        <h2>Please Select your T-Shirt Size:</h2>
-        <div class="Size">
-          <h3>T-Shirt Sizes</h3>
+        <h2>- Please Select your Size:</h2>
+        <div class="size">
+          <h4 class="tShirtColours">T-Shirt Sizes</h4>
           <div class="radio">
             <p>
               <input
                 type="radio"
                 name="T-ShirtSize"
                 value="xs"
-                class="inputRadio1"
+                class="inputRadio"
               />XS
             </p>
-             <p>
+            <p>
               <input
                 type="radio"
                 name="T-ShirtSize"
                 value="s"
-                class="inputRadio1"
+                class="inputRadio"
               />S
             </p>
-             <p>
+            <p>
               <input
                 type="radio"
                 name="T-ShirtSize"
                 value="m"
-                class="inputRadio1"
+                class="inputRadio"
               />M
             </p>
-             <p>
+            <p>
               <input
                 type="radio"
                 name="T-ShirtSize"
@@ -131,15 +137,23 @@
                 class="inputRadio1"
               />XXL
             </p>
+          </div>
         </div>
-        <h2>Please select the date your T-Shirt will be sent:</h2>
-        <h3>Make sure that date is in the next 4 weeks. </h3>
-        <input type="date" class="timeTable">
+
+        <div class="date">
+          <h2>- Please select the date :</h2>
+          <h4 class="h4date">Make sure that date is in the next 4 weeks.</h4>
+          <input type="date" class="timeTable" />
+        </div>
+
+        <div class="submit">
+          <input type="submit" class="inputSubmit" />
+        </div>
       </form>
     </main>
     <footer class="form">
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h5>By Orlando Morales CYF</h5>
     </footer>
   </body>
 </html>
