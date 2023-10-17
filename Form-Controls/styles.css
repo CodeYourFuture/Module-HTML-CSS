@@ -1,0 +1,11 @@
+:focus {
+  outline: 2px solid skyblue;
+}
+
+label,
+input,
+select,
+button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
