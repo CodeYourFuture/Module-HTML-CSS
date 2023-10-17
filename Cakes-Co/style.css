@@ -1,1 +1,340 @@
 /*  Add your styling here */
+@font-face {
+    font-family: "Alex Brush", cursive;
+    font-family: "Anton", sans-serif;
+    font-family: "Cinzel", serif;
+    font-family: "IM Fell Double Pica SC", serif;
+    font-family: "Lato", sans-serif;
+    font-family: "PT Sans", sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Anton&family=Cinzel:wght@400;500;600;700;800;900&family=IM+Fell+Double+Pica+SC&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    width: 100vw;
+  }
+  
+  /* styling with Mobile first design */
+  .cake-header {
+    background-color: #dcceb8;
+    margin-bottom: 0.5vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-image {
+    width: 15vw;
+    height: 15vw;
+    padding: 2vh;
+    box-shadow: 2px 2.5px rgb(228, 127, 228);
+    border: 1px solid none;
+    margin-left: 3vw;
+    margin-bottom: 1.5vh;
+    border-radius: 7.5vw;
+  }
+  .DeliCakes {
+    position: absolute;
+    top: 10.5vh;
+  }
+  .DeliCakes h1 {
+    font-family: "Anton", sans-serif;
+    font-weight: bold;
+    font-size: 5vw;
+    color: rgb(38, 5, 5);
+    margin-bottom: 0;
+    text-align: center;
+    margin-left: 3vw;
+    text-shadow: 1.5px 0.7px 2px darkslategrey;
+  }
+  .cake-span {
+    font-family: "Alex Brush", cursive;
+    font-size: 3vw;
+    margin-left: 2.8vh;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(126, 99, 28);
+  }
+  .slogan {
+    font-weight: bold;
+    font-size: clamp(2vh, 3vw, 2vh);
+    text-align: right;
+    font-style: italic;
+    position: relative;
+    top: 1vh;
+    margin-right: 5vw;
+    margin-left: 38vw;
+    padding-bottom: 0.1vw;
+    color: rgb(38, 5, 5);
+  }
+  /* Nav styling with hamburger */
+  .hamburger {
+    cursor: pointer;
+    padding: 10px;
+    align-self: center;
+    justify-self: end;
+    display: block;
+    position: absolute;
+    margin-left: 85vw;
+    top: 0.1vh;
+  }
+  .ham-bar {
+    width: 7vw;
+    height: 0.75vw;
+    background-color: grey;
+    margin: 0.5vh 0;
+    transition: 0.3s;
+    border-radius: 1vw;
+  }
+  #menu-toggle:checked + .menu {
+    display: grid;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    right: 1vw;
+    margin-top: 0.5vh;
+    background-color: #afa595;
+    box-shadow: 0px 4px 10px #270327;
+    border-radius: 0.25rem;
+    z-index: 10;
+    width: auto;
+    padding: 2vh 2vw;
+  }
+  #menu-toggle:checked ~ .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    height: auto;
+    min-height: 25vh;
+    width: 50vw;
+    margin-right: 4rem;
+    top: 0;
+  }
+  #menu-toggle:checked ~ .hamburger .ham-bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  #menu-toggle:checked ~ .hamburger .ham-bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #menu-toggle:checked ~ .hamburger .ham-bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  .hidden {
+    display: none !important;
+  }
+  .menu-bar {
+    display: flex;
+    padding: 1vh 15vw;
+    background-color: rgb(192, 148, 148);
+    color: #270327;
+    border: none;
+    border-radius: 0.5;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.6s ease;
+    width: 4vw;
+    height: 2vh;
+    font-size: clamp(2vh, 2.5vw, 3vh);
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-bar a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 500;
+  }
+  .menu-bar:hover {
+    background-color: brown;
+    color: whitesmoke;
+  }
+  
+  /* main area styling */
+  /* main-article styling */
+  
+  .main-image {
+    width: 90vw;
+    height: 70vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 10vw;
+  }
+  .main-article {
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto;
+    transition: all 0.3s ease;
+  }
+  .main-image:hover {
+    opacity: 0.7;
+    transform: scale(0.8);
+  }
+  .Bakery {
+    font-family: "Lato", sans-serif;
+    text-align: justify;
+    line-height: 1.3;
+    font-size: clamp(2.25vh, 2.5vw, 3.5vh);
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 0;
+  }
+  .Bakery h1 {
+    text-shadow: 1px 2px 2.5px rgb(184, 6, 59);
+  }
+  .order-now {
+    font-size: clamp(2vh, 2.5vw, 3.5vh);
+    background-color: brown;
+    color: whitesmoke;
+    font-style: italic;
+    text-decoration: none;
+    padding: 0 0.5vw;
+  }
+  /* show-menu section styling */
+  .show-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+    grid-template-rows: repeat(2, auto);
+    margin: 1.5vh 0.5vw 1.5vh 0.5vw;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .show-article img {
+    width: 40vw;
+    height: 40vw;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  .show-article p {
+    font-size: 4.7vw;
+    font-weight: 550;
+    margin-top: 0.5vh;
+  }
+  .show-article img:hover {
+    opacity: 0.7;
+    transform: scale(0.8);
+  }
+  /* new-menu section styling */
+  .new-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+    grid-template-rows: repeat(2, auto);
+    /* gap: 0.5vw; */
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 6vw;
+  }
+  .new h3 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 0.5vh;
+  }
+  .new-article img {
+    width: 40vw;
+    height: 40vw;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  .new-article p {
+    font-size: 3.8vw;
+    font-weight: 550;
+    margin-top: 0.5vh;
+  }
+  .new-article img:hover {
+    opacity: 0.7;
+    transform: scale(0.8);
+  }
+  /* footer styling */
+  .cake-footer {
+    background-color: rgb(209, 209, 142);
+    margin-top: 3vh;
+  }
+  .location,
+  .shops,
+  .email {
+    background: rgb(196, 144, 189);
+    color: rgb(202, 105, 173)45, 245);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 4vw;
+    width: 35vw;
+    padding: 2vw 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 0.2rem;
+    margin-top: 3vh;
+    margin-left: 5.5vw;
+  }
+  .footer-article {
+    display: flex;
+    flex-direction: column;
+  }
+  .icon-footer img {
+    gap: 0.5vw;
+    height: 7vw;
+    width: 7vw;
+    border-radius: 6vw;
+    border: 2px solid #f38888;
+    padding: 0.7vh;
+    margin: 0.6vh;
+  }
+  .icon-footer {
+    display: flex;
+    justify-content: center;
+    margin: 4.5vh 3vw 0 0;
+  }
+  .copy {
+    font-size: 3.8vw;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    padding-bottom: 1.5vh;
+  }
+  .footer-article div:hover {
+    background: whitesmoke;
+    color: rgb(90, 6, 6);
+  }
+  
+  /* Media styling for 540px responsive design */
+  
+  @media screen and (min-width: 540px) {
+    .hamburger {
+      display: none;
+    }
+  
+    .menu {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      /* right: 3; */
+      margin: 4vh 2vw 4vh 2vw;
+      height: 5vh;
+      gap: 1vh;
+      background-color: #afa595;
+      padding: 2vh 2vw 2vw 19vw;
+      box-shadow: 0px 4px 10px;
+    }
+  
+    .menu-bar {
+      font-size: clamp(1.6vh, 2.5vw, 3vh);
+      align-content: left;
+      padding: 1vh 6vw;
+      width: 2vw;
+      height: 2vh;
+    }
+  
+    .header-image {
+      width: 5vw;
+      height: 5vw;
+      padding: 1vh;
+      border: 1px solid none;
+      margin-left: 0.2vw;
+      border-radius: 4vw;
+    }
+  
+    
