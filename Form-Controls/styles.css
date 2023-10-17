@@ -2,4 +2,32 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  margin: 5%;
+  font-family: RockSalt-Regular;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.inputNames {
+  display: flex;
+  flex-direction: column;
+}
+.tShirt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }

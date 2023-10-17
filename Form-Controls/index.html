@@ -1,28 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+        <!-- write your html here-->
+        <!-- try writing out the requirements first-->
+        <h2>Please insert your First name and Last name:</h2>
+        <div class="container">
+          <div class="inputNames">
+            <h3>First Name:</h3>
+            <input
+              type="text"
+              name="First Name"
+              id="FirstName"
+              class="formControl"
+              required
+            />
+          </div>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+          <div class="inputNames">
+            <h3>Last Name:</h3>
+            <input
+              type="text"
+              name="Last Name"
+              id="LastName"
+              class="formControl"
+              required
+            />
+          </div>
+        </div>
 
+        <h2>Please Select your T-Shirt Colour:</h2>
+        <div class="tShirt">
+          <h3>T-Shirt Colours</h3>
+          <div class="radio">
+            <p>
+              <input
+                type="radio"
+                name="T-ShirtColour"
+                value="b"
+                class="inputRadio"
+              />Blue
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="T-ShirtColour"
+                value="r"
+                class="inputRadio"
+              />Red
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="T-ShirtColour"
+                value="y"
+                class="inputRadio"
+              />Yellow
+            </p>
+          </div>
+        </div>
+
+        <h2>Please Select your T-Shirt Size:</h2>
+        <div class="Size">
+          <h3>T-Shirt Sizes</h3>
+          <div class="radio">
+            <p>
+              <input
+                type="radio"
+                name="T-ShirtSize"
+                value="xs"
+                class="inputRadio1"
+              />XS-Extra Small
+            </p>
+             <p>
+              <input
+                type="radio"
+                name="T-ShirtSize"
+                value="s"
+                class="inputRadio1"
+              />S-Small
+            </p>
+             <p>
+              <input
+                type="radio"
+                name="T-ShirtSize"
+                value="m"
+                class="inputRadio1"
+              />M-Medium
+            </p>
+             <p>
+              <input
+                type="radio"
+                name="T-ShirtSize"
+                value="l"
+                class="inputRadio1"
+              />L-Large
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="T-ShirtSize"
+                value="xl"
+                class="inputRadio1"
+              />XL-Extra Large
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="T-ShirtSize"
+                value="xxl"
+                class="inputRadio1"
+              />XXL-Double Extra Large
+            </p>
+        </div>
+        <h2>Please select the date your T-Shirt will be sent:</h2>
+        <h3>Make sure that date is in the next 4 weeks. </h3>
+        <input type="date" class="timeTable">
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By HOMEWORK SOLUTION</h2>
+    </footer>
+  </body>
 </html>
