@@ -5,15 +5,56 @@
   text-align: center;
 }
 
-body {
-  margin: 5%;
+@font-face {
   font-family: RockSalt-Regular;
+  src: url(RockSalt-Regular.ttf);
+}
+
+@font-face {
+  font-family: PermanentMarker-Regular;
+  src: url(PermanentMarker-Regular.ttf);
+}
+
+@font-face {
+  font-family: DMSerifDisplay-Regular;
+  src: url(DMSerifDisplay-Regular.ttf);
+}
+
+body {
+  font-family: DMSerifDisplay-Regular;
+  background-color: #e5e5f7;
+  background-image: radial-gradient(#a679a5 0.5px, transparent 0.5px),
+    radial-gradient(#a679a5 0.5px, #e5e5f7 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 240%;
+  padding-bottom: 5%;
+}
+
+h2 {
+  font-size: 120%;
+  padding-bottom: 3%;
+}
+
+h3 {
+  font-size: 100%;
 }
 
 .container {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.form {
+  background-color: #ffffff;
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
 }
 
 .inputNames {
