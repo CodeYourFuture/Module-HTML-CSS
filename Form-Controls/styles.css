@@ -101,7 +101,7 @@ p {
   padding-bottom: 3%;
 }
 
-.tShirtColours {
+.tShirtColors {
   font-size: 130%;
 }
 
@@ -160,11 +160,11 @@ p {
   height: 40px;
   width: 80px;
   color: #fff;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: bolder;
   background-color: #3b3b3b;
   border: solid 4px #fff709;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-bottom: 2%;
 }
 
