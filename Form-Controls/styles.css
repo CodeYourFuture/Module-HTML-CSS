@@ -1,0 +1,149 @@
+
+.frmlable {
+    display: flex;
+    gap: 140px;
+    padding-top: 40px;
+    color: aliceblue;
+}
+.frminput {
+    padding-top: 15px;
+    display: flex;
+    gap: 20px;
+    
+}
+.frminput input {
+    border: 1px solid black;
+    height: 30px;
+    border-radius: 5px;
+    width: 200px;
+
+}
+.frmaddress {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: aliceblue;
+} 
+.frmaddress input {
+    width: 430px;
+    border: 1px solid black;
+    height: 30px;
+    border-radius: 5px;
+
+
+}
+.storeleft {
+    display: flex;
+    flex-direction: column;
+}
+.frmlable2 {
+    display: flex;
+    gap: 200px;
+    padding-top: 20px;
+    color: aliceblue;
+}
+.frminput2 #size {
+    border: 1px solid black;
+    width: 230px;
+    height: 30px;
+}
+.frminput2 input {
+    border: 1px solid black;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.ordercolor {
+    padding-top: 20px;
+     color: aliceblue;
+     font-size: large;
+}
+.colorclass {
+    color: aliceblue;
+}
+.terms1 {
+    font-size: large;
+    padding-left: 10px;
+    color: aliceblue;
+}
+.terms2 {
+    color: #86cff1;
+    text-decoration: underline;
+
+}
+.orderbtn {
+    background-color: #07b4f9;
+    color: aliceblue;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style:inherit;
+    height: 40px;
+    width: 160px;
+   
+}
+.mainrow {
+    display: flex;
+    gap: 20px;
+    border-radius: 5px;
+    border-style: double;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-spacing: 20px;
+    background-color: rgb(34, 86, 131);
+}
+.hclass {
+    background-color: rgb(12, 120, 228);
+}
+footer {
+    background-color: rgb(101, 165, 199);
+}
+
+.allfooter {
+    justify-content: center;
+}
+.footericons {
+    display: flex;
+flex-direction: row;
+gap: 50px;
+justify-content: center;
+
+}
+.karmafooter {
+    padding-top: 50px;
+    text-align: center;
+    justify-content: center;
+    border-top: #6940ef;
+    border-radius: 80px;
+}
+
+
+.ftr {
+   /* display: flex;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.face {
+    width: 40px;
+    height: 40px;
+}
+.twit {
+    width: 40px;
+    height: 40px;
+}
+.inst {
+    width: 40px;
+    height: 40px;
+}
+.storeimg {
+    width: 100%;
+   /* max-width: 400px;*/
+    height: auto;
+  }
