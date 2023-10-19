@@ -1,14 +1,14 @@
 body {
   text-align: center;
   margin: 0;
+  background: linear-gradient(to bottom, #2e31db, #b3b3ac);
 }
 
 header {
-  color: #000000;
-  text-align: center;
   padding: 20px 0;
   margin-bottom: 20px;
   background-color: rgba(179, 240, 245, 0.973); /* to see the footer */
+  border: #a64fe0 20px solid;
 }
 header h1 {
   color: #8e41e7f8;
@@ -67,4 +67,52 @@ footer a {
   color: #fff;
   text-decoration: none;
   margin: 0 10px;
+}
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  header {
+    padding: 10px 0;
+    margin-bottom: 10px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  main {
+    margin: 0 5%;
+    display: block; /* Change to a single column layout for smaller screens */
+  }
+
+  section {
+    padding: 5px 15px;
+    margin-bottom: 10px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  h2 {
+    padding: 0;
+  }
+
+  button {
+    font-size: 12px;
+  }
+
+  footer {
+    padding: 10px 0;
+    margin-top: 10px;
+  }
+
+  footer p {
+    margin-bottom: 5px;
+  }
 }
