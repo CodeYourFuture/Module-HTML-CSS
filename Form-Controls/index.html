@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+        <!-- write your html here-->
+        <!--  1. What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide something.
+              2. What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
+              3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
+              4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
+              5. When do they want the t-shirt to be delivered? I must collect a date and make sure that date is in the next four weeks. How will I do this? How will I make sure there are no mistakes about the date?-->
+        <div class="groupInptC">
+          <label for="nameInpt">Full Name :</label>
+          <input type="text" id="nameInpt"/>
+        </div>
+        <div class="groupInptC">
+          <label for="emailInpt">E-mail :</label>
+          <input type="email" id="emailInpt"/>
+        </div>
+        <div class="groupInptR">
+          <label for="colorInpt">Select Color :</label>
+          <input type="text" id="colorInpt"/>
+        </div>
+        <div class="groupInptR">
+          <label for="sizeInpt">Select Size :</label>
+          <input type="text" id="sizeInpt"/>
+        </div>
+        <div class="groupInptC">
+          <label for="dateInpt">Select Delivery Date :</label>
+          <input type="text" id="dateInpt"/>
+        </div>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
 
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By FIKRET ELLEK</h2>
+    </footer>
+  </body>
 </html>
