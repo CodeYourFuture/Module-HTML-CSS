@@ -1,0 +1,22 @@
+:root {
+  --colour-background: #E6DACD;
+  --colour-foreground: #F4ECE6;
+  --colour-accent: #0150FD;
+  --colour-black: #000;
+  --colour-white: #FFF;
+
+  /* base font size 12 */
+  --fs-min: 12px;
+  --fs-xl: calc(var(--fs-min) + 5.5rem);
+  --fs-l: calc(var(--fs-min) + 0.8125rem);
+  --fs-m: calc(var(--fs-min) + 0.3125rem);
+  --fs-sm: calc(var(--fs-min) + 0.125rem);
+  --fs-xs: var(--fs-min);
+
+  --gap-xl: 2.375rem;
+  --gap-l: 1.5rem;
+  --gap-m: 1rem;
+  --gap-s: 0.5rem;
+  --gap-xs: 0.25rem;
+}
+
