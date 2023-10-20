@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Quicksand:wght@300;400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/normalise.css">
     <link rel="stylesheet" href="css/style.css">
@@ -22,12 +22,13 @@
     <header>
         <section>
             <h1>Pedro Ricciardi</h1>
-            <p>/ WEB DEVELOPER</p>
+            <p class="divider">/</p>
+            <p>WEB DEVELOPER</p>
         </section>
         <section>
-            <label for="nav__toggle"></label>
+            <label for="nav__toggle" id="hamburger__button"></label>
             <input type="checkbox" name="nav__toggle" id="nav__toggle">
-            <nav>
+            <nav id="nav-list">
                 <a href="index.html" class="nav-item actual-page">ABOUT ME</a>
                 <a href="resume.html" class="nav-item">RESUME</a>
                 <a href="projects.html" class="nav-item">PROJECTS</a>

@@ -1,22 +1,87 @@
 :root {
-  --colour-background: #E6DACD;
-  --colour-foreground: #F4ECE6;
-  --colour-accent: #0150FD;
+  --colour-background: #e6dacd;
+  --colour-foreground: #f4ece6;
+  --colour-accent: #0150fd;
   --colour-black: #000;
-  --colour-white: #FFF;
+  --colour-white: #fff;
 
   /* base font size 12 */
   --fs-min: 12px;
   --fs-xl: calc(var(--fs-min) + 5.5rem);
-  --fs-l: calc(var(--fs-min) + 0.8125rem);
+  --fs-lg: calc(var(--fs-min) + 0.8125rem);
   --fs-m: calc(var(--fs-min) + 0.3125rem);
   --fs-sm: calc(var(--fs-min) + 0.125rem);
   --fs-xs: var(--fs-min);
 
   --gap-xl: 2.375rem;
-  --gap-l: 1.5rem;
+  --gap-lg: 1.5rem;
   --gap-m: 1rem;
-  --gap-s: 0.5rem;
+  --gap-sm: 0.5rem;
   --gap-xs: 0.25rem;
 }
 
+strong {
+  font-size: var(--fs-xl);
+}
+
+h1 {
+  font-size: var(--fs-lg);
+  display: inline-block;
+}
+
+h2 {
+  font-size: var(--fs-m);
+}
+
+h3 {
+  font-size: var(--fs-sm);
+}
+
+p {
+  font-size: var(--fs-m);
+  display: inline-block;
+}
+
+a {
+  font-size: var(--fs-sm);
+}
+
+a:hover,
+a:focus,
+a.actual-page {
+  color: var(--colour-accent);
+  fill: var(--colour-accent);
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  min-width: 982px;
+  margin: 0 auto;
+}
+
+/* header */
+
+#hamburger__button,
+#nav__toggle {
+  display: none;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: var(--gap-xl);
+  justify-content: space-between;
+}
+
+.divider {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 var(--gap-sm);
+}
+
+#nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: var(--gap-lg);
+}

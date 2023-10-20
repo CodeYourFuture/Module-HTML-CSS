@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 a:any-link,
@@ -11,6 +12,7 @@ a:focus,
 a:visited {
   text-decoration: none;
   color: inherit;
+  transition: all 0.2s ease-in-out;
 }
 
 h1,
