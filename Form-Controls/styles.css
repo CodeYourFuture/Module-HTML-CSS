@@ -87,16 +87,24 @@
 .mainrow {
     display: flex;
     gap: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     border-style: double;
+    border-color: lightblue;
     justify-content: center;
     padding-top: 10px;
     padding-bottom: 15px;
     border-spacing: 20px;
     background-color: rgb(34, 86, 131);
+    margin-top: 5px;
+
 }
 .hclass {
-    background-color: rgb(12, 120, 228);
+    background-color: rgb(84, 179, 210);
+   /* background-color: rgb(12, 120, 228);*/
+    padding: 20px;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: darkblue;
 }
 footer {
     background-color: rgb(101, 165, 199);
@@ -112,12 +120,14 @@ gap: 50px;
 justify-content: center;
 
 }
-.karmafooter {
-    padding-top: 50px;
+.hfooter {
+    margin-top: 5px;
+    padding-top: 10px;
     text-align: center;
     justify-content: center;
     border-top: #6940ef;
     border-radius: 80px;
+    color: aliceblue;
 }
 
 
@@ -129,6 +139,7 @@ justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: aliceblue;
 }
 .face {
     width: 40px;
@@ -147,3 +158,10 @@ justify-content: center;
    /* max-width: 400px;*/
     height: auto;
   }
+.datelable {
+    color: aliceblue;
+}
+.dateinput {
+    width: 200px;
+    border-radius: 5px;
+}

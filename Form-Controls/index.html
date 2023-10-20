@@ -24,14 +24,14 @@
           <label for="#">Last Name *</label> 
       </div>
       <div class="frminput">
-      <input type="text">
-      <input type="text">
+      <input type="text" required>
+      <input type="text" required>
   </div>
 <div class="frmaddress">
 <label for="#">E-mail *</label>
-<input type="text">
+<input type="text" placeholder="xxxxx@gmail.com" pattern=".+@gmail\.com" required>
 <label for="#">Address *</label>
-<input type="text">
+<input type="text" required>
 </div>
  <div class="frmlable2">
   <label for="#">Size *</label>
@@ -46,7 +46,7 @@
       <option value="xlarge">XL</option>
       <option value="xxlarge">XXL</option>
     </select>
-  <input type="number"> 
+  <input type="number" required> 
  </div>
 
  <div class="ordercolor">
@@ -57,7 +57,7 @@
     <!-- try writing out the requirements first-->
   </form>
 
-  <input type="radio" id="color1" name="color" value="color1">
+  <input type="radio" id="color1" name="color" value="color1" required>
   <label class="colorclass" for="color1">Blue</label> <br>
   <input type="radio" id="color2" name="color" value="color2">
   <label class="colorclass" for="color2"> Green </label> <br>
@@ -65,9 +65,12 @@
   <label class="colorclass" for="color3"> White</label><br>
   
   <br>
+  <label class="datelable"  for="deleverydate">Preffered Delivery date:</label>
+  <input class="dateinput" type="date" id="deleverydate" name="delevery-date" value="date" min="date" max="value+30" required/>
+
   <br>
   <br>
-  <input type="checkbox" id="" name="" value="">
+  <input type="checkbox" id="" name="" value="" required>
   <label class="terms1" for="">By placing your order you agree to our <a class="terms2" href="#">Terms and Conditions.</a> </label><br>
   <br>
   <br>
@@ -80,10 +83,11 @@
 </div>
   </main>
   <footer>
+
     <!-- change to your name-->
     
     <div class="allfooter">
-      <div class="karmafooter">
+      <div class="hfooter">
           <h5>Join us On:</h5>
        </div>
   
@@ -94,7 +98,7 @@
   
        </div>
   <div class="ftr">
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Haythem Solution</h2>
   </div> 
   </div>
 
