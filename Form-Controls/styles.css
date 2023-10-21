@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --backgroundColor: rgb(30, 30, 30);
+  --ReverseColor: rgb(225, 225, 225);
+}
+body {
+}
+
+header {
+  width: auto;
+  height: 100px;
+  margin: 1em;
+  border-radius: 2em;
+  background-color: var(--backgroundColor);
+  color: var(--ReverseColor);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  width: 90px;
+}
+
+main {
+  margin: 5vw 10vw;
+}
+
+.formArea {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.groupInptC {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+.groupInptR {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+}
+
+legend {
+  width: max-content;
+}
+.pickArea {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.groupR {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  max-width: 85ch;
+}
+input {
+  height: 3em;
+  font-size: inherit;
+}
+
+input[type="date"] {
+  padding: 0;
+  width: 10em;
+}
+
+h2 {
+  text-align: center;
+}
+button {
+  width: 10em;
+  padding: 1em 0;
+  font-size: inherit;
+  color: var(--ReverseColor);
+  background-color: var(--backgroundColor);
+}
