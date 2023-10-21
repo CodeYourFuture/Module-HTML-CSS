@@ -10,6 +10,7 @@
   </head>
   <body>
     <header>
+      <img src="./img/logo.png" class="logo" alt="brand logo" />
       <h1>Product Pick</h1>
     </header>
     <main>
@@ -20,28 +21,120 @@
               3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
               4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
               5. When do they want the t-shirt to be delivered? I must collect a date and make sure that date is in the next four weeks. How will I do this? How will I make sure there are no mistakes about the date?-->
-        <div class="groupInptC">
-          <label for="nameInpt">Full Name :</label>
-          <input type="text" id="nameInpt"/>
-        </div>
-        <div class="groupInptC">
-          <label for="emailInpt">E-mail :</label>
-          <input type="email" id="emailInpt"/>
-        </div>
-        <div class="groupInptR">
-          <label for="colorInpt">Select Color :</label>
-          <input type="text" id="colorInpt"/>
-        </div>
-        <div class="groupInptR">
-          <label for="sizeInpt">Select Size :</label>
-          <input type="text" id="sizeInpt"/>
-        </div>
-        <div class="groupInptC">
-          <label for="dateInpt">Select Delivery Date :</label>
-          <input type="text" id="dateInpt"/>
-        </div>
+        <div class="formArea">
+          <div class="groupInptC">
+            <label for="nameInpt">Full Name :</label>
+            <input type="text" id="nameInpt" />
+          </div>
+          <div class="groupInptC">
+            <label for="emailInpt">E-mail :</label>
+            <input type="email" id="emailInpt" />
+          </div>
+          <div class="groupInptR">
+            <div class="groupInptC">
+              <legend>Select Color :</legend>
+              <div class="pickArea">
+                <div class="groupR">
+                  <input
+                    type="radio"
+                    id="colorWhite"
+                    name="color"
+                    value="White"
+                  />
+                  <label for="colorWhite">White</label>
+                </div>
+                <div class="groupR">
+                  <input type="radio" id="colorRed" name="color" value="Red" />
+                  <label for="colorRed">Red</label>
+                </div>
+                <div class="groupR">
+                  <input
+                    type="radio"
+                    id="colorYellow"
+                    name="color"
+                    value="Yellow"
+                  />
+                  <label for="colorYellow">Yellow</label>
+                </div>
+                <div class="groupR">
+                  <input
+                    type="radio"
+                    id="colorBlue"
+                    name="color"
+                    value="Blue"
+                  />
+                  <label for="colorBlue">Blue</label>
+                </div>
+                <div class="groupR">
+                  <input
+                    type="radio"
+                    id="colorBlack"
+                    name="color"
+                    value="Black"
+                  />
+                  <label for="colorBlack">Black</label>
+                </div>
+              </div>
+            </div>
 
+            <div class="groupInptC">
+              <legend>Select Size :</legend>
+              <div class="pickArea">
+                <div class="groupR">
+                  <input type="radio" id="sizeXS" name="size" value="xsmall" />
+                  <label for="sizeXS">XS</label>
+                </div>
 
+                <div class="groupR">
+                  <input type="radio" id="sizeS" name="size" value="small" />
+                  <label for="sizeS">S</label>
+                </div>
+
+                <div class="groupR">
+                  <input type="radio" id="sizeM" name="size" value="medium" />
+                  <label for="sizeM">M</label>
+                </div>
+
+                <div class="groupR">
+                  <input type="radio" id="sizeL" name="size" value="large" />
+                  <label for="sizeL">L</label>
+                </div>
+
+                <div class="groupR">
+                  <input type="radio" id="sizeXL" name="size" value="xlarge" />
+                  <label for="sizeXL">XL</label>
+                </div>
+
+                <div class="groupR">
+                  <input
+                    type="radio"
+                    id="sizeXXL"
+                    name="size"
+                    value="xxlarge"
+                  />
+                  <label for="sizeXXL">XXL</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="groupInptC">
+            <label for="dateInpt">Select Delivery Date :</label>
+            <input
+              type="date"
+              id="dateInpt"
+              name="date"
+              value="2023-10-21"
+              min="2023-10-21"
+              max="2023-11-21"
+            />
+          </div>
+
+          <p>
+          <button>Submit</button>
+        </p>
+        </div>
+        
       </form>
     </main>
     <footer>
