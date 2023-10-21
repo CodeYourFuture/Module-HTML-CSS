@@ -1,28 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-div">
+      <div class="black">
+        <img class="img-div" src="https://images.tshirtstudio.com/general/shopping-cart2.svg">
+      </div>
+      <h2 class="title"><span>CYF</span> T-SHIRT</h2>
+      <div class="header-right">
+         <input class="search" placeholder="What are you looking for today?">
+         <img class="img-div"  src="https://images.tshirtstudio.com/general/myAccountIcon.svg">
+      </div>
+      </div>
+      <nav class="navigation">
+        <ul class="nav-ul">
+          <li>25% off</li>
+          <li>Polo</li>
+          <li>Sport</li>
+          <li>print t-shirt</li>
+          <li>customize</li>
+          <li>Sale</li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <section class="section-div">
+        <img class="shirt-img" src="images (1).jpg" />
+    
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+      <form>
+        <h3>Product pic</h3>
+        <p>Slim-Fit Stretch-Cotton Jersey T-Shirt</p>
+        <p>$70</p>
+     
+        <p class="size-color-date">color :</p>
+        <input
+          type="radio"
+          id="radio1"
+          name="radio"
+         
+        />
+        <label
+          class="label-1"
+          for="radio1"
+        ></label>
 
+        <input
+          type="radio"
+          id="radio2"
+          name="radio"
+         
+        />
+        <label
+          class="label-2"
+          for="radio2"
+        ></label>
+
+
+         <input
+          type="radio"
+          id="radio3"
+          name="radio"
+         
+        />
+        <label
+          class="label-3"
+          for="radio3"
+        ></label>
+
+        <div class="color-div"> </div>
+
+
+        <section class="section-size">
+          <p class="size-color-date">Size :</p>
+          <button class="xs-size">XS</button>
+          <button class="s-size">S</button>
+          <button class="m-size">M</button>
+          <button class="l-size">L</button>
+          <button class="xl-size">XL</button>
+          <button class="xll-size">XLL</button>
+        </section>
+
+        <label for="date-time"> Deliver Date:</label>
+        <input type="datetime-local" max="2024-02-02T00:00"  id="date-time" required />
+
+        <section class="form-section">
+          <div class="input-section">
+            <label for="fullname">Full Name</label><br />
+            <input type="text" id="fullname" name="text" required />
+          </div>
+
+          <div class="input-section">
+            <label for="fullname">Email</label> <br />
+            <input type="email" id="fullname" name="text" required />
+          </div>
+        </section>
+        <input type="submit" id="submit-button">
+      </form>
+           
+    </main>
+   </section>
+    <footer>
+      <div class="footer">
+
+      <h5>Cloth</h5>
+      <h5>Gift</h5>
+      <h5>Collection</h5>
+      <h5>Helps</h5>
+      </div>
+       <h4>Nohe Tekelmariyam</h4>
+      <h4>By HOMEWORK SOLUTION</h>
+    </footer>
+  </body>
 </html>
