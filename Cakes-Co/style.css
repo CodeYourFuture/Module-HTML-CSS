@@ -1,1 +1,245 @@
-/*  Add your styling here */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+    font-size: 4vw;
+    background-image: linear-gradient(rgb(243, 207, 232), rgb(247, 243, 168), rgb(255, 126, 203));
+     
+  }
+  h1 {
+    font-size: 2.4em;
+    font-weight: 500;
+  }
+  h4 {
+    font-size: 1.2em;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  h6 {
+    font-size: 0.7em;
+    font-weight: 200;
+  }
+  p {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.4em;
+  }
+  img {
+    width: 100%;
+    border-radius: 10%;
+  }
+  
+  :root {
+    
+    --backgroundColor: linear-gradient(rgb(249, 170, 217), rgb(246, 239, 115), rgb(243, 129, 207));
+    --generalPadding: 1em;
+    --sectionGap: 2em;
+    --white: rgb(75, 6, 52);
+  }
+  
+  header {
+    height: 40vw;
+    padding: var(--generalPadding);
+    background-color: var(--backgroundColor);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--white);
+  }
+  
+  
+
+
+
+  .logo-img {
+    margin-top: var(--generalPadding);
+    height: 70%;
+    width: auto;
+    border-radius: 50%;
+
+  }
+  .header-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: end;
+  }
+  #menu-inpt {
+    display: none;
+  }
+  .menu-lbl {
+    height: 30%;
+    width: auto;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .menu-img {
+    height: 100%;
+  }
+
+  .header-area p {
+    width: 19ch;
+  }
+  
+  .nav-nav {
+    display: none;
+    width: min-content;
+    border-radius: var(--generalPadding);
+    padding: var(--generalPadding);
+    background-color: rgb(231, 119, 162);
+    position: absolute;
+    top: 70px;
+    right: 100%;
+    transition: 0s;
+  }
+  
+  #menu-inpt:checked + .nav-nav {
+    display: block;
+    right: var(--generalPadding);
+  }
+  
+  .nav-ul {
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+  }
+  .nav-a {
+    border: solid 1px;
+    text-decoration: none;
+    border-radius: 0.5em;
+    background-color: var(--backgroundColor);
+    padding: 0.25em 1em 0.2em;
+    color: var(--white);
+  }
+  
+  main {
+    margin: var(--sectionGap) 0;
+    padding: var(--generalPadding);
+    display: flex;
+    flex-direction: column;
+    gap: var(--sectionGap);
+  }
+  
+  #intro-sctn {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sectionGap);
+  }
+  
+  #images-sctn {
+    display: grid;
+    gap: var(--generalPadding);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+  
+  footer {
+    height: 40vw;
+    padding: var(--generalPadding);
+    background-color: var(--backgroundColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #nav-footer {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--generalPadding) / 2);
+  }
+  #nav-footer a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1em;
+    font-weight: 400;
+  }
+  
+  footer h6 {
+    align-self: center;
+    color: var(--white);
+  }
+  
+  @media screen and (min-width: 540px) {
+    body {
+      font-size: 2vw;
+    }
+    header {
+      height: 10vw;
+    }
+    .header-area {
+      justify-content: flex-end;
+    }
+  
+    .nav-nav {
+      margin: var(--generalPadding) var(--generalPadding) 0;
+      display: flex;
+      width: auto;
+      border-radius: 0;
+      position: static;
+      justify-content: flex-end;
+    }
+  
+    .nav-ul {
+      font-size: 0.75em;
+      display: flex;
+      flex-direction: row;
+      gap: 1em;
+    }
+  
+    .menu-lbl {
+      display: none;
+    }
+  
+    main {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto);
+      padding: 0 var(--generalPadding);
+    }
+    .nav-area {
+      justify-content: flex-end;
+    }
+    .nav-area img {
+      display: none;
+    }
+    .nav-area p {
+      width: auto;
+    }
+    #intro-sctn {
+      grid-column: 2/-1;
+      text-align: right;
+    }
+    #hero-sctn {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+  
+    #images-sctn {
+      grid-column: 1/-1;
+      display: grid;
+      gap: var(--generalPadding);
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      
+    }
+  
+    footer {
+      height: 10vw;
+      gap: var(--sectionGap);
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #nav-footer {
+      display: flex;
+      flex-direction: row;
+      gap: calc(var(--generalPadding) * 2);
+    }
+  }
