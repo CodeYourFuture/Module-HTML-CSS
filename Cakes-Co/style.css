@@ -1,1 +1,209 @@
-/*  Add your styling here */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(203, 255, 238);
+    color: #3a0066;
+}
+
+
+header {
+    font-family: 'Princess Sofia', cursive;
+    background-color: #FFC0CB; /* Rosa claro para o cabeçalho */
+    color: #3a0066;
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+    position: relative;
+}
+
+
+nav {
+    background-color: #c0a7f0; /* Rosa médio para o menu de navegação */
+    text-align: center;
+    padding: 10px;
+    font-size: large;
+}
+
+nav ul {
+    font-family: 'Princess Sofia', cursive;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3a0066;
+    transition: color 0.3s;
+    font-size: xx-large;
+    padding: 50px;
+
+}
+
+nav ul li a:hover {
+    color: #8307f0; /* Rosa mais escuro para o efeito de hover */
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #FFC0CB; /* Rosa claro para o rodapé */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+#lorem {
+    font-size: 2rem;   
+}
+
+/* Estilos para dispositivos móveis (até 768px de largura) */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilos adicionais para dispositivos maiores */
+@media (min-width: 769px) {
+    header {
+        padding: 40px;
+    }
+}
+
+
+
+
+.image-container {
+    font-family: 'Princess Sofia', cursive;
+    font-size: x-large;
+  }
+
+
+
+
+.image-container a {
+    display: inline-block; /* Exibe os elementos 'a' em linha */
+    width: 40%; /* Define a largura para ocupar cerca de 30% do contêiner */
+    margin: 10px; /* Adiciona margem para separar as imagens */ 
+    max-width: 200%; /* Garante que as imagens não ultrapassem o espaço designado */
+   
+   
+
+}
+
+/* Estilo para as imagens */
+.image-container img {
+    display: inline;
+    max-width: 200%; /* Garante que as imagens não ultrapassem o espaço designado */
+ border-radius: 10px; /* Adiciona bordas arredondadas com um raio de 10px */
+text-decoration: none; /* Remove sublinhado padrão de links */ 
+ max-width: 100%; /* As imagens se ajustam à largura da tela */
+    border: 1px solid #ccc;
+box-shadow: 5px 5px 10px rgba(150, 100, 200, 0.7); /* Adiciona uma sombra lilás (cor: rgba(150, 100, 200, 0.7)) */
+}
+
+
+
+
+  
+  #logo {
+    border-radius: 40%; /* Torna a imagem redonda */
+    position: absolute;
+    top: 3; /* Alinha no topo do cabeçalho */
+    left: 0; /* Alinha no canto esquerdo do cabeçalho */
+    width: 300px; /* Tamanho da imagem (ajuste conforme necessário) */
+    height: 300px; /* Tamanho da imagem (ajuste conforme necessário) */
+    margin: 10px; /* Espaço em torno da imagem (ajuste conforme necessário) */
+  }
+  
+  h1 {
+    margin-left: 70px; /* Para dar espaço ao texto após a imagem */
+  }
+  
+  #tres {
+    margin-top: 70px;
+display: flex
+
+  }
+  
+  #texto{
+margin-left: 100px;
+    text-align: center;
+  }
+
+  #um {
+display: flex;
+justify-content: space-between;
+
+  }
+
+  #jasmine{
+    display: block;
+  }
+
+  #cinderela {
+    display: block;
+  }
+
+  #moana {
+display: block;
+
+  }
+
+
+  /* Estilos para dispositivos móveis (até 768px de largura) */
+@media (max-width: 768px) {
+    header {
+        font-size: 30px; /* Reduz o tamanho da fonte do cabeçalho */
+        padding: 10px; /* Reduz o preenchimento do cabeçalho */
+    }
+
+    nav ul {
+        padding: 0; /* Reduz o preenchimento da lista de navegação */
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0; /* Adiciona espaço entre os itens de navegação */
+    }
+
+    nav ul li a {
+        font-size: 20px; /* Reduz o tamanho da fonte dos links de navegação */
+        padding: 10px; /* Reduz o preenchimento dos links de navegação */
+    }
+
+    .image-container a {
+        width: 100%; /* Ocupa a largura total do contêiner */
+        margin: 10px 0; /* Adiciona espaço entre as imagens */
+        max-width: 100%; /* Garante que as imagens não ultrapassem o espaço designado */
+    }
+
+    #logo {
+        width: 150px; /* Reduz o tamanho do logotipo para dispositivos móveis */
+        height: 150px; /* Reduz o tamanho do logotipo para dispositivos móveis */
+    }
+
+    h1 {
+        margin-left: 0; /* Remove o espaço à esquerda do título */
+        text-align: center; /* Centraliza o título */
+    }
+
+    #tres {
+        flex-direction: column; /* Alinha os elementos verticalmente */
+    }
+
+    #texto {
+        margin-left: 0; /* Remove a margem à esquerda do texto */
+    }
+}
