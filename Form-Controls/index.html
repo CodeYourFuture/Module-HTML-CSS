@@ -24,11 +24,11 @@
         <div class="formArea">
           <div class="groupInptC">
             <label for="nameInpt">Full Name :</label>
-            <input type="text" id="nameInpt" />
+            <input type="text" id="nameInpt" required />
           </div>
           <div class="groupInptC">
             <label for="emailInpt">E-mail :</label>
-            <input type="email" id="emailInpt" />
+            <input type="email" id="emailInpt" required />
           </div>
           <div class="groupInptR">
             <div class="groupInptC">
@@ -40,6 +40,7 @@
                     id="colorWhite"
                     name="color"
                     value="White"
+                    required
                   />
                   <label for="colorWhite">White</label>
                 </div>
@@ -81,7 +82,13 @@
               <legend>Select Size :</legend>
               <div class="pickArea">
                 <div class="groupR">
-                  <input type="radio" id="sizeXS" name="size" value="xsmall" />
+                  <input
+                    required
+                    type="radio"
+                    id="sizeXS"
+                    name="size"
+                    value="xsmall"
+                  />
                   <label for="sizeXS">XS</label>
                 </div>
 
@@ -124,17 +131,17 @@
               type="date"
               id="dateInpt"
               name="date"
-              value="2023-10-21"
+              value=""
               min="2023-10-21"
               max="2023-11-21"
+              required
             />
           </div>
 
           <p>
-          <button>Submit</button>
-        </p>
+            <button>Submit</button>
+          </p>
         </div>
-        
       </form>
     </main>
     <footer>
