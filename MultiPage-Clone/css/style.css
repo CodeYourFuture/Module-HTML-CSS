@@ -14,6 +14,7 @@
   --fs-sm: calc(var(--fs-min) + 0.125rem);
   --fs-xs: var(--fs-min);
 
+  --gap-xxl: 4.75rem;
   --gap-xl: 2.375rem;
   --gap-lg: 1.5rem;
   --gap-m: 1rem;
@@ -76,7 +77,7 @@ header {
   right: 0;
   height: 12vh;
 
-  padding: 0 var(--gap-xl);
+  padding: 0 var(--gap-xxl);
 
   background-color: var(--colour-white);
 
@@ -165,15 +166,12 @@ main {
 }
 
 #main-card__footer {
-  padding: var(--gap-m) 0;
-  background-color: var(--colour-white);
-  width: 100%;
-}
-
-#main-card__footer div {
   display: flex;
   justify-content: center;
   gap: var(--gap-lg);
+  padding: var(--gap-m) 0;
+  background-color: var(--colour-white);
+  width: 100%;
 }
 
 #main-card__footer svg {
@@ -238,6 +236,62 @@ main {
 #more-about-me {
   display: grid;
   gap: var(--gap-lg);
+}
+
+/* footer */
+
+footer {
+  padding: 0 var(--gap-xxl);
+  height: 12vh;
+  width: 100vw;
+
+  background-color: var(--colour-white);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#credits {
+  font-size: var(--fs-xs);
+}
+
+#credits p {
+  text-align: left;
+  font-size: 1em;
+
+  width: 60%;
+}
+
+#credits a {
+  font-size: 1em;
+}
+
+#footer__contacts {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--gap-xl);
+
+  width: 100%;
+}
+
+#footer__contacts > div {
+  display: grid;
+  justify-items: center;
+  gap: var(--gap-sm);
+
+}
+
+#social-media {
+  display: flex;
+  justify-content: space-between;
+
+  min-width: 80px;
+}
+
+#social-media svg {
+  height: var(--fs-m);
 }
 
 /* hidden class */
