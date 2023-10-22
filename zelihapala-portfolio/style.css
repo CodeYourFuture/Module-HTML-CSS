@@ -118,7 +118,7 @@ nav ul {
   gap: var(--gap);
   font-size: larger;
   font-weight: bold;
-  color: blue;
+  color: rgb(49, 49, 216);
 }
 
 /* Text readability */
