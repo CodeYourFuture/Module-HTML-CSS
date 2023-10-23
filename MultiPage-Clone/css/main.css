@@ -25,6 +25,14 @@ main {
   width: 50%;
 }
 
+.square {
+  width: 15px;
+  height: 15px;
+  background-color: blue;
+  margin-top: 6px;
+  margin-right: 10px;
+}
+
 .h2Header {
   font-size: 1.5rem;
   font-weight: bolder;
@@ -134,12 +142,13 @@ main {
 
 .h1div2section2 {
   font-size: 6rem;
-  margin-bottom: 30px;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 .h2div2section2 {
   font-size: 1.3rem;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   text-align: start;
 }
 
@@ -148,7 +157,7 @@ main {
   height: 30px;
   border: solid 1px #000000;
   border-radius: 20px;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
   background-color: #ffffff;
   margin-right: 10px;
 }
