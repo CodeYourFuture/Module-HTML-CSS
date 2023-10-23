@@ -1,3 +1,218 @@
 /* Add your CSS here */
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
 
+main {
+}
 /* Dont' forget to link this file to your HTML in the <head> */
+/*header*/
+/*divHeader*/
+.header {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+.divHeader {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.h2Header {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.h3Header1 {
+  margin: 0px 5px;
+  margin-top: 5px;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.h3Header2 {
+  margin-top: 5px;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+/*Navigation*/
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.navigationItems {
+  display: flex;
+  padding: 0px;
+}
+
+.navigationList {
+  list-style: none;
+}
+
+.navigation_Link1 {
+  color: #000000;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.navigation_Link1:hover {
+  color: #2369ff;
+  font-weight: 600;
+}
+
+/*Main*/
+/*Section1*/
+.section1 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 35%;
+  height: 520px;
+  background-color: #797777;
+}
+
+.divSection1 {
+  width: 40%;
+  height: 100%;
+}
+
+/*Section2*/
+.imgSection2 {
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.h2div1section2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.h3div1section2 {
+  font-size: 1.2rem;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.div1Section2 {
+  width: 30%;
+  background-color: #ede6c3;
+  text-align: center;
+  margin-right: 25px;
+  margin-left: 70px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  position: relative;
+}
+
+.div2Section2 {
+  width: 55%;
+  margin-left: 60px;
+  padding-right: 15%;
+}
+
+.h1div2section2 {
+  font-size: 6rem;
+  margin-bottom: 30px;
+}
+
+.h2div2section2 {
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+  text-align: start;
+}
+
+.div3button {
+  width: 100px;
+  height: 30px;
+  border: solid 1px #000000;
+  border-radius: 20px;
+  margin-bottom: 70px;
+  background-color: #ffffff;
+  margin-right: 10px;
+}
+
+.div3button:hover {
+  background-color: #2369ff;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.aButton {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bolder;
+}
+
+.aButton:hover {
+  color: #ffffff;
+  border: none;
+}
+
+.pDiv2section2 {
+  font-size: 1.2rem;
+}
+
+/*footer*/
+.footer {
+  display: flex;
+  height: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.divFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #ffffff;
+  margin-top: 40px;
+}
+
+.logosFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+}
+
+.iconFooter {
+  height: 30px;
+  border: solid 1.5px #000000;
+  border-radius: 30px;
+  padding: 5px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.textFooter {
+  width: 100%;
+}
+
+.pFooter {
+  height: 100%;
+  font-size: 1rem;
+  text-align: center;
+}
