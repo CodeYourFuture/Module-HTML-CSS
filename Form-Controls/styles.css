@@ -1,0 +1,100 @@
+
+body{
+    background-image: linear-gradient(rgb(243, 207, 232), rgb(247, 243, 168), rgb(226, 171, 204));;
+}
+h1{
+color: rgb(82, 6, 86);
+}
+.btn{
+    color: rgb(96, 7, 57);
+    font-weight: 400;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    background-image: linear-gradient(rgb(243, 207, 232), rgb(247, 243, 168), rgb(255, 126, 203));
+    margin: 50px;
+    border-radius: 10px;
+}
+
+
+header, footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    text-decoration: none;
+}
+.title{
+    font-weight: lighter;
+    font-size: 40px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    background-image: linear-gradient(rgb(243, 207, 232), rgb(228, 225, 167));;
+    padding: 15px 25px;
+    margin-top: -20px;
+    border-radius: 10px;
+    border: solid rgb(238, 162, 162);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.dit {
+    color:rgb(57, 7, 103)
+}
+
+label{
+    font-size: 25px;
+    margin: 20px;
+    padding: 20px;
+    display: table-cell;
+    text-align: left;
+}
+
+input[type=text], input[type=email], input[type=date]{
+    display: table-cell;
+    border: solid 2px rgb(211, 160, 160);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+select[name=color], select[name=size]{
+    border: solid 2px rgb(238, 184, 242);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.first-name, .last-name, .e-mail, .color-options, .size-options, .choose-date{
+    display: table-row;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-color: rgb(233, 91, 139);
+}
+
+.place-order{
+    padding: 15px 25px;
+    margin-top: -20px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: solid rgb(238, 162, 162);
+    background-color:rgb(222, 134, 134) ;
+}
+.color {
+    background-color: pink;
+}
+.size {
+    background-color: pink;
+}

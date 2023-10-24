@@ -13,15 +13,63 @@
     <h1>Product Pick</h1>
   </header>
   <main>
+    <button class="title btn">Confirm Your Details</button>
   <form>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
+    <div class="first-name dit">
+      <label for="F-name">First name :</label>
+      <input type="text" id="F-name" name="F-name" required>
+    </div>
+    <div class="last-name dit">
+      <label for="l-name">Last name :</label>
+      <input type="text" id="L-name" name="L-name" required>
+    </div>
+    <div class="e-mail dit">
+      <label for="email">Email address :</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="color-options dit">
+      <label for="color">Choose a color :</label>
+      <select  name="color" id="color" class="color" required>
+      
+    </div>
+    
+    <option value="" disabled selected>Select a Color</option>
+    <option>Black</option>
+    <option>Yellow</option>
+    <option>Green</option>
+    <option>Blue</option>
+    <option>pink</option>
+  </select>
+</div>
+<div class="size-options dit">
+  <label for="size">Choose a Size :</label>
+  <select name="size" id="size" class="size" required>
+    <option value="" disabled selected>Size</option>
+    <option>XS</option>
+    <option>S</option>
+    <option>M</option>
+    <option>L</option>
+    <option>XL</option>
+    <option>2XL</option>
+  </select>
+</div>
+<div class="choose-date dit">
+  <label for="date">Choose a date :</label>
+ 
+  <input type="date" id="date" name="date" max="2023/10/21" required>
+</div>
+<br>
+<div class="button"><button type="button" class="place-order dit">Place your order</button></div>
+  
   </form>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+
+    <h3>By Nazanin Saedi</h3>
   </footer>
 </body>
 
