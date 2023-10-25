@@ -225,7 +225,7 @@ a.button-blue {
 a.button-blue:focus,
 a.button-blue:hover,
 a.button-blue:active {
-  background-color: var(--colour-white);
+  background-color: transparent;
   border: 2px solid var(--colour-accent);
   color: var(--colour-black);
 }
