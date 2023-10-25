@@ -1,0 +1,37 @@
+main {
+  background: var(--colour-background);
+}
+
+.other-pages__content {
+  width: 780px;
+  margin: 0 auto;
+  padding: var(--gap-xxl) 0 var(--gap-xl);
+
+  display: grid;
+  gap: var(--gap-xl);
+
+}
+
+a.button-blue {
+  padding: var(--gap-sm) var(--gap-m);
+}
+
+h2 {
+  font-size: calc(var(--fs-xl) + 7px);
+  text-align: center;
+}
+
+h3 {
+  font-size: var(--fs-lg);
+}
+
+/* Resume Section */
+
+.resume__section {
+  width: 100%;
+}
+
+#experience-cv__container {
+  display: flex;
+  justify-content: space-between;
+}
