@@ -196,38 +196,35 @@ main {
   gap: var(--gap-sm);
 }
 
-.resume-projects-buttons a {
+a.button-blue,
+a.button-white {
   padding: var(--gap-sm) var(--gap-xl);
-
   font-family: "Poppins", sans-serif;
+  border-radius: var(--fs-lg);
+}
 
+a.button-white {
   background-color: var(--colour-white);
   border: 2px solid var(--colour-black);
-  border-radius: var(--fs-lg);
 }
 
-.resume-projects-buttons a:focus,
-.resume-projects-buttons a:hover,
-.resume-projects-buttons a:active {
+a.button-white:focus,
+a.button-white:hover,
+a.button-white:active {
   background-color: var(--colour-accent);
   border: 2px solid var(--colour-white);
   color: var(--colour-white);
 }
 
-.resume-projects-buttons a:first-child {
-  padding: var(--gap-sm) var(--gap-xl);
-
-  font-family: "Poppins", sans-serif;
-
+a.button-blue {
   background-color: var(--colour-accent);
   border: 2px solid var(--colour-white);
   color: var(--colour-white);
-  border-radius: var(--fs-lg);
 }
 
-.resume-projects-buttons a:first-child:focus,
-.resume-projects-buttons a:first-child:hover,
-.resume-projects-buttons a:first-child:active {
+a.button-blue:focus,
+a.button-blue:hover,
+a.button-blue:active {
   background-color: var(--colour-white);
   border: 2px solid var(--colour-accent);
   color: var(--colour-black);
@@ -280,7 +277,6 @@ footer {
   display: grid;
   justify-items: center;
   gap: var(--gap-sm);
-
 }
 
 #social-media {
