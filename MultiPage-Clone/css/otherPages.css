@@ -1,3 +1,9 @@
+:root {
+  --fs-xxl: calc(var(--fs-min) + 1.4375rem);
+  --fs-xl: calc(var(--fs-min) + 0.8125rem);
+  --fs-lg: calc(var(--fs-min) + 0.5rem);
+}
+
 main {
   background: var(--colour-background);
 }
@@ -9,7 +15,6 @@ main {
 
   display: grid;
   gap: var(--gap-xl);
-
 }
 
 a.button-blue {
@@ -17,21 +22,70 @@ a.button-blue {
 }
 
 h2 {
-  font-size: calc(var(--fs-xl) + 7px);
+  font-size: var(--fs-xxl);
   text-align: center;
 }
 
 h3 {
-  font-size: var(--fs-lg);
+  font-size: var(--fs-xl);
 }
 
 /* Resume Section */
 
 .resume__section {
   width: 100%;
+  margin-top: var(--gap-lg);
+
+  display: grid;
+  gap: var(--gap-xl);
 }
 
 #experience-cv__container {
   display: flex;
   justify-content: space-between;
 }
+
+/* Cards */
+
+.card {
+  background-color: var(--colour-white);
+  box-shadow: var(--shadow);
+}
+
+/* Resume Card (history) */
+
+.resume-card-history {
+  padding: var(--gap-xxl) var(--gap-xl);
+
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-xxl);
+}
+
+.card-history__summary {
+  flex: 0.6;
+
+  display: grid;
+  align-items: center;
+}
+
+.card-history__date {
+  font-size: var(--fs-lg);
+  color: var(--colour-accent);
+}
+
+.card-history__summary p:last-child {
+  margin-top: var(--gap-sm);
+}
+
+.card-history__text {
+  flex: 1;
+  text-align: justify;
+
+  display: grid;
+  align-items: center;
+  gap: var(--gap-m);
+}
+
+/* Resume Card (skills) */
+

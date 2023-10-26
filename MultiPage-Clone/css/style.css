@@ -71,12 +71,7 @@ body {
 }
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   height: 12vh;
-
   padding: 0 var(--gap-xxl);
 
   background-color: var(--colour-white);
@@ -85,8 +80,6 @@ header {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: space-between;
-
-  z-index: 1;
 }
 
 .divider {
@@ -104,25 +97,20 @@ header {
 /* main */
 
 main {
-  position: relative;
-  margin-top: 12vh;
   background: linear-gradient(
     to right,
     var(--colour-background) 40%,
     var(--colour-white) 40%
   );
-
-  height: 76vh;
 }
 
 #info {
-  position: absolute;
-  top: 50%;
-  left: 48%;
-  transform: translate(-50%, -50%);
-
+  width: 800px;
+  margin: 0 auto;
+  padding: calc(var(--gap-xxl) * 1.5) 0;
+  
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.8fr 1fr;
   grid-template-rows: 1fr;
   gap: var(--gap-lg);
 }
