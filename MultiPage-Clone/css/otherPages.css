@@ -9,9 +9,9 @@ main {
 }
 
 .other-pages__content {
-  width: 780px;
+  width: 740px;
   margin: 0 auto;
-  padding: var(--gap-xxl) 0 var(--gap-xl);
+  padding: var(--gap-xxl) 0;
 
   display: grid;
   gap: var(--gap-xl);
@@ -21,12 +21,12 @@ a.button-blue {
   padding: var(--gap-sm) var(--gap-m);
 }
 
-h2 {
+main h2 {
   font-size: var(--fs-xxl);
   text-align: center;
 }
 
-h3 {
+main h3 {
   font-size: var(--fs-xl);
 }
 
@@ -63,14 +63,18 @@ h3 {
 }
 
 .card-history__summary {
+  margin-bottom: var(--gap-xl);
+
   flex: 0.6;
 
   display: grid;
   align-items: center;
+  grid-template-rows: repeat(4, var(--fs-xxl));
 }
 
 .card-history__date {
   font-size: var(--fs-lg);
+
   color: var(--colour-accent);
 }
 
@@ -79,6 +83,8 @@ h3 {
 }
 
 .card-history__text {
+  margin-top: var(--gap-xl);
+
   flex: 1;
   text-align: justify;
 
@@ -87,5 +93,62 @@ h3 {
   gap: var(--gap-m);
 }
 
+.card-history__more {
+  font-size: var(--fs-sm);
+}
+
 /* Resume Card (skills) */
 
+.resume-card-skills {
+  padding: var(--gap-xxl) var(--gap-xl);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xxl);
+}
+
+.card-skills__container {
+  display: grid;
+  gap: var(--gap-lg);
+}
+
+.skill-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: var(--gap-m);
+}
+
+/* blue box before Resume and skills */
+
+main h2,
+.skill {
+  position: relative;
+}
+
+main {
+  margin-left: 0.8em;
+}
+
+.skill {
+  margin-left: 1.2em;
+}
+
+main h2::before {
+  content: "";
+  position: absolute;
+  background-color: var(--colour-accent);
+  height: calc(0.6 * 1em);
+  aspect-ratio: 1;
+
+  transform: translate(-0.8em, 80%);
+}
+
+.skill::before {
+  content: "";
+  position: absolute;
+  background-color: var(--colour-accent);
+  height: calc(0.75 * 1em);
+  aspect-ratio: 1;
+
+  transform: translate(-1.2em, 35%);
+}
