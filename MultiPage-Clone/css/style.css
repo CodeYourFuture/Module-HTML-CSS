@@ -228,8 +228,7 @@ a.button-blue:active {
 footer {
   padding: 0 var(--gap-xxl);
   height: 12vh;
-  width: 100vw;
-
+  
   background-color: var(--colour-white);
 
   display: grid;
