@@ -72,7 +72,7 @@ main h3 {
   grid-template-rows: repeat(4, var(--fs-xxl));
 }
 
-.card-history__date {
+main h4 {
   font-size: var(--fs-lg);
 
   color: var(--colour-accent);
@@ -151,4 +151,40 @@ main h2::before {
   aspect-ratio: 1;
 
   transform: translate(-1.2em, 35%);
+}
+
+/* Projects page */
+
+#projects-page__intro {
+  text-align: center;
+}
+
+#projects-list {
+  display: grid;
+  gap: var(--gap-lg);
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-name {
+  margin: var(--gap-xxl) 0 var(--gap-lg);
+  padding-left: var(--gap-lg);
+  border-left: solid 0.6em var(--colour-accent);
+}
+
+.project-name p {
+  font-weight: bold;
+  font-size: var(--fs-sm);
+}
+
+.project-image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-description {
+  padding-left: calc(var(--gap-lg) + 0.6em);
 }
