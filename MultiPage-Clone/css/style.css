@@ -4,6 +4,7 @@
   --colour-accent: #0150fd;
   --colour-black: #000;
   --colour-white: #fff;
+  --colour-warning: #c91d1d;
 
   /* base font size 12 */
   --fs-min: 12px;
@@ -185,6 +186,7 @@ main {
 }
 
 a.button-blue,
+.button-blue,
 a.button-white {
   padding: var(--gap-sm) var(--gap-xl);
   font-family: "Poppins", sans-serif;
@@ -204,7 +206,8 @@ a.button-white:active {
   color: var(--colour-white);
 }
 
-a.button-blue {
+a.button-blue,
+.button-blue {
   background-color: var(--colour-accent);
   border: 2px solid var(--colour-white);
   color: var(--colour-white);
@@ -212,7 +215,10 @@ a.button-blue {
 
 a.button-blue:focus,
 a.button-blue:hover,
-a.button-blue:active {
+a.button-blue:active,
+.button-blue:focus,
+.button-blue:hover,
+.button-blue:active {
   background-color: transparent;
   border: 2px solid var(--colour-accent);
   color: var(--colour-black);
@@ -228,7 +234,7 @@ a.button-blue:active {
 footer {
   padding: 0 var(--gap-xxl);
   height: 12vh;
-  
+
   background-color: var(--colour-white);
 
   display: grid;

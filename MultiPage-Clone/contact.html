@@ -39,7 +39,34 @@
   </header>
 
   <main>
-    <section ></section>
+    <section class="other-pages__content">
+      <h2>Let's Talk</h2>
+      <form action="" class="card">
+        <div id="contact-name">
+          <div id="first-name" class="contact-field">
+            <label for="first-name__input" id="first-name__label" class="required-field">First Name</label>
+            <input type="text" name="first-name__input" id="first-name__input" required>
+          </div>
+          <div id="last-name" class="contact-field">
+            <label for="last-name__input" id="last-name__label" class="required-field">Last Name</label>
+            <input type="text" name="last-name__input" id="last-name__input" required>
+          </div>
+        </div>
+        <div class="contact-field">
+          <label for="contact-email__input" class="required-field">Email</label>
+          <input type="text" name="contact-email__input" id="contact-email__input" required>
+        </div>
+        <div class="contact-field">
+          <label for="contact-subject__input">Subject</label>
+          <input type="text" name="contact-subject__input" id="contact-subject__input">
+        </div>
+        <div class="contact-field">
+          <label for="contact-message__input">Message</label>
+          <textarea name="contact-message__input" id="contact-message__input" rows="10"></textarea>
+        </div>
+        <button type="submit" class="button-blue">SEND</button>
+      </form>
+    </section>
   </main>
 
   <footer>

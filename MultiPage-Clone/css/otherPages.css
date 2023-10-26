@@ -2,6 +2,8 @@
   --fs-xxl: calc(var(--fs-min) + 1.4375rem);
   --fs-xl: calc(var(--fs-min) + 0.8125rem);
   --fs-lg: calc(var(--fs-min) + 0.5rem);
+
+  --colour-form-field-border: #3b3b3b;
 }
 
 main {
@@ -125,7 +127,7 @@ main h2,
   position: relative;
 }
 
-main h2{
+main h2 {
   margin-left: 0.8em;
 }
 
@@ -187,4 +189,70 @@ main h2::before {
 
 .project-description {
   padding-left: calc(var(--gap-lg) + 0.6em);
+}
+
+/* Contact Page */
+
+form {
+  padding: var(--gap-xxl);
+
+  display: grid;
+  gap: var(--gap-xl);
+}
+
+.contact-field {
+  display: grid;
+  gap: var(--gap-m);
+}
+
+label {
+  font-weight: bold;
+  font-size: var(--fs-sm);
+}
+
+#contact-name {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-xl);
+}
+
+input,
+textarea {
+  padding: 1em;
+  text-align: justify;
+  color: var(--colour-accent);
+  font-weight: bold;
+  border-bottom: 2px solid var(--colour-form-field-border);
+  transition: all 0.2s ease-in-out;
+}
+
+input:hover,
+input:focus,
+input:active,
+textarea:hover,
+textarea:focus,
+textarea:active {
+  padding-left: 1em;
+  color: var(--colour-accent);
+  font-weight: bold;
+  border-bottom: 3px solid var(--colour-accent);
+  transition: all 0.2s ease-in-out;
+}
+
+input:invalid,
+textarea:invalid {
+  border-bottom: 2px solid var(--colour-warning);
+  transition: all 0.2s ease-in-out;
+}
+
+button {
+  justify-self: flex-start;
+}
+
+/* blue asterisk for required fields */
+
+.required-field::after {
+  content: " *";
+  color: var(--colour-accent);
+  font-weight: normal;
 }
