@@ -31,7 +31,6 @@ strong {
 
 h1 {
   font-size: var(--fs-lg);
-  display: inline-block;
 }
 
 h2 {
@@ -60,19 +59,21 @@ a.actual-page {
 }
 
 body {
-  min-width: 982px;
+  min-width: 100vw;
   margin: 0 auto;
 }
 
 /* header */
 
-#hamburger__button,
+#hamburger__button-container,
 #nav__toggle {
   display: none;
 }
 
 header {
-  height: 12vh;
+  position: relative;
+
+  height: 126px;
   padding: 0 var(--gap-xxl);
 
   background-color: var(--colour-white);
@@ -93,6 +94,24 @@ header {
   flex-direction: row;
   justify-content: flex-end;
   gap: var(--gap-lg);
+}
+
+/* blue box beside h1 */
+
+header h1 {
+  position: relative;
+  margin-left: 0.8em;
+  display: inline-block;
+}
+
+header h1::before {
+  content: "";
+  position: absolute;
+  background-color: var(--colour-accent);
+  height: calc(0.6 * 1em);
+  aspect-ratio: 1;
+
+  transform: translate(-0.8em, 75%);
 }
 
 /* main */
@@ -144,7 +163,7 @@ main {
 
 #main-card__info h1 {
   width: 80%;
-  line-height: var(--fs-lg);
+  line-height: var(--fs-xl);
 }
 
 #main-card__divider {
@@ -169,10 +188,13 @@ main {
 
 /* greetings */
 
+
 #greetings {
   display: flex;
   flex-direction: column;
   gap: var(--gap-xl);
+
+  text-align: justify;
 }
 
 #greetings__welcome {
@@ -194,7 +216,7 @@ a.button-white {
 }
 
 a.button-white {
-  background-color: var(--colour-white);
+  background-color: transparent;
   border: 2px solid var(--colour-black);
 }
 
@@ -209,7 +231,7 @@ a.button-white:active {
 a.button-blue,
 .button-blue {
   background-color: var(--colour-accent);
-  border: 2px solid var(--colour-white);
+  border: 1px solid var(--colour-white);
   color: var(--colour-white);
 }
 
@@ -233,7 +255,7 @@ a.button-blue:active,
 
 footer {
   padding: 0 var(--gap-xxl);
-  height: 12vh;
+  height: 110px;
 
   background-color: var(--colour-white);
 

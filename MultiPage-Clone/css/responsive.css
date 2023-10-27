@@ -1,0 +1,221 @@
+@media screen and (max-width: 728px) {
+  :root {
+    --fs-xxl: calc(var(--fs-min) + 1.4375rem);
+    --fs-xl: calc(var(--fs-min) + 0.8125rem);
+    --fs-lg: calc(var(--fs-min) + 0.5rem);
+  }
+
+  /* show and hide elements */
+  #main-card__buttons {
+    display: flex;
+  }
+
+  #greetings__buttons,
+  #main-card__role,
+  /* #nav-list, */
+  .divider {
+    display: none;
+  }
+
+  /* Header */
+
+  header {
+    height: 91px;
+    padding: 0 var(--gap-m);
+    grid-template-columns: 1fr 0.2fr;
+  }
+
+  header section:first-child {
+    display: grid;
+  }
+
+  #nav-list {
+    opacity: 0;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+
+    transform: translateY(-5vh);
+
+    background-color: var(--colour-foreground);
+
+    z-index: -1;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.5s ease-in;
+  }
+
+  #nav__toggle:checked ~ #nav-list {
+    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+
+    transition: all 0.5s ease-in;
+    z-index: 1;
+  }
+
+  a.nav-item {
+    opacity: 0;
+    transform: translateY(-10vh);
+
+    font-family: "Poppins", sans-serif;
+    font-size: var(--fs-lg);
+    font-weight: 700;
+
+    transition: all 1s ease-in;
+  }
+
+  #nav__toggle:checked ~ #nav-list a.nav-item {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.5s ease-in-out;
+  }
+  /* hamburger menu */
+
+  #hamburger__button-container {
+    display: block;
+    position: absolute;
+    top: var(--gap-m);
+    right: var(--gap-sm);
+
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .hamburger__button {
+    background-color: var(--colour-accent);
+    border-radius: 2px;
+
+    height: 3px;
+  }
+
+  #hamburger__button-bars {
+    width: 26px;
+    height: 21px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: transform 0.33s ease-out;
+  }
+
+  #hamburger__button-bar1 {
+    width: 50%;
+
+    transform-origin: right;
+    transition: transform 0.33s cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  }
+
+  #hamburger__button-bar2 {
+    width: 100%;
+  }
+
+  #hamburger__button-bar3 {
+    align-self: flex-end;
+    width: 50%;
+
+    transform-origin: left;
+    transition: transform 0.33s cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  }
+
+  #nav__toggle:checked
+    ~ #hamburger__button-container
+    #hamburger__button-bars
+    .hamburger__button {
+    background-color: var(--colour-black);
+  }
+
+  #nav__toggle:checked ~ #hamburger__button-container {
+    position: fixed;
+  }
+
+  #nav__toggle:checked ~ #hamburger__button-container #hamburger__button-bars {
+    transform: rotate(-45deg);
+    transition: transform 0.33s ease-out;
+  }
+
+  #nav__toggle:checked
+    ~ #hamburger__button-container
+    #hamburger__button-bars
+    #hamburger__button-bar1 {
+    transform: rotate(-90deg) translateX(4px);
+    transition: transform 0.33s cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  }
+
+  #nav__toggle:checked
+    ~ #hamburger__button-container
+    #hamburger__button-bars
+    #hamburger__button-bar3 {
+    transform: rotate(-90deg) translateX(-4px);
+    transition: transform 0.33s cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  }
+
+  /* Main */
+
+  main {
+    background: linear-gradient(
+      to top,
+      var(--colour-background) 80%,
+      var(--colour-white) 80%
+    );
+  }
+
+  #info {
+    width: auto;
+    margin: 0 var(--gap-m);
+    padding: 0;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #main-card__info h1 {
+    width: 50%;
+  }
+
+  a.button-blue,
+  .button-blue,
+  a.button-white {
+    padding: var(--gap-sm) var(--gap-lg);
+  }
+
+  #greetings {
+    gap: var(--gap-m);
+    padding: 0 var(--gap-m);
+  }
+
+  #greetings h2 {
+    margin-bottom: var(--gap-sm);
+  }
+
+  /* Footer */
+
+  footer {
+    grid-template-columns: 1fr;
+    gap: var(--gap-m);
+
+    padding: var(--gap-m);
+  }
+
+  #footer__contacts {
+    grid-row: 1;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    gap: var(--gap-m);
+
+    width: 100%;
+  }
+
+  #credits p {
+    width: 100%;
+    text-align: justify;
+  }
+}

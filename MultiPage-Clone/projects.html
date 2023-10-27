@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/normalise.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/otherPages.css">
+  <link rel="stylesheet" href="css/responsive.css">
 
   <title>Pedro Ricciardi - Projects</title>
 </head>
@@ -22,17 +23,19 @@
 <body>
   <header>
     <section>
-      <h1>Pedro Ricciardi</h1>
-      <p class="divider">/</p>
-      <p>WEB DEVELOPER</p>
-    </section>
-    <section>
-      <label for="nav__toggle" id="hamburger__button"></label>
       <input type="checkbox" name="nav__toggle" id="nav__toggle">
+    
+      <label for="nav__toggle" id="hamburger__button-container">
+        <div id="hamburger__button-bars">
+          <div id="hamburger__button-bar1" class="hamburger__button"></div>
+          <div id="hamburger__button-bar2" class="hamburger__button"></div>
+          <div id="hamburger__button-bar3" class="hamburger__button"></div>
+        </div>
+      </label>
       <nav id="nav-list">
-        <a href="index.html" class="nav-item">ABOUT ME</a>
+        <a href="index.html" class="nav-item actual-page">ABOUT ME</a>
         <a href="resume.html" class="nav-item">RESUME</a>
-        <a href="projects.html" class="nav-item actual-page">PROJECTS</a>
+        <a href="projects.html" class="nav-item">PROJECTS</a>
         <a href="contact.html" class="nav-item">CONTACT</a>
       </nav>
     </section>

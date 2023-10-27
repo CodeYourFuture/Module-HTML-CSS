@@ -14,6 +14,7 @@
 
   <link rel="stylesheet" href="css/normalise.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 
 
   <title>Pedro Ricciardi - About me</title>
@@ -27,8 +28,15 @@
       <p>WEB DEVELOPER</p>
     </section>
     <section>
-      <label for="nav__toggle" id="hamburger__button"></label>
       <input type="checkbox" name="nav__toggle" id="nav__toggle">
+
+      <label for="nav__toggle" id="hamburger__button-container">
+        <div id="hamburger__button-bars">
+          <div id="hamburger__button-bar1" class="hamburger__button"></div>
+          <div id="hamburger__button-bar2" class="hamburger__button"></div>
+          <div id="hamburger__button-bar3" class="hamburger__button"></div>
+        </div>
+      </label>
       <nav id="nav-list">
         <a href="index.html" class="nav-item actual-page">ABOUT ME</a>
         <a href="resume.html" class="nav-item">RESUME</a>
@@ -44,12 +52,10 @@
           <img src="https://avatars.githubusercontent.com/u/16962159?v=4" alt="">
           <h1>Pedro Ricciardi</h1>
           <div id="main-card__divider"></div>
-          <div id="main-card__extra">
-            <p id="main-card__role">WEB DEVELOPER</p>
-            <div id="main-card__buttons" class="hidden resume-projects-buttons">
-              <a href="">RESUME</a>
-              <a href="">PROJECTS</a>
-            </div>
+          <p id="main-card__role">WEB DEVELOPER</p>
+          <div id="main-card__buttons" class="hidden resume-projects-buttons">
+            <a href="resume.html" class="button-blue">RESUME</a>
+            <a href="projects.html" class="button-white">PROJECTS</a>
           </div>
         </section>
         <section id="main-card__footer">
@@ -85,8 +91,8 @@
           <p id="greetings__welcome">Welcome to my page</p>
         </div>
         <div id="greetings__buttons" class="resume-projects-buttons">
-          <a href="" class="button-blue">RESUME</a>
-          <a href="" class="button-white">PROJECTS</a>
+          <a href="resume.html" class="button-blue">RESUME</a>
+          <a href="projects.html" class="button-white">PROJECTS</a>
         </div>
         <div id="more-about-me">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium harum voluptas beatae commodi
