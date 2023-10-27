@@ -223,7 +223,6 @@ textarea {
   color: var(--colour-accent);
   font-weight: bold;
   border-bottom: 2px solid var(--colour-form-field-border);
-  transition: all 0.2s ease-in-out;
 }
 
 input:hover,
@@ -236,13 +235,10 @@ textarea:active {
   color: var(--colour-accent);
   font-weight: bold;
   border-bottom: 3px solid var(--colour-accent);
-  transition: all 0.2s ease-in-out;
 }
 
-input:invalid,
-textarea:invalid {
+input:not(:focus):not(:placeholder-shown):invalid {
   border-bottom: 2px solid var(--colour-warning);
-  transition: all 0.2s ease-in-out;
 }
 
 button {
