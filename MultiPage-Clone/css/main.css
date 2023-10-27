@@ -1,3 +1,717 @@
 /* Add your CSS here */
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+/* Don't forget to link this file to your HTML in the <head> */
+/*header*/
+/*divHeader*/
+.header {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10px;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+.divHeader {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.divSquare {
+  display: flex;
+  flex-direction: row;
+}
+
+.square {
+  width: 15px;
+  height: 15px;
+  background-color: #0000fd;
+  margin-top: 6px;
+  margin-right: 10px;
+}
+
+.square h2 {
+  padding-left: 100px;
+}
+
+.h2Header {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-right: 5px;
+}
+
+.h3Header2 {
+  margin-top: 6px;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+/*Navigation*/
+
+/*Main*/
+/*Section1*/
+.section1 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 38%;
+  height: 527px;
+  background-color: #797777;
+}
+
+.divSection1 {
+  width: 30%;
+  height: 100%;
+}
+
+/*Section2*/
+.imgSection2 {
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.h2div1section2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bolder;
+}
+
+.h3div1section2 {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.div1Section2 {
+  width: 30%;
+  background-color: #ede6c3;
+  text-align: center;
+  margin-right: 25px;
+  margin-left: 110px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  position: relative;
+}
+
+.div2Section2 {
+  width: 50%;
+  margin-left: 60px;
+  padding-right: 15%;
+}
+
+.h1div2section2 {
+  font-size: 6rem;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.h2div2section2 {
+  font-size: 1.3rem;
+  margin-bottom: 35px;
+  text-align: start;
+}
+
+.div3button {
+  width: 100px;
+  height: 30px;
+  border: solid 1px #000000;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  background-color: #ffffff;
+  margin-right: 10px;
+}
+
+.div3button:hover {
+  background-color: #0000fd;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.aButton {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bolder;
+}
+
+.aButton:hover {
+  color: #ffffff;
+  border: none;
+}
+
+.pDiv2section2 {
+  font-size: 1.2rem;
+}
+
+/*footer*/
+.footer {
+  display: flex;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.divFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-content: center;
+  background-color: #ffffff;
+  margin-top: 40px;
+}
+
+.logosFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 40%;
+}
+
+.iconFooter {
+  height: 25px;
+  padding: 5px 15px;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.textFooter {
+  width: 100%;
+}
+
+.pFooter {
+  height: 100%;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/*media queries*/
+@media (min-width: 100px) and (max-width: 810px) {
+  .header {
+    justify-content: space-between;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navigation p {
+    display: block;
+    color: #0000fd;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+
+  .navigation input {
+    display: block;
+  }
+
+  .navigation i {
+    display: block;
+  }
+
+  .navigation {
+    background-color: #ffffff;
+    padding: 10px 12px;
+    position: relative;
+  }
+
+  .checkbox,
+  .icons {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    color: #0000fd;
+    margin-top: 0px;
+  }
+
+  .icons {
+    pointer-events: none;
+    font-size: 24px;
+  }
+
+  .checkbox {
+    opacity: 0;
+  }
+
+  .fi-br-cross {
+    opacity: 0;
+  }
+
+  .checkbox:checked ~ .fi-br-menu-burger {
+    display: none;
+  }
+
+  .checkbox:checked ~ .fi-br-cross {
+    opacity: 1;
+  }
+
+  .navigationItems {
+    width: 40%;
+    height: 50px;
+    position: absolute;
+    top: 25px;
+    left: -280px;
+    right: 150px;
+    display: block;
+  }
+
+  .navigationItems li {
+    list-style: none;
+  }
+
+  .navigationItems li a {
+    width: 72px;
+    height: 30px;
+    text-decoration: none;
+    font-size: 8.1px;
+    font-weight: bolder;
+    display: block;
+    margin-top: 5px;
+    padding: 9px 12px;
+    color: #0000fd;
+    background-color: #c0f7ff;
+    border: solid 2px #ffffff;
+  }
+
+  .navigationItems li a:hover {
+    color: #ffffff;
+    background-color: #0000fd;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: 0.5s;
+  }
+
+  .navigationItems {
+    display: none;
+  }
+
+  .checkbox:checked ~ .navigationItems {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .checkbox:checked ~ .navigation_Link1 {
+    position: absolute;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 600px) {
+  /*header*/
+  .header {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .divHeader {
+    flex-direction: column;
+  }
+
+  .square {
+    width: 8px;
+    height: 8px;
+    background-color: #0000fd;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+
+  .h2Header {
+    font-size: 0.84rem;
+    font-weight: bolder;
+  }
+
+  .h3Header2 {
+    margin-top: 0px;
+    font-size: 0.6rem;
+    font-weight: lighter;
+  }
+
+  .navigation_Link1 {
+    text-align: center;
+  }
+
+  /*main*/
+  /*section1*/
+  .section1 {
+    flex-direction: column;
+    height: 505px;
+    width: 100%;
+  }
+
+  /*Section2*/
+  .section2 {
+    flex-direction: column;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 2dvb;
+  }
+
+  .h2div1section2 {
+    margin-bottom: 20px;
+  }
+
+  .div1Section2 {
+    width: 80%;
+    background-color: #ede6c3;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .div2Section2 {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .h1div2section2 {
+    font-size: 4rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .h2div2section2 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .div3Section2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .div3button {
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+
+  .pDiv2section2 {
+    font-size: 1.2rem;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .pFooter {
+    font-size: 0.7rem;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 351px) and (max-width: 400px) {
+  .square {
+    margin-top: 6px;
+    margin-right: 5px;
+  }
+
+  .h2Header {
+    font-size: 0.9rem;
+    font-weight: bolder;
+  }
+
+  .h3Header2 {
+    font-size: 0.7rem;
+    font-weight: lighter;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 500px) {
+  .square {
+    width: 11px;
+    height: 11px;
+    margin-top: 7px;
+  }
+
+  .h2Header {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+
+  .h3Header2 {
+    font-size: 0.8rem;
+    font-weight: lighter;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+  .square {
+    width: 15px;
+    height: 15px;
+    margin-top: 6px;
+  }
+
+  .h2Header {
+    font-size: 1.3rem;
+    font-weight: bolder;
+  }
+
+  .h3Header2 {
+    font-size: 1rem;
+    font-weight: lighter;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 700px) {
+  .header {
+    margin-left: 20px;
+    align-items: center;
+  }
+
+  .divHeader {
+    justify-content: row;
+  }
+  .square {
+    width: 10px;
+    height: 10px;
+    margin-top: 6px;
+    margin-right: 5px;
+  }
+
+  .h2Header {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+
+  .h3Header2 {
+    font-size: 0.7rem;
+    font-weight: lighter;
+  }
+
+  .section1 {
+    width: 50%;
+    height: 505px;
+  }
+
+  .section2 {
+    flex-direction: column;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 2dvb;
+  }
+
+  .h2div1section2 {
+    margin-bottom: 20px;
+  }
+
+  .div1Section2 {
+    width: 80%;
+    background-color: #ede6c3;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .div2Section2 {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .h1div2section2 {
+    font-size: 4rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .h2div2section2 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .div3Section2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .div3button {
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+
+  .pDiv2section2 {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .pFooter {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 810px) {
+  .square {
+    width: 15px;
+    height: 15px;
+    margin-top: 3px;
+  }
+
+  .h2Header {
+    font-size: 1.15rem;
+    font-weight: bolder;
+  }
+
+  .h3Header2 {
+    font-size: 0.75rem;
+    font-weight: lighter;
+    margin-top: 5.5px;
+  }
+
+  .section1 {
+    width: 50%;
+    height: 505px;
+  }
+
+  .section2 {
+    flex-direction: column;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 2dvb;
+  }
+
+  .h2div1section2 {
+    margin-bottom: 20px;
+  }
+
+  .div1Section2 {
+    width: 80%;
+    background-color: #ede6c3;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .div2Section2 {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .h1div2section2 {
+    font-size: 4rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .h2div2section2 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .div3Section2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .div3button {
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+
+  .pDiv2section2 {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .pFooter {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 811px) and (max-width: 881px) {
+  .square {
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+  }
+
+  .h2Header {
+    font-size: 1.35rem;
+    font-weight: bolder;
+  }
+
+  .h3Header2 {
+    font-size: 0.85rem;
+    font-weight: lighter;
+    margin-top: 7px;
+  }
+}
+
+@media (min-width: 811px) {
+  /*navigation*/
+  .navigation {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+  }
+
+  .navigationItems {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+  }
+
+  .navigationList {
+    list-style: none;
+  }
+
+  .navigation_Link1 {
+    color: #000000;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .navigation_Link1:hover {
+    color: #2369ff;
+    font-weight: 600;
+  }
+
+  .fi-br-cross {
+    opacity: 0;
+  }
+
+  .fi-br-menu-burger {
+    opacity: 0;
+  }
+
+  .checkbox {
+    opacity: 0;
+  }
+}
