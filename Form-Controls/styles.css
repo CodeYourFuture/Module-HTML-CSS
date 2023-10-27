@@ -158,7 +158,7 @@ p {
 
 .inputSubmit {
   height: 40px;
-  width: 80px;
+  width: 90px;
   color: #fff;
   font-size: 17px;
   font-weight: bolder;
@@ -170,4 +170,7 @@ p {
 
 .inputSubmit:hover {
   cursor: pointer;
+  background-color: #fff709;
+  color: #3b3b3b;
+  border: dashed 3px #002beb;
 }
