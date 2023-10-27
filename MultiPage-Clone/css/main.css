@@ -3,7 +3,6 @@
   margin: 0px;
   box-sizing: border-box;
 }
-
 /* Dont' forget to link this file to your HTML in the <head> */
 /*header*/
 /*divHeader*/
@@ -53,8 +52,6 @@
 }
 
 /*Navigation*/
-.navigation {
-}
 
 /*Main*/
 /*Section1*/
@@ -172,6 +169,7 @@
 .divFooter {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   justify-content: center;
   background-color: #ffffff;
   margin-top: 40px;
@@ -214,7 +212,7 @@
 
   .navigation p {
     display: block;
-    color: #064600;
+    color: #0000fd;
     font-size: 25px;
     font-weight: bolder;
   }
@@ -228,7 +226,7 @@
   }
 
   .navigation {
-    background-color: #e9efeb;
+    background-color: #ffffff;
     padding: 10px 12px;
     position: relative;
   }
@@ -241,7 +239,7 @@
     cursor: pointer;
     width: 25px;
     height: 25px;
-    color: #064600;
+    color: #0000fd;
     margin-top: 0px;
   }
 
@@ -286,17 +284,17 @@
     text-decoration: none;
     font-size: 8.1px;
     font-weight: bolder;
-    color: #ffffff;
-    background-color: #064600;
     display: block;
     margin-top: 5px;
     padding: 9px 12px;
+    color: #0000fd;
+    background-color: #c0f7ff;
     border: solid 2px #ffffff;
   }
 
   .navigationItems li a:hover {
-    background-color: #ffffff;
-    color: #064600;
+    color: #ffffff;
+    background-color: #0000fd;
     cursor: pointer;
     font-weight: bolder;
   }
@@ -335,7 +333,7 @@
   }
 
   .h2Header {
-    font-size: 0.86rem;
+    font-size: 0.84rem;
     font-weight: bolder;
   }
 
