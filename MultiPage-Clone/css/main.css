@@ -3,7 +3,7 @@
   margin: 0px;
   box-sizing: border-box;
 }
-/* Dont' forget to link this file to your HTML in the <head> */
+/* Don't forget to link this file to your HTML in the <head> */
 /*header*/
 /*divHeader*/
 .header {
@@ -297,6 +297,7 @@
     background-color: #0000fd;
     cursor: pointer;
     font-weight: bolder;
+    transition: 0.5s;
   }
 
   .navigationItems {
@@ -356,7 +357,6 @@
   }
 
   /*Section2*/
-
   .section2 {
     flex-direction: column;
     margin-right: 0px;
