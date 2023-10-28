@@ -1,0 +1,67 @@
+body{
+    font-family: sans-serif;
+    font-family:'Times New Roman', Times, serif;
+    margin: 20px 100px;
+    background-color: rgb(107, 162, 207);
+ 
+    
+}
+/*style the header section*/
+header {
+   margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+.git {
+    border: 2px black solid;
+    margin-bottom: 30px;
+    display: flex;
+    height: auto;
+    width: auto;
+}
+
+/*style the article section*/
+article{
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    height: auto;
+    width: 40rem;
+    flex-direction: column;
+    border: 2px black solid;
+    padding: 1rem;
+}
+
+.container-git {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+/* style the buttons*/
+.button{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color:rgb(95, 124, 185);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Adjust your changes to the footer */
+footer {
+    text-align: center;
+    background-color: rgb(255, 0, 0);
+    justify-content: center;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+}
