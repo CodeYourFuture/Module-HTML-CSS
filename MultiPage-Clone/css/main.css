@@ -15,8 +15,6 @@ h1,
 p {
   margin-top: 0;
   margin-bottom: 0;
-  /* margin: 0;
-  padding: 0; */
 }
 
 .header,
@@ -33,6 +31,11 @@ p {
   height: 1.1em;
   margin: 0.5em 0.1em;
   margin-right: 0.5em;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
 }
 
 .maya {
@@ -186,12 +189,6 @@ p {
 /* Hero-content close */
 
 @media screen and (max-width: 768px) {
-  .header,
-  .content,
-  .footer {
-    padding: 0;
-  }
-
   #hamitems {
     display: block;
     position: absolute;
@@ -202,7 +199,8 @@ p {
   }
   #hamitems a {
     border: 2px solid rgb(117, 105, 105);
-    border-radius: 3px;
+    border-radius: 5px;
+    padding-left: 1em;
   }
 
   .nav__link {
@@ -247,6 +245,18 @@ p {
     height: 35em;
   }
 
+  .hero-four-img {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin: 41.5em 9em;
+    padding: 0 3em;
+  }
+
+  .four-img {
+    width: 25%;
+  }
+
   .hero-img {
     width: 30%;
     margin: 8.6em 13em;
@@ -265,37 +275,86 @@ p {
   .hero-content {
     grid-column: 1/9;
   }
-
-  .four-img {
-    width: 8%;
-  }
 }
 
 @media screen and (max-width: 460px) {
+  h1,
+  p {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  #hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav__link {
+    background-color: rgb(243, 233, 234);
+    font-weight: 600;
+    padding: 0.3em;
+  }
+  #hamnav label {
+    display: inline-block;
+    color: rgb(35, 26, 18);
+    font-size: 1.2em;
+    font-style: normal;
+    padding: 53px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  #hamitems {
+    display: none;
+  }
+
+  #hamnav input:checked ~ #hamitems {
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+  }
   .hero-content h2 {
     font-size: 3em;
   }
 
+  #hero {
+    display: grid;
+    grid-template-rows: repeat(2, 0.8fr);
+  }
+
   .hero-box {
-    width: 300%;
+    width: 70%;
   }
   .hero-box2 {
-    width: 160%;
+    width: 50%;
+    margin: 2em;
   }
   .hero-img {
-    width: 60%;
-    margin: 9em 10em;
+    width: 30%;
+    margin: 9em 3em;
   }
   .hero-text {
-    margin: 19em 2em;
+    font-size: 0.5em;
+    margin: 30em 0em;
+    padding-bottom: 8em;
+    margin-right: 3rem;
+  }
+
+  .hero-four-img {
+    position: absolute;
+    display: inline-block;
+    margin: 38em 0;
+    padding-left: 1em;
+    padding-right: ;
   }
   .four-img {
-    width: 10%;
-  }
-  .four-img {
-    width: 20%;
-    display: inline;
-    padding-right: 6em;
-    margin-top: 8em;
+    width: 3.5%;
   }
 }
