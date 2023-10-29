@@ -1,11 +1,48 @@
 /* Add your CSS here */
-
+* {
+  margin: 0;
+  padding: 0;
+}
 /* Header*/
 
-.logo {
+.blue-logo {
   width: 16px;
   height: 16px;
   background-color: blue;
+  margin-top: 6px;
+  margin-right: 10px;
+}
+
+.header-items {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.right-header {
+  display: flex;
+  flex-direction: row;
+}
+.header-main {
+  display: flex;
+  flex-direction: column;
+}
+.slash-span {
+  display: none;
+}
+/* Owner's Photo Styles */
+.owner-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.owner-photo:hover {
+  transform: scale(1.1);
 }
 
 /*Section Hero*/
