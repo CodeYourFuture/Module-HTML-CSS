@@ -4,8 +4,189 @@
   --Royal-blue: #0150fd;
   --Black: #000;
   --White: #fff;
+
+  --bar-width: 30px;
+  --bar-height: 3px;
+  --hamburger-gap: 6px;
+  --hamburger-margin: 34.5px;
+  --animation-timing: 400ms ease-in-out;
+  --font-header1: normal normal bold 20px/1.4em poppins-semibold, poppins,
+    sans-serif;
+  --gap: 13px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 10px;
 }
 
 /* Add your CSS here */
+
+/* Header */
+
+header {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 90px;
+  background-color: var(--White);
+}
+.cont-header {
+  height: 100%;
+  margin: 0px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.outer-header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: calc(var(--gap) / (3/2));
+}
+.inner-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+  background-color: var(--Royal-blue);
+}
+
+.name-link {
+  text-decoration: none;
+  color: var(--Black);
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1em;
+}
+
+.title-link {
+  text-decoration: none;
+  color: var(--Black);
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1em;
+  width: fit-content;
+}
+
+/* Hamburger menu */
+
+.hmb-cont {
+  width: 100vw;
+  min-height: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  width: max-content;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: var(--hamburger-margin);
+
+  z-index: 3;
+  cursor: pointer;
+}
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--Royal-blue);
+  border-radius: 9999px;
+  transition: transform var(--animation-timing),
+    background-color var(--animation-timing);
+}
+.hamburger-menu::before {
+  width: calc(var(--bar-width) / 2);
+}
+.hamburger-menu:has(input:checked)::before {
+  transform-origin: right center;
+  transform: translate(-71%, -63%) rotate(-135deg);
+  background-color: var(--Black);
+}
+.hamburger-menu::after {
+  width: calc(var(--bar-width) / 2);
+  align-self: flex-end;
+}
+.hamburger-menu:has(input:checked)::after {
+  transform-origin: left center;
+  transform: translate(70%, 63%) rotate(-135deg);
+  background-color: var(--Black);
+}
+.hamburger-menu input:checked {
+  transform: rotate(-45deg);
+  background-color: var(--Black);
+}
+
+.hamburger-menu input {
+  appearance: none;
+  outline: none;
+  pointer-events: none;
+}
+
+.sidebar {
+  transition: opacity var(--animation-timing), display var(--animation-timing), background-color var(--animation-timing);
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--White);
+  position: absolute;
+  z-index: 2;
+  padding-top: 90px;
+  display: none;
+  opacity: 0;
+  
+}
+
+.hamburger-menu:has(input:checked) + .sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--Dark-beige);
+  opacity: 1;
+}
+.menu-nav{
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.nav-links{
+  text-decoration: none;
+  color: var(--Black);
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1em;
+}
+
 
 /* Dont' forget to link this file to your HTML in the <head> */
