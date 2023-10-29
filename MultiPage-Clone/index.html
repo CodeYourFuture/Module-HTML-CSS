@@ -1,19 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Add a link to your custom CSS here -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/MultiPage-Clone/css/main.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Responsive grid project</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header>
+      <section class="top-navigation">
+        <section class="input">
+          <input
+            class="search"
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search...."
+          />
+          <i class="search-icon" id="search-icon" aria-hidden="true"></i>
+        </section>
+        <section class="icons">
+          <div class="log-in">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 448 512"
+            >
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"
+              />
+            </svg>
+            <p class="login">Log in</p>
+          </div>
+          <svg
+            class="shopping-cart"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="1rem"
+            height="1rem"
+            viewBox="5.7 0 105.5 126.1"
+            preserveAspectRatio="xMinYMax meet"
+            data-hook="svg-icon-1"
+          >
+            <path
+              d="M99.8 28.4c0-1.2-0.9-2-2.1-2h-15c0 3.2 0 7.6 0 8.2 0 1.5-1.2 2.6-2.6 2.9 -1.5 0.3-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-0.9 0-4.7 0-8.2H40.1c0 3.2 0 7.3 0 8.2 0 1.5-1.2 2.9-2.6 2.9 -1.5 0-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-0.6 0-5 0-8.2h-15c-1.2 0-2 0.9-2 2L8.3 124c0 1.2 0.9 2.1 2.1 2.1h96.3c1.2 0 2.1-0.9 2.1-2.1L99.8 28.4z"
+            ></path>
+            <path
+              d="M59.1 5.9c-2.9 0-2 0-2.9 0 -2 0-4.4 0.6-6.4 1.5 -3.2 1.5-5.9 4.1-7.6 7.3 -0.9 1.8-1.5 3.5-1.8 5.6 0 0.9-0.3 1.5-0.3 2.3 0 1.2 0 2.1 0 3.2 0 1.5-1.2 2.9-2.6 2.9 -1.5 0-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-1.2 0-2.3 0-3.5 0-3.2 0.9-6.4 2-9.4 1.2-2.3 2.6-4.7 4.7-6.4 3.2-2.9 6.7-5 11.1-5.9C53.5 0.3 55 0 56.7 0c1.5 0 2.9 0 4.4 0 2.9 0 5.6 0.6 7.9 1.8 2.6 1.2 5 2.6 6.7 4.4 3.2 3.2 5.3 6.7 6.4 11.1 0.3 1.5 0.6 3.2 0.6 4.7 0 1.2 0 2.3 0 3.2 0 1.5-1.2 2.6-2.6 2.9s-2.9-0.9-3.2-2.3c0-0.3 0-0.3 0-0.6 0-1.2 0-2.6 0-3.8 0-2.3-0.6-4.4-1.8-6.4 -1.5-3.2-4.1-5.9-7.3-7.3 -1.8-0.9-3.5-1.8-5.9-1.8C61.1 5.9 59.1 5.9 59.1 5.9L59.1 5.9z"
+            ></path>
+            <text
+              x="58.5"
+              y="77"
+              dy=".35em"
+              text-anchor="middle"
+              class="bGBBgJ"
+              data-hook="items-count"
+            ></text>
+          </svg>
+        </section>
+      </section>
+      <nav class="navigation">
+        <section class="logo-list">
+          <div class="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="list tabs">
+            <li class="tab active">
+              <a class="logo" href="#tab1">PRICKLES & CO.</a>
+            </li>
+            <li class="tab">
+              <a class="nav-links dropdown" href="#tab2">
+                Shop
+                <div class="dropdown-menu">
+                  <a href="#">Cacti</a>
+                  <a href="#">Plants</a>
+                  <a href="#">Succulents</a>
+                </div>
+              </a>
+            </li>
+            <li class="tab"><a class="nav-links" href="#about">About</a></li>
+            <li class="tab"><a class="nav-links" href="#tab3">FAQ</a></li>
+            <li class="tab">
+              <a class="nav-links" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </section>
+        <div class="nav-description">
+          <div class="wrapper">
+            <span>We Deliver to Your Doorstep</span>
+            <span>Call Us Now! 123-456-7890</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section ="tab-content active" id="tab1">
+        <section class="msg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            style="
+              border-radius: 0px;
+              fill: rgb(255, 255, 255);
+              width: 26px;
+              height: 26px;
+              flex-shrink: 0;
+            "
+          >
+            <path
+              d="M16 2C8.28 2 2 7.8 2 14.93a12.144 12.144 0 001.696 6.15l-1.668 7.51A1.16 1.16 0 003.63 29.9l6.914-3.072A14.835 14.835 0 0016 27.861c7.72 0 14-5.8 14-12.93S23.72 2 16 2zm4.508 16.32h-9.016a1.16 1.16 0 010-2.32h9.016a1.16 1.16 0 010 2.32zm0-4.638h-9.016a1.16 1.16 0 010-2.318h9.016a1.16 1.16 0 110 2.318z"
+              fill="currentColor"
+              fill-rule="nonzero"
+            ></path>
+          </svg>
+          <span class="msg-span">Let's chat!</span>
+        </section>
+        <section class="hero">
+          <div class="hero-card">
+            <div class="hero-logo">
+              <span>ESTB</span>
+              <svg
+                class="flower"
+                preserveAspectRatio="xMidYMid meet"
+                data-bbox="10.326 50.3 180.129 101.208"
+                xmlns="http://www.w3.org/2000/svg"
+                width="200"
+                height="200"
+                viewBox="10.326 50.3 180.129 101.208"
+                role="presentation"
+                aria-hidden="true"
+              >
+                <g>
+                  <path
+                    d="M105.6 52.7c-1.8-1.5-3.5-2.4-5.1-2.4-1.6.1-3.3 1-5.1 2.4-11.2 9.2-16.3 21-17 35.2-.4 7.5-1.3 14.8 10.2 12.6 1.3-.2 3.1-.2 4.3.6 1 .6 1.9 1.4 2.6 2.4 3 4.3 2.2 9.1 1 13.9-1.8 7-2.5 14.2-1.6 21.3.6 4.9-.6 13.1 5.6 12.8 6.3.3 5-7.9 5.6-12.8.9-7.2.2-14.3-1.6-21.3-1.2-4.8-2.1-9.7 1-13.9.7-.9 1.6-1.7 2.6-2.4 1.2-.8 3-.8 4.3-.6 11.5 2.1 10.6-5.2 10.2-12.6-.7-14.2-5.8-26-17-35.2z"
+                  ></path>
+                  <path
+                    d="M57.6 128.4c1.5-2.3 3.7-6.5 3.6-11.2-.2-5.8-4-10.6-5.4-12.2-.3-.3-.7-.3-1 0-1.2 1.5-4.4 6.1-4.2 11.8.1 3.7 3 8.4 4.8 10.8-.2 2-.2 4 0 5.5v.2c-4.4-2.4-8.9-5.5-12.9-9.7-.1-.2-.2-.3-.4-.4-1.5-1.6-2.9-3.2-4.1-5.1-.3-.4-.5-.8-.8-1.2-.8-2.6-.5-5.5.9-7.9 2.7-.7 6.4-2.2 9.1-5.2 4-4.3 4.6-10.5 4.7-12.5 0-.4-.3-.6-.7-.6-2 .3-8 1.5-12 5.8-2.6 2.7-3.4 8.2-3.2 11.6-.7 1.3-1.2 2.8-1.4 4.2-2.5-5-4.2-10.6-4.9-16.6.1-3 1.7-5.7 3.9-6.9 2.1-.1 5.5-.6 8.1-2.7 3.2-2.6 4.2-6.9 4.5-8.7.1-.4-.2-.8-.7-.8-1.7 0-6.2.1-9.3 2.7-2.8 2.3-3.9 5.9-4.3 8-1 .7-1.9 1.6-2.5 2.6-.2-5.6.4-11.7 1.6-18.1 1.8-.5 5.6-2.1 8.1-5 3.2-3.6 3.8-8.4 3.8-10.3 0-.4-.4-.7-.8-.7-1.9.4-5.9 1.8-9.4 5.2-2.6 2.6-3.4 6.4-3.6 8.5-2 9.5-2.6 18.2-1.6 26.1v.2c-1.1-1.4-2.3-2.7-3.4-3.8-.1-2.4-.7-6.2-3.1-9.2-3.1-3.9-8.2-5.1-9.9-5.4-.3-.1-.6.2-.7.5-.1 1.7 0 6.6 3 10.4 1.8 2.3 5.7 3.9 8.3 4.6 2.5 1.7 6 6.4 6.9 9.1 1.3 5.7 3.5 10.9 6.6 15.6v.1c.3.5.6 1 .9 1.4l.9 1.2c-1.3-.4-2.7-.8-4.1-.8-.1-.2-.1-.4-.3-.6-1.9-2.3-5.4-5.6-9.1-6.2-5.6-1-10.9 1.6-12.8 2.7-.4.2-.5.8-.2 1.2 1.5 1.7 5.6 5.8 11.2 6.8 3.8.6 7.5-.4 10.1-1.4.1-.1.2-.2.3-.2 3.2-.3 7.5 2 8.4 2.7 5.5 5.9 11.9 9.8 17.6 12.4-.6.4-1.6.8-3.1 1.1-5-3.4-12.7-4-16.4-3.2-7.8 1.8-12.9 7.4-14.5 9.6-.3.4-.2.9.3 1.1 2.4 1.2 10.2 4.6 18 2.8 5.8-1.4 10.3-5.2 12.9-8.1v-.1c1.2-.2 2.3-.5 3.2-.9.9-.4 1.5-.9 1.9-1.3 7.5 3.1 13.4 4 13.9 4l.3-2.2c-.1 0-7.7-1.1-16.5-5.4-.2 0-.8-2.1-.5-5.9z"
+                  ></path>
+                  <path
+                    d="M190.1 115.9c-1.9-1.1-7.3-3.7-12.8-2.7-3.7.7-7.2 3.9-9.1 6.2l-.3.6c-1.4 0-2.8.3-4.1.8l.9-1.2c.3-.5.6-1 .9-1.4v-.1c3-4.7 5.2-9.9 6.6-15.6.9-2.6 4.4-7.4 6.9-9.1 2.5-.7 6.4-2.3 8.3-4.6 3-3.8 3.1-8.7 3-10.4 0-.3-.3-.6-.7-.5-1.7.3-6.8 1.5-9.9 5.4-2.4 3-3 6.8-3.1 9.2-1.2 1-2.4 2.3-3.4 3.8v-.2c.9-7.9.4-16.6-1.6-26.1-.2-2.1-1-5.9-3.6-8.5-3.5-3.4-7.5-4.9-9.4-5.2-.4-.1-.8.2-.8.7 0 1.9.6 6.7 3.8 10.3 2.6 2.9 6.3 4.4 8.1 5 1.3 6.4 1.8 12.4 1.6 18.1-.7-1.1-1.5-2-2.5-2.6-.4-2-1.5-5.6-4.3-8-3.2-2.6-7.6-2.8-9.3-2.7-.4 0-.7.4-.7.8.3 1.7 1.3 6 4.5 8.7 2.6 2.1 6 2.6 8.1 2.7 2.2 1.2 3.7 3.9 3.9 6.9-.7 6.1-2.4 11.6-4.9 16.6-.2-1.5-.7-2.9-1.4-4.2.2-3.4-.6-8.9-3.2-11.6-4-4.2-10-5.5-12-5.8-.4-.1-.7.2-.7.6.1 2 .7 8.2 4.7 12.5 2.7 3 6.4 4.4 9.1 5.2 1.4 2.4 1.7 5.2.9 7.9-.3.4-.5.8-.8 1.2-1.3 1.8-2.7 3.5-4.1 5.1l-.4.4c-4 4.2-8.5 7.4-12.9 9.7v-.2c.2-1.6.2-3.5 0-5.5 1.8-2.4 4.7-7 4.8-10.8.2-5.7-3-10.3-4.2-11.8-.2-.3-.7-.3-1 0-1.4 1.6-5.2 6.3-5.4 12.2-.2 4.7 2.1 8.9 3.6 11.2.3 3.7-.2 5.8-.5 6.4-8.9 4.3-16.5 5.4-16.6 5.4l.3 2.2c.5-.1 6.4-.9 13.9-4 .4.4.9.9 1.9 1.3.9.4 2 .7 3.2.9v.1c2.6 2.8 7.1 6.7 12.9 8.1 7.8 1.8 15.6-1.6 18-2.8.4-.2.5-.7.3-1.1-1.6-2.2-6.7-7.8-14.5-9.6-3.7-.8-11.3-.2-16.4 3.2-1.5-.3-2.5-.7-3.1-1.1 5.7-2.6 12.1-6.6 17.6-12.4.9-.8 5.1-3 8.4-2.7.1.1.2.2.3.2 2.6 1.1 6.3 2.1 10.1 1.4 5.6-.9 9.8-5.1 11.2-6.8.4-.9.3-1.4-.1-1.7z"
+                  ></path>
+                </g>
+              </svg>
+              <span>2035</span>
+            </div>
+            <h1 class="heading">PRICKLES & CO</h1>
+            <p class="hero-card-p">BRING NATURE INDOORS</p>
+            <button class="hero-btn">Shop Now</button>
+          </div>
+        </section>
+        <section class="container">
+          <section class="card-container">
+            <div class="card card-1">
+              <h2 class="card-heading">CACTI</h2>
+              <button class="hero-btn">Shop Collection</button>
+            </div>
+            <div class="card card-2">
+              <h2 class="card-heading">PLANTS</h2>
+              <button class="hero-btn">Shop Collection</button>
+            </div>
+            <div class="card card-3">
+              <h2 class="card-heading">SUCCULENTS</h2>
+              <button class="hero-btn">Shop Collection</button>
+            </div>
+          </section>
+          <section class="columns">
+            <section class="about-us" id="about">
+              <div class="about-us-card">
+                <h2 class="about-us-heading">About US</h2>
+                <p class="about-us-p">
+                  Welcome to Prickles & Co.! We're not just a regular shop; 
+                  we're all about plants and making your home greener.
+                   We've been around since 2035, and we're here to bring nature inside.
+                    Our store is filled with awesome cacti, plants, and succulents to spruce up your space. 
+                    <br />
+                  <br /><br />
 
-    <!-- Add your markup here -->
+                  You might have some questions, and that's cool – check out our FAQs. And if you need to reach us, just hit "Contact." 
+                  The best part? We'll even deliver these lovely plants to your doorstep. So, come on in, explore, and let's have a chat about how 
+                  Prickles & Co. can make your home more lush and vibrant.
+                </p>
+              </div>
+              <div class="/about-us-img-1"></div>
+              <div class="about-us-img-2"></div>
+            </section>
+            <section class="buy-online">
+              <div class="buy-online-img"></div>
+              <div class="buy-online-card">
+                <p class="buy-online-p">BUY ONLINE NOW & GET 10% OFF !</p>
+                <button class="hero-btn buy-online-btn">Shop Now</button>
+              </div>
+            </section>
+          </section>
+        </section>
+        <section class="contact-us" id="contact">
+          <form class="contact-form">
+            <h2 class="about-us-heading">FOR SPECIAL REQUESTS & ORDERS</h2>
+            <div class="name">
+              <label for="first-name"
+                >First Name
+                <input type="text" name="first-name" id="f-name" />
+              </label>
+              <label for="last-name"
+                >Last Name
+                <input type="text" name="last-name" id="l-name" />
+              </label>
+            </div>
+            <label for="email"
+              >Email
+              <input type="email" name="email" id="email" />
+            </label>
+            <label for="phone"
+              >Phone Number
+              <input type="number" name="phone" id="phone" />
+            </label>
+            <label for="Massage"
+              >Massage
+              <textarea
+                name="Massage"
+                id="massage"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </label>
+            <button class="hero-btn form-btn">Send</button>
+          </form>
+        </section>
+      </section>
+      <section class="tab-content" id="tab2">
+        <h1>hello</h1>
+      </section>
+    </main>
 
-
+    <footer>
+      <section class="list-container">
+        <section class="footer-list">
+          <h3 class="footer-list-heading">OUR STORE</h3>
+          <ul class="footer-list">
+            <li class="footer-li">Address: 500 Terry Francine</li>
+            <li class="footer-li">Street San Francisco, CA 94158</li>
+            <li class="footer-li">Phone: 123-456-7890</li>
+            <li class="footer-li">Email: info@mysite.com</li>
+          </ul>
+        </section>
+        <section class="footer-list">
+          <h3 class="footer-list-heading">OPENING HOURS</h3>
+          <ul class="footer-list">
+            <li class="footer-li">Mon - Fri: 7am - 10pm</li>
+            <li class="footer-li">Saturday: 8am - 10pm</li>
+            <li class="footer-li">​Sunday: 8am - 11pm</li>
+          </ul>
+        </section>
+        <section class="footer-list">
+          <h3 class="footer-list-heading">HELP</h3>
+          <ul class="footer-list">
+            <li class="footer-li">Shipping & Returns</li>
+            <li class="footer-li">Privacy Policy</li>
+            <li class="footer-li">FAQ</li>
+          </ul>
+        </section>
+      </section>
+      <section class="subscribe">
+        <h4 class="subscribe-heading">SUBSCRIBE</h4>
+        <section class="subscribe-form">
+          <label for="email"
+            >Enter your email here *
+            <input type="email" name="email" id="email" />
+          </label>
+          <button class="hero-btn subscribe-btn">Subscribe Now</button>
+        </section>
+        <section class="subscribe-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 512 512"
+          >
+            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 384 512"
+          >
+            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 448 512"
+          >
+            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+            />
+          </svg>
+        </section>
+      </section>
+    </footer>
+    <script src="/MultiPage-Clone/main.js"></script>
+    </div>
     <!-- Please leave this in to credit the creators of this design -->
     <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
 </body>

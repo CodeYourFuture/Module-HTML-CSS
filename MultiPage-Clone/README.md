@@ -18,8 +18,8 @@ Here are 3 designs to choose from, along with suggested fonts and colours to use
 
 ![Prickles & Co homepage](./designs/Cactus%20shop.png)
 
-Live demo here: https://www.wix.com/website-template/view/html/1995
-
+Live demo here: 
+https://www.wix.com/website-template/view/html/1995
 ### Fonts
 
 **Headings:** Fjalla One - Regular 400  
