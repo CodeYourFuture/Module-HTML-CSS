@@ -1,3 +1,15 @@
 /* Add your CSS here */
 
+/* Header*/
+
+.logo {
+  width: 16px;
+  height: 16px;
+  background-color: blue;
+}
+
+/*Section Hero*/
+
+/*Section Information*/
+
 /* Dont' forget to link this file to your HTML in the <head> */
