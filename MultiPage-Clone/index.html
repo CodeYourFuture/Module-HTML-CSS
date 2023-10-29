@@ -1,21 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <!-- Add a link to your custom CSS here -->
-
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Responsive grid project</title>
-</head>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="personel">
+        <div class="logo"></div>
+        <h1>Zeliha Pala</h1>
+        <h2>FULL STACK DEVELOPER</h2>
+      </div>
 
-<body>
+      <div class="hamburger">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle">&#9776; Menu</label>
+        <!-- "hamburger" icon -->
+        <nav>
+          <ul class="nav-items">
+            <li><a href="#">ABOUT ME</a></li>
+            <li><a href="#">RESUME</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <!-- Add your markup here -->
+    <main>
+      <!-- Section Hero-->
 
+      <section id="hero">
+        <div>
+          <img src="image/GettyImages-1132119301.jpg" alt="" />
+        </div>
+        <div>
+          <h2>Zeliha Pala</h2>
+        </div>
 
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
-</body>
+        <hr />
 
+        <div class="buttons">
+          <button>RESUME</button>
+          <button>PROJECTS</button>
+        </div>
+
+        <div class="social-Media">
+          <a class="facebook" href="https://www.facebook.com/" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a class="twitter" href="https://www.twitter.com/" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a class="linkedin" href="https://www.linkedin.com/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            class="instagram"
+            href="https://www.instagram.com/"
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- Section Information -->
+      <section class="information">
+        <div id="Hello">
+          <p>Hello</p>
+          <p>I am Zeliha | I am a FULL STACK DEVELOPER</p>
+          <p>
+            I'm a full-stack developer with skills in both front-end and
+            back-end technologies.
+          </p>
+
+          <p>
+            I specialize in developing a wide range of web and app projects,
+            leveraging my expertise in technologies like JavaScript, Python,
+            React, Node.js, and more. My passion lies in crafting user-friendly
+            experiences and enhancing server performance. Explore my portfolio
+            to witness my work and discover how I can contribute to the success
+            of your projects.
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+
+    <footer></footer>
+
+    <p>
+      This website design was created by Wix.com, and is used here for strictly
+      educational purposes.
+    </p>
+  </body>
 </html>
