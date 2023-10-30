@@ -8,6 +8,13 @@
     <!-- Add a link to your custom CSS here -->
     <link rel="stylesheet" href="./css/main.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Responsive grid project</title>
   </head>
   <body>
@@ -49,14 +56,14 @@
           <div class="me-card">
             <img
               class="owner-photo"
-              src="image/GettyImages-1132119301.jpg"
+              src="image/robot.png"
               alt="profile photo"
             />
 
-            <div class="name">
-              <h3>Zeliha <br />Pala</h3>
+            <div class="name-cont">
+              <h3 class="name-card">Zeliha Pala</h3>
               <hr class="job" />
-              <button class="btn">RESUME</button>
+              <button class="btn blue-btn">RESUME</button>
               <button class="btn">PROJECTS</button>
             </div>
 
@@ -87,31 +94,40 @@
               /></a>
             </div>
           </div>
-        </div>
-      </section>
+          <section id="content">
+            <div class="content">
+              <h2>Hello</h2>
+              <span>Here's who I am & what I do</span>
 
-      <!--  Section Content   -->
-      <section id="content">
-        <div class="content">
-          <h2>Hello</h2>
-          <span>Here's who I am & what I do</span>
-
-          <p>
-            I'm a full-stack developer with skills in both front-end and
-            back-end technologies. I specialize in developing a wide range of
-            web and app projects, leveraging my expertise in technologies like
-            JavaScript, React, Node.js, and more. My passion lies in crafting
-            user-friendly experiences and enhancing server performance. Explore
-            my portfolio to witness my work and discover how I can contribute to
-            the success of your projects.
-          </p>
+              <p>
+                I'm a full-stack developer with skills in both front-end and
+                back-end technologies.
+                <br />
+                <br />
+                Explore my portfolio to witness my work and discover how I can
+                contribute to the success of your projects.
+              </p>
+            </div>
+          </section>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
 
-    <footer></footer>
+    <footer>
+      <div class="info">
+        <div class="num">
+          <p>Call</p>
+          <p>123-456-789</p>
+        </div>
+
+        <div class="mail">
+          <p>Write</p>
+          <p>info@mysite.com</p>
+        </div>
+      </div>
+    </footer>
 
     <!--  <p>
       This website design was created by Wix.com, and is used here for strictly
