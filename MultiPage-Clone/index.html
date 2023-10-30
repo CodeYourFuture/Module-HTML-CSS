@@ -18,83 +18,88 @@
           <div class="blue-logo"></div>
           <h2 class="name">Zeliha Pala</h2>
         </div>
-        <p class="job"><span class="slash-span"> / </span>SOFTWARE DEVELOPER</p>
+        <p class="job">
+          <span class="slash-span"> / </span>FULL-STACK DEVELOPER
+        </p>
       </div>
 
-      <div class="hamburger-menu">
-        <label for="menu-icon">
-          <img
-            class="ham-icon"
-            src="image/menu-burger-horizontal-svgrepo-com.svg"
-            alt="hamburger menu"
-        /></label>
-        <input type="checkbox" id="menu-icon" />
+      <label class="ham-menu" for="menu-icon">
+        <img
+          class="ham-icon"
+          src="image/menu-burger-horizontal-svgrepo-com.svg"
+          alt="hamburger menu"
+      /></label>
+      <input type="checkbox" id="menu-icon" />
 
-        <!-- "hamburger" icon -->
-        <nav>
-          <ul id="menu-items">
-            <li><a href="#">ABOUT ME</a></li>
-            <li><a href="#">RESUME</a></li>
-            <li><a href="#">PROJECTS</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
-        </nav>
-      </div>
+      <!-- "hamburger" icon -->
+      <nav class="nav-page">
+        <ul id="menu-items">
+          <li><a href="#">ABOUT ME</a></li>
+          <li><a href="#">RESUME</a></li>
+          <li><a href="#">PROJECTS</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
       <!-- Section Hero-->
-
       <section id="hero">
-        <div>
-          <img
-            class="owner-photo"
-            src="image/GettyImages-1132119301.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <h2>Zeliha Pala</h2>
-        </div>
+        <div class="background-color">
+          <div class="me-card">
+            <img
+              class="owner-photo"
+              src="image/GettyImages-1132119301.jpg"
+              alt="profile photo"
+            />
 
-        <hr />
+            <div class="name">
+              <h3>Zeliha <br />Pala</h3>
+              <hr class="job" />
+              <button class="btn">RESUME</button>
+              <button class="btn">PROJECTS</button>
+            </div>
 
-        <div class="buttons">
-          <button>RESUME</button>
-          <button>PROJECTS</button>
-        </div>
-
-        <div class="social-Media">
-          <a class="facebook" href="https://www.facebook.com/" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a class="twitter" href="https://www.twitter.com/" target="_blank">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a class="linkedin" href="https://www.linkedin.com/" target="_blank">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a
-            class="instagram"
-            href="https://www.instagram.com/"
-            target="_blank"
-          >
-            <i class="fab fa-instagram"></i>
-          </a>
+            <div class="social-media">
+              <a href="#"
+                ><img
+                  src="https://www.svgrepo.com/show/512120/facebook-176.svg"
+                  alt="for more detail"
+                  class="icons"
+              /></a>
+              <a href="#"
+                ><img
+                  src="https://www.svgrepo.com/show/513008/twitter-154.svg"
+                  alt="for more detail"
+                  class="icons"
+              /></a>
+              <a href="#"
+                ><img
+                  src="https://www.svgrepo.com/show/120652/linkedin-logo.svg"
+                  alt="for more detail"
+                  class="icons"
+              /></a>
+              <a href="#"
+                ><img
+                  src="https://www.svgrepo.com/show/521711/instagram.svg"
+                  alt="for more detail"
+                  class="icons"
+              /></a>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- Section Information -->
-      <section class="information">
-        <div id="Hello">
-          <p>Hello</p>
-          <p>I am Zeliha | I am a FULL STACK DEVELOPER</p>
+      <!--  Section Content   -->
+      <section id="content">
+        <div class="content">
+          <h2>Hello</h2>
+          <span>Here's who I am & what I do</span>
+
           <p>
             I'm a full-stack developer with skills in both front-end and
             back-end technologies.
-          </p>
-
-          <p>
+            <br />
             I specialize in developing a wide range of web and app projects,
             leveraging my expertise in technologies like JavaScript, Python,
             React, Node.js, and more. My passion lies in crafting user-friendly
@@ -105,13 +110,14 @@
         </div>
       </section>
     </main>
+
     <!-- Footer -->
 
     <footer></footer>
 
-    <p>
+    <!--  <p>
       This website design was created by Wix.com, and is used here for strictly
       educational purposes.
-    </p>
+    </p> -->
   </body>
 </html>
