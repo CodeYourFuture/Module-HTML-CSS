@@ -2,13 +2,19 @@
 * {
   margin: 0;
   padding: 0;
+
+  font-family: "Quicksand", sans-serif;
 }
 :root {
   --dark-beige: #e6dacd;
-  --light-beige: #f4ece6;
+  --light-beige: #f8eee6;
   --royal-blue: #0150fd;
   --black: #000;
   --white: #fff;
+  --font_3: normal normal bold 27px/1.4em poppins-semibold, poppins, sans-serif;
+  --font_0: normal normal bold 38px/1.4em poppins-semibold, poppins, sans-serif;
+  --font_5: normal normal bold 19px/1.4em avenir-lt-w01_35-light1475496,
+    avenir-lt-w05_35-light, sans-serif;
 }
 
 /* Header*/
@@ -91,7 +97,7 @@ ul li a {
 /* Owner's Photo Styles */
 .owner-photo {
   width: 60%;
-  height: auto;
+  height: 1000%;
   margin: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -111,33 +117,18 @@ ul li a {
   display: flex;
   flex-direction: column;
 }
-.background-1 {
-  margin-top: 3.5em;
-  background-color: rgb(235, 209, 209);
-  width: 100%;
-  height: 100em;
-  position: absolute;
-}
-
-.background-2 {
-  margin: 5.5em 5em;
-  background-color: rgb(198, 214, 208);
-  width: 80%;
-  height: 25Sem;
-  position: absolute;
-  border-bottom: 60px solid white;
-}
 
 .icons {
   width: 15px;
   padding: 0 1em;
 }
-.name h3 {
-  font-weight: 800;
-  font-size: 2em;
-  line-height: 1.3em;
+.name-cont {
+}
+.name-card {
+  font: var(--font_3);
+  width: 6ch;
   text-align: center;
-  margin-bottom: 10px;
+  margin: 0px auto 10px;
 }
 
 .job {
@@ -145,7 +136,7 @@ ul li a {
 }
 .background-color {
   width: 100vw;
-  height: 200vh;
+  height: fit-content;
   background-color: var(--dark-beige);
   margin-top: 15rem;
 }
@@ -174,25 +165,56 @@ ul li a {
 }
 .btn {
   display: inline-block;
-  margin-top: 2em;
-  margin-bottom: 1em;
-  padding: 0.5rem 20px;
+  margin: 2em 10px 1em;
+
   border: 1px solid var(--black);
   font-size: 16px;
   font-weight: bold;
   border-radius: 9em;
   background-color: var(--white);
   transition: 0.3s;
+  width: 114px;
+  height: 33px;
+}
+.blue-btn {
+  background-color: var(--royal-blue);
+  color: var(--white);
+  border-color: var(--royal-blue);
 }
 
 .btn:hover {
-  background: rgb(11, 54, 211);
-  color: var(--light-beige);
+  background: var(--royal-blue);
+  color: var(--white);
+  border-color: var(--royal-blue);
 }
 
-/*Section content
+.blue-btn:hover {
+  background: var(--white);
+  color: var(--black);
+  border-color: var(--black);
+}
+/*Section content*/
+#content {
+  margin: 280px 8vw 0px;
+}
 
-
+.content h2 {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+}
+.content span {
+  font-family: "Poppins", sans-serif;
+  line-height: normal;
+  font: var(--font_5);
+}
+p {
+  line-height: 2em;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 /* Dont' forget to link this file to your HTML in the <head> */
 
 /* 390 pikselden buyukse. */
