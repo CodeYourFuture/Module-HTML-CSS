@@ -1,0 +1,263 @@
+:root {
+  --fs-xxl: calc(var(--fs-min) + 1.4375rem);
+  --fs-xl: calc(var(--fs-min) + 0.8125rem);
+  --fs-lg: calc(var(--fs-min) + 0.5rem);
+
+  --colour-form-field-border: #3b3b3b;
+}
+
+main {
+  background: var(--colour-background);
+}
+
+.other-pages__content {
+  width: 740px;
+  margin: 0 auto;
+  padding: var(--gap-xxl) 0;
+
+  display: grid;
+  gap: var(--gap-xl);
+}
+
+a.button-blue {
+  padding: var(--gap-sm) var(--gap-m);
+}
+
+main h2 {
+  font-size: var(--fs-xxl);
+  text-align: center;
+}
+
+main h3 {
+  font-size: var(--fs-xl);
+}
+
+/* Resume Section */
+
+.resume__section {
+  width: 100%;
+  margin-top: var(--gap-lg);
+
+  display: grid;
+  gap: var(--gap-xl);
+}
+
+#experience-cv__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cards */
+
+.card {
+  background-color: var(--colour-white);
+  box-shadow: var(--shadow);
+}
+
+/* Resume Card (history) */
+
+.resume-card-history {
+  padding: var(--gap-xxl) var(--gap-xl);
+
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-xxl);
+}
+
+.card-history__summary {
+  margin-bottom: var(--gap-xl);
+
+  flex: 0.6;
+
+  display: grid;
+  align-items: center;
+  grid-template-rows: repeat(auto-fill, var(--fs-xxl));
+}
+
+main h4 {
+  font-size: var(--fs-lg);
+
+  color: var(--colour-accent);
+}
+
+.card-history__text {
+  margin-top: var(--gap-xl);
+
+  flex: 1;
+  text-align: justify;
+
+  display: grid;
+  align-items: center;
+  gap: var(--gap-m);
+}
+
+.card-history__more p {
+  display: block;
+  font-size: var(--fs-sm);
+}
+
+/* Resume Card (skills) */
+
+.resume-card-skills {
+  padding: var(--gap-xxl) var(--gap-xl);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xxl);
+}
+
+.card-skills__container {
+  display: grid;
+  gap: var(--gap-lg);
+}
+
+.skill-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: var(--gap-m);
+}
+
+/* blue box beside elements */
+
+main h2,
+.skill {
+  position: relative;
+}
+
+main h2 {
+  margin-left: 0.8em;
+}
+
+.skill {
+  margin-left: 1.2em;
+}
+
+main h2::before {
+  content: "";
+  position: absolute;
+  background-color: var(--colour-accent);
+  height: calc(0.6 * 1em);
+  aspect-ratio: 1;
+
+  transform: translate(-0.8em, 80%);
+}
+
+.skill::before {
+  content: "";
+  position: absolute;
+  background-color: var(--colour-accent);
+  height: calc(0.75 * 1em);
+  aspect-ratio: 1;
+
+  transform: translate(-1.2em, 35%);
+}
+
+/* Projects page */
+
+#projects-page__intro {
+  text-align: center;
+}
+
+#projects-list {
+  display: grid;
+  gap: var(--gap-lg);
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+}
+
+.project-info {
+  flex: 1.2;
+}
+
+.project-name {
+  margin: var(--gap-xxl) 0 var(--gap-lg);
+  padding-left: var(--gap-lg);
+  border-left: solid 0.6em var(--colour-accent);
+}
+
+.project-description {
+  padding-left: calc(var(--gap-lg) + 0.6em);
+  padding-right: var(--gap-lg);
+  text-align: justify;
+}
+
+.project-name p {
+  font-weight: bold;
+  font-size: var(--fs-sm);
+}
+
+.project-image {
+  flex: 0.8;
+}
+
+.project-image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Contact Page */
+
+form {
+  padding: var(--gap-xxl);
+
+  display: grid;
+  gap: var(--gap-xl);
+}
+
+.contact-field {
+  display: grid;
+  gap: var(--gap-m);
+}
+
+label {
+  font-weight: bold;
+  font-size: var(--fs-sm);
+}
+
+#contact-name {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-xl);
+}
+
+input,
+textarea {
+  padding: 1em;
+  text-align: justify;
+  color: var(--colour-accent);
+  font-weight: bold;
+  border-bottom: 2px solid var(--colour-form-field-border);
+}
+
+input:hover,
+input:focus,
+input:active,
+textarea:hover,
+textarea:focus,
+textarea:active {
+  padding-left: 1em;
+  color: var(--colour-accent);
+  font-weight: bold;
+  border-bottom: 3px solid var(--colour-accent);
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+  border-bottom: 2px solid var(--colour-warning);
+}
+
+button {
+  justify-self: flex-start;
+}
+
+/* blue asterisk for required fields */
+
+.required-field::after {
+  content: " *";
+  color: var(--colour-accent);
+  font-weight: normal;
+}
