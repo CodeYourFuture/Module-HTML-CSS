@@ -1,16 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400&family=Playfair+Display:ital,wght@0,400;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- Add a link to your css file here -->
-</head>
+  </head>
 
-<body>
-    <!-- Add your markup here -->
-</body>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <section class="header">
+          <div class="branding">
+            <a href="index.html"
+              ><img src="img/logo.svg" alt="rb-logo" class="logo"
+            /></a>
+          </div>
+          <h3>Indulge in Sweet Moments!</h3>
+        </section>
+        <nav>
+          <ul id="menu">
+            <a class="menu_item" href="">Home</a>
+            <a class="menu_item" href="">Cakes</a>
+            <a class="menu_item" href="">Ordering</a>
+            <a class="menu_item" href="">Lessons</a>
+            <a class="menu_item" href="">About</a>
+          </ul>
+          <a href="javascript:void(0);" class="icon" onclick="switchMenu()">
+            <div class="fa fa-bars"></div>
+          </a>
+        </nav>
+      </header>
 
+      <!-- Main-->
+      <main>
+        <section class="hero">
+          <article class="welcome">
+            <img src="img/cupcake-tray.webp" alt="cupcake-tray" id="hero-img" />
+            <div class="welcome-text">
+              <h1>Welcome</h1>
+              <p>
+                Welcome to Rb's Cakes, the ultimate destination for cupcake
+                connoisseurs. Our delectable cupcakes are a sensory delight,
+                offering a wide range of flavors to satisfy your every craving.
+                From timeless classics like rich chocolate and creamy vanilla to
+                unique, imaginative combinations that will enchant your taste
+                buds, we have a treat for every occasion. Whether you're
+                celebrating a special event or simply yearning for a delightful
+                indulgence, Rb's Cakes has you covered. Explore our selection,
+                place your order, and experience the joy of Rb's Cakes, where
+                happiness is just a bite away!
+              </p>
+            </div>
+          </article>
+        </section>
+        <section class="cupcake-group">
+          <div class="cupcake-container">
+            <img src="img/cupcake-1.webp" alt="" class="cupcake_item-img" />
+            <div class="middle-btn">
+              <a class="menu_item" href="#">Fruity</a>
+            </div>
+          </div>
+
+          <div class="cupcake-container">
+            <img src="img/cupcake-2.webp" alt="" class="cupcake_item-img" />
+            <div class="middle-btn">
+              <a class="menu_item" href="#">Chocolatey</a>
+            </div>
+          </div>
+
+          <div class="cupcake-container">
+            <img src="img/cupcake-3.webp" alt="" class="cupcake_item-img" />
+            <div class="middle-btn">
+              <a class="menu_item" href="#">Hallowey</a>
+            </div>
+          </div>
+          <div class="cupcake-container">
+            <img src="img/cupcake-4.webp" alt="" class="cupcake_item-img" />
+            <div class="middle-btn">
+              <a class="menu_item" href="#">Coloury</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer-->
+      <footer class="footer">
+        <!-- Social Media Logos -->
+        <div class="social-media">
+          <div class="social-media-item">
+            <div class="circle">
+              <img src="img/logo-x-twitter.svg" alt="x-icon" />
+            </div>
+
+            <p>@rb_cakes_mcr</p>
+          </div>
+          <div class="social-media-item">
+            <div class="circle">
+              <img src="img/facebook-icon.svg" alt="facebook-icon" />
+            </div>
+            <p>@rb_cakes_mcr</p>
+          </div>
+          <div class="social-media-item">
+            <div class="circle">
+              <img src="img/instagram-icon.svg" alt="instagram-icon" />
+            </div>
+
+            <p>@rb_cakes_mcr</p>
+          </div>
+        </div>
+        <!-- Copyright -->
+        <div class="copyright">&copy; Rb's Cake, Ltd.</div>
+      </footer>
+    </div>
+
+    <script>
+      function switchMenu() {
+        var x = document.getElementById("menu");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
 </html>

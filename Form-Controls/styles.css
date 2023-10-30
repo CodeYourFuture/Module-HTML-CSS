@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+}
+
+:root {
+  --red: rgba(230, 4, 2, 1);
+  --blue: rgba(2, 0, 172, 1);
+  --yellow: rgba(253, 221, 5, 1);
+  --default-text-color: rgba(4, 1, 2, 1);
+  --white: rgb(255, 255, 255);
+  --background-color: var(--white);
+
+  --default-font-family: "Roboto", sans-serif;
+  --heading-font-family: "Pixelify Sans", sans-serif;
+  font-size: 16px;
+}
+
+:focus {
+  outline: 2px dashed var(--blue);
+}
+
+
+/* General styles, */
+h1 {
+  font-weight: 300;
+  line-height: 1.2em;
+  margin: 0;
+  font-family: var(--heading-font-family);
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  padding: 1.5rem 3rem;
+  background-color: var(--red);
+  border: 3px solid black;
+}
+
+header img {
+  width: 100px;
+
+}
+
+/* Main Styles */
+
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  background-color: var(--background);
+  color: var(--default-text-color);
+  font-family: var(--default-font-family);
+  margin: 0 auto;
+  align-self: center;
+  padding: 1rem;
+  place-items: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  row-gap: 1.5rem;
+  border: 3px solid black;
+  margin: 0 3rem;
+  padding: 2rem 0;
+}
+
+fieldset {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 0.5rem;
+}
+
+legend {
+  color: var(--default-text-color);
+  margin-bottom: 0.5rem;
+}
+
+.input-set {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.input-set label {
+  display: grid;
+  place-items: center;
+}
+
+.col-1 {
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+
+.col-2 {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+
+label {
+  color: var(--default-text-color);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+input {
+  color: var(--default-text-color);
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  padding-left: 0.5rem;
+}
+
+.required {
+  color: var(--red);
+}
+
+.mondrian-img {
+  height: 125px;
+}
+
+select {
+  height: 2.5rem;
+  color: var(--default-text-color);
+  border-radius: 0.5rem;
+  border-width: 1px;
+  flex-grow: 1;
+}
+
+#submit {
+  color: var(--white);
+  background-color: var(--blue);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+}
+
+#submit:hover {
+  color: var(--blue);
+  background-color: var(--yellow);
+
+}
+
+.primary-btn:hover {
+  color: var(--yellow);
+  background-color: var(--white);
+}
+
+
+
+#sample-0 {
+  height: 100%;
+  max-width: 70%;
+  object-fit: contain;
+}
+
+#sample-a,
+#sample-c,
+#sample-rby {
+  display: none;
+  height: 100%;
+  max-width: 70%;
+  object-fit: contain;
+}
+
+#com-a,
+#com-c,
+#com-red-blue-yel {
+  display: none;
+}
+
+#com-a:checked~#sample-a {
+  display: block;
+}
+
+#com-c:checked~#sample-c {
+  display: block;
+}
+
+#com-red-blue-yel:checked~#sample-rby {
+  display: block;
+}
+
+#com-a:checked~#sample-0 {
+  display: none;
+}
+
+#com-c:checked~#sample-0 {
+  display: none;
+}
+
+#com-red-blue-yel:checked~#sample-0 {
+  display: none;
+}
+
+/* Footer Styles */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 6rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
+  font-family: var(--heading-font-family);
+  border: 3px solid black;
+}
+
+a {
+  text-decoration: none;
+  color: var(--blue)
+}

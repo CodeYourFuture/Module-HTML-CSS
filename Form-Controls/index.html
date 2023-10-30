@@ -1,28 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Mondrian Art T-shirts</title>
+  <meta name="description" content="A form to collect data for mondrian t-shirt design" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap"
+    rel="stylesheet" />
 </head>
+
 <body>
   <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <img src="logo.svg" alt="logo image">
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
+    <h1>Choose your Mondrian Art T-shirt</h1>
+  </header>
+  <form>
+    <!-- Mondrian Design names = mondrian-group
+    com-a = Composition A
+    com-c = Composition C
+    com-red-blue-yel = Composition with Red Blue and Yellow
+  -->
+    <input type="radio" id="com-a" name="mondrian-group" value="com-a" required />
+    <input type="radio" id="com-c" name="mondrian-group" value="con-c" />
+    <input type="radio" id="com-red-blue-yel" name="mondrian-group" value="com-red-blue-yel" />
+
+    <main>
+      <div class="col-1">
+        <label for="fname">First Name <span class="required">*</span></label>
+        <input type="text" id="fname" name="fname" placeholder="First Name" required minlength="2" />
+      </div>
+      <div class="col-1">
+        <label for="lname">Last Name <span class="required">*</span></label>
+        <input type="text" id="lname" name="lname" placeholder="Last Name" required minlength="2" />
+      </div>
+      <div class="col-2">
+        <label for="email">Email Address <span class="required">*</span></label>
+        <input type="email" id="email" name="email" placeholder="Email" pattern="[^ @]*@[^ @]*" required />
+      </div>
+
+      <div class="col-2">
+        <fieldset>
+          <legend>
+            Choose your Mondrian design <span class="required">*</span>
+          </legend>
+          <div class="input-set">
+
+            <label for="com-a"><img class="mondrian-img" src="images/mondrian_composition_a.jpeg"
+                alt="mondrian_composition_a" required />Composition A</label>
+          </div>
+          <div class="input-set">
+            <label for="com-c"><img class="mondrian-img" src="images/mondrian_composition_c.jpeg"
+                alt="mondrian_composition_c" />
+              Composition C </label>
+          </div>
+          <div class="input-set">
+            <label for="com-red-blue-yel"> <img class="mondrian-img" src="images/mondrian_red_blue_yellow.jpg"
+                alt="mondrian_red_blue_yellow" />
+              Composition with Red Blue and Yellow
+            </label>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="col-1">
+        <label for="size">Size <span class="required">*</span></label>
+        <select id="size" name="size" required>
+          <option value="" disabled selected>Select your size...</option>
+          <option value="x-small">X-Small</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+          <option value="x-large">X-Large</option>
+          <option value="xx-large">XX-Large</option>
+        </select>
+      </div>
+      <div class="col-1">
+        <label for="date">Delivery date: <span class="required">*</span></label>
+        <input type="date" id="date" name="date" min="2023-10-19" max="2023-11-16" required />
+      </div>
+      <div class="col-2">
+        <input type="submit" id="submit" name="submit" />
+      </div>
+    </main>
+    <img src="images/c-0.png" id="sample-0" alt="mondrian-design-t-shirt" />
+
+    <img src="images/c-a.png" id="sample-a" alt="mondrian-design-t-shirt" />
+    <img src="images/c-c.png" id="sample-c" alt="mondrian-design-t-shirt" />
+    <img src="images/c-rby.png" id="sample-rby" alt="mondrian-design-t-shirt" />
+  </form>
 </body>
+<footer>
+  <h2>Learn more about <a href="https://www.tate.org.uk/art/artists/piet-mondrian-1651">Piet Mondrian</a></h2>
+
+  <h3>By <a href="https://deploy-preview-31--cyf-developer-portfolio.netlify.app/">Rabia AVCI</a></h3>
+
+</footer>
 
 </html>
