@@ -3,6 +3,7 @@
     --fs-xxl: calc(var(--fs-min) + 1.4375rem);
     --fs-xl: calc(var(--fs-min) + 0.8125rem);
     --fs-lg: calc(var(--fs-min) + 0.5rem);
+    --fs-sm: calc(var(--fs-min) + 0.25rem);
   }
 
   /* show and hide elements */
@@ -200,7 +201,8 @@
   footer {
     grid-template-columns: 1fr;
     gap: var(--gap-m);
-
+    
+    height: unset;
     padding: var(--gap-m);
   }
 
@@ -223,13 +225,10 @@
 
   .other-pages__content {
     width: 100%;
+    padding: var(--gap-xxl) var(--gap-sm);
   }
 
   /* Resume */
-
-  .resume__section {
-    padding: 0 var(--gap-sm);
-  }
 
   .resume-card-history {
     flex-direction: column;
@@ -258,12 +257,16 @@
 
   /* Projects */
 
-  #projects-list {
-    margin: 0 var(--gap-sm);
+  .project {
+    gap: var(--gap-m);
   }
 
   .project-info {
     flex: initial;
+  }
+
+  .project-name {
+    margin: var(--gap-m) 0;
   }
 
   .project-image {
@@ -276,5 +279,17 @@
     display: block;
     width: 100%;
     object-fit: cover;
+  }
+
+  /* contact */
+
+  #contact-name {
+    grid-template-columns: 1fr;
+    gap: var(--gap-m);
+  }
+
+  form {
+    padding: var(--gap-xl) var(--gap-m);
+    gap: var(--gap-m);
   }
 }
