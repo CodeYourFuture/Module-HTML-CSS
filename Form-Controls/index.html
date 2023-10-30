@@ -1,28 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My form exercise</title>
 </head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
 
-  </main>
+<body>
+    <div class="container">
+        <h1>T-Shirt Order Form</h1>
+        <form id="order-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required minlength="2">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="color">Color:</label>
+                <select id="color" name="color" required>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="size">Size:</label>
+                <select id="size" name="size" required>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="delivery-date">Delivery Date:</label>
+                <input type="date" id="delivery-date" name="delivery-date" required min="<?php echo date('Y-m-d'); ?>"
+                    max="<?php echo date('Y-m-d', strtotime('+4 weeks')); ?>">
+            </div>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+
+  </header>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Fidaa Bashir</h2>
   </footer>
 </body>
 
 </html>
+
