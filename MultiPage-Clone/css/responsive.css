@@ -159,7 +159,7 @@
 
   /* Main */
 
-  main {
+  main.main-index {
     background: linear-gradient(
       to top,
       var(--colour-background) 80%,
@@ -217,5 +217,64 @@
   #credits p {
     width: 100%;
     text-align: justify;
+  }
+
+  /* other pages standards */
+
+  .other-pages__content {
+    width: 100%;
+  }
+
+  /* Resume */
+
+  .resume__section {
+    padding: 0 var(--gap-sm);
+  }
+
+  .resume-card-history {
+    flex-direction: column;
+    gap: var(--gap-lg);
+
+    padding: var(--gap-lg);
+  }
+
+  .card-history__summary {
+    flex: unset;
+    margin: 0;
+  }
+
+  .card-history__more {
+    margin-top: var(--gap-sm);
+  }
+
+  .card-history__text {
+    flex: unset;
+    margin: 0;
+  }
+
+  .skill-list {
+    grid-template-columns: 1fr;
+  }
+
+  /* Projects */
+
+  #projects-list {
+    margin: 0 var(--gap-sm);
+  }
+
+  .project-info {
+    flex: initial;
+  }
+
+  .project-image {
+    flex: initial;
+    width: 100%;
+    aspect-ratio: 1.41;
+  }
+
+  .project-image img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
   }
 }

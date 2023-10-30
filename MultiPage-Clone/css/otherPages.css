@@ -71,17 +71,13 @@ main h3 {
 
   display: grid;
   align-items: center;
-  grid-template-rows: repeat(4, var(--fs-xxl));
+  grid-template-rows: repeat(auto-fill, var(--fs-xxl));
 }
 
 main h4 {
   font-size: var(--fs-lg);
 
   color: var(--colour-accent);
-}
-
-.card-history__summary p:last-child {
-  margin-top: var(--gap-sm);
 }
 
 .card-history__text {
@@ -95,7 +91,8 @@ main h4 {
   gap: var(--gap-m);
 }
 
-.card-history__more {
+.card-history__more p {
+  display: block;
   font-size: var(--fs-sm);
 }
 
@@ -168,7 +165,13 @@ main h2::before {
 
 .project {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 100%;
+}
+
+.project-info {
+  flex: 1.2;
 }
 
 .project-name {
@@ -177,18 +180,24 @@ main h2::before {
   border-left: solid 0.6em var(--colour-accent);
 }
 
+.project-description {
+  padding-left: calc(var(--gap-lg) + 0.6em);
+  padding-right: var(--gap-lg);
+  text-align: justify;
+}
+
 .project-name p {
   font-weight: bold;
   font-size: var(--fs-sm);
 }
 
+.project-image {
+  flex: 0.8;
+}
+
 .project-image img {
   height: 100%;
   object-fit: cover;
-}
-
-.project-description {
-  padding-left: calc(var(--gap-lg) + 0.6em);
 }
 
 /* Contact Page */

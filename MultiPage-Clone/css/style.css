@@ -116,7 +116,7 @@ header h1::before {
 
 /* main */
 
-main {
+main.main-index {
   background: linear-gradient(
     to right,
     var(--colour-background) 40%,
