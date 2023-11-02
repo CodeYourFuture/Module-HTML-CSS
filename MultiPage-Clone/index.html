@@ -1,21 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <!-- Add a link to your custom CSS here -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Responsive grid project</title>
-</head>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header-items">
+      <div class="header-main">
+        <div class="right-header">
+          <div class="blue-logo"></div>
+          <h2 class="name">Zeliha Pala</h2>
+        </div>
+        <p class="job">
+          <span class="slash-span"> / </span>FULL-STACK DEVELOPER
+        </p>
+      </div>
 
-<body>
+      <label class="ham-menu" for="menu-icon">
+        <img
+          class="ham-icon"
+          src="image/menu-burger-horizontal-svgrepo-com.svg"
+          alt="hamburger menu"
+      /></label>
+      <input type="checkbox" id="menu-icon" />
 
-    <!-- Add your markup here -->
+      <!-- "hamburger" icon -->
+      <nav class="nav-page">
+        <ul id="menu-items">
+          <li><a href="#">ABOUT ME</a></li>
+          <li><a href="#">RESUME</a></li>
+          <li><a href="#">PROJECTS</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
+      <!-- Section Hero-->
+      <section id="hero">
+        <div class="background-color">
+          <div class="me-card">
+            <img
+              class="owner-photo"
+              src="image/robot.png"
+              alt="profile photo"
+            />
 
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
-</body>
+            <div class="name-cont">
+              <div class="front-card">
+                <h2 class="name-card">Zeliha Pala</h2>
+                <hr class="blue-line"></hr>
+                <h3>FULL-STACK DEVELOPER</h3>
+              </div>
 
+              <div class="buttons">
+                <button class="btn blue-btn">RESUME</button>
+                <button class="btn">PROJECTS</button>
+              </div>
+            </div>
+
+            <div class="social-media">
+              <a href="#"
+                ><img
+                  src="https://www.svgrepo.com/show/512120/facebook-176.svg"
+                  alt="for more detail"
+                  class="icons"
+              /></a>
+              <a href="#"
+                ><img
+                  src="https://www.svgrepo.com/show/513008/twitter-154.svg"
+                  alt="for more detail"
+                  class="icons"
+              /></a>
+              <a href="#"
+                ><img
+                  src="https://www.svgrepo.com/show/120652/linkedin-logo.svg"
+                  alt="for more detail"
+                  class="icons"
+              /></a>
+              <a href="#"
+                ><img
+                  src="https://www.svgrepo.com/show/521711/instagram.svg"
+                  alt="for more detail"
+                  class="icons"
+              /></a>
+            </div>
+          </div>
+          <section id="content">
+            <div class="content">
+              <h2>Hello</h2>
+              <span>Here's who I am & what I do</span>
+              <p class="market">
+                I'm a full-stack developer with skills in both front-end and
+                back-end technologies.
+                <br />
+
+                Explore my portfolio to witness a collection of projects that
+                showcase my ability to blend creativity and technical
+                proficiency. Each project represents a unique challenge. You'll
+                find examples of web applications, mobile apps, and backend
+                systems, all meticulously designed and skillfully implemented.
+              </p>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="info">
+        <div class="num">
+          <p class="p1">Call</p>
+          <p>123-456-789</p>
+        </div>
+
+        <div class="mail">
+          <p class="p1">Write</p>
+          <p>info@mysite.com</p>
+        </div>
+      </div>
+
+<div>
+ <p class="follow">Follow</p>
+      <div class="social-media">
+        <a href="#"
+          ><img
+            src="https://www.svgrepo.com/show/512120/facebook-176.svg"
+            alt="for more detail"
+            class="icons"
+        /></a>
+        <a href="#"
+          ><img
+            src="https://www.svgrepo.com/show/513008/twitter-154.svg"
+            alt="for more detail"
+            class="icons"
+        /></a>
+        <a href="#"
+          ><img
+            src="https://www.svgrepo.com/show/120652/linkedin-logo.svg"
+            alt="for more detail"
+            class="icons"
+        /></a>
+        <a href="#"
+          ><img
+            src="https://www.svgrepo.com/show/521711/instagram.svg"
+            alt="for more detail"
+            class="icons"
+        /></a>
+      </div>
+</div>
+     <div>
+       <p class="copy c-1">© 2035 by Maya Nelson.</p>
+      <p class="copy c-2">Powered and secured by Wix</p>
+     </div>
+     
+
+    </footer>
+
+    <!--  <p>
+      This website design was created by Wix.com, and is used here for strictly
+      educational purposes.
+    </p> -->
+  </body>
 </html>
