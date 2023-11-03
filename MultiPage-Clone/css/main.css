@@ -197,7 +197,6 @@ main {
   flex-direction: column;
   align-items: center;
   height: fit-content;
-  
 }
 
 .hero-background {
@@ -303,7 +302,6 @@ main {
 /* footer */
 
 .ftr-cont {
-  h
   background-color: var(--White);
   display: flex;
   flex-direction: column;
