@@ -1,0 +1,404 @@
+body {
+  margin: 0;
+  background-color: #ededee;
+}
+
+#search:hover {
+  border: 1px solid rgb(210, 88, 44);
+  box-sizing: border-box;
+}
+#search {
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  /* width: 30%; */
+}
+#search:focus {
+  outline: transparent;
+}
+.search-button {
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+}
+.bag {
+  margin-right: 20px;
+}
+body header {
+  background-color: white;
+}
+.second-header {
+  background: #ededee;
+}
+.second-he {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.pricles {
+  text-decoration: none;
+  color: rgb(210, 88, 44);
+  font-weight: bold;
+  font-size: 25px;
+  padding-left: 2%;
+}
+.second-he a {
+  color: rgb(210, 88, 44);
+}
+.banner {
+  padding-left: 3%;
+  color: rgb(210, 88, 44);
+}
+.banner-text {
+  width: 100%;
+}
+.banner-text p {
+  font-size: 20px;
+  opacity: 0;
+  width: 100%;
+  animation: anil 10s infinite;
+}
+.boxb1 {
+  position: absolute;
+  top: 23%;
+  font-size: 19px;
+  opacity: 0;
+  /* width: 100%; */
+  animation: ani2 10s infinite;
+}
+@keyframes anil {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
+}
+@keyframes ani2 {
+  45% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+}
+.list-nav {
+  display: none;
+}
+.pric-img {
+  width: 100%;
+}
+.logo {
+  position: absolute;
+  top: 50%;
+}
+.logop {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  /* position: absolute;
+  top: -100%; */
+}
+/* .logopp{ position: absolute;
+  top: -50%;} */
+.logop span {
+  border-bottom: 2px solid white;
+  margin: 15px;
+}
+.logo h1 {
+  font-size: 400%;
+  color: white;
+  text-align: center;
+  margin-bottom: 0;
+}
+.logo p {
+  font-size: 255%;
+  color: white;
+  text-align: center;
+}
+.button {
+  padding: 15px 40px;
+  background-color: rgb(210, 88, 44);
+  color: white;
+  font-size: 20px;
+  border: none;
+  left: 35%;
+  position: absolute;
+}
+
+.bot {
+  padding: 3%;
+}
+.img-main {
+  background: white;
+}
+..img-main image {
+  width: 100%;
+}
+.cacti {
+  text-align: center;
+  font-size: 25px;
+  color: rgb(210, 88, 44);
+  padding: 5%;
+}
+.cacti span {
+  border-bottom: 2px solid rgb(210, 88, 44);
+}
+.longp {
+  text-align: center;
+  font-size: 19px;
+  color: rgb(210, 88, 44);
+  margin: 5% 5% 0 5%;
+  padding-bottom: 4%;
+}
+.bzunav {
+  background-color: #133032;
+}
+.beauty-img img {
+  display: inline;
+  width: 100%;
+}
+.bp {
+  color: white;
+  font-size: 500%;
+  text-align: center;
+}
+.bb {
+  background: white;
+  color: black;
+  font-size: 18px;
+  border: none;
+  padding: 10px 30px;
+  margin-left: 35%;
+  margin-bottom: 3%;
+}
+.form {
+  background: rgba(255, 255, 255, 0.804);
+  display: flex;
+  flex-direction: column;
+  margin: 2.5%;
+  padding: 2%;
+  margin-top: 6%;
+}
+.form input {
+  padding: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+textarea {
+  padding: 10%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.form button {
+  background: rgb(210, 88, 44);
+  padding: 2%;
+  color: white;
+  font-size: 18px;
+  border: none;
+  margin-bottom: 5%;
+}
+.form P {
+  color: rgb(210, 88, 44);
+  text-align: center;
+  font-size: 30px;
+}
+.last-section {
+  background: #133032;
+  color: white;
+  text-align: center;
+}
+.last-section img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.last-section p {
+  padding: 10px;
+}
+.last-section nav {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.last-section label {
+  text-align: left;
+  margin-top: 20px;
+}
+.etem {
+  margin-left: 4%;
+}
+#emailsub {
+  padding: 8px;
+  margin-bottom: 20px;
+  margin-top: 12px;
+  border: 2px solid rgb(210, 88, 44);
+  background-color: #133032;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+#subbut {
+  padding: 8px;
+  font-size: 18px;
+  background-color: white;
+  margin-bottom: 40px;
+  border: none;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+#footer {
+  display: grid;
+  grid-template-columns: 10% 10% 10%;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+}
+footer p {
+  color: rgb(210, 88, 44);
+  text-align: center;
+  padding-top: 3%;
+  margin-bottom: 10%;
+}
+footer a {
+  color: rgb(210, 88, 44);
+}
+@media (min-width: 900px) {
+  html {
+    background-color: #ededee;
+  }
+  body {
+    margin: 0 5% 0 5%;
+  }
+  header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 11;
+  }
+  .second-he {
+    padding-top: 0.5%;
+  }
+  .second-he svg {
+    display: none;
+  }
+  .list-nav {
+    display: block;
+  }
+  .list-nav a {
+    text-decoration: none;
+    padding-left: 25px;
+    font-size: 20px;
+  }
+  .list-nav a:hover {
+    color: black;
+  }
+  .search-button {
+    display: flex;
+    justify-content: space-between;
+  }
+  .boxb1 {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 16%;
+    z-index: 1;
+  }
+
+  .imglgoo {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 44%;
+    z-index: 1;
+  }
+  .logo {
+    z-index: 2;
+    position: absolute;
+    left: 20%;
+    text-align: center;
+  }
+  .logo button {
+    position: absolute;
+    left: 35%;
+  }
+
+  .fimg {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+  }
+  #fs {
+    margin-left: 3%;
+  }
+  #fl {
+    margin-right: 3%;
+  }
+  .button {
+    position: absolute;
+    left: 9%;
+  }
+  .img-main,
+  .bzunav {
+    position: relative;
+    z-index: 4;
+  }
+  .img-main img {
+    width: 90%;
+  }
+  .bzunav {
+    display: grid;
+    grid-template-columns: 1.45fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    margin-top: 5%;
+  }
+  .bbp {
+    position: relative;
+    font-size: 6px;
+    text-align: center;
+  }
+  #bi1 {
+    width: 100%;
+    height: 100%;
+  }
+  .bb {
+    position: absolute;
+    top: 80%;
+  }
+  .bp {
+    position: absolute;
+    margin-left: 250px;
+  }
+  .last-section img {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 40%;
+    z-index: 1;
+  }
+  .form {
+    position: absolute;
+    z-index: 2;
+    left: 25%;
+  }
+
+  .ourstore {
+    background: #133032;
+    color: white;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    z-index: 4;
+    top: 110px;
+  }
+  .ourstore h2 {
+    padding-top: 30px;
+  }
+  footer {
+    margin-top: 120px;
+  }
+}
