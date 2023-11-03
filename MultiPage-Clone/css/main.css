@@ -38,7 +38,7 @@ header {
   position: absolute;
   top: 0px;
   width: 100%;
-  height: 90px;
+  height: 100px;
   background-color: var(--White);
 }
 .cont-header {
@@ -196,20 +196,22 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: fit-content;
+  
 }
 
 .hero-background {
   background-color: var(--Dark-beige);
   z-index: -1;
   width: 100vw;
-  height: 100vh;
-  margin: 270px 0px 0px 0px;
   position: absolute;
+  top: 270px;
+  height: 100%;
 }
 
 .card-section {
   background-color: var(--Light-beige);
-  width: 90vw;
+  width: 88vw;
   height: fit-content;
   box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, 0.6));
   display: flex;
@@ -274,4 +276,57 @@ main {
 
 .media-icon {
   width: 25px;
+}
+
+.intro-p {
+  width: 80vw;
+  margin: 45px;
+}
+.main-hdr {
+  margin: 45px 0px 15px;
+
+  font: var(--font-header1);
+  font-size: 55px;
+}
+.second-hdr {
+  font: var(--font-header1);
+  font-size: 22px;
+  font-weight: 600;
+}
+.info-p {
+  font: var(--font-header1);
+  font-weight: 300;
+  font-size: 18px;
+  margin: 20px 0px;
+}
+
+/* footer */
+
+.ftr-cont {
+  h
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.info-ftr {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+.info-cont {
+}
+
+.ftr-hdr {
+  font: var(--font-header1);
+  font-size: 20px;
+  font-weight: 500;
+}
+.ftr-p {
+  font: var(--font-header1);
+  font-size: 18px;
+  font-weight: 300;
 }
