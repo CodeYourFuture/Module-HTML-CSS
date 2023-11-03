@@ -13,6 +13,7 @@
   --font-header1: normal normal bold 20px/1.4em poppins-semibold, poppins,
     sans-serif;
   --gap: 13px;
+  --shd: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
 }
 *,
 *::before,
@@ -20,6 +21,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+img {
+  width: 200px;
 }
 
 body {
@@ -50,7 +54,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: calc(var(--gap) / (3/2));
+  gap: calc(var(--gap) / (3 / 2));
 }
 .inner-header {
   display: flex;
@@ -71,7 +75,7 @@ header {
   cursor: pointer;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 30px;
   line-height: 1em;
 }
 
@@ -149,7 +153,6 @@ header {
 }
 
 .sidebar {
-  transition: opacity var(--animation-timing), display var(--animation-timing), background-color var(--animation-timing);
   min-width: 100vw;
   min-height: 100vh;
   background-color: var(--White);
@@ -158,17 +161,16 @@ header {
   padding-top: 90px;
   display: none;
   opacity: 0;
-  
 }
 
 .hamburger-menu:has(input:checked) + .sidebar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--Dark-beige);
+  background-color: var(--Light-beige);
   opacity: 1;
 }
-.menu-nav{
+.menu-nav {
   width: fit-content;
   height: fit-content;
   display: flex;
@@ -178,7 +180,7 @@ header {
   gap: var(--gap);
 }
 
-.nav-links{
+.nav-links {
   text-decoration: none;
   color: var(--Black);
   cursor: pointer;
@@ -188,5 +190,88 @@ header {
   line-height: 1em;
 }
 
+/* main */
+main {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+.hero-background {
+  background-color: var(--Dark-beige);
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  margin: 270px 0px 0px 0px;
+  position: absolute;
+}
+
+.card-section {
+  background-color: var(--Light-beige);
+  width: 90vw;
+  height: fit-content;
+  box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, 0.6));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.personal-info {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0px;
+  gap: 30px;
+}
+.photo-img {
+  width: 50%;
+  border-radius: 9999px;
+}
+
+.name-card {
+  max-width: 6ch;
+  text-align: center;
+}
+
+.line-hr {
+  background-color: var(--Royal-blue);
+  width: 30%;
+  height: 3px;
+  border-radius: 9999px;
+}
+.button-cont {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.btn-card {
+  width: 150px;
+  height: 45px;
+  border-radius: 9999px;
+  border: none;
+  background-color: var(--Royal-blue);
+  color: var(--White);
+  font: var(--font-header1);
+  font-weight: 600;
+}
+.btn-empty {
+  border: 1.5px solid var(--Black);
+  color: var(--Black);
+  background-color: var(--Royal-blue), 0;
+}
+.media-info {
+  height: 50px;
+  background-color: var(--White);
+  margin: 0px 0px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-icon {
+  width: 25px;
+}
