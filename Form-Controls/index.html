@@ -3,26 +3,64 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
+  <meta name="description" content="form Product">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
+<title> from application </title>
 <body>
+  <from action="results.html" method="Get">
   <header>
     <h1>Product Pick</h1>
+   <p> We are providing  pick up services with our partnership across UK. <br> or local store open from 8:30 to8:30pm. 
   </header>
   <main>
   <form>
+   <div class="n1">
+      <label class="text">Name</label>
+      <input type="text" id="name">
+  </div>
+  <div class="email2">
+      <label for="email">Email</label>
+      <input class="email" name="email" id="email"required>
+      </div>
+   <div class="date3"> 
+      <label class="date">Date </label>
+      <input type="date"name= date id="date" max="2023-11-14">
+    </div>
+    <div>
+      <label for="options">Choose one of the following:</label>
+        <select id="options" name="options">
+            <option value="red">Red </option>
+            <option value="Yellow">Yellow</option>
+            <option value="Green">Green</option>
+        </select>
+      </div>
+      <div class="size1">
+    <label for="size">Select Size:</label>
+     <select id="size" name="size">
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+     </select> 
+     </div>
+     <div class="sumt4">
+     <button>Submit</button>
+     </div>
+    <h2> Customer services policy</h2>
+    <p> We expect your delivery will arrive on time and in good condition. if you would preferring  to track your order <br>
+       in real-time and receive timely updates on the status of ours deliveries. Convenience plays a crucial role, with customers<br>
+       preferring various delivery options, including same-day, next-day, and scheduled. </p>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
   </form>
-
-  </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <p> Aym Abdullah <br>
+  <a href="products90@.com">Products90@.com</a></p>
   </footer>
+  </form>
 </body>
-
 </html>

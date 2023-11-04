@@ -1,1 +1,62 @@
 /*  Add your styling here */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  color: rgba(14, 12, 12, 0.785);
+}
+.navbar ul {
+  list-style: none;
+  text-decoration: none;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+   font-size: 15px;
+  background-color: gray;
+  color: white;
+}
+header{
+  background-color: orangered
+}
+img {
+  width: 70px;
+  margin-bottom: 20px;
+}
+
+
+h1,p{
+  margin-left: 100px;
+  margin-bottom:20px; 
+}
+.box1{
+  width: 150px;
+  float: left;
+}
+.threeline{
+  position:absolute;
+  top: 75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 20px;
+
+}
+.threeline .navbar{
+  height: 3px;
+  width: 100px;
+  background-color:white;
+  border-radius: 10px;
+
+}
+
+
+
+
+
+  
+
