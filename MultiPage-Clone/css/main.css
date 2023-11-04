@@ -205,12 +205,12 @@ main {
   width: 100vw;
   position: absolute;
   top: 270px;
-  height: 100%;
+  height: calc(100% + 270px );
 }
 
 .full-b {
   top: 0px;
-  height: calc(100% + 200px);
+  height: calc(100% + 360px);
 }
 
 .card-section {
