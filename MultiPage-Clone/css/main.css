@@ -370,6 +370,9 @@ main {
 .align-center{
   text-align: center;
 }
+.align-self-center{
+  align-self: center;
+}
 
 .projects-card {
   width: 100%;
@@ -407,6 +410,32 @@ font-size: 17px;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* form */
+
+.form{
+  padding: 40px 20px;
+  gap: 10px;
+}
+
+.form label {
+  font: var(--font-header1);
+  font-weight: 400;
+  margin-top: 10px;
+}
+.blue-star {
+  color: var(--Royal-blue);
+}
+
+.form input {
+  height: 60px;
+  border: none;
+  border-bottom: solid 2px var(--Black);
+}
+
+.submit-btn {
+  margin-top: 20px;
 }
 
 /* footer */
