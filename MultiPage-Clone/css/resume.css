@@ -1,13 +1,4 @@
-/* Add your CSS here */
-
-/* Dont' forget to link this file to your HTML in the <head> */
-/* header */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Quicksand", sans-serif;
-}
-/*  */
+/* resume-page*/
 
 header {
   display: flex;
@@ -72,134 +63,132 @@ header {
   pointer-events: auto;
   color: #0150fd;
 }
-.humburger-div {
-  display: none;
-}
 
 .navigation ul li:hover {
   color: #0150fd;
 }
-/* main */
-.about-main {
-  display: flex;
-  margin-top: 8em;
-}
-/* left-side */
-.left-section {
-  position: relative;
-  background-color: #e6dacd;
-  width: 70%;
-  height: 50em;
-}
-/* middle */
-.midle-profile {
-  position: absolute;
-  top: 9em;
-  right: -3em;
-  background-color: #f4ece6;
-  width: 70%;
-  height: auto;
-
-  box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, 0.6));
-}
-
-.profile-img {
-  margin: 2em 4em 1em 4em;
-  max-width: 60%;
-  max-height: 40%;
-  border-radius: 50%;
-}
-
-.myname {
-  display: block;
-  font-size: 2rem;
-  text-align: center;
-  margin: 0.2em auto 1em auto;
-}
-
-.smallblue-div {
-  width: 3em;
-  height: 0.2em;
-  background-color: #0150fd;
-  margin: 0 auto;
-}
-.resumeproject-button {
+.humburger-div {
   display: none;
 }
-.project {
-  margin-left: 4em;
-  text-align: center;
-  margin-top: 1.7em;
-  letter-spacing: 0.3em;
+.resume-body,
+.main-project {
+  background-color: #e6dacd;
+  position: relative;
 }
-.profile-footer {
-  padding: 1em 0;
-  margin-top: 2em;
+.title-resume {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  margin-top: 15em;
 }
-.profile-footer img {
-  width: 6%;
+.title-resume h1 {
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+  margin-left: 0.3em;
 }
-
-.right-section {
-  align-self: center;
-  margin-left: 5em;
+.information-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 56%;
+  margin: auto;
+  margin-top: 4em;
 }
-.hello {
-  font-weight: 700;
-  font-size: 6.25rem;
-  margin: 0px;
-  padding: 0px;
-  display: block;
+.information-area h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
 }
-.second-p {
-  font-size: 1.5rem;
-  padding: 0px;
-  margin-top: 0px;
-}
-
-.resume-button {
+.cv-button {
   background-color: #0150fd;
   color: #fff;
   font-weight: bold;
   border: 2px solid #0150fd;
   border-radius: 1em;
-  padding: 0.5em 2em;
+  padding: 0.5em 1em;
   cursor: pointer;
 }
-.resume-button:hover {
-  background-color: #fff;
+.cv-button:hover {
+  background-color: #e6dacd;
   color: black;
 }
-.project-button {
-  background-color: #fff;
-  border: 1px solid black;
-  border-radius: 1em;
-  padding: 0.5em 2em;
-  margin-left: 1em;
-  cursor: pointer;
-}
-.project-button:hover {
-  background-color: #0150fd;
-  color: #fff;
-  border: 1px solid #0150fd;
-}
-.aboutmepar-div {
-  width: 60%;
-}
-.aboutme-p {
+.title-grid p {
+  color: #403b3b;
+  display: block;
   font-family: "Poppins", sans-serif;
-  line-height: 1.5em;
 }
-.credit-p {
-  margin: 0px;
+.second-child,
+.third-child {
+  margin-top: 0px;
+  font-size: 12px;
 }
+.main-section {
+  width: 50%;
+  margin: 2em auto 5em auto;
 
-/* i used the same css for all page footer  */
-/* footer */
+  padding: 3em 3em;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px 2px rgb(200, 198, 198);
+}
+.main-section h3 {
+  margin-bottom: 0;
+  color: #0150fd;
+}
+.main-section h2 {
+  font-family: "Poppins", sans-serif;
+}
+.cv-article {
+  display: flex;
+  justify-content: space-between;
+}
+.section-p {
+  width: 50%;
+}
+.section-p p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  color: #403b3b;
+}
+.education-line {
+  margin: 7em 0 3.5em 16.3em;
+}
+.education-line h2 {
+  font-family: "Poppins", sans-serif;
+}
+.professional-skillset {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #403b3b;
+}
+.professional-skillset p {
+  margin-left: 3px;
+}
+.skill-set {
+  margin-left: 4em;
+}
+#blue-div {
+  margin-left: 0px;
+}
+.professional-flex {
+  display: flex;
+}
+.skillset h2 {
+  margin-top: 4em;
+}
+.language-section {
+  margin-bottom: 4em;
+}
+.professional-skillset1 {
+  display: flex;
+  align-items: center;
+  margin-left: 5em;
+  font-size: 14px;
+  color: #403b3b;
+}
+.professional-skillset1 p {
+  margin-left: 3px;
+}
 footer {
   display: flex;
   align-items: center;
@@ -241,17 +230,17 @@ footer p {
   .navigation {
     display: none;
   }
-
-  #header {
+  body {
+    margin: 0px;
+  }
+  header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    padding: 0 0 1em 0;
+    padding: 1em 0px;
   }
-  .humburger-div {
-    display: block;
-  }
+
   .blue-div {
     width: 1em;
     height: 1em;
@@ -270,7 +259,7 @@ footer p {
     margin-left: 2em;
   }
 
-  .name {
+  .smalldiv-name p {
     font-size: 1.2rem;
     font-weight: 800;
     margin: 0px;
@@ -297,82 +286,60 @@ footer p {
   .work-title {
     margin: 0px;
   }
-  .about-main {
+  .information-area {
+    width: 90%;
+    margin-top: 0px;
+  }
+  .title-resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5em;
+  }
+  .education-line {
+    margin: 1em 0 0 1em;
+  }
+  .education-line h2 {
+    margin: 0px;
+  }
+  .professional-flex {
     display: flex;
     flex-direction: column;
   }
-  .midle-profile {
-    position: absolute;
-    top: -10em;
-    left: 2em;
-    background-color: #f4ece6;
-    min-width: 90%;
-    height: auto;
-    box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, 0.6));
+  .skillset h2 {
+    margin-top: 0px;
   }
-
-  .profile-img {
-    width: 60%;
-    border-radius: 50%;
+  .professional-flex p {
+    font-size: 1rem;
   }
-  .profileimg-div {
-    margin: 1em 0px;
-    text-align: center;
-  }
-
-  .left-section {
-    position: relative;
-    background-color: #e6dacd;
-    width: 100%;
-    height: 23em;
-  }
-  .myname {
-    font-size: 1.2rem;
-    font-weight: 700;
-  }
-  .project {
-    display: none;
-  }
-  .resumeproject-button {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 2em;
-  }
-  /* right-section */
-  .right-section {
-    background-color: #e6dacd;
-    padding-left: 7%;
-    padding-top: 5em;
+  .skill-set {
     margin-left: 0px;
   }
-  .hello {
-    font-weight: 700;
-    font-size: 2.3rem;
-    margin: 0px 0px 0.5em 0.2em;
-    padding: 0px;
-    display: block;
+  .professional-skillset1 {
+    margin-left: 0px;
+    font-size: 1rem;
   }
-  .second-p {
-    font-size: 1.3rem;
-    padding: 0px;
-    margin-top: 0px;
-    margin-left: 0.4em;
+  .cv-article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 90%;
   }
-
-  .buttonsfor-mainpage {
-    display: none;
-  }
-  .aboutmepar-div {
+  .section-p {
     width: 80%;
   }
-  .aboutme-p {
-    width: 100%;
+  .section-p p {
+    font-size: 1rem;
   }
-  .credit-p {
-    font-family: "Quicksand", sans-serif;
-    font-size: 0.7rem;
-    margin: 0px;
+  .main-section {
+    margin: 2em 0px 0px 1em;
+    width: 90%;
+
+    padding: 1.3em 1em 1.3em 2em;
+
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 2px rgb(200, 198, 198);
   }
   .footer-section {
     display: flex;
@@ -391,10 +358,11 @@ footer p {
   .link-wix {
     display: none;
   }
+  /* nav */
   #hamburger__button-container {
     display: block;
     position: absolute;
-     top: 2em;
+    top: 2em;
     right: 2em;
     cursor: pointer;
     z-index: 2;
@@ -454,5 +422,8 @@ footer p {
   }
   #nav__toggle {
     display: none;
+  }
+  .humburger-div {
+    display: block;
   }
 }
