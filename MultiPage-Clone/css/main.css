@@ -1,12 +1,13 @@
 body {
-  font-family: "Roboto Slab", serif;
+  font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   margin: 0;
 }
 
 body,
 button {
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  /* font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif; */
+  font-family: "Raleway", sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
 }
@@ -25,12 +26,18 @@ p {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 540px){
+.header {
+  font-family: "Roboto Slab", serif;
+}
+
 /* header and navbar open */
 
 .header__logo {
   height: 1.2em;
   margin: 0.5em 0.1em;
   margin-right: 0.5em;
+  /* font-family: "Roboto Slab", serif; */
 }
 
 #hero {
@@ -42,11 +49,14 @@ p {
   padding-top: 3em;
   display: flex;
 }
+.maya p {
+  font-size: 1.2em;
+}
 
 .maya span {
   font-family: "Kanit", sans-serif;
   font-weight: 800;
-  font-size: 1.57em;
+  font-size: 1.3em;
 }
 
 #hamnav label,
@@ -56,7 +66,7 @@ p {
 
 #hamitems {
   font-size: 0.9em;
-  margin-left: 27em;
+  margin-left: 23em;
   margin-top: 1em;
   display: flex;
   flex-direction: row;
@@ -64,19 +74,22 @@ p {
 }
 #hamitems a {
   padding-left: 2.5em;
-  color: black;
+  color: #000;
   text-decoration: none;
   text-align: center;
 }
+#hamitems a.nav__link1 {
+  color: #0150fd;
+}
 
 #hamitems a:hover {
-  color: rgb(0, 0, 255);
+  color: #0150fd;
 }
 
 /* Hero section Open */
 .hero-box {
   margin-top: 3.5em;
-  background-color: rgb(235, 209, 209);
+  background-color: #e6dacd;
   width: 37%;
   height: 42em;
   position: absolute;
@@ -84,7 +97,7 @@ p {
 
 .hero-box2 {
   margin: 5.5em 5em;
-  background-color: rgb(211, 172, 172);
+  background-color: #f4ece6;
   width: 36%;
   height: 35em;
   position: absolute;
@@ -166,17 +179,27 @@ p {
 .btn {
   display: inline-block;
   margin-top: 3em;
-  padding: 0.4em 20px;
-  border: 2px solid black;
-  font-size: 16px;
+  padding: 0.4em 1.4em;
+  border: 1px solid black;
+  font-size: 14px;
   font-weight: bold;
   border-radius: 10em;
   background-color: white;
   transition: 0.4s;
 }
+.btn1 {
+  font-weight: bold;
+  border: none;
+  margin-top: 3em;
+  border-radius: 10em;
+  font-size: 13px;
+  color: #fff;
+  padding: 0.6em 2.5em;
+  background-color: #0150fd;
+}
 
 .btn:hover {
-  background: rgb(11, 54, 211);
+  background: #0150fd;
   color: aliceblue;
 }
 
