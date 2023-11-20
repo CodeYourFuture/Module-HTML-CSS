@@ -1,23 +1,59 @@
-/*  Add your styling here */
+html, body {
+  min-width: 100vw;
+}
 header {
+  display : flex; 
+  flex-direction: column;
+  height: 200px;
+}
+.logobar {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  background-color: #9ac0db;
+  margin-bottom: 5px;
+}
 
-   /* grid-column: 1 / 3;
-    grid-row: 1; */
-   /* border-radius: 5px;
-    padding: 10px;
-    background-color: rgb(207, 232, 220);
-    border: 2px solid rgb(79, 185, 227);
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    font-weight: bolder;*/
-
-
-
-
+.logoimgclass {
+  width: 75px;
+  height: 70px;
+  
+  box-sizing: border-box;
+  border: none;
 
 }
-  
+
+.logotxt {
+  font-size:large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: aliceblue;
+  font-weight: bolder;
+  margin-left: 20px;
+}
+
+.top-nav {
+  display: flex; 
+  background-color: #669bbc;
+
+  height: 50px;
+  padding: 1em;
+
+}
+@media (min-width: 700px) {
+  .top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #669bbc;
+
+     color: #fff; 
+    height: 50px;
+    padding: 1em;
+  }
+}
+
   article:first-child {
     margin-top: 20px;
     border: 2px solid #669bbc;
@@ -46,8 +82,7 @@ header {
   }
   
   body {
-    width: 90%;
-    min-width: 360px;
+    /* min-width: 360px; */
     margin: 2em auto; 
     font:
       0.9em/1.2 Arial,
@@ -73,10 +108,7 @@ header {
 
   }
   
-/*img {
-    width: auto;
-      height: auto; 
-}  */
+  
 
 .firstart {
     display: grid;
@@ -84,21 +116,22 @@ header {
     grid-row: 1;
     
     flex-direction: row-reverse; 
-
+    width: fit-content;
+    height: fit-content;
 }
 .firstart img {
-    width: 400px;
-    height: 300px;
+    
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    max-height: 300px;
+    border-radius: 100px;
 
 }
 .firstart p {
     font-size: 15px;
 }
-/*
-.secondart img {
-    height: 250px;
-    width: 300px;
-} */
+
 
 .secondart {
     display: grid;
@@ -113,6 +146,7 @@ header {
     width: 100%;
     max-width: 300px;
     max-height: 250px;
+    border-radius: 100px;
 }
 
 .cakeclass {
@@ -131,57 +165,24 @@ header {
 
 }
 
-/*.gridimg1 {
-    grid-area: img1;
-} */
-
-
-
-/*.slides {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-
-}
-.slides > div {
-    display: flex;
-    flex-shrink: 0;
-    width: 100%;
-    height: 300px;
-    scroll-snap-align: start;
-    scroll-behavior: smooth;
-    background: #74ABE2;
-    justify-content: center;
-    align-items: center;
-    font-size: 100px;
-
-}*/
 
 .firstsection {
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-content: center;  
-   /* border: 5px solid navy; */
 }
 .secondsection {
-    /* border: 5px solid navy; */
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
-    width: auto;
-    height: auto;
+    /* width: auto;
+    height: auto; */
 }
 
-.navclass {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    background-color: #669bbc;
-
-}
 .ulclass {
+  border: 5px solid rebeccapurple;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -189,8 +190,8 @@ header {
 
 }
 
-.liclass {
-    
+/* .liclass {
+    border: 5px solid red;
     text-decoration: none;
     list-style: none;
     background-color: aqua;
@@ -200,27 +201,8 @@ header {
     padding-top: 10px;
     border-radius: 5px;
 
-}
-.logoimgclass {
-    width: 75px;
-    height: 70px;
-    box-sizing: border-box;
-    border: none;
+} */
 
-}
-.logobar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #9ac0db;
-    margin-bottom: 5px;
-}
-.logotxt {
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: aliceblue;
-    font-weight: bolder;
-}
 
 
   @media screen and (min-width: 40em) {
@@ -236,27 +218,15 @@ header {
   
 }
 
-.top-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #00BAF0;
-    /*background: linear-gradient(to left, #f46b45, #eea849);*/
-    background-color: #669bbc;
 
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #FFF;
-    height: 50px;
-    padding: 1em;
-  }
   
   .menu {
     display: flex;
     flex-direction: row;
-    list-style-type: none;
-    margin: 0;
+    /* list-style-type: none; */
+     margin: 0;
     padding: 0;
+    color: #fff;
   }
   
   .menu > li {
@@ -265,6 +235,7 @@ header {
   }
   
   .menu-button-container {
+
     display: none;
     height: 100%;
     width: 30px;
@@ -272,6 +243,9 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    justify-items: center;
+    align-content: center;
   }
   
   #menu-toggle {
@@ -283,7 +257,7 @@ header {
   .menu-button::after {
     display: block;
     background-color: #fff;
-    position: absolute;
+     position: absolute; 
     height: 4px;
     width: 30px;
     transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -319,9 +293,13 @@ header {
       display: flex;
     }
     .menu {
-      position: absolute;
-      top: 0;
-      margin-top: 50px;
-      left: 0;
+      display: flex;
+      color: #fff;
+      display: none;
     }
+
+}
+
+.abc {
+  /* width: fit-content; */
 }
