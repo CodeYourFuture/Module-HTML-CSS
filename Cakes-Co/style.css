@@ -118,6 +118,8 @@ header {
     flex-direction: row-reverse; 
     width: fit-content;
     height: fit-content;
+    background-color: rgb(57, 181, 181);
+    border-radius: 25px;
 }
 .firstart img {
     
@@ -130,6 +132,7 @@ header {
 }
 .firstart p {
     font-size: 15px;
+    
 }
 
 
@@ -139,6 +142,8 @@ header {
     grid-template-rows: repeat(1,1fr);
     grid-template-areas:
     "img1 img2 img3 img4";
+    background-color: cadetblue;
+    border-radius: 25px;
 }
 
 .gridimg {
