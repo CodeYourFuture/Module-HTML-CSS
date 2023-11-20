@@ -72,6 +72,7 @@ p {
 a {
   font-size: var(--fs-link);
   text-decoration: none;
+  font-weight: bold;
   color: var(--primary-color);
   transition: all 0.2s;
 }
@@ -82,11 +83,11 @@ a:visited {
 
 a:hover {
   color: var(--focus-color-light-bg);
-  font-weight: bold;
   transition: all 0.2s;
 }
 
-header, main {
+header,
+main {
   width: var(--page-width);
 }
 
