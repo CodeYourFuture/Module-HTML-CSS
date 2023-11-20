@@ -68,7 +68,6 @@ h3 {
 }
 p {
   font-size: var(--fs-paragraph);
-  text-align: justify;
 }
 a {
   font-size: var(--fs-link);
