@@ -86,11 +86,14 @@ a:hover {
   transition: all 0.2s;
 }
 
+header, main {
+  width: var(--page-width);
+}
+
 /* HEADER */
 
 header {
   margin: 1rem auto;
-  width: var(--page-width);
 }
 
 .title {
@@ -120,7 +123,6 @@ main {
   flex-wrap: wrap;
   gap: var(--spacing);
   justify-items: stretch;
-  width: var(--page-width);
   margin: auto auto 5rem;
 }
 
