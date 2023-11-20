@@ -1,5 +1,5 @@
 html, body {
-  min-width: 100vw;
+  /* min-width: 100vw; */
 }
 header {
   display : flex; 
@@ -177,12 +177,10 @@ header {
     justify-content: center;
     align-content: center;
     align-items: center;
-    /* width: auto;
-    height: auto; */
+ 
 }
 
 .ulclass {
-  border: 5px solid rebeccapurple;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -190,18 +188,6 @@ header {
 
 }
 
-/* .liclass {
-    border: 5px solid red;
-    text-decoration: none;
-    list-style: none;
-    background-color: aqua;
-    width: 65px;
-    height: 25px;
-    text-align: center;
-    padding-top: 10px;
-    border-radius: 5px;
-
-} */
 
 
 
@@ -223,7 +209,6 @@ header {
   .menu {
     display: flex;
     flex-direction: row;
-    /* list-style-type: none; */
      margin: 0;
     padding: 0;
     color: #fff;
