@@ -39,7 +39,7 @@ body {
 
 /* Header */
 
-#banner {
+#header__banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
