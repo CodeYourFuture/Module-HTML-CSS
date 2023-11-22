@@ -45,7 +45,8 @@ h3 {
   font-size: 90%;
 }
 
-h4 {
+h4,
+.email {
   font-size: 90%;
   text-align: center;
 }
