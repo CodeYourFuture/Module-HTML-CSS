@@ -44,8 +44,7 @@
 
             <div class="form-group">
                 <label for="delivery-date">Delivery Date:</label>
-                <input type="date" id="delivery-date" name="delivery-date" required min="<?php echo date('Y-m-d'); ?>"
-                    max="<?php echo date('Y-m-d', strtotime('+4 weeks')); ?>">
+                <input type="date" id="delivery-date" name="delivery-date" min="2023-11-25" max="2023-12-23" required/>
             </div>
 
             <button type="submit">Place Order</button>
