@@ -194,13 +194,13 @@ header {
   color: var(--Black);
   cursor: pointer;
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  /* font-weight: 700; */
   font-size: 2.5em;
   line-height: 1em;
 }
 .nav-links:hover {
   color: var(--Royal-blue);
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 .media-information {
@@ -298,6 +298,13 @@ main {
   border-radius: 9999px;
 }
 
+.line-hr {
+  background-color: var(--Royal-blue);
+  width: 18%;
+  height: 3px;
+  border-radius: 9999px;
+}
+
 .card {
   max-width: 6ch;
   text-align: center;
@@ -320,15 +327,21 @@ main {
   width: 150px;
   height: 45px;
   border-radius: 9999px;
-  border: none;
+  /* border: none; */
   background-color: var(--Royal-blue);
-  color: var(--White);
+  color: var(--Black);
   font-weight: 600;
 }
 .empty {
   border: 1.5px solid var(--Black);
   color: var(--Black);
   background-color: var(--Royal-blue), 0;
+}
+.full {
+  border: 3px solid var(--Royal-blue);
+}
+.full:hover {
+  background-color: var(--bar-width);
 }
 
 .empty:hover {
@@ -371,7 +384,7 @@ main {
 }
 
 .section-cont {
-  padding-top: 9em;
+  padding-top: 2em;
 }
 .left-side-btn {
   display: none;
@@ -442,7 +455,7 @@ main {
   .nav-links1 {
     color: var(--Royal-blue);
     font-size: 1.5em;
-    font-weight: 300;
+    /* font-weight: 300; */
   }
 }
 
