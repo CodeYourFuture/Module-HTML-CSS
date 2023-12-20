@@ -94,7 +94,7 @@ p {
 
 .content {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
 }
 
 .welcome {
@@ -265,9 +265,9 @@ a:hover {
 
 @media screen and (max-width: 768px) {
   .content {
-    display: flex;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
     border-radius: 1em;
-    flex-direction: column-reverse;
   }
 
   #hamitems {
@@ -322,6 +322,7 @@ a:hover {
   .main-img {
     margin: 1rem;
     border: 8px solid rgb(118, 102, 81);
+    width: 18em;
   }
 
   .welcome {
