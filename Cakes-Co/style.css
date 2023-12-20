@@ -3,6 +3,7 @@ body {
   -webkit-font-smoothing: antialiased;
   margin: 0 0;
   background-color: rgb(169, 139, 139);
+  box-sizing: border-box;
 }
 
 body,
@@ -24,11 +25,6 @@ p {
   padding: 0 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.main-image {
-  width: 60%;
-  padding-bottom: 1em;
 }
 
 /*Hamburger Section*/
@@ -62,8 +58,12 @@ p {
 
 .main-img {
   margin: 1rem;
-  height: 20rem;
   border: 8px solid rgb(118, 102, 81);
+  height: auto;
+  width: 85%;
+  height: 20rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
 /*CSS for 4 images*/
@@ -91,16 +91,31 @@ p {
 #hamitems {
   display: none;
 }
-
-.content {
+.container {
   display: flex;
+  flex-direction: column;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.side-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .welcome {
+  flex: 1;
   align-content: flex-end;
   text-align: end;
-  margin: 0.9rem;
+  margin: 1.9rem;
+  padding-right: 2rem;
   font-size: 1.5rem;
 }
 
@@ -180,26 +195,9 @@ a:hover {
 /*For computer view*/
 
 @media screen and (min-width: 900px) {
-  body {
-    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-    color: var(--grey-dark);
-    font-size: 0.9rem;
-    background-color: rgb(169, 139, 139);
-  }
-
   .menu__img {
     display: grid;
     grid-template-columns: auto auto auto auto;
-  }
-
-  .main {
-    width: 50%;
-    padding-bottom: 4em;
-  }
-
-  .main-image {
-    width: 60%;
-    padding-bottom: 2em;
   }
 
   #hamnav {
@@ -238,14 +236,6 @@ a:hover {
     font-weight: 600;
   }
 
-  .main-img {
-    margin: 1rem;
-    width: 85%;
-    height: 20rem;
-    border: 8px solid rgb(118, 102, 81);
-    margin-top: 3rem;
-  }
-
   .welcome {
     padding-top: 2rem;
   }
@@ -264,10 +254,8 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .content {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    border-radius: 1em;
+  #content {
+    flex-direction: column;
   }
 
   #hamitems {
@@ -319,17 +307,13 @@ a:hover {
     margin-top: 43px;
   }
 
-  .main-img {
-    margin: 1rem;
-    border: 8px solid rgb(118, 102, 81);
-    width: 18em;
+  .side-image {
+    order: 1;
   }
 
   .welcome {
-    align-content: flex-end;
     text-align: start;
     margin: 0.9rem;
-    font-size: 1.5rem;
   }
 
   .footer {
