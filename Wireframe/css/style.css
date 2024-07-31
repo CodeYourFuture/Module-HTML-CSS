@@ -1,0 +1,141 @@
+:root {
+  --font-family: sans-serif;
+  --orange-dark: #ef6419;
+  --aqua-color: aqua;
+  --grey-color: grey;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  background-color: #ffeead;
+  height: 100%;
+  padding: 10px;
+  margin: 0px;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-gap: 6px;
+  /* grid-template-columns: [main-start] 1fr [content-start] 5fr [content-end main-end];
+  grid-template-rows: [main-start] 40px [content-start] auto [content-end] 40px [main-end]; */
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 40px 510px 50px 10px;
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "c c c c c c c c c c m m"
+    "c c c c c c c c c c m m"
+    "l l l l l l r r r r m m"
+    "l l l l l l r r r r m m"
+    "f f f f f f f f f f f f";
+}
+
+.header {
+  grid-area: h;
+  /* grid-column: main; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e0e1dd;
+  border-radius: 8px;
+  position: float;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+.nav-item {
+  padding: 20rem 0;
+  margin: 7rem;
+}
+
+/* .top-bar {
+  /* grid-area: t; */
+/* background-color: var(--grey-color); */
+/* height: 5rem; */
+/* } */
+.learn {
+  margin-left: 0;
+  font-size: xx-large;
+  background-color: #ccd5ae;
+}
+.menu {
+  grid-area: m;
+  background-color: #e0e1dd;
+  margin: 0 0.2rem;
+}
+.sidebar {
+  /* flex-direction: row;  */
+  font-size: medium;
+  margin: 0 0 8rem 0;
+  padding: 0.2rem;
+  list-style: none;
+  border-radius: 8px;
+  align-items: center;
+  background-color: #d4a373;
+  /* background-image: url(./images/point-icon.jpg); */
+  text-align: center;
+}
+h1,
+h2 {
+  text-align: center;
+  color: rgb(236, 68, 68);
+}
+p {
+  font-size: 18px;
+}
+.content {
+  grid-area: c;
+  margin: 0 0.2rem 0 4rem;
+  background-color: #d4a373;
+  background-image: url("./images/github-logo.webp");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 37%;
+}
+
+.left-cont {
+  grid-area: l;
+  margin-left: 4rem;
+  margin-right: 3rem;
+  margin-top: 1rem;
+  background-color: #ccd5ae;
+  /* grid-area: b;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+}
+.right-cont {
+  grid-area: r;
+  background-color: #ccd5ae;
+  padding: 0.5rem;
+  margin: 1rem 0.2rem 0 0;
+}
+.arrow {
+  display: inline-block;
+  height: 0;
+  width: 1;
+  border: 6px solid #e0e1dd;
+  border-left-color: burlywood;
+}
+.footer {
+  /* grid-column: main; */
+  grid-area: f;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* background-color: #e0e1dd; */
+  text-align: center;
+  font-style: italic;
+}
+
+/* .footer-contact {
+  align-items: center;
+  justify-content: space-between;
+}
+.footer p,
+h5 {
+  font-style: italic;
+  font-size: 17px;
+} */
