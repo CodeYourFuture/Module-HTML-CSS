@@ -1,0 +1,49 @@
+body{background-color:#fdf0d5;
+    
+} 
+/*git*/
+
+.git-defenation
+{ margin-left: 10%;
+ margin-right: 10%;
+ padding: 6px 20px;
+ border-radius: 6px;
+
+ border: 2px solid  #669bbc}
+article h2{
+    color: #c1121f;
+}
+.read-button{
+    color: #fdf0d5;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-style: none;
+    border-radius: 3px;
+    background-color: #669bbc;
+    
+}
+.read-button:hover{
+color: red;
+background-color: white;
+}
+/*article2*/
+.article2{ 
+ border: 2px solid #669bbc;
+}
+#article1{
+    margin-right: 3em;
+    padding: 1em;
+}
+#article2{
+    padding: 1em;
+}
+#git-main{
+    display: flex;
+    align-items: stretch;
+    margin-top: 3em;
+    margin-left: 10%;
+ margin-right: 10%;
+}
+.footer{
+    background-color: white;
+}
