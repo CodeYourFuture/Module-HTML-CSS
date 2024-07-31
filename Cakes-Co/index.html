@@ -1,16 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
-</head>
+    <link rel="stylesheet" href="/Cakes-Co/style.css" />
 
-<body>
-    <!-- Add your markup here -->
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Raleway:ital,wght@1,200;1,500&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+  </head>
 
+  <body>
+    <div class="container">
+
+      <header>
+       
+        <img src="/Cakes-Co/design/logo.jpg" class="header-logo" alt="">
+
+        <!-- svg section -->
+         <div class="svgText-wrapper">
+            <svg class="hb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#eee" stroke-width=".6" fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
+  <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+    <animate dur="0.2s" attributeName="d" values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze" begin="start.begin" />
+    <animate dur="0.2s" attributeName="d" values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze" begin="reverse.begin" />
+  </path>
+  <rect width="10" height="10" stroke="none">
+    <animate dur="2s" id="reverse" attributeName="width" begin="click" />
+  </rect>
+  <rect width="10" height="10" stroke="none">
+    <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="click" />
+    <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
+  </rect>
+</svg>
+        <h1>The best cakes in town delivered to your door</h1>
+</div>
+        
+      </header>
+
+
+      <!-- nav section -->
+      <nav>
+        <a href="#">HOME</a>
+       <a href="#">CAKES</a>
+       <a href="#">ORDERIN</a>
+       <a href="#">LESSONS</a>
+       <a href="#">ABOUT</a>
+      </nav>
+
+
+
+      <main>
+        <div>
+          <img src="/Cakes-Co/design/umesh-soni-LDnmyOaA-ew-unsplash.jpg" class="main-image" alt="">
+        </div>
+        <div>
+          <p>Welcome</p>
+          <h2>
+to Sweet Delights Bakery,
+ where every creation is a delectable work of art!
+  Our cakes are crafted with love and skill, using only the finest ingredients.
+   From classic flavors like velvety chocolate to exotic combinations like lavender-infused vanilla, there's a cake to suit every taste bud.
+    Our talented bakers take h3ride in customizing designs for your special occasions, be it a whimsical birthday cake or an elegant wedding masterpiece. Step into our charming shop, where the sweet aroma of freshly baked treats invites you to indulge in a world of confectionery wonders.
+    
+     We also offer a delightful range of pastries, cupcakes, and cookies for those looking for a bite-sized delight. With a commitment to quality and creativity, Sweet Delights Bakery is your go-to destination for all things sweet and delightful!</h2>
+        </div>
+      </main>
+      <content>
+        <div>
+          <img src="/Cakes-Co/design/hamide-jafari-974x2guatCs-unsplash.jpg" class="content-image1" alt="">
+        </div>
+                <div>
+                  <img src="/Cakes-Co/design/henry-be-_y5CCcYWTjU-unsplash (2).jpg" class="content-image2" alt="">
+                </div>
+                        <div>
+                          <img src="/Cakes-Co/design/lindsay-cotter-9J7sHieVFi0-unsplash.jpg" class="content-image3" alt="">
+                        </div>
+                                <div>
+                                  <img src="/Cakes-Co/design/artem-gavrysh-F6-U5fGAOik-unsplash.jpg" class="content-image4" alt="">
+                                </div>
+      </content>
+      <footer>
+        <a href="#">Address</a>
+       <a href="#">Contact</a>
+       <a href="#">07864489</a>
+       <div class="svg-footer">
+             <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><rect x="48" y="48" width="100" height="100" rx="8" ry="8"/><rect x="200" y="48" width="112" height="112" rx="8" ry="8"/><rect x="352" y="48" width="112" height="112" rx="8" ry="8"/><rect x="48" y="200" width="112" height="112" rx="8" ry="8"/><rect x="200" y="200" width="112" height="112" rx="8" ry="8"/><rect x="352" y="200" width="112" height="112" rx="8" ry="8"/><rect x="48" y="352" width="112" height="112" rx="8" ry="8"/><rect x="200" y="352" width="112" height="112" rx="8" ry="8"/><rect x="352" y="352" width="112" height="112" rx="8" ry="8"/></svg>
+       </div>
+      </footer>
+    </div>
+  </body>
 </html>
