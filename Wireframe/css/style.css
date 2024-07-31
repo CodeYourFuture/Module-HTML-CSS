@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --dark-blue: #071221;
+    --white: #ffff;
+
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+}
+
+body,
+button {
+    font-family: 'Arsenal', sans-serif;
+    color: var(--grey-dark);
+    font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header,
+.content,
+.footer {
+    padding: 0 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+
+}
+
+.title {
+    margin: 2rem 0;
+    font-size: 2.5rem;
+}
+
+.hero {
+    height: 25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.hero__card {
+    height: 14rem;
+    width: 30rem;
+    display: grid;
+    text-align: left;
+    margin-left: 10rem;
+}
+
+.hero__title {
+    font-size: 3rem;
+}
+
+.hero__button {
+    cursor: pointer;
+    height: 3rem;
+    width: 10rem;
+    margin: 2rem 0;
+    padding: .5rem;
+    background-color: #a6b3c5;
+    color: black;
+    text-align: left;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.hero__button:hover,
+.hero__button:active {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.article__container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+margin-bottom: 5rem;
+}
+
+article {
+    height: auto;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    border: 2px solid #b6c4d8;
+    border-radius: 2px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.article__title {
+    font-size: 2rem;
+}
+
+.article__link {
+    padding: .5rem 0;
+    width: 8.1rem;
+    color: #0b1525;
+    border-bottom: 2px solid var(--dark-blue);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.article__link:hover,
+.article__link:active {
+    border-bottom: 8px solid var(--dark-blue);
+}
+article:first-child{
+    background-color: #E4E8EE;
+    border: 2px solid var(--dark-blue);
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: #E4E8EE;
+    color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a{
+    font-size: 1.5rem;
+    color: #071532;
+}
