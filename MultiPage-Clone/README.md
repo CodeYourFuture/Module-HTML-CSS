@@ -1,98 +1,70 @@
-# Make a multi-page responsive website using CSS Grid
+# Cakes Co
 
-Choose one of the designs below, and re-create the design to perfection, using CSS Grid, and media queries to make the site fully responsive.
+The objective of this exercise is to create a responsive webpage showcasing your imaginary cake business. You are not required to found an actual cake business, but cakes brought to class this week will be welcomed with joy.
 
 ## Learning Objectives
 
-1. Create a mobile-first, responsive website
-2. Use CSS Grid and flexbox for layouts and alignment
-3. Save fonts and colours in CSS variables
+- Translate wireframe designs to a fully featured web page.
+- Implement a responsive design using the Mobile First approach
+- Adapt the page layout for larger screens using media queries
+- Select appropriate fonts and color schemes to create an aesthetically pleasing design
+- Use hover/focus effects to add interactivity to buttons and images
 
-## Style guide
+## Requirements
 
-Here are 3 designs to choose from, along with suggested fonts and colours to use for your chosen projects:
+This project develops your skills in creating responsive webpages using the Mobile First approach. You are expected to have a basic understanding of HTML and CSS.
 
-### **DESIGN 1: Prickles & Co**
+Start by implementing the mobile design in HTML and CSS. Then use media queries to adapt the layout for larger screens. Use `min-width` for your media queries and create three different variants of the layout using two different breakpoints.
 
-**An e-commerce site selling plants**
+Choose appropriate fonts and colors and find visually appealing cake pictures to replace the placeholders in the wireframes. You are encouraged to add hover/focus effects to buttons and images to enhance interactivity.
 
-![Prickles & Co homepage](./designs/Cactus%20shop.png)
+Make sure that all elements are visible and functional on both mobile and desktop devices.
 
-Live demo here: https://www.wix.com/website-template/view/html/1995
+## Acceptance Criteria
 
-### Fonts
+- [ ] The webpage is responsive and follows the Mobile First approach
+- [ ] The layout adapts appropriately for larger screens using media queries
+- [ ] Fonts and colors are selected appropriately and cake pictures are visually appealing
+- [ ] The webpage includes hover effects to add interactivity
+- [ ] All elements are visible and function as intended on both mobile and desktop devices according to the wireframes
+- [ ] Your page scores 100 on Lighthouse Accessibility
+- [ ] Your site is deployed to Netlify and the link is included in your PR message.
 
-**Headings:** Fjalla One - Regular 400  
-https://fonts.google.com/specimen/Fjalla+One  
-**Subheadings:** Outfit - Extra-light 200  
-https://fonts.google.com/specimen/Outfit  
-**Body:** Outfit - Extra-light 200  
-https://fonts.google.com/specimen/Outfit
+## Tips for success
 
-### Colors
+When you're ready to start coding:
 
-Red Brown: #A05941  
-Green Black: #133032  
-Light Grey: #EDEDEE  
-White: #FFF  
-Transparent White: rgba(0,0,0,0.75)
+### Start with mobile
 
-=====================================
+- Write the HTML following the mobile design
+- Then write your CSS for everything to look great on mobile
+- Remember to link your CSS file to your HTML file inside the `<head>` in `index.html`
+- You don't need to use any media queries yet, because we're following a [Mobile First](https://www.invisionapp.com/inside-design/mobile-first-design/) approach!
 
-### **DESIGN 2: Resume**
+### Then adapt the page for larger screens
 
-**A website to showcase skills and projects**
+- Now add media queries to your CSS, and change the layout and sizing of elements so they make better use of a wider screen (see the desktop wireframe design below).
+- To follow Mobile First principles, we will only be using `min-width` in our media queries (no max-width!)
+- You should **use 2 different breakpoints**, meaning you should have **3** different variants of your layout. Here's an example.
 
-![Business resume homepage](./designs/Business%20portfolio.png)
+  If we have the following **2 breakpoints**:
 
-Live demo here: https://www.wix.com/website-template/view/html/2622
+  > - breakpoint 1 --> 540px
+  > - breakpoint 2 --> 900px
 
-### Fonts
+  Then our CSS code will be split into **3**:
 
-**Headings:** Poppins - Semi-bold 600  
-https://fonts.google.com/specimen/Poppins  
-**Body:** Quicksand - Light 300  
-https://fonts.google.com/specimen/Quicksand
+  > 1. **"default"**: default styles, should implement the mobile design (no media query used for these). These styles will apply to all screen sizes by default.
+  > 2. **"medium"**: Our first media query `@media (min-width: 540px) {...}` **will overwrite our default styles** for screens at least 540px wide. Screens _below_ 540px will apply the styles from the "default".
+  > 3. **"large"**: Our second media query `@media (min-width: 900px) {...}` **will overwrite our default AND medium styles** for screens at least 900px wide (no upper limit).
 
-### Colors
+### Define your own style
 
-Dark beige: #E6DACD  
-Light beige: #F4ECE6  
-Royal blue: #0150FD  
-Black: #000  
-White: #FFF
+- Choose 1-2 fonts to use (lots of [free fonts here](https://fonts.google.com/))
+- Choose 2-3 colours that you think go together well, and try to limit yourself to those in your CSS ([look here at palettes](https://coolors.co/palettes/trending) for inspiration)
+- Select some nice cake pictures to replace the placeholders in the wireframes (good [photo source here](https://unsplash.com/images/food/cake)).
+- Get creative! Can you add some cool hover/focus effects to buttons and [images](https://www.wix.com/website-template/view/html/1911?siteId=c1c72d26-c040-41f2-80ce-0b0f8aef01b4&metaSiteId=5d77fab8-f068-4228-8b61-4181af054ca6&originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button)?
 
-=====================================
+### Also
 
-### **DESIGN 3: Juice Bar**
-
-**An e-commerce site for fruit juices**
-
-![Juice Bar homepage](./designs/Juice%20bar.png)
-
-Live demo here: https://www.wix.com/website-template/view/html/2962
-
-### Fonts
-
-**Headings and subheadings:** Questrial - Regular 400  
-https://fonts.google.com/specimen/Questrial  
-**Buttons:** Raleway - Regular 400  
-https://fonts.google.com/specimen/Raleway  
-**Body:** Roboto - Light 300  
-https://fonts.google.com/specimen/Roboto
-
-### Colors
-
-Black: #000  
-White: #FFF  
-Lylac: #f5e8ff  
-Light Green: #E6FAC0  
-Medium Green: #5E7D1F  
-Dark Green: #394B2A
-
-=====================================
-
-## **Crediting**
-
-Very important: please credit the designer in your footer with the sentence
-"This website design was created by Wix.com, and is used here for strictly educational purposes."
+- It's up to you to find a solution for any elements that are visible in desktop and not on mobile - and vice versa.

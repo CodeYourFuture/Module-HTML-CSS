@@ -1,0 +1,481 @@
+body, html {
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header-nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    margin: 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.header-title-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.top-navigation {
+    margin: 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.header-title::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.hamburger {
+    display: none; /* Initially hidden */
+}
+
+.slash {
+    display: inline; /* Display the slash in desktop view */
+}
+
+.part-1,
+.part-2 {
+    display: inline; /* Display inline in desktop view */
+}
+
+.button-menu {
+    display: flex;
+}
+
+.button-menu button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: black;
+}
+
+.button-menu button:hover {
+    color: blue;
+}
+
+.header-container h1 {
+    font-size: 1em;
+    text-align: end;
+}
+
+@media (max-width: 599px) {
+    .hamburger {
+        display: block; /* Show hamburger in mobile */
+    }
+    .button-menu {
+        display: none; /* Hide button menu in mobile */
+    }
+
+    .header-title-wrapper {
+        flex-direction: column; /* Stack vertically in mobile view */
+        align-items: flex-start;
+    }
+
+    .header-title::before {
+        display: none; /* Hide the original blue square in mobile view */
+    }
+
+    .part-1::before {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: blue;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    .slash {
+        display: none; /* Hide the slash in mobile view */
+    }
+
+    .part-1,
+    .part-2 {
+        display: block; /* Stack on top of each other in mobile view */
+    }
+}
+
+
+/* Footer CSS */
+
+.footer-sections {
+    display: flex;
+    flex-direction: column;  /* Stack the items vertically */
+    align-items: flex-start;  /* Justify content at the start */
+    padding: 20px;
+    background-color: #f1f1f1;  /* Optional background color */
+}
+
+/* Wrapper for Call and Email */
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;  /* Space out call and email */
+    width: 100%;  /* Take the full width */
+}
+
+.call-section,
+.email-section {
+    display: flex;
+    flex-direction: column;  /* Stack items vertically */
+    padding: 10px;
+}
+
+.call-section h3,
+.email-section h3,
+.call-section p,
+.email-section p {
+    margin: 0;  /* Remove default margins */
+}
+
+.follow-section {
+    padding: 10px;
+    width: 100%;
+}
+
+.copyright-section {
+    padding: 10px;
+    width: 100%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;  /* Align icons at the start */
+    gap: 20px;  /* Spacing between icons */
+}
+
+.social-icons img {
+    width: 24px;  /* Set the width */
+    height: 24px; /* Set the height */
+}
+
+/* ... */
+
+/* Media Query for Desktop */
+@media (min-width: 768px) {
+    .footer-sections {
+        flex-direction: row;  /* Change to horizontal layout */
+        justify-content: flex-start; /* Align items at the start */
+    }
+
+    .copyright-section {
+        order: -1;  /* Make it the first item */
+    }
+
+    .call-section {
+        order: 1;  /* Make it the second item */
+    }
+
+    .email-section {
+        order: 2;  /* Make it the third item */
+    }
+
+    .follow-section {
+        order: 3;  /* Make it the fourth item */
+    }
+
+    .call-section,
+    .email-section,
+    .follow-section,
+    .copyright-section {
+        margin-left: 20px;  /* Add some spacing between sections */
+    }
+
+    .call-section h3,
+    .email-section h3,
+    .follow-section h3 {
+        margin-bottom: 10px;  /* Add some bottom margin to align titles */
+    }
+}
+
+.split-section {
+    position: relative;
+}
+
+.split-section .left {
+    background-color: #F4ECE6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.split-section .right {
+    background-color: #E6DACD;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.split-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.split-section .social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    padding: 0.5em;
+}
+
+.left {
+    background-color: #F4ECE6;
+    text-align: center;
+    padding: 9px;
+}
+
+.right {
+    margin-top: 250px; /* Adjust the value as needed */
+    padding: 10px;
+    font-size: 10px;
+}
+
+.profile-image {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+}
+
+.name {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.first-name,
+.last-name {
+    margin: 0;
+    font-size: 24px; /* Adjust as needed */
+}
+
+.line {
+    width: 20%;
+    height: 2px;
+    background-color: royalblue;
+    margin: 20px auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 1em;
+}
+
+.resume-button, .projects-button {
+    /* existing styles */
+    border-radius: 22px;  /* Add rounded corners */
+}
+
+.cta-button {
+    /* existing styles */
+    border-radius: 12px;  /* Add rounded corners */
+}
+
+
+.resume-button {
+    background-color: royalblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.projects-button {
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+.name {
+    margin-top: 10px;
+}
+
+.first-name,
+.last-name {
+    margin: 0;
+    font-size: 24px; /* Adjust as needed */
+}
+
+.line {
+    width: 20%;
+    height: 2px;
+    background-color: royalblue;
+    margin: 20px auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.resume-button {
+    background-color: royalblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.projects-button {
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+  body {
+    display: grid;
+    grid-template-rows: 50px 1fr 50px; /* 50px for header, 1fr for content, 50px for footer */
+    height: 100vh;
+  }
+  
+  header {
+    grid-row: 1 / 2;
+  }
+  
+  .resumeBackground {
+    background-color: #E6DACD;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer {
+    grid-row: 3 / 4;
+  }
+  
+  .resumeBox {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin: 10px;
+  }
+  
+  .transparentTitle {
+    background-color: transparent;
+    border: none;
+  }
+  
+  .resumeSubtitle {
+    background-color: transparent;
+  }
+
+  
+  .contact-section {
+    grid-row: 2 / 3; /* Position it in the center row */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%; /* Cover 80% of the page width */
+    margin: 0 auto; /* Center it horizontally */
+}
+
+.contactInputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: darkblue;
+}
+
+.contact-section {
+    grid-row: 2 / 3; /* Position it in the center row */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Cover 80% of the page width */
+    margin: 0 auto; /* Center it horizontally */
+    background-color: #E6DACD; /* Set the background color */
+}
+
+/* ... existing CSS ... */
+
+.projectsBackground {
+    background-color: #E6DACD;
+  }
+  
+  .projectsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .projectWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .projectBox {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    text-align: start;
+  }
+  
+  .projectImage {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Media Query for Desktop */
+  @media (min-width: 768px) {
+    .projectWrapper {
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
+  
