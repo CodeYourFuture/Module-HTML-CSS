@@ -10,18 +10,104 @@
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1 class="design-h">::<span class="h1-style">::</span>::<span class="h1-style">::</span>
+    </h1>
   </header>
+
+  <!-- form and image section -->
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <div class="forme-wrapper">
+  <form action="">
+    <h1>ORDER NOW</h1>
+
+    <!-- shopping logo -->
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="orangered"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="white"
+        class="w-6 h-6"
+        width="40px"
+        height="40px"
+    >
+        <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z"
+        />
+    </svg>
+
+    <div class="name-wrapper">
+        <div class="input-box">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <i class='bx bxs-user'></i>
+        </div>
+
+        <div class="input-box">
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+        </div>
+    </div>
+
+    <div class="color-wrapper">
+        <label for="color">Color</label>
+        <select id="color" name="color" class="color">
+            <option value="Cream">Cream</option>
+            <option value="Black">Black</option>
+            <option value="Blue">Blue</option>
+            <option value="White">White</option>
+        </select>
+    </div>
+
+    <div class="size-wrapper">
+        <label for="size">Size</label>
+        <select id="size" name="size" class="size">
+            <option value="X-Small">X-Small</option>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+            <option value="X-Large">X-Large</option>
+            <option value="XX-Large">XX-Large</option>
+        </select>
+    </div>
+
+    <div class="input-box">
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" name="amount" placeholder="Amount" required>
+    </div>
+
+    <div class="input-box">
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" min="2025-04-08" required>
+    </div>
+
+    <div class="input-box">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+    </div>
+
+    <div class="input-box">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="Phone">
+    </div>
+</form>
+
+  </div>
+
+  <!-- button -->
+  <button>SUBMIT</button>
 
   </main>
+
+  <!-- footer section -->
+
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <div class="logo-wrapper">
+     <h6>BAHADOR</h6> 
+<img src="/Form-Controls/logo.png" alt="" class="my-logo">
+    </div>
   </footer>
 </body>
 
