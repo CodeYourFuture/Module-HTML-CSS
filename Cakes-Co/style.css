@@ -1,1 +1,318 @@
-/*  Add your styling here */
+:root {
+  --background: #de9bab;
+  --brand: #36000b;
+  --layout-color: #d1758b;
+  --brand-accent: #263600;
+  --transition-effect: ease-in-out 0.4s;
+}
+
+body {
+  background-color: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--brand);
+}
+
+a {
+  text-decoration: none;
+}
+
+.cupcake-logo {
+  border-radius: 100%;
+}
+
+header p {
+  color: var(--brand);
+}
+
+main div:nth-child(1) {
+  background-image: url("https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3150&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.socials-svgs svg {
+  fill: var(--brand);
+}
+
+@media only screen and (max-width: 480px) {
+  /* GENERAL STYLES */
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    padding-bottom: 4rem;
+  }
+
+  .layout {
+    display: grid;
+    grid-template-rows: 200px 780px 350px 140px;
+    row-gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  nav {
+    display: none;
+  }
+
+  /* HEADER & NAV STYLES - HEADER PICTURE & HAMBURGER MENU */
+
+  header {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    grid-template-rows: 110px 1fr;
+    row-gap: 1rem;
+    padding: 0 2rem;
+  }
+
+  .cupcake-logo {
+    width: 100%;
+    height: 100%;
+  }
+
+  header svg {
+    justify-self: end;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    text-align: end;
+    line-height: 0.8;
+    grid-column: 2 / 3;
+  }
+
+  main,
+  nav,
+  content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* MAIN STYLES - MAIN CAKE IMAGE AND WELCOME TEXT */
+
+  main {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+
+  main div:nth-child(1) {
+    grid-column: span 2;
+  }
+
+  main div:nth-child(2) {
+    grid-row: 1 / 2;
+    grid-column: span 2;
+  }
+
+  main div:nth-child(2) p {
+    line-height: 1.4;
+    text-align: justify;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+  }
+
+  main div:nth-child(2) h1 {
+    font-size: 4rem;
+  }
+
+  /* CONTENT STYLES - 4 IMAGES OF CAKES */
+
+  content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 10rem);
+    row-gap: 2rem;
+    column-gap: 2rem;
+  }
+
+  /* FOOTER STYLES - A FEW LINKS AND SOCIAL MEDIA LINKS */
+
+  footer div:nth-child(1) {
+    display: flex;
+    gap: 0.4rem;
+    flex-direction: column;
+  }
+
+  footer {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 2rem;
+    width: 82%;
+  }
+
+  .socials-svgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    text-align: end;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+
+  .layout {
+    display: grid;
+    grid-template-rows: 250px 100px 500px 460px 350px;
+    row-gap: 3rem;
+  }
+
+  header {
+    background-color: var(--layout-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    padding: 0 2%;
+    border-bottom-left-radius: 100%;
+  }
+
+  header p {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    align-self: end;
+    justify-self: end;
+  }
+
+  .cupcake-logo {
+    align-self: center;
+    border-radius: 100%;
+    margin-left: 1rem;
+  }
+
+  header svg {
+    display: none;
+  }
+
+  nav {
+    background-color: var(--background);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 2rem;
+    border-bottom: 2px solid var(--layout-color);
+  }
+
+  .flex-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .flex-nav a:hover,
+  .flex-nav a:active {
+    border-top-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    opacity: 1;
+  }
+
+  .flex-nav a {
+    display: flex;
+    color: white;
+    background-color: var(--brand);
+    padding: 0.8rem 1.4rem;
+    transition: border-top-left-radius ease-in-out 0.3s,
+      border-bottom-right-radius ease-in-out 0.6s,
+      border-top-right-radius ease-in-out 0.9s,
+      border-bottom-left-radius ease-in-out 1.2s, opacity ease-in-out 1.2s;
+    opacity: 0.6;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+
+  main div:nth-child(2) h1 {
+    font-size: 3.9rem;
+    text-align: end;
+  }
+
+  main div:nth-child(2) p {
+    line-height: 1.2;
+    text-align: end;
+    font-size: 1.4rem;
+  }
+
+  content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+  }
+
+  content div img {
+    border-radius: 10px;
+    opacity: 0.6;
+    transition: opacity var(--transition-effect);
+    cursor: pointer;
+  }
+
+  content div img:hover,
+  content div img:active {
+    opacity: 1;
+  }
+
+  nav,
+  main,
+  content {
+    width: 1300px;
+    margin: 0 auto;
+  }
+
+  footer {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+
+  footer div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.6rem;
+  }
+
+  .footer-links {
+    color: var(--brand);
+    transition: color var(--transition-effect);
+  }
+
+  .footer-links:hover {
+    color: var(--brand-accent);
+  }
+
+  .socials-svgs {
+    position: absolute;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    right: 3%;
+    text-align: end;
+    gap: 0.6rem;
+  }
+
+  .socials-svgs svg {
+    transition: fill var(--transition-effect);
+  }
+
+  .socials-svgs svg:hover,
+  .socials-svgs svg:active {
+    fill: var(--brand-accent);
+  }
+}
