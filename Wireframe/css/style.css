@@ -1,0 +1,98 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 1rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+/*Header*/
+
+header {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  padding-bottom: 2px;
+}
+
+header p {
+  padding-bottom: 1rem;
+}
+
+/*Learn more style*/
+
+a:link {
+  background-color: pink;
+  padding: 7px 10px;
+  text-align: justify;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+a:hover,
+a:active {
+  background-color: rgb(12, 213, 35);
+}
+
+/*Article and layout*/
+
+.layout {
+  background-color: #00856f;
+  padding-top: 20px;
+  width: 100%;
+  height: 15rem;
+}
+
+.art__content {
+  text-align: justify;
+  padding-top: 2rem;
+}
+
+.art__main {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  align-content: center;
+}
+
+/*Hr class*/
+
+hr.new {
+  border-top: 1px solid rgb(177, 12, 12);
+  width: 65rem;
+  margin-top: 2rem;
+}
+
+/*images*/
+
+.article__img {
+  margin-top: 2rem;
+  width: 100%;
+  height: 350px;
+}
+
+/*text Section*/
+
+.text__section {
+  padding-bottom: 0.1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding-left: 4rem;
+}
+
+/*Footer*/
+button:hover {
+  background-color: #00856f;
+}
+button {
+  background-color: rgb(61, 18, 18);
+  color: rgb(253, 250, 245);
+  border-radius: 5px;
+}
+footer {
+  padding-top: 1rem;
+  text-align: center;
+  color: rgb(59, 63, 63);
+}
