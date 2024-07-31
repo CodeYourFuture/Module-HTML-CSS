@@ -1,0 +1,120 @@
+/* Define root variables */
+:root {
+  --main-font: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  --main-color: #292b2c;
+  --rest-color: #fff;
+  --header-color: #70184b;
+  --background-color: #b4b4b4;
+  --border-color: #0a0a0a;
+  --btn-background: #5a0000;
+  --btn-hover-background: #e7b3b3;
+  --footer-border-color: #f7eae4;
+  --text-shadow-color: rgba(255, 255, 255, 0.5);
+  --space: 20px;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-color);
+  font-family: var(--main-font);
+  color: var(--main-color);
+  font-size: 1rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 70%;
+  margin: 0 auto; 
+}
+
+article {
+  display: grid;
+  grid-template:
+    "picture picture picture" 
+    "....... title   ......." 
+    "....... article ......." 
+    "....... btn     ......." 1fr /
+    var(--space) 1fr var(--space);
+  border: 1px solid;
+  background-color: var(--rest-color);
+  border: 1px solid var(--text-color);
+  padding: 0;
+  gap: 10px;
+}
+
+.main-article {
+  grid-column: span 2;
+}
+
+.article-pic {
+  width: 100%;
+  max-height: 100%;
+  padding: 0;
+  background-size: 100%;
+  grid-area: picture;
+}
+
+.article-title {
+  margin: 0;
+  color: var(--main-color);
+  padding: 20px;
+  grid-area: title;
+  border-top: 1px solid var(--border-color);
+}
+
+.article_summary {
+  margin: 0;
+  padding: 20px;
+  grid-area: article;
+}
+
+.article-btn {
+  grid-area: btn;
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 20px;
+  background-color: var(--btn-background);
+  margin: auto auto 20px 0;
+  padding: calc(var(--space) / 2);
+  color: var(--rest-color);
+}
+
+.article-btn:hover {
+  cursor: pointer;
+  background-color: var(--btn-hover-background);
+  color: var(--border-color)
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.site-header {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  text-shadow: 2px 2px 4px var(--text-shadow-color);
+  color: var(--header-color);
+}
+
+.footer {
+  margin-top: 10.8rem;
+  border-top: 2px solid var(--footer-border-color);
+  width: 76%;
+  margin-left: 12%;
+}
+
+.footer_content {
+  padding: 2rem 2rem 0 2rem;
+  text-align: center;
+}
+
+.footer p {
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
