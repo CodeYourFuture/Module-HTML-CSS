@@ -3,25 +3,91 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
+  <title>Shirti-fy.com  </title>
+  <link rel="icon" type="image/x-icon" href="/images/faveicon-16.ico">
+  <meta name="description" content="Complete your stylish purchase at shirti-fy.com - Explore a wide range of 
+  fashionable shirts and finalize your order today.">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#c4c1c0">
   <link rel="stylesheet" href="styles.css">
+  
 </head>
 <body>
-  <header>
-    <h1>Product Pick</h1>
+  <header class="header">
+    <a href="#" id="home"><img  src="images/icons8-back-sf-black-32.svg" alt="back to home page icon" aria-label="Go to your account panel"></a>
+    <a href="#"  id="profile">
+      <img id="prof-img" src="images/abstract-user-flat-4.svg" alt="account icon" aria-label="go back to home page">
+    </a>
   </header>
-  <main>
-  <form>
+
+
+  <main class="main">
+    <h1>Finalize Your Order</h1>
+    <h2>Please note that fields marked with an asterisk (*) are mandatory and must be filled out</h2>
+  <form class="form">
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
+    
+    <!-- defining form for persnal information of users -->
+    <div class="fieldset-container">
+      <fieldset class="fieldset-1">
+        <legend>Personal Info</legend>
+        <span>
+          <label for="user-name">Full Name:  </label><br>
+          <input type="text" name="name" id="user-name" placeholder="Full name (required)" minlength="2" maxlength="70" required aria-required="true"><br>
+        </span>
+
+        <span>
+          <label for="user-email">E-mail Address: </label><br>
+          <input type="email" name="email" id="user-email" placeholder="Email address (required)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required aria-required="true"><br>
+      </span>
+      </fieldset>
+
+    <!-- ///// t-shirt color options ///// -->
+    
+      <fieldset class="fieldset-2 ">
+        <legend>delivery Info</legend>
+        <span>
+          <label for="t-shirt-color">Choose your color:  </label><br>
+          <select id="t-shirt-color" name="t-shirt-color">
+            <option value="red" id="red">Red</option>
+            <option value="white" id="blue">White</option>
+            <option value="green" id="green">Green</option>
+          </select><br>
+        </span>
+
+
+        <!-- T-shirt size choosing //////////////////////-->
+        <span>
+          <label for="t-shirt-size">Please choose your size:  </label><br>
+          <select id="t-shirt-size" name="t-shirt-size"  >
+            <option value="x-small">x-Small</option>
+            <option value="small">Small</option>
+            <option value="medium"> Medium</option>
+            <option value="large">Large</option>
+            <option value="x-large">x-Large</option>
+            <option value="xx-large">xx-Large</option>
+
+          </select><br>
+        </span>
+        <!-- /////////////delivery date ////////////////////////////-->
+        <span>
+          <label for="date">Select delivery date:</label><br>
+          <input id="date" type="date" min="2023-09-02" max="2023-10-02" required><br>
+        </span>
+      </fieldset>
+    </div>
+    <input id="submit" type="submit" value="submit">
   </form>
+  
 
   </main>
-  <footer>
+  <footer class="footer">
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <a href="#">Shirtify.com</a>
+    <p>created by Behrouz</p>
+    
   </footer>
 </body>
 
