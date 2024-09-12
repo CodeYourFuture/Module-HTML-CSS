@@ -1,0 +1,36 @@
+footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-top: 2px solid grey;
+      color: bisque;
+      text-align: center;
+    }
+
+body {
+  color: bisque;
+  background-color: rgb(39, 35, 35);
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+a {
+  border-radius: 2px;
+  background-color: #666;
+  text-decoration-line: none;
+  padding: 5px;
+  color:bisque;
+}
+a:hover{
+  background-color:#444;
+}
+
+h1, h2 {
+  color: rgb(163, 110, 110);
+  text-shadow: 2px 2px 4px rgb(8, 8, 8);
+}
+.what-is-git-img {
+
+}
