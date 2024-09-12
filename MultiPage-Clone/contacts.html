@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Add a link to your custom CSS here -->
-    <title>FE - About Me</title>
+    <title>FE - Contact</title>
     <link rel="stylesheet" href="./css/main.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -51,53 +51,37 @@
       </div>
     </header>
 
-    <main class="background-index">
-    
+    <main class="background-dark">
+      <div class="resume-cont">
+        <div class="resume-hdr">
+          <div class="logo"></div>
+          <p class="resume-hdr-p">Let's Talk</p>
+        </div>
 
-      <section class="card-section shadow">
-        <div class="personal-info">
-          <img class="photo-img" src="./img/pp.jpeg" alt="profile photo" />
-          <h1 class="name-link name-card">Fikret Ellek</h1>
-          <div class="line-hr"></div>
-          <a class="title-link in-card" href="./resume.html">Software Engineer</a>
-
-          <div class="button-cont right-side-btn">
-            <a href="./resume.html"><button class="btn-card">RESUME</button></a>
-            <a href="./projects.html"
-              ><button class="btn-card btn-empty">PROJECTS</button></a
-            >
+        <div class="shadow form">
+          <div>
+            <div>
+            <label for="name">First Name <span class="blue-star">*</span></label>
+          <input type="text" id="name" />
           </div>
+          <div>
+             <label for="surname">Last Name <span class="blue-star">*</span></label>
+          <input type="text" id="surname" />
+          </div>
+          </div>
+          
+          
+         
+          <label for="mail">Email <span class="blue-star">*</span></label>
+          <input type="email" id="mail" />
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" />
+          <label for="message">Message</label>
+          <input type="text" id="message" />
+          <button class="btn-card submit-btn align-self-center">Submit</button>
         </div>
-        <div class="media-info">
-          <a href=""><img class="media-icon" src="./img/f.png" alt="" /></a>
-          <a href=""><img class="media-icon" src="./img/x.png" alt="" /></a>
-          <a href=""><img class="media-icon" src="./img/in.png" alt="" /></a>
-          <a href=""><img class="media-icon" src="./img/ins.png" alt="" /></a>
-        </div>
-      </section>
-
-      <section class="intro-p">
-        <p class="main-hdr">Hello</p>
-        
-        <p class="second-hdr">Here's who I am & what I do</p>
-        <div class="button-cont left-side-btn">
-          <a href="./resume.html"><button class="btn-card">RESUME</button></a>
-          <a href="./projects.html"
-            ><button class="btn-card btn-empty">PROJECTS</button></a
-          >
-        </div>
-        <p class="info-p">
-          I'm a paragraph. Click here to add your own text and edit me. It’s
-          easy. Just click “Edit Text” or double click me to add your own
-          content and make changes to the font.
-        </p>
-        <p class="info-p">
-          I’m a great place for you to tell a story and let your users know a
-          little more about you
-        </p>
-      </section>
+      </div>
     </main>
-
     <footer>
       <div class="ftr-cont">
         <div class="info-ftr">
@@ -129,7 +113,5 @@
         </p>
       </div>
     </footer>
-
-    <!-- Please leave this in to credit the creators of this design -->
   </body>
 </html>
