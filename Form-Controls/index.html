@@ -1,27 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>My form exercise</title>
   <meta name="description" content="">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" /> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+    <form>
+      <!-- write your html here-->
+      <div class="order-text">
+        <h1>Please confirm some details for your order!</h1>
+      </div>
+      <div class="name">
+        <div class="text-input">
+          <label for="firstname">First name *</label>
+          <input type="text" name="First name" id="firstname" required />
+        </div>
+        <div class="text-input">
+          <label for="lastname">Last name *</label>
+          <input type="text" name="Last name" id="lastname" required />
+        </div>
+      </div>
+      <div class="email-address">
+        <label for="address1">Email address *</label>
+        <input type="email" name="Address Line 1" id="address1" required />
+      </div>
+      <div class="color-size">
+        <div class="dropdown">
+          <label for="color">Color *</label>
+          <select name="color" id="color" required>
+            <option value="" placeholder="" disabled selected>
+              Select your color...
+            </option>
+            <option value="white">White</option>
+            <option value="black">Black</option>
+            <option value="grey">Grey</option>
+          </select>
+        </div>
+        <div class="dropdown">
+          <label for="size">Size *</label>
+          <select name="size" id="size" required>
+            <option value="" placeholder="" disabled selected>
+              Select your size...
+            </option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+        </div>
+      </div>
+      <div class="delievery-date">
+        <label for="date">Preferred delivery date *</label>
+        <input type="date" name="date" id="date" min="2023-11-01" max="2023-11-29" required />
+      </div>
+      <div>
+        <input type="checkbox" name="terms" id="terms" required />
+        <label for="terms">
+          <p class="tnc-text">By placing your order you agree to
+            <a class="tnc">Terms & Conditions</a> .*
+          </p>
+        </label>
+        <div class="order-btn">
+          <button class="place-order">Place my order now</button>
+        </div>
+      </div>
+      <!-- try writing out the requirements first-->
+    </form>
+    <!-- We are selling t-shirts. Write a form to collect the following data:
 
+Our customers already have accounts, so we know their addresses and charging details already. We don't need to collect
+that data. We want to confirm they are the right person, then get them to choose a colour and then pick a delivery date.
+
+Writing that out as a series of questions to ask yourself:
+
+1. What is the customer's name? I must collect this data, and validate it. But what is a valid name? I must decide
+something.
+2. What is the customer's email? I must make sure the email is valid. Email addresses have a consistent pattern.
+3. What colour should this t-shirt be? I must give 3 options. How will I make sure they don't pick other colours?
+4. What size does the customer want? I must give the following 6 options: XS, S, M, L, XL, XXL
+5. When do they want the t-shirt to be delivered? I must collect a date and make sure that date is in the next four
+weeks. How will I do this? How will I make sure there are no mistakes about the date? -->
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>By Areeb</h2>
   </footer>
 </body>
 
