@@ -1,0 +1,160 @@
+*{
+  margin: 0px;
+  padding: 0px; 
+  font-family: sans-serif; 
+}
+header{
+    background-color: rgb(207, 204, 204);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 12px;
+
+}
+li{
+    list-style: none;
+}
+.logo{
+    grid-column: 1;
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav{
+    grid-column: 2;
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+}
+.section-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+    margin-top: 4rem;
+}
+.section-one h1{
+    font-size: 80px;
+}
+.section-one p{
+    font-size: 38px;
+    margin-top: 25px;
+}
+.sec1img{
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+}
+.container {
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.image {
+    height: auto;
+    margin-right: 15px;
+}
+#container-p{
+    font-size: 55px;
+    text-align: center;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.text-content :nth-child(1) {
+    max-width: 300px;
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.text-content :nth-child(2) {
+    max-width: 300px;
+    margin: 0;
+    padding: 5px;
+}
+.grid-d{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    grid-template-rows: auto auto;
+    margin-bottom: 25px;
+    
+}
+.container:nth-child(1) {
+    grid-column: 1;
+    justify-self: center;
+}
+
+.container:nth-child(2) {
+    grid-column: 2;
+    justify-self: center;
+}
+
+.container:nth-child(3) {
+    grid-column: 1/span 2;
+    justify-self: center;
+}
+.offerings{
+    background-color: rgb(39, 38, 38);
+    margin: 20px;
+    
+}
+.text-offering{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+}
+.box{
+    display: flex;
+    align-content: center;
+    justify-content: center;  
+    gap: 50px;
+    padding: 25px;
+}
+.box-item1{
+   border: 1px solid white;
+   padding: 20px;
+   text-align: center;
+}
+.box-item1 :nth-child(1){
+   color: white;
+padding: 20px;
+}
+.box-item1 p:nth-child(2){
+   color: white;
+padding: 20px;
+}
+.box-item1 p:nth-child(3){
+color: white;
+padding: 20px;
+}
+button{
+    padding: 10px;
+}
+footer{
+   text-align: center;
+   background-color: #333;
+   color: white;
+   padding: 20px;
+   width: 100%;
+}
+.footer-nav a{
+ text-decoration: none;
+ color: white;
+ margin: 0 20px;
+}
+.footer-nav a:hover {
+ text-decoration: underline;
+}
