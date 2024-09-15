@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>TshirtOrder</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+  </head>
+  <body>
+
+
+    <header>
+      <nav class="top-navigation">
+        <img class="logo" src="img/Red.jpeg" alt="Logo Image" width="26">
+        <ul class="links">
+          <li class="active"><a href="index.html">Meet Beluga</a></li>
+          <li><a href="store.html">Order T-Shirt</a></li>         
+          <li><a href="#">How it Works</a></li>
+          <li><a href="#">Store</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>        
+      </nav>
+    </header>  
+
+
+    <section class="order-section">
+        <h2 class="order-title">Order your T-Shirt today!</h2>
+        <div class="order-left">
+            <div class="order-form-container">
+                <form action="#" method="post">
+                <div class="name-container">
+                    <div class="name-field">
+                        <label for="first-name">First name*</label>
+                        <input type="text" id="first-name" required>
+                    </div>
+                    <div class="name-field">
+                        <label for="last-name">Last name*</label>
+                        <input type="text" id="last-name" required>
+                    </div>
+                </div>
+                
+                <label for="email">Email*</label>
+                <input type="text" id="email" required>
+  
+    
+                <div class="address-container">
+                    <div class="city-field">
+                        <label for="city">Size*</label>
+                        <select id="city" required>
+                            <option value="">Select a size</option>
+                            <option value="xs">Extra Small</option>
+                            <option value="s">Small</option>
+                            <option value="m">Medium</option>
+                            <option value="l">Large</option>
+                            <option value="xl">Extra Large</option>
+                            <option value="xxl">Extra Extra Large</option>
+                        </select>
+                    </div>
+                </div>
+    
+                    <order-fieldset>
+                        <legend>Select a colour*</legend>
+                        <input type="radio" id="Red" name="color" value="Red" required>
+                        <label for="Red">Red</label>
+                        
+                        <input type="radio" id="Blue" name="color" value="Blue" required>
+                        <label for="Blue">Blue</label>
+                        
+                        <input type="radio" id="Green" name="color" value="Green" required>
+                        <label for="Green">Green</label>
+                        
+                    </order-fieldset>
+
+                    <order-delivery>
+                      <legend>Select a delivery method*</legend>
+                      <input type="radio" id="Home" name="color" value="Home" required>
+                      <label for="Home">Home delivery</label>
+                      
+                      <input type="radio" id="Collection" name="color" value="Collection" required>
+                      <label for="Collection">Collection point</label>
+                      
+                      <input type="radio" id="Store" name="color" value="Store" required>
+                      <label for="Store">Store pickup</label>
+                      
+                    </order-delivery>
+                    
+                    <label for="delivery-date">Select a delivery date:*</label>
+                    <input type="date" id="delivery-date" name="delivery-date" min="2023-09-01" max="2023-09-28" required>
+                    
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">Tick checkbox acknowledging if ordering you agree to <a href="#" class="terms-link"> Beluga's Terms and Conditions</a>.*</label>
+                    
+                    <button type="submit" class="order-button">Place my order</button>
+
+
+                </form>
+            </div>
+        </div>
+
+        <div class="order-right">
+            <img src="img/Beluga.png" alt="Beluga">
+        </div>
+    </section>
+    
+
+
+
+  
+    <footer>
+      <div>
+        <h2>Join us on</h2>
+          <ul class="socials">
+          <li>
+          <img src="img/twitter-icon.svg" alt="twitter-icon">
+          </li>
+          <li>
+          <img src="img/facebook-icon.svg" alt="facebook-icon">
+          </li>
+          <li>
+          <img src="img/instagram-icon.svg" alt="instagram-icon">
+          </li>
+          </ul>
+          <h2 class="copyright">© Beluga, Inc.</h2>
+      </div>
+    </footer>
+  </body>
+</html>
+
