@@ -1,21 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Add a link to your custom CSS here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="/MultiPage-Clone/css/main.css" />
     <title>Responsive grid project</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header id="header">
+      <div class="nav-naming">
+        <div class="smalldiv-name">
+          <div class="blue-div"></div>
+          <p class="name">Nohe Tekelmariyam</p>
+        </div>
+        <div class="separation">/</div>
+        <p class="work-title">PROJECT MANGER</p>
+      </div>
 
+      <nav class="navigation">
+        <ul>
+          <li><a>About</a></li>
+          <li><a href="Resume.html">Resume</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="humburger-div"> 
+        <input type="checkbox" name="nav__toggle" id="nav__toggle">
+      <label for="nav__toggle" id="hamburger__button-container">
+       
+        
+        <div id="hamburger__button-bars">
+          <div id="hamburger__button-bar1" class="hamburger__button"></div>
+          <div id="hamburger__button-bar2" class="hamburger__button"></div>
+          <div id="hamburger__button-bar3" class="hamburger__button"></div>
+        </div> 
+      </div>  
+    </header>
+
+    <main class="about-main">
+      <div class="left-section">
+        <div class="midle-profile">
+          <div class="profileimg-div">
+            <img src="20230418_233231noh.jpg" class="profile-img" />
+          </div>
+          <p class="myname">Nohe <br />Tekelmariyam</p>
+
+          <div>
+            <div class="smallblue-div"></div>
+          </div>
+          <p class="project">PROJECT MANAGER</p>
+
+          <div class="resumeproject-button">
+            <button class="resume-button">RESUME</button>
+            <button class="project-button">PROJECTS</button>
+          </div>
+
+          <section class="profile-footer">
+            <img
+              class="socialmedia-pic"
+              src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_29,h_29,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/0fdef751204647a3bbd7eaa2827ed4f9.png"
+            />
+            <img
+              class="socialmedia-pic"
+              src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png/v1/fill/w_29,h_29,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c7d035ba85f6486680c2facedecdcf4d.png"
+            />
+            <img
+              class="socialmedia-pic"
+              src="https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png/v1/fill/w_29,h_29,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6ea5b4a88f0b4f91945b40499aa0af00.png"
+            />
+            <img
+              class="socialmedia-pic"
+              src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_29,h_29,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/01c3aff52f2a4dffa526d7a9843d46ea.png"
+            />
+          </section>
+        </div>
+      </div>
+
+      <div class="right-section">
+        <p class="hello">Hello</p>
+        <p class="second-p">Here's who I am & what I do</p>
+        <div class="buttonsfor-mainpage">
+          <button class="resume-button">RESUME</button>
+          <button class="project-button">PROJECTS</button>
+        </div>
+
+        <div class="aboutmepar-div" id="aboutmepar-div">
+          <p class="aboutme-p">
+            I'm a paragraph. Click here to add your own text and edit me.It’s
+            easy. Just click “Edit Text” or double click me to add your own
+            content and make changes to the font.
+          </p>
+
+          <p class="aboutme-p">
+            I’m a great place for you to tell a story and let your users know a
+            little more about you.
+          </p>
+        </div>
+      </div>
+    </main>
     <!-- Add your markup here -->
 
-
     <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
-</body>
+    <p class="credit-p">
+      This website design was created by Wix.com, and is used here for strictly
+      educational purposes.
+    </p>
 
+    <footer>
+      <section class="link-wix">
+        <p>
+          © 2035 by Maya Nelson. Powered and secured by
+          <a href="https://www.wix.com/?utm_campaign=vir_created_with">Wix</a>
+        </p>
+      </section>
+
+      <section class="footer-section">
+        <section class="pone-no">
+          <h5>Call</h5>
+          <p>123-456-7890</p>
+        </section>
+
+        <section class="email-section">
+          <h5>Write</h5>
+          <p>info@mysite.com</p>
+        </section>
+
+        <section class="socialmedia-section">
+          <h5>Follow</h5>
+          <img
+            class="socialmedia-pic"
+            src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_29,h_29,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/0fdef751204647a3bbd7eaa2827ed4f9.png"
+          />
+          <img
+            class="socialmedia-pic"
+            src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png/v1/fill/w_29,h_29,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c7d035ba85f6486680c2facedecdcf4d.png"
+          />
+          <img
+            class="socialmedia-pic"
+            src="https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png/v1/fill/w_29,h_29,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6ea5b4a88f0b4f91945b40499aa0af00.png"
+          />
+          <img
+            class="socialmedia-pic"
+            src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_29,h_29,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/01c3aff52f2a4dffa526d7a9843d46ea.png"
+          />
+        </section>
+      </section>
+    </footer>
+  </body>
 </html>

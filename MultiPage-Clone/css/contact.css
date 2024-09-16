@@ -1,13 +1,10 @@
-/* Add your CSS here */
-
-/* Dont' forget to link this file to your HTML in the <head> */
-/* header */
+/* contact */
 body {
   margin: 0;
   padding: 0;
-  font-family: "Quicksand", sans-serif;
+  background-color: #e6dacd;
+  height: 50em;
 }
-/*  */
 
 header {
   display: flex;
@@ -34,6 +31,7 @@ header {
 }
 .nav-naming {
   font-family: "Poppins", sans-serif;
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -68,8 +66,7 @@ header {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
 }
-.navigation ul li:first-child {
-  pointer-events: auto;
+.navigation ul li:last-child {
   color: #0150fd;
 }
 .humburger-div {
@@ -79,133 +76,96 @@ header {
 .navigation ul li:hover {
   color: #0150fd;
 }
-/* main */
-.about-main {
-  display: flex;
-  margin-top: 8em;
-}
-/* left-side */
-.left-section {
-  position: relative;
-  background-color: #e6dacd;
-  width: 70%;
-  height: 50em;
-}
-/* middle */
-.midle-profile {
-  position: absolute;
-  top: 9em;
-  right: -3em;
-  background-color: #f4ece6;
-  width: 70%;
-  height: auto;
-
-  box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, 0.6));
-}
-
-.profile-img {
-  margin: 2em 4em 1em 4em;
-  max-width: 60%;
-  max-height: 40%;
-  border-radius: 50%;
-}
-
-.myname {
-  display: block;
-  font-size: 2rem;
-  text-align: center;
-  margin: 0.2em auto 1em auto;
-}
-
-.smallblue-div {
-  width: 3em;
-  height: 0.2em;
-  background-color: #0150fd;
-  margin: 0 auto;
-}
-.resumeproject-button {
-  display: none;
-}
-.project {
-  margin-left: 4em;
-  text-align: center;
-  margin-top: 1.7em;
-  letter-spacing: 0.3em;
-}
-.profile-footer {
-  padding: 1em 0;
-  margin-top: 2em;
+.title-resume {
+  margin-top: 10em;
+  margin-bottom: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
-}
-.profile-footer img {
-  width: 6%;
 }
 
-.right-section {
-  align-self: center;
+.title-resume p {
+  font-size: 2rem;
+  margin-left: 0.4em;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+}
+.container {
+  font-family: "Poppins", sans-serif;
+
+  box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, 0.6));
+  width: 60%;
+  height: auto;
+  background-color: #fff;
+  padding-top: 2em;
+  padding-bottom: 5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/**/
+.name-place {
+  display: flex;
+  font-weight: bolder;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+}
+#firstname {
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  width: 90%;
+  padding: 1em 2em;
+  color: #0150fd;
+}
+
+#firstname:hover {
+  border-color: #0150fd;
+}
+.email-div {
+  font-weight: bolder;
+  margin: 3em 0 0 7.5em;
+}
+#email {
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  padding: 1em 2em;
+  color: #0150fd;
+  width: 78%;
+}
+#email:hover {
+  border-color: #0150fd;
+}
+.firstname-clas {
   margin-left: 5em;
 }
-.hello {
-  font-weight: 700;
-  font-size: 6.25rem;
-  margin: 0px;
-  padding: 0px;
-  display: block;
+span {
+  color: #0150fd;
 }
-.second-p {
-  font-size: 1.5rem;
-  padding: 0px;
-  margin-top: 0px;
+.text-area {
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.resume-button {
+.submit-div {
+  margin: 1em 0 0 7.5em;
+}
+.send-button {
+  font-weight: bolder;
+  border: none;
+  border-radius: 3em;
   background-color: #0150fd;
   color: #fff;
-  font-weight: bold;
-  border: 2px solid #0150fd;
-  border-radius: 1em;
-  padding: 0.5em 2em;
-  cursor: pointer;
+  padding: 0.8em 2.8em;
 }
-.resume-button:hover {
-  background-color: #fff;
-  color: black;
-}
-.project-button {
-  background-color: #fff;
-  border: 1px solid black;
-  border-radius: 1em;
-  padding: 0.5em 2em;
-  margin-left: 1em;
-  cursor: pointer;
-}
-.project-button:hover {
-  background-color: #0150fd;
-  color: #fff;
-  border: 1px solid #0150fd;
-}
-.aboutmepar-div {
-  width: 60%;
-}
-.aboutme-p {
-  font-family: "Poppins", sans-serif;
-  line-height: 1.5em;
-}
-.credit-p {
-  margin: 0px;
-}
-
-/* i used the same css for all page footer  */
-/* footer */
 footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
   padding: 1.5em 0;
+  margin-top: 3em;
 }
 
 .link-wix {
@@ -241,17 +201,17 @@ footer p {
   .navigation {
     display: none;
   }
-
-  #header {
+  body {
+    margin: 0px;
+  }
+  header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    padding: 0 0 1em 0;
+    padding: 0.7em 0px;
   }
-  .humburger-div {
-    display: block;
-  }
+
   .blue-div {
     width: 1em;
     height: 1em;
@@ -269,8 +229,12 @@ footer p {
     padding-top: 1em;
     margin-left: 2em;
   }
+  #firstname {
+    border-bottom: 2px solid black;
+    width: 90%;
+  }
 
-  .name {
+  .smalldiv-name p {
     font-size: 1.2rem;
     font-weight: 800;
     margin: 0px;
@@ -297,82 +261,33 @@ footer p {
   .work-title {
     margin: 0px;
   }
-  .about-main {
+  .title-resume {
     display: flex;
-    flex-direction: column;
-  }
-  .midle-profile {
-    position: absolute;
-    top: -10em;
-    left: 2em;
-    background-color: #f4ece6;
-    min-width: 90%;
-    height: auto;
-    box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, 0.6));
-  }
-
-  .profile-img {
-    width: 60%;
-    border-radius: 50%;
-  }
-  .profileimg-div {
-    margin: 1em 0px;
-    text-align: center;
-  }
-
-  .left-section {
-    position: relative;
-    background-color: #e6dacd;
-    width: 100%;
-    height: 23em;
-  }
-  .myname {
-    font-size: 1.2rem;
-    font-weight: 700;
-  }
-  .project {
-    display: none;
-  }
-  .resumeproject-button {
-    display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    margin-top: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 0px;
   }
-  /* right-section */
-  .right-section {
-    background-color: #e6dacd;
-    padding-left: 7%;
-    padding-top: 5em;
+  .name-place {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 1em;
+  }
+  .firstname-clas {
     margin-left: 0px;
+    margin-top: 1em;
   }
-  .hello {
-    font-weight: 700;
-    font-size: 2.3rem;
-    margin: 0px 0px 0.5em 0.2em;
-    padding: 0px;
-    display: block;
+  .email-div {
+    margin: 1em 0 0 1em;
+    font-weight: bolder;
   }
-  .second-p {
-    font-size: 1.3rem;
-    padding: 0px;
-    margin-top: 0px;
-    margin-left: 0.4em;
-  }
-
-  .buttonsfor-mainpage {
-    display: none;
-  }
-  .aboutmepar-div {
-    width: 80%;
-  }
-  .aboutme-p {
-    width: 100%;
-  }
-  .credit-p {
-    font-family: "Quicksand", sans-serif;
-    font-size: 0.7rem;
-    margin: 0px;
+  .container {
+    width: 90%;
+    height: auto;
+    margin: 0 0px 0px 1em;
+    padding: 1em 0 2em 0;
+    box-shadow: 2px 2px 2px 2px rgb(200, 198, 198);
   }
   .footer-section {
     display: flex;
@@ -391,10 +306,11 @@ footer p {
   .link-wix {
     display: none;
   }
+
   #hamburger__button-container {
     display: block;
     position: absolute;
-     top: 2em;
+    top: 2em;
     right: 2em;
     cursor: pointer;
     z-index: 2;
@@ -454,5 +370,8 @@ footer p {
   }
   #nav__toggle {
     display: none;
+  }
+  .humburger-div {
+    display: block;
   }
 }
