@@ -1,0 +1,404 @@
+/* General styles */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --Questrial-font: "Questrial";
+  --Raleway-font: "Raleway";
+  --Roboto-font: "Roboto";
+
+  /* Colors */
+  --Black: #000;
+  --White: #fff;
+  --Lylac: #f5e8ff;
+  --Light-Green: #e6fac0;
+  --Medium-Green: #5e7d1f;
+  --Dark-Green: #394b2a;
+
+  /* Layout design */
+  --Mobile-layout: 56.5px 56.5px 476px 62px 873px 870px 1660px 914px 600px 100px
+    100px;
+}
+
+body {
+  font-family: var(--Roboto-font);
+  color: var(--Black);
+}
+
+.layout {
+  display: grid;
+  grid-template-rows: var(--Mobile-layout);
+}
+
+a {
+  text-decoration: none;
+}
+
+/*  */
+
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--Raleway-font);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.6rem;
+}
+
+nav p {
+  font-size: 2.2rem;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.hamburger-menu::before,
+.hamburger-menu input {
+  content: "";
+  width: 2.2rem;
+  height: 0.2rem;
+  background-color: black;
+  transition: rotate ease-in 0.2s,
+    translate
+      linear(
+        0 0%,
+        0 1.8%,
+        0.01 3.6%,
+        0.03 6.35%,
+        0.07 9.1%,
+        0.13 11.4%,
+        0.19 13.4%,
+        0.27 15%,
+        0.34 16.1%,
+        0.54 18.35%,
+        0.66 20.6%,
+        0.72 22.4%,
+        0.77 24.6%,
+        0.81 27.3%,
+        0.85 30.4%,
+        0.88 35.1%,
+        0.92 40.6%,
+        0.94 47.2%,
+        0.96 55%,
+        0.98 64%,
+        0.99 74.4%,
+        1 86.4%,
+        1 100%
+      )
+      1.6s;
+
+  /* transition: rotate ease-in-out 0.3s, translate ease-in-out 0.6s; <--- FOR TRANSITION OUT!!!!!!! */
+}
+
+.hamburger-menu input {
+  appearance: none;
+  outline: none;
+  pointer-events: none;
+}
+
+.hamburger-menu:has(input:checked)::before {
+  translate: 0 0.8rem;
+  rotate: 45deg;
+}
+
+.hamburger-menu input:checked {
+  translate: 0 -0.2rem;
+  rotate: -45deg;
+}
+
+.hamburger-menu:has(input:checked)::before,
+.hamburger-menu input:checked {
+  transition: translate ease-in 0.2s,
+    rotate
+      linear(
+        0 0%,
+        0 1.8%,
+        0.01 3.6%,
+        0.03 6.35%,
+        0.07 9.1%,
+        0.13 11.4%,
+        0.19 13.4%,
+        0.27 15%,
+        0.34 16.1%,
+        0.54 18.35%,
+        0.66 20.6%,
+        0.72 22.4%,
+        0.77 24.6%,
+        0.81 27.3%,
+        0.85 30.4%,
+        0.88 35.1%,
+        0.92 40.6%,
+        0.94 47.2%,
+        0.96 55%,
+        0.98 64%,
+        0.99 74.4%,
+        1 86.4%,
+        1 100%
+      )
+      1.6s;
+}
+
+/* .hamburger-menu:has(input:checked) {
+  transition: translate ease-in 2ms;
+} */
+
+/* .hamburger-menu .move:checked {
+  translate: 0 -0.2rem;
+}
+
+.hamburger-menu .rotate:checked {
+  rotate: 45deg;
+} */
+/* 
+.hamburger-menu:has(input:checked)::before {
+  transform: translate(0rem, 0.3rem);
+  animation: rotate-45 2s forwards;
+} */
+
+main {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 3.2rem;
+  font-family: var(--Questrial-font);
+  font-weight: 400;
+  line-height: 4.16rem;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+main p {
+  font-size: 2.2rem;
+  font-family: var(--Questrial-font);
+  font-weight: 100;
+  margin-bottom: 2.5rem;
+  line-height: 3.3rem;
+}
+
+.explore-flavours-btn {
+  font-size: 1.5rem;
+  border: var(--Black) 2px solid;
+  padding: 1.4rem 2.8rem;
+  color: var(--Black);
+  margin-bottom: 3.3rem;
+}
+
+.juice-img-main {
+  max-width: 39rem;
+  height: 19rem;
+}
+
+/*  */
+
+.small-section-under-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--Lylac);
+  font-size: 1.6rem;
+  padding: 11px 0;
+}
+
+.try-now {
+  text-decoration: underline;
+  color: var(--Black);
+}
+
+.content-1 {
+  text-align: center;
+}
+
+.content-1 h1 {
+  font-size: 3.2rem;
+  margin-top: 3rem;
+  font-family: var(--Questrial-font);
+  line-height: 4.16rem;
+  font-weight: 400;
+}
+
+.component-1,
+.component-2,
+.component-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.component-1 svg,
+.component-2 svg,
+.component-3 svg {
+  margin: 2rem 0;
+}
+
+.component-1 h2,
+.component-2 h2,
+.component-3 h2 {
+  font-size: 2.2rem;
+  font-family: var(--Questrial-font);
+  font-weight: 100;
+}
+
+.component-1 p,
+.component-2 p,
+.component-3 p {
+  font-size: 1.5rem;
+  width: 260px;
+  line-height: 2.5rem;
+  margin-bottom: 2.7rem;
+}
+
+/*  */
+
+.content-2 {
+  background-color: var(--Light-Green);
+  display: grid;
+  grid-template-rows: 400px 425px;
+  gap: 3rem;
+}
+
+.image-content-2 {
+  width: 34rem;
+  height: 39rem;
+  margin: auto;
+}
+
+.content-2-text {
+  display: grid;
+  grid-template-rows: 13.5rem 22rem 5rem;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content-2-text h1 {
+  font-size: 3.2rem;
+  font-family: var(--Questrial-font);
+  margin-bottom: 1rem;
+  line-height: 4.16rem;
+}
+
+.content-2-text p {
+  font-size: 1.5rem;
+  line-height: 2.7rem;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2.9rem;
+}
+
+.our-vision-btn {
+  border: 2px solid var(--Black);
+  color: var(--Black);
+  padding: 1.6rem 4.2rem;
+  font-size: 1.5rem;
+}
+
+.content-3 {
+  text-align: center;
+  background-color: var(--Lylac);
+  display: grid;
+  grid-template-rows: 580px 480px 566px;
+  row-gap: 1rem;
+}
+
+.content-3 h1 {
+  font-size: 3.2rem;
+  margin-top: 2.7rem;
+  margin-bottom: 1rem;
+}
+
+.content-3 h3 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  line-height: 2.86rem;
+}
+
+.content-3 p {
+  font-size: 1.5rem;
+  line-height: 2.55rem;
+  width: 59%;
+  margin: 0 auto;
+}
+
+.view-all-btn {
+  border: 2px solid var(--Black);
+  margin-top: 3.2rem;
+  font-size: 1.5rem;
+  display: inline-block;
+  padding: 1.2rem 4.6rem;
+}
+
+.img-header-container .content-3-img-container {
+}
+
+.content-4 {
+  display: grid;
+  grid-template-rows: 476px 425px;
+  gap: 2rem;
+}
+
+.content-4-text {
+  display: grid;
+  grid-template-rows: 7rem 12.4rem 5rem;
+  row-gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.content-4-text h1 {
+  font-size: 3.2rem;
+}
+
+.content-4-text p {
+  font-size: 1.5rem;
+}
+
+.try-it-btn {
+  border: 2px solid var(--Black);
+  color: var(--Black);
+  padding: 1.2rem 6rem;
+  font-size: 1.5rem;
+  margin: 2rem 0 0 0;
+}
+
+.content-5 {
+  background-color: var(--Light-Green);
+}
+
+.content-6 {
+  background-color: gold;
+}
+
+footer {
+  background-color: coral;
+}
