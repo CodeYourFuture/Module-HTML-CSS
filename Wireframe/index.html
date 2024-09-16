@@ -1,13 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <link rel="stylesheet" href="/Wireframe/css/style.css">
+</head>
+
+<body>
+    <header>
+        <section class="title">
+            <h1>Intoduction to Git</h1>
+    
+        </section>
+
+        <section class="hero">
+
+            <div class="hero__card">
+                <h2 class="hero__title">Git is used for</h2>
+                <pclass="hero__description">
+                    Git is a popular version control system. It was created by Linus Torvalds in 2005, and has been maintained by Junio Hamano since then.
+                    Tracking code changes.
+                    Tracking who made changes.
+                    Coding collaboration.
+                    </p>
+                    <button class="hero__button">
+                        Read More
+                    </button>
+            </div>
+            <img src="/Wireframe/git-hero.jpg" alt="hero-bg">
+        </section>
+
+    </header>
+    <main>
+       <section class="article__container">
+        <article>
+            <h3 class="article__title">What does Git do?</h3>
+            <p class="article__summary">Manage projects with Repositories
+                Clone a project to work on a local copy
+                Control and track changes with Staging and Committing
+                Branch and Merge to allow for work on different parts and versions of a project
+                Pull the latest version of the project to a local copy
+                Push local updates to the main project</p>
+            <a href="https://www.w3schools.com/git/git_intro.asp?remote=github" class="article__link">Learn More Here</a>
+        </article>
+        <article>
+            <h3 class="article__title">Working with Git</h3>
+            <p class="article__summary">Initialize Git on a folder, making it a Repository
+                Git now creates a hidden folder to keep track of changes in that folder
+                When a file is changed, added or deleted, it is considered modified
+                You select the modified files you want to Stage
+                The Staged files are Committed, which prompts Git to store a permanent snapshot of the files
+                Git allows you to see the full history of every commit.
+                You can revert back to any previous commit.
+                Git does not store a separate copy of every file in every commit, but keeps track of changes made in each commit!</p>
+            <a href="https://www.w3schools.com/git/git_intro.asp?remote=github" class="article__link">Learn More Here</a>
+        </article>
+        <article>
+            <h3 class="article__title">Why Git?</h3>
+            <p class="article__summary">Over 70% of developers use Git!
+                Developers can work together from anywhere in the world.
+                Developers can see the full history of the project.
+                Developers can revert to earlier versions of a project.
+                </p>
+            <a href="https://www.w3schools.com/git/git_intro.asp?remote=github" class="article__link">Learn More Here</a>
+        </article>
+       </section>
+    </main>
+    <footer>
+        <p>This page is Design by<a href="https://adniyayousaf.netlify.app">  Adniya Yousaf</a></p>
+    </footer>
+
 </body>
+
 </html
