@@ -1,1 +1,305 @@
-/*  Add your styling here */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+:root {
+        --font-primary: "Roboto", sans-serif;
+        --white: white;
+}
+
+h2 {
+        vertical-align: center;
+        text-align: center;
+}
+
+html,
+body {
+        margin: 0;
+        height: 100%;
+}
+
+* {
+        font-family: “Raleway”;
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+        }
+ */____________________main____________________*/
+
+
+        .container {
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                background-color: var(--white);
+                gap: 1rem;
+                line-height: clamp(1.5rem, 2vw, 2rem);
+                font-size: clamp(1rem, 2vw, 1.5rem);
+                
+        }
+                header {
+                        position: relative;
+                        display: 
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-template-areas:
+                               
+                        padding: 1rem;
+                        row-gap: 1rem;
+                        
+                }
+        
+
+       
+.content-p{
+        text-align: end;
+}
+
+
+.top-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #00BAF0;
+        background: linear-gradient(to left, #e487c5, #e7c8f8);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: #FFF;
+        height:50px;
+        padding: 1em;
+}
+
+.menu {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+}
+
+.menu>li {
+        margin: 0 1rem;
+        overflow: hidden;
+}
+
+.menu-button-container {
+        display: none;
+        height: 100%;
+        width: 30px;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+#menu-toggle {
+        display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        height: 4px;
+        width: 30px;
+        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        border-radius: 2px;
+}
+
+.menu-button::before {
+        content: '';
+        margin-top: -8px;
+}
+
+.menu-button::after {
+        content:'';
+        margin-top: 8px;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+        margin-top: 0px;
+        transform: rotate(405deg);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
+        background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+        margin-top: 0px;
+        transform: rotate(-405deg);
+}
+
+@media (max-width: 700px) {
+        .menu-button-container {
+                display: flex;
+        }
+}
+        .menu {
+                position: absolute;
+                top: 0;
+                margin-top: 50px;
+                left: 0;
+                flex-direction: column;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+        }
+
+        #menu-toggle~.menu li {
+                height: 0;
+                margin: 0;
+                padding: 0;
+                border: 0;
+                transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        #menu-toggle:checked~.menu li {
+                border: 1px solid #333;
+                height: 2.5em;
+                padding: 0.5em;
+                transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .menu>li {
+                display: flex;
+                justify-content: center;
+                margin: 0;
+                padding: 0.5em 0;
+                width: 100%;
+                color: white;
+                background-color: #222;
+        }
+
+        .menu>li:not(:last-child) {
+                border-bottom: 1px solid #444;
+        }
+        .logo{
+
+        }
+*/____________________main____________________*/
+main {
+        display: grid;
+        gap: .5rem;
+}
+
+.welcome {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        height: 34.5rem;
+        margin-top:0px;
+}
+
+.card {
+        padding: 2rem;
+        text-align: justify;
+}
+
+.img_main {
+        margin-inline: 1rem;
+        background: url(/Cakes-Co/design/Naked-Cake-Recipe-Card.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        animation: fade-in 1s ease;
+        margin-top: -6rem;
+}
+ */____________________show_img____________________*/
+ 
+.show-img {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 1rem;
+      
+}
+
+.img-item {
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 44.3%;
+        margin:.8rem;
+       
+        border: 1px solid rgb(216, 112, 180);
+       cursor: pointer;
+}
+.img-item img {
+        height: 7rem;
+        transition: transform 0.5s ease-in-out;
+}
+*/____________________footer____________________*/
+footer {
+        margin-top: 5rem;
+        text-align: center;
+        margin-top: 6rem;
+        border-top: 1px solid rgb(214, 212, 212);
+       
+}
+.footer_container{
+background: linear-gradient(to left, #e487c5, #e7c8f8);
+}
+
+.footer_content {
+        margin-top: 2rem;
+        
+        }
+        
+
+
+.content {
+        font-weight: normal;
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 1rem;
+}
+
+.footer_part {
+        display: flex;
+        justify-content: center;
+
+}
+
+.footer_icon {
+        height: 1.9rem;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0.5rem;
+        border: 1px solid rgb(220, 217, 217);
+        border-radius: 50%;
+        margin-top: 2rem;
+
+}
+
+#facebook-icon {
+        margin-right: 15px;
+        margin-left: 15px;
+}
+
+.cakes_mobality {
+        margin-top: 10px;
+        font-size: smaller;
+        font-weight: lighter;
+        color: rgb(196, 193, 193);
+        text-align: center;
+}
+
+.input_card {
+        display: flex;
+}
+
+.note_container {
+        display: flex;
+        margin-top: 10rem;
+
+}
+
+.note {
+        background-color: rgb(250, 233, 233);
+        width: 70vw;
+        text-align: center;
+
+        font-size: larger;
+
+}
+
+.note_info {
+        margin-top: 10rem;
+}
