@@ -1,0 +1,30 @@
+@media screen and (max-width: 1400px) {
+:root {
+    --fs-xxl: 3rem;
+    --fs-xl: 2rem;
+    --fs-l: 1.25rem;
+    --fs-m: 1.175rem;
+    --fs-s: 1rem;
+  }
+
+  header {
+    justify-content: space-around;
+  }
+
+  main {
+    padding: var(--gap-xs);
+
+    background: no-repeat url(assets/form-background.jpg);
+    background-position: right -80% top 20%;
+    background-size: 80%;
+  
+  }
+
+  #form__container {
+    margin: 1px;
+  }
+
+  #tshirt-colour__container {
+    gap: var(--gap-s);
+  }
+}
