@@ -1,3 +1,485 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+:root {
+  --dark-beige: #e6dacd;
+  --light-beige: #f4ece6;
+  --royal-blue: #0150fd;
+  --black: #000;
+  --white: #fff;
+  --body-font: "Quicksand", sans-serif;
+  --heading-font: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--body-font);
+}
+
+h1 {
+  font-family: var(--heading-font);
+}
+.header {
+  display: grid;
+  grid-template-areas: "name nav";
+  height: 10vh;
+  padding: 20px;
+  align-items: center;
+}
+
+.container-name {
+  grid-area: name;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.blue-square {
+  width: 50px;
+  height: 50px;
+  background-color: var(--royal-blue);
+  margin-right: 10px;
+  border: 1px solid var(--royal-blue);
+  text-align: center;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  margin-top: -35px;
+  margin-left: 38px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: var(--heading-font);
+}
+
+.occupation {
+  margin-left: -20px;
+  font-family: var(--body-font);
+}
+
+.mobile-header {
+  display: inline-block;
+  margin: 0 !important;
+}
+.blue-square {
+  width: 10px;
+  height: 10px;
+  background-color: var(--royal-blue);
+  grid-area: name;
+  padding: 2px;
+  margin: 15px;
+}
+
+#nav {
+  display: none;
+}
+
+.nav {
+  font-size: 20px;
+  list-style: none;
+  padding: 0;
+  grid-area: nav;
+  justify-self: end;
+  display: grid;
+  grid-template-areas: "about resume projects contact";
+  grid-gap: 10px;
+}
+
+.about {
+  grid-area: about;
+}
+
+.resume {
+  grid-area: resume;
+}
+
+.projects {
+  grid-area: projects;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.nav li {
+  display: inline;
+  padding: 10px;
+}
+
+.nav li {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.nav li:hover {
+  color: var(--royal-blue);
+  cursor: pointer;
+}
+.nav label:hover {
+  cursor: pointer;
+}
+
+.mobile-nav-icon {
+  cursor: pointer;
+  padding: 10px;
+  align-self: center;
+  justify-self: end;
+  display: block;
+  position: absolute;
+  margin-left: 85vw;
+  top: 7vh;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: var(--royal-blue);
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius: 2px;
+}
+.bar:nth-child(1) {
+  width: 15px;
+}
+
+.bar:nth-child(3) {
+  margin-left: 15px;
+  width: 15px;
+}
+
+#about {
+  display: grid;
+  grid-template-areas:
+    "card"
+    "info";
+  width: 350px;
+  height: 50vh;
+  margin: 0 auto;
+}
+
+#card {
+  grid-area: card;
+  display: grid;
+  grid-template-areas:
+    "image"
+    "f-name"
+    "l-name"
+    "lines"
+    "buttons"
+    "footer";
+  gap: 2px;
+  background-color: var(--light-beige);
+  width: auto;
+  height: auto;
+  margin-top: 20vh;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+#card > * {
+  justify-self: center;
+  align-self: center;
+}
+.info {
+  grid-area: info;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-beige);
+  width: auto;
+  height: auto;
+  padding: 10px;
+}
+
+.image {
+  grid-area: image;
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  border-radius: 50%; /* Create a circular shape */
+  overflow: hidden; /* Hide any parts of the image that extend beyond the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the circle */
+}
+.f-name {
+  grid-area: f-name;
+  text-align: center;
+}
+.l-name {
+  grid-area: l-name;
+  text-align: center;
+  margin-top: -40px;
+}
+.line {
+  grid-area: lines;
+}
+.blue-line {
+  width: 150px;
+  height: 1px;
+  background-color: var(--royal-blue);
+  border: 1px solid var(--royal-blue);
+  text-align: center;
+}
+.buttons {
+  grid-area: buttons;
+  display: grid;
+  grid-template-areas: "RESUME PROJECTS";
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: auto;
+}
+.RESUME {
+  grid-area: RESUME;
+  padding: 10px 20px;
+  background-color: var(--royal-blue);
+  color: var(--white);
+  text-decoration: none;
+  text-align: center;
+  border-radius: 50px;
+  width: 90px;
+  font-size: small;
+  font-weight: bold;
+  border: 2px solid var(--royal-blue);
+}
+.RESUME:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+.PROJECTS {
+  grid-area: PROJECTS;
+  padding: 10px 20px;
+  background-color: var(--light-beige);
+  color: var(--black);
+  text-decoration: none;
+  text-align: center;
+  border-radius: 50px;
+  width: 90px;
+  font-size: small;
+  font-weight: bold;
+  border: 1px solid var(--black);
+}
+.PROJECTS:hover {
+  background-color: var(--royal-blue);
+  color: var(--white);
+  border: 2px solid var(--royal-blue);
+}
+.footer {
+  grid-area: footer;
+  background-color: var(--white);
+  height: 7vh;
+  width: 350px;
+  padding-top: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.social-icons {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  grid-template-areas: "facebook twitter instagram linkedin";
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.social-icons img {
+  width: 30px;
+  height: auto;
+}
+
+.facebook {
+  grid-area: facebook;
+}
+
+.twitter {
+  grid-area: twitter;
+}
+
+.instagram {
+  grid-area: instagram;
+}
+
+.linkedin {
+  grid-area: linkedin;
+}
+#background {
+  background: linear-gradient(180deg, var(--white) 50%, var(--dark-beige) 50%);
+  height: 200vh;
+}
+.show {
+  display: none;
+}
+.add-info {
+  display: none;
+}
+/* page layout for larger screens using media queries */
+@media (min-width: 540px) {
+  #nav {
+    display: grid;
+  }
+  .mobile-nav-icon {
+    display: none;
+  }
+  .container-name {
+    width: 45vw;
+    font-size: clamp(2vh, 1vw, 1vh) !important;
+  }
+  .name {
+    font-size: 16px;
+  }
+  .information {
+    flex-direction: row;
+  }
+  .occupation {
+    margin-left: 10px;
+    margin-top: 5px;
+    text-transform: uppercase;
+  }
+  .occupation::before {
+    content: "/ ";
+  }
+  .nav {
+    font-size: clamp(2vh, 1vw, 1vh) !important;
+  }
+  #background {
+    background: linear-gradient(90deg, var(--dark-beige) 50%, var(--white) 50%);
+    height: 120vh;
+  }
+  #about {
+    grid-template-areas: "card info";
+    width: 90vw;
+    height: 20vh;
+  }
+  .info {
+    background-color: var(--white);
+    margin-top: 100px;
+  }
+  .hide {
+    display: none;
+  }
+  .show {
+    display: inline;
+    font-size: clamp(2.5vh, 1vw, 1vh) !important;
+    padding: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .f-name {
+    font-size: 12px !important;
+    margin-top: 15px;
+  }
+  .l-name {
+    font-size: 12px !important;
+  }
+
+  .blue-line {
+    width: 100px;
+  }
+  .footer {
+    margin-bottom: -20px;
+  }
+  .add-info {
+    display: block;
+  }
+  .PROJECTS {
+    background-color: var(--white);
+  }
+}
+
+@media (min-width: 900px) {
+  #nav {
+    display: grid;
+  }
+  .mobile-nav-icon {
+    display: none;
+  }
+  .container-name {
+    width: 55vw;
+    font-size: clamp(2vh, 1vw, 1vh) !important;
+  }
+  .name {
+    font-size: 25px;
+    margin-top: -7px;
+  }
+  .blue-square {
+    width: 12px;
+    height: 12px;
+  }
+  .information {
+    flex-direction: row;
+  }
+  .occupation {
+    margin-left: 10px;
+    margin-top: 1px;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  .occupation::before {
+    content: "/ ";
+  }
+  .nav {
+    font-size: clamp(2.5vh, 2vw, 2vh) !important;
+  }
+  #background {
+    background: linear-gradient(90deg, var(--dark-beige) 50%, var(--white) 50%);
+    height: 120vh;
+    max-width: 80vw;
+  }
+  #about {
+    grid-template-areas: "card info";
+    width: 60vw;
+    height: 20vh;
+    margin-left: 20vw;
+  }
+  #card {
+    width: 25vw;
+  }
+  .info {
+    background-color: var(--white);
+    margin-top: 120px;
+    margin-bottom: -5px;
+    padding: 20px;
+  }
+  .hide {
+    display: none;
+  }
+  .show {
+    display: inline;
+    font-size: clamp(2.5vh, 1vw, 1vh) !important;
+    padding: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .f-name {
+    font-size: 12px !important;
+    margin-top: 15px;
+  }
+  .l-name {
+    font-size: 12px !important;
+  }
+
+  .blue-line {
+    width: 100px;
+  }
+  .footer {
+    margin-bottom: -20px;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.2);
+    width: 26.5vw;
+  }
+  .add-info {
+    display: block;
+  }
+  .PROJECTS {
+    background-color: var(--white);
+  }
+}
