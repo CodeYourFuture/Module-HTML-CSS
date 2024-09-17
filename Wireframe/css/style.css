@@ -1,0 +1,171 @@
+
+/* Body */
+
+body{
+background-color:rgb(63, 54, 65);    
+}
+
+
+
+/* Header */
+
+
+.page_title{
+font-size: 40px;
+margin-bottom: 10px;
+position: relative;
+left: 750px;
+color: aliceblue;
+}
+
+
+.title_description{
+font-family: Georgia, 'Times New Roman', Times, serif; 
+font-size: large;
+font-style: italic;
+margin-top:0px;
+margin-bottom: 80px;
+position: relative;
+left: 600px;
+color: aliceblue;
+}
+
+
+/* Article Title */
+
+
+article {
+position: relative;
+left: 170px;
+}
+
+
+
+h4{
+font-size: 18px;
+color: aliceblue;
+}
+
+
+/* Article 1 */
+
+.div_article1:first-child{
+border: 0.5px solid rgb(245, 234, 217);
+width: 1000px;
+position: relative;
+left:300px ;;
+}
+
+.div_article1 img{
+ width: 1000px; 
+height: 500px;   
+}
+
+.subdivided_div_article1{
+text-align: left;
+padding: 15px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+color: aliceblue;
+}
+
+
+
+
+/* Article 2 */
+
+.div_article2{
+border:0.5px solid  rgb(245, 234, 217); 
+width: 500px;
+height: 420px;
+position: relative; 
+left: 300px;
+top:53px;
+overflow: hidden;
+padding-bottom:15px;
+}
+
+.div_article2 img{
+width:500px;    
+}
+
+.subdivided_div_article2{
+margin: 10px;  
+font-family:Georgia, 'Times New Roman', Times, serif; 
+color: aliceblue;
+}
+
+
+
+
+
+/* Article 3 */
+
+
+
+.div_article3{
+border:0.5px solid rgb(245, 234, 217);
+width: 455px;
+height:420px;
+position:relative;
+left: 848px; 
+bottom:385px;
+overflow: hidden;
+padding-bottom:15px;   
+}
+
+.div_article3 img{
+width:455px;
+height: 250px;
+}
+
+.subdivided_div_article3{
+margin: 10px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+color: aliceblue;
+}
+
+
+
+/* Buttons */
+
+.subdivided_div_article1 button {
+color:black;
+border-radius: 7px;
+border:0.5px solid grey;
+background-color: rgb(181, 207, 183);
+height:30px;
+width: 100px;
+}
+
+.subdivided_div_article2 button {
+color:black;
+border-radius: 7px;
+border:0.5px solid grey;
+background-color: rgb(181, 207, 183);
+height:30px;
+width: 100px;
+}
+
+.subdivided_div_article3 button {
+color:black;
+border-radius: 7px;
+border:0.5px solid grey;
+background-color: rgb(181, 207, 183);
+height:30px;
+width: 100px;
+}
+
+
+/* Footer */
+
+footer{
+color: rgb(218, 240, 231);
+background-color: rgb(71, 63, 80);
+text-align: center;
+font-size: larger;
+padding:30px;
+position: fixed;
+bottom: 0;
+width: 100%;
+box-shadow: 0 -2px 5px rgb(126, 126, 126);
+}
