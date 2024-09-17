@@ -1,0 +1,216 @@
+:root {
+  --font-family: Arial, sans-serif;
+  --container-max-width: 600px;
+  --container-padding: 20px;
+  --container-bg-color: #ffffff; /* Changed to white background */
+  --container-border: 1px solid #ddd;
+  --container-border-radius: 5px;
+  --container-gap: 10px;
+  --label-font-weight: bold;
+  --input-width: 100%;
+  --input-padding: 10px;
+  --input-border: 1px solid #ccc;
+  --input-border-radius: 3px;
+  --input-margin-bottom: 15px;
+  --select-height: 40px;
+  --submit-bg-color: #08968a;
+  --submit-color: #ffffff;
+  --submit-padding: 10px 20px;
+  --submit-border-radius: 3px;
+  --submit-cursor: pointer;
+  --submit-hover-bg-color: #2e754e;
+  --focus-outline-color: #08968a;
+  --required-color: #ff0000;
+  --valid-color: #666; /* Darkened valid color for better contrast */
+  --disabled-color: #888; /* Adjusted disabled color for better contrast */
+  /* Updated color values for specific elements */
+  --required-note-color: var(--required-color);
+  --container-form-bg-color: #f7f7f7; /* Adjusted background color */
+  --container-form-text-color: #333; /* Dark text for better contrast */
+  --submit-button-bg-color: var(
+    --submit-bg-color
+  ); /* Adjusted background color */
+  --submit-button-text-color: var(
+    --submit-color
+  ); /* White text for better contrast */
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+.order {
+  background-color: var(--container-bg-color);
+  border: var(--container-border);
+  border-radius: var(--container-border-radius);
+  display: grid;
+  gap: var(--container-gap);
+  grid-template-areas: "form T-Shirt";
+  width: auto;
+}
+
+.form {
+  grid-area: form;
+}
+
+.T-Shirt {
+  grid-area: T-Shirt;
+}
+
+.pic {
+  width: 40vw;
+  height: 80vh;
+}
+
+#name:focus,
+#email:focus,
+#deliveryDate:focus {
+  outline: 2px solid var(--focus-outline-color);
+}
+
+#submit:focus {
+  background-color: var(--submit-hover-bg-color);
+}
+
+/* Style for required fields */
+.required + input:required,
+.required + select:required {
+  border-color: var(
+    --required-color
+  ); /* Change the border color for required fields */
+}
+
+/* Style for required labels */
+.required::after {
+  color: var(--required-color); /* Set the asterisk color to red */
+}
+
+.note {
+  text-align: left;
+  font-weight: bold;
+}
+
+.required-note {
+  color: var(--required-note-color);
+}
+
+/* Style for the submit button when any required fields are empty */
+form:has(
+    .required + input:required:invalid,
+    .required + select:required:invalid
+  )
+  #submit {
+  background-color: var(
+    --valid-color
+  ); /* Change submit button background color when required fields are empty */
+  color: var(
+    --disabled-color
+  ); /* Change submit button text color when required fields are empty */
+  cursor: not-allowed; /* Change cursor for the submit button when required fields are empty */
+}
+input:required:valid,
+select:required:valid {
+  border-color: var(
+    --valid-color
+  ); /* Change border color to a neutral color for valid input */
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: var(--container-padding);
+  background-color: var(--container-bg-color);
+  border: var(--container-border);
+  border-radius: var(--container-border-radius);
+  display: grid;
+  gap: var(--container-gap);
+  grid-template-areas:
+    "header header"
+    "name email"
+    "color size"
+    "deliveryDate deliveryDate"
+    "submit submit";
+}
+div.container.form {
+  background-color: var(
+    --container-form-bg-color
+  ); /* Adjusted background color */
+  color: var(--container-form-text-color); /* Dark text for better contrast */
+}
+
+label {
+  font-weight: var(--label-font-weight);
+}
+
+input[type="text"],
+input[type="email"],
+select,
+input[type="date"] {
+  width: var(--input-width);
+  padding: var(--input-padding);
+  border: var(--input-border);
+  border-radius: var(--input-border-radius);
+  margin-bottom: var(--input-margin-bottom);
+}
+
+select {
+  height: var(--select-height);
+}
+
+input[type="submit"] {
+  background-color: var(--submit-button-bg-color);
+  color: var(--submit-button-text-color);
+  border: none;
+  padding: var(--submit-padding);
+  border-radius: var(--submit-border-radius);
+  cursor: var(--submit-cursor);
+  transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:not(:disabled) {
+  background-color: var(--submit-bg-color); /* Background color */
+  color: var(--submit-color); /* Text color */
+}
+
+input[type="submit"]:hover:not(:disabled) {
+  background-color: var(--submit-hover-bg-color); /* Hover background color */
+}
+
+input[type="submit"]:disabled {
+  background-color: var(--valid-color); /* Disabled state background color */
+  color: var(--disabled-color); /* Disabled state text color */
+  cursor: not-allowed; /* Change cursor for disabled state */
+}
+
+input[type="submit"]:hover {
+  background-color: var(--submit-hover-bg-color);
+}
+
+#name {
+  grid-area: name;
+}
+
+#email {
+  grid-area: email;
+}
+
+#color {
+  grid-area: color;
+}
+
+#size {
+  grid-area: size;
+}
+
+#deliveryDate {
+  grid-area: deliveryDate;
+}
+
+#submit {
+  grid-area: submit;
+}
+
+h2 {
+  grid-area: header;
+  text-align: center;
+}
