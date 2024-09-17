@@ -1,0 +1,161 @@
+/* header */
+.header-div,
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.black {
+  background-color: black;
+}
+.img-div {
+  cursor: pointer;
+}
+span {
+  color: red;
+}
+.title {
+}
+
+.search {
+  width: 55%;
+  padding: 0.5em 1.5em;
+  border: none;
+  box-shadow: 2px 4px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.navigation {
+  border-bottom: 1px solid gray;
+  border-top: 6px solid black;
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+ul li {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+ul li:hover {
+  color: rgb(218, 39, 39);
+}
+/*  section-div*/
+.section-div {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2em;
+}
+.shirt-img {
+  width: 25%;
+  padding-bottom: 2em;
+}
+/* input-section */
+
+.form-section {
+  margin-top: 1.5em;
+}
+
+/* size-button */
+.size-color-date {
+  display: inline-block;
+}
+button {
+  color: white;
+  font-weight: bold;
+  background-color: rgb(53, 40, 40);
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  color: red;
+  background-color: white;
+}
+/* radio-button */
+/* radio1 */
+
+#radio1 {
+  opacity: 0;
+}
+.label-1 {
+  padding: 8px 15px;
+  background-color: rgb(235, 27, 27);
+  cursor: pointer;
+}
+
+#radio1:checked ~ .color-div {
+  background-color: rgb(232, 40, 26);
+}
+/* radio2 */
+#radio2 {
+  opacity: 0;
+}
+.label-2 {
+  padding: 8px 15px;
+  background-color: gray;
+  cursor: pointer;
+}
+
+#radio2:checked ~ .color-div {
+  background-color: gray;
+}
+
+/* radio3 */
+
+#radio3 {
+  opacity: 0;
+}
+.label-3 {
+  padding: 8px 15px;
+  background-color: black;
+  cursor: pointer;
+}
+
+#radio3:checked ~ .color-div {
+  background-color: black;
+}
+
+.color-div {
+  width: 1em;
+  height: 1em;
+  border: 1px solid black;
+}
+
+#submit-button {
+  margin-left: 4em;
+  margin-top: 1.5em;
+  border-style: none;
+  padding: 0.5em;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#submit-button:hover {
+  color: black;
+}
+/* footer */
+footer {
+  background-color: black;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+}
+h5:hover {
+  color: red;
+}
+h5 {
+  cursor: pointer;
+  color: white;
+  margin-left: 2em;
+}
+h4 {
+  text-align: center;
+  color: white;
+}
