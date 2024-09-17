@@ -9,19 +9,99 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Product Pick</h1>
+  <header class="hclass">
+    <h1 style="color: aliceblue;">Product Pick</h1>
   </header>
   <main>
-  <form>
+  <form id="confirmdata">
     <!-- write your html here-->
+
+    <div class="mainrow">
+      <div>
+
+      <div class="frmlable">
+          <Label>First Name *</Label> 
+          <label for="#">Last Name *</label> 
+      </div>
+      <div class="frminput">
+      <input type="text" required>
+      <input type="text" required>
+  </div>
+<div class="frmaddress">
+<label for="mail">E-mail *</label>
+<input id="mail" type="text" placeholder="xxxxx@gmail.com" pattern=".+@gmail\.com" required>
+<label for="address">Address *</label>
+<input id="address" type="text" required>
+</div>
+ <div class="frmlable2">
+  <label for="size">Size *</label>
+  <label for="qty">Quantity *</label>
+ </div>
+ <div class="frminput2">
+  <select id="size">
+      <option value="xsmall">XS</option>
+      <option value="small">S</option>
+      <option value="medium">M</option>
+      <option value="large">L</option>
+      <option value="xlarge">XL</option>
+      <option value="xxlarge">XXL</option>
+    </select>
+  <input id="qty" type="number" required> 
+ </div>
+
+ <div class="ordercolor">
+  <h5>Select a color:</h5>
+  
+ </div>
+
     <!-- try writing out the requirements first-->
   </form>
 
+  <input type="radio" id="color1" name="color" value="color1" required>
+  <label class="colorclass" for="color1">Blue</label> <br>
+  <input type="radio" id="color2" name="color" value="color2">
+  <label class="colorclass" for="color2"> Green </label> <br>
+  <input type="radio" id="color3" name="color" value="color3">
+  <label class="colorclass" for="color3"> White</label><br>
+  
+  <br>
+  <label class="datelable"  for="deleverydate">Preffered Delivery date:</label>
+  <input class="dateinput" type="date" id="deleverydate" name="delevery-date" value="date" min="date" max="date" required/>
+
+  <br>
+  <br>
+  <input type="checkbox" id="trm" required>
+  <label class="terms1" for="trm">By placing your order you agree to our <a class="terms2" href="#">Terms and Conditions.</a> </label><br>
+  <br>
+  <br>
+  <button class="orderbtn">Place my Order</button>
+</div>
+  <div>
+    <img class="storeimg" src="/Form-Controls/si-papi-ne-peut-pas-le-rparer-personne-ne-peut-men-t-shirt-casual-90s-style-harajuku-women-tops-geraldblack-com-32967096991904.webp" alt="Store Image">
+</div>
+
+</div>
   </main>
   <footer>
+
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    
+    <div class="allfooter">
+      <div class="hfooter">
+          <h5>Join us On:</h5>
+       </div>
+  
+       <div class="footericons">
+          <img class="twit" src="twitter-icon.svg" alt="Twitter">
+          <img class="face" src="facebook-icon.svg" alt="Facebook">
+          <img class="inst" src="instagram-icon.svg" alt="Instgram">
+  
+       </div>
+  <div class="ftr">
+    <h2>By Haythem Solution</h2>
+  </div> 
+  </div>
+
   </footer>
 </body>
 
