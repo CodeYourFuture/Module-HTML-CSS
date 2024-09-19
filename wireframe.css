@@ -1,0 +1,135 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f9f9f9;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
+/* Header Styling */
+header {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Articles Section */
+.articles {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+  height: calc(100vh - 200px); /* Adjust for header and footer */
+}
+
+.first-article {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f39c12;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.second-article,
+.third-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.second-article {
+  grid-column: 1 / 2;
+}
+
+.third-article {
+  grid-column: 2 / 3;
+}
+
+article h2 {
+  margin-top: 0;
+  color: #34495e;
+}
+
+article p {
+  margin: 10px 0;
+}
+
+article a {
+  color: #e74c3c;
+}
+
+.more-text {
+  display: none;
+}
+
+.read-more-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.read-more-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .articles {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .second-article,
+  .third-article {
+    grid-column: 1;
+  }
+}
