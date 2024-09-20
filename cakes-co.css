@@ -1,0 +1,107 @@
+/* Default Mobile First CSS */
+body {
+  font-family: "Arial, sans-serif";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fff8f0;
+}
+
+header {
+  text-align: center;
+  padding: 1em;
+  background-color: #ffb6c1;
+  color: white;
+}
+
+.menu-toggle {
+  display: block;
+}
+
+.main {
+  padding: 1em;
+}
+
+.featured-cakes img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 1em;
+}
+
+.category img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #ffb6c1;
+  color: white;
+}
+
+/* Medium Screen Styles */
+@media (min-width: 540px) {
+  header {
+    padding: 1.5em;
+  }
+
+  .categories {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .featured-cakes img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  footer {
+    padding: 2em;
+  }
+}
+
+/* Large Screen Styles */
+@media (min-width: 900px) {
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .featured-cakes img {
+    width: 60%;
+    height: auto;
+  }
+
+  .welcome {
+    width: 40%;
+    padding: 2em;
+  }
+
+  .categories {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  footer {
+    padding: 3em;
+  }
+}
