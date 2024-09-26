@@ -1,16 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Add your markup here -->
-</body>
+    <!-- HEADER with nav and menu bar -->
+    <header class="header">
+      <img src="images/cake-logo.svg" alt="a beautiful cup cake" />
+      <p>The best cakes in town delivered to your door</p>
+    </header>
 
+    <!-- Nav and menu bar (hamburger) -->
+    <nav>
+      <input type="checkbox" class="show" id="menu-bar" />
+      <label for="menu-bar" class="hamburger">
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+      </label>
+
+      <div class="menu-items">
+        <a class="nav-link menu-home" href="#">HOME</a>
+        <a class="nav-link menu-cakes" href="#">CAKES</a>
+        <a class="nav-link menu-orderin" href="#">ORDERING</a>
+        <a class="nav-link menu-lessons" href="#">LESSONS</a>
+        <a class="nav-link menu-about" href="#">ABOUT</a>
+      </div>
+    </nav>
+
+    <!-- HERO page -->
+    <main>
+      <section class="hero">
+        <div class="welcome-text">
+          <h1>Welcome</h1>
+          <p>
+            Welcome to the ultimate destination for cake lovers. Discover a
+            world of delectable treats that will tantalize your taste buds and
+            sweeten your day. From classic favorites like rich chocolate and
+            velvety vanilla to exotic creations bursting with fresh fruits and
+            creamy fillings, our bakers pour their passion into every creation.
+            With easy browsing, convenient ordering, and prompt delivery,
+            satisfying your cake cravings has never been this delightful.
+            Explore our delectable selection now, and let every moment be a
+            celebration of sweetness!
+          </p>
+        </div>
+
+        <img
+          src="images/cake-1.jpg"
+          alt="hand taking a small portion from white-creamed cake"
+          class="big-cake"
+        />
+      </section>
+
+      <!-- Content page (4 cakes)-->
+      <section class="cake-images">
+        <img
+          class="cake-1"
+          src="images/cake-sub1.jpg"
+          alt="cake on a tray and with a cone"
+        />
+        <img
+          class="cake-2"
+          src="images/cake-sub2c.jpg"
+          alt="trays of cake with strawberry and a cup of coffee"
+        />
+        <img
+          class="cake-3"
+          src="images/cake-sub3.jpg"
+          alt="a beautiful cake and 5 cup cakes"
+        />
+        <img
+          class="cake-3"
+          src="images/cake-sub4.jpg"
+          alt="cake sandwiched with cream and topped with fruits"
+        />
+      </section>
+    </main>
+
+    <!-- FOOTER section -->
+    <footer class="footer">
+      <div class="foot-sidebar">
+        <div class="quick">
+          <a href="#">Quick Link</a>
+        </div>
+        <div class="track">
+          <a href="#">Track Orders</a>
+        </div>
+        <div class="chat">
+          <a href="#">Chat Agent</a>
+        </div>
+      </div>
+
+      <div class="contacts">
+        <a href="#"
+          ><img class="contact-logo" src="images/twitter-icon.svg"
+        /></a>
+        <a href="#"
+          ><img class="contact-logo" src="images/facebook-icon.svg"
+        /></a>
+        <a href="#"
+          ><img class="contact-logo" src="images/instagram-icon.svg" />
+        </a>
+      </div>
+      <p class="copyright">&copy;2023 Tajudeen Oyehan</p>
+    </footer>
+  </body>
 </html>
