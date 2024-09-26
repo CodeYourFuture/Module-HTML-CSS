@@ -1,0 +1,83 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("https://i.pinimg.com/736x/60/20/6d/60206d5bdac65259ed1bd1c202dee4e3.jpg");
+  background-position: center;
+  background-size: cover, 10px;
+  background-repeat: no-repeat;
+}
+
+form {
+  width: 100%;
+  padding: 30px;
+  background-color: rgba(82, 58, 22, 0.7);
+  border-radius: 5px;
+}
+
+h1 {
+  margin-top: 2px;
+  font-size: 50px;
+  text-align: center;
+  color: black;
+  text-shadow: 2px 2px 7px white;
+}
+s h2 {
+  font-size: 25px;
+  margin-top: 5px;
+  color: rgb(255, 255, 255);
+}
+
+h3 {
+  font-size: 25px;
+  margin-top: 5px;
+  color: rgb(245, 240, 240);
+}
+
+label {
+  font-size: 23px;
+  color: orange;
+}
+
+input {
+  margin-bottom: 15px;
+  accent-color: rgb(7, 7, 7);
+  font-size: 20px;
+}
+
+#fullname {
+  width: 250px;
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+#email {
+  width: 250px;
+  height: 30px;
+  padding-left: 50px;
+}
+
+#date {
+  font-size: 18px;
+  padding: 5px;
+}
+
+.submit {
+  width: 130px;
+  height: 35px;
+  margin: 25px;
+  font-size: 19px;
+  background-color: white;
+  color: black;
+  border: 1px solid rgb(231, 202, 140);
+  border-radius: 4px;
+}
+
+footer h2 {
+  margin-top: 40px;
+  font-size: 19px;
+  color: black;
+  font-weight: 800;
+}
