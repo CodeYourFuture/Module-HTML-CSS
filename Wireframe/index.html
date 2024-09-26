@@ -4,10 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wireframe</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-</body>
+  
+
+  <header id="header">
+    <h1>Wireframe Git Guide:</h1>
+    <p>An Introduction to Git Version Control</p>
+  </header>
+
+  <main>
+    <div id="articles-section">
+
+      <div id="subject1">
+        <img id="first-img" src="images/What-is-Git.jpg" alt="Simple diagram with arrows to describe Git">
+        <div id="first-article-texts">
+          <article id="first-article">
+            <h2 class="article title">What is Git?</h2>
+            <p>Git is a distributed version control system that tracks changes in any set of computer files, usually used for coordinating work among programmers who are collaboratively developing source code during software development.</p>
+            <button class="button"><a href="https://en.wikipedia.org/wiki/Git" target="_blank">Read More</a></button>
+          </article>
+        </div>
+      </div>
+      
+
+      <div id="subject2-3">
+
+        <div class="flex-subjects">
+          <img class="imgs-container" src="images/Why-we-need-Git.jpg" alt="Diagram of different developers working for a business organization using Git described with arrows">
+          <div class="article-texts">
+            <article>
+              <h2 class="article title">Why do developers need Git?</h2>
+              <p>Git allows users to 'stage' and 'commit' files, enabling them to choose specific pieces for version tracking and updates, let multiple developers work on a project where everyone can upload, edit and manage the source code.</p>
+              <button class="button"><a href="https://www.nobledesktop.com/learn/git/what-is-git#:~:text=Git%20allows%20users%20to%20'stage,smoother%20collaboration%20with%20other%20developers." target="_blank">Read More</a></button>
+            </article>
+          </div>
+        </div>
+
+        <div class="flex-subjects">
+          <img class="imgs-container" src="images/What-is-branch-in-Git.jpg" alt="Diagram to describe branches to add features to an octopus">
+          <div class="article-texts">
+            <article>
+              <h2 class="article title">What is a branch in Git?</h2>
+              <p>A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process. You can think of them as a way to request a brand new working directory, staging area, and project history.</p>
+              <button class="button"><a href="https://www.atlassian.com/git/tutorials/using-branches#:~:text=A%20branch%20represents%20an%20independent,staging%20area%2C%20and%20project%20history." target="_blank">Read More</a></button>
+            </article>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer id="footer">
+    <small>Contact links</small>
+  </footer>
+
+  </body>
 </html
