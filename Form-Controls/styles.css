@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: RockSalt-Regular;
+  src: url(RockSalt-Regular.ttf);
+}
+
+@font-face {
+  font-family: PermanentMarker-Regular;
+  src: url(PermanentMarker-Regular.ttf);
+}
+
+@font-face {
+  font-family: DMSerifDisplay-Regular;
+  src: url(DMSerifDisplay-Regular.ttf);
+}
+
+body {
+  font-family: DMSerifDisplay-Regular;
+  background-color: #e5e5f7;
+  background-image: radial-gradient(#a679a5 0.5px, transparent 0.5px),
+    radial-gradient(#a679a5 0.5px, #e5e5f7 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 300%;
+  padding-bottom: 3%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 160%;
+  padding-bottom: 3%;
+  text-align: center;
+}
+
+h3,
+.email {
+  font-size: 90%;
+  text-align: center;
+}
+
+h4 {
+  text-align: end;
+  padding-right: 2%;
+}
+
+p {
+  font-size: 115%;
+  accent-color: #000000;
+}
+
+.form {
+  background-color: #f4f3f1;
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+  border-right: solid 5px #676767;
+  border-left: solid 5px #676767;
+  border-top: solid 5px #676767;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: left;
+  margin-left: 12px;
+}
+
+.inputNames {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+}
+
+.formControl {
+  height: 30px;
+  padding-left: 10px;
+}
+
+.formEmail {
+  height: 30px;
+  width: 260px;
+  padding-left: 10px;
+}
+
+.tShirt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 3%;
+}
+
+.tShirtColors {
+  font-size: 130%;
+}
+
+.radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.blue {
+  color: #0303fd;
+  font-size: 115%;
+  accent-color: #0303fd;
+}
+
+.red {
+  color: #fe0000;
+  font-size: 115%;
+  accent-color: #fe0000;
+}
+
+.green {
+  color: #007512;
+  font-size: 115%;
+  accent-color: #007512;
+}
+
+.size {
+  padding-bottom: 3%;
+}
+
+.h4date {
+  font-size: 100%;
+  margin: auto;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.timeTable {
+  height: 40px;
+  font-size: 20px;
+  margin-left: 5px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+}
+
+.inputSubmit {
+  height: 40px;
+  width: 90px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bolder;
+  background-color: #3b3b3b;
+  border: solid 4px #fff709;
+  border-radius: 10px;
+  margin-bottom: 2%;
+}
+
+.inputSubmit:hover {
+  cursor: pointer;
+  background-color: #fff709;
+  color: #3b3b3b;
+  border: dashed 3px #002beb;
+}
