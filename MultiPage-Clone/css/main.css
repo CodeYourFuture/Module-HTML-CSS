@@ -1,3 +1,99 @@
 /* Add your CSS here */
 
 /* Dont' forget to link this file to your HTML in the <head> */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* grid section */
+.container {
+  width: 100%;
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  grid-template-rows: 100px 400px 1fr;
+}
+/* nav bar style section */
+nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: white;
+}
+
+nav p {
+  justify-self: center;
+  padding-top: 2rem;
+}
+
+.juiceBar-Burger-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.w-6 {
+  width: 50px;
+  padding-top: 1.5rem;
+}
+.order-online-login-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    gap: 4rem;
+}
+.logIn-p {
+    font-size: 20px;
+}
+.logo-svg {
+    margin-top: 2rem;
+}
+.user-logo {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 7px;
+}
+.btn-orderOnline {
+    padding: 10px 60px;
+    font-size: large;
+}
+
+
+main {
+  background-color: white;
+}
+
+/* main content and font style */
+.main-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+  gap: 2rem;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: lighter;
+}
+p {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+button {
+  padding: 20px 60px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+.main-2 {
+  background-color: pink;
+  display: grid;
+  grid-row: span;
+}
+.main-image {
+    width: 100%;
+
+}
