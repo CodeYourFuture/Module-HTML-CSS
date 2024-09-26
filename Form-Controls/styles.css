@@ -1,0 +1,67 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: rgb(30, 28, 26);
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+header img {
+  width: 10%;
+}
+main {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.name,
+.email {
+  padding: 30px;
+}
+.xs,
+.s,
+.m,
+.l,
+.xl,
+.xxl {
+  margin-left: 30px;
+}
+.black {
+  border: 10px solid black;
+}
+.yellow {
+  border: 10px solid yellow;
+}
+.blue {
+  border: 10px solid blue;
+}
+.red {
+  border: 10px solid red;
+}
+.size {
+  margin-right: 40px;
+}
+fieldset {
+  margin-top: 50px;
+  border-radius: 15px;
+  padding: 20px;
+}
+button {
+  margin-top: 50px;
+  padding: 15px 20px;
+  background: green;
+  color: azure;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+}
+#name,
+#email {
+  padding: 10px 20px;
+  border-radius: 15px;
+}

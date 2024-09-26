@@ -1,28 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
-
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
-
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bello's Online shopping</h1>
+      <img src="tee-34009_1280.png" alt="white t-shirt logo" />
+    </header>
+    <main>
+      <section><img alt="blue t-shirt" src="images (1).jpg" /></section>
+      <form>
+        <lable class="name" for="name"> Name</lable>
+        <input type="text" id="name" name="name" required />
+        <lable class="email" for="email"> Email</lable>
+        <input type="email" id="email" name="email" required />
+        <fieldset>
+          <legend>size</legend>
+          <lable class="xs" for="xs"> Xs </lable
+          ><input type="radio" id="xs" name="size" value="xs" />
+          <lable class="s" for="s"> S </lable
+          ><input type="radio" id="s"  name="size" value="s"/>
+          <lable class="m" for="m"> M </lable
+          ><input type="radio" id="m"  name="size" value="m"/>
+          <lable class="l" for="l"> L </lable
+          ><input type="radio" id="l"  name="size" value="l"/>
+          <lable class="xl" for="xl"> Xl </lable
+          ><input type="radio" id="xl"  name="size" value="xl" />
+          <lable class="xxl" for="xxl"> XXl </lable
+          ><input type="radio" id="xxl"   name="size" value="xxl"/>
+        </fieldset>
+        <fieldset re>
+          <legend>Color</legend>
+          <input type="radio" id="bl"   name="color" value="bl"/><lable for="bl" class="size">
+            <span class="black"></span>
+          </lable>
+          <input type="radio" id="ye"  name="color" value="ye" /><lable for="ye" class="size">
+            <span class="yellow"></span>
+          </lable>
+          <input type="radio" id="blu"  name="color" value="blu" /><lable for="blu" class="size">
+            <span class="blue"></span>
+          </lable>
+          <input type="radio" id="re"  name="color" value="re" /><lable for="re" class="size">
+            <span class="red"></span>
+          </lable>
+        </fieldset>
+        <fieldset>
+          <legend> Choose delivery Date </legend>
+          <lable for="date"></lable>
+<input type="date" value min="2023-10-27" max="2023-11-27" required></input>
+        </fieldset>
+        <button type="submit"> Submit</button>
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2></h2>
+    </footer>
+  </body>
 </html>
