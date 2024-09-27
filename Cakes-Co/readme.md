@@ -61,8 +61,34 @@ When you're ready to start coding:
 ### Define your own style
 
 - Choose 1-2 fonts to use (lots of [free fonts here](https://fonts.google.com/))
+
+<!-- Font Styles -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300&family=Nunito+Sans:opsz,wght@6..12,200;6..12,400&family=Playfair+Display+SC:ital@0;1&family=Playfair+Display:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet">
+
+<!-- css rules  -->
+font-family: 'League Spartan', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Playfair Display SC', serif;
+
 - Choose 2-3 colours that you think go together well, and try to limit yourself to those in your CSS ([look here at palettes](https://coolors.co/palettes/trending) for inspiration)
+
+<!-- Colors  -->
+
+pink : rgb(242 200 217)
+lighter-pink: rgb(249 237 244)
+gold: rgb(160 150 111)
+background: rgb(255 255 255)
+
+
+
 - Select some nice cake pictures to replace the placeholders in the wireframes (good [photo source here](https://unsplash.com/images/food/cake)).
+
+<!-- Photos  -->
+ 4 cupcake
+ 
 - Get creative! Can you add some cool hover/focus effects to buttons and [images](https://www.wix.com/website-template/view/html/1911?siteId=c1c72d26-c040-41f2-80ce-0b0f8aef01b4&metaSiteId=5d77fab8-f068-4228-8b61-4181af054ca6&originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button)?
 
 ### Also
