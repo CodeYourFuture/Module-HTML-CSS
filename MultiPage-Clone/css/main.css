@@ -1,3 +1,771 @@
 /* Add your CSS here */
 
+@font-face {
+  font-family: "Outfit";
+  src: url("/MultiPage-Clone/fonts/Outfit-Regular.ttf") format("truetype");
+  font-display: swap;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("/MultiPage-Clone/fonts/Outfit-ExtraLight.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Fjalla One";
+  src: url("/MultiPage-Clone/fonts/FjallaOne-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+:root {
+  --red-brown: #a05941;
+  --green-black: #133032;
+  --light-grey: #ededee;
+  --white: #fff;
+  --transparent-white: rgba(0, 0, 0, 0.75);
+  --ff-outfit-reg: "Outfit";
+  --ff-fjalla: "Fjalla One";
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  min-height: 100vh;
+  background-color: var(--light-grey);
+  margin-inline: 2rem;
+  font-family: var(--ff-outfit-reg);
+  font-weight: 400;
+  font-size: 1rem;
+}
+.msg {
+  cursor: pointer;
+  position: fixed;
+  height: 3rem;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  gap: 1rem;
+  right: 1vw;
+  bottom: 1rem;
+  font-family: var(--ff-fjalla);
+  background-color: var(--red-brown);
+  z-index: 1000;
+}
+.msg svg {
+  fill: var(--white);
+}
+header {
+  position: fixed;
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  padding-right: 8rem;
+}
+/*----------------------Top Navigation------------------------------*/
+.top-navigation {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  padding: 1rem;
+}
+
+.input {
+  display: flex;
+  width: 20%;
+  position: relative;
+  font-family: var(--ff-outfit-reg);
+}
+.input svg {
+  fill: var(--red-brown);
+}
+.search {
+  border: none;
+  height: 3rem;
+  padding: 1rem;
+  padding-left: 2.5rem;
+  width: 100%;
+}
+.search::placeholder {
+  font-size: 1rem;
+  font-family: var(--ff-outfit-reg);
+  font-weight: 200;
+  color: var(--red-brown);
+}
+#search-icon {
+  position: absolute;
+  left: 0.5rem;
+  top: 0.9rem;
+  margin-right: 2rem;
+  color: #a05941;
+}
+.search:hover,
+.search:active {
+  border: 1px solid var(--red-brown);
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.log-in {
+  cursor: pointer;
+  display: flex;
+  gap: 0.7rem;
+}
+.log-in svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: white;
+  padding-top: 0.2rem;
+  border: 1px solid var(--red-brown);
+  border-radius: 50%;
+  background-color: var(--red-brown);
+}
+
+.login {
+  color: var(--red-brown);
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+.shopping-cart {
+  cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: var(--red-brown);
+}
+.log-in svg:hover {
+  fill: var(--red-brown);
+  background-color: var(--white);
+}
+
+/*---------------------------Navbar--------------------------------*/
+.navigation {
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--light-grey);
+}
+.logo-list {
+  display: flex;
+  gap: 2rem;
+}
+.menu {
+  display: none;
+}
+.list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-links {
+  text-decoration: none;
+  font-weight: 200;
+  color: var(--red-brown);
+}
+.nav-links:hover {
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid var(--red-brown);
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: var(--light-grey);
+  min-width: 50px;
+  z-index: 1;
+}
+.dropdown-menu a {
+  text-decoration: none;
+  display: block;
+  color: var(--red-brown);
+  font-weight: 300;
+  margin-block: 0.6rem;
+  margin-inline: 1rem;
+}
+.dropdown-menu a:hover {
+  color: var(--green-black);
+}
+.list:hover .dropdown-menu {
+  display: block;
+}
+.logo {
+  font-family: var(--ff-fjalla);
+  font-size: 1.4rem;
+  color: var(--red-brown);
+  text-decoration: none;
+}
+.nav-description {
+  font-family: var(--ff-fjalla);
+  color: var(--red-brown);
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+}
+.wrapper {
+  display: block;
+  height: 2rem;
+}
+.wrapper span {
+  position: absolute;
+  width: 20rem;
+  right: 7rem;
+  overflow: hidden;
+  animation: changeText 10s infinite;
+}
+.wrapper span:nth-child(1) {
+  animation-delay: 0s;
+}
+.wrapper span:nth-child(2) {
+  animation-delay: 7s;
+}
+@keyframes changeText {
+  0%,
+  100% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+/*------tabs-------------*/
+
+ul.tabs {
+  list-style: none;
+}
+li.tab {
+  display: inline-block;
+  margin-right: 10px;
+}
+.tab-content {
+  display: none;
+}
+/* Show active tab content */
+.active {
+  display: block;
+}
+
+/*------------------------------Hero section-----------------*/
+.hero {
+  color: var(--white);
+  height: 65rem;
+  width: 100%;
+  background: url(/MultiPage-Clone/designs/background-img.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 8rem;
+}
+.hero-card {
+  width: 100%;
+  height: 100%;
+  padding-block: 7rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  backdrop-filter: brightness(70%) contrast(64%) sepia(5%) saturate(2)
+    hue-rotate(102deg);
+}
+.hero-logo {
+  display: flex;
+  align-items: center;
+}
+.hero-logo span {
+  font-weight: 200;
+  letter-spacing: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid white;
+}
+
+.flower {
+  height: 4.5rem;
+  fill: var(--white);
+}
+
+.heading {
+  font-size: 6.5rem;
+  letter-spacing: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  font-family: var(--ff-fjalla);
+}
+.hero-card-p {
+  font-size: 1.3rem;
+  font-weight: 200;
+  letter-spacing: 0.3rem;
+}
+.hero-btn {
+  cursor: pointer;
+  height: 2.6rem;
+  width: 13rem;
+  font-size: 1.1rem;
+  font-family: var(--ff-outfit-reg);
+  font-weight: 200;
+  background-color: var(--red-brown);
+  border: none;
+  color: white;
+}
+.hero-btn:hover {
+  opacity: 0.8;
+  color: black;
+}
+/*----------------------Cards Section--------------------------------*/
+.card-container {
+  height: 35rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 3rem;
+}
+.card {
+  height: 100%;
+  width: 30%;
+  text-align: center;
+  background-size: cover;
+  background-position: top;
+  padding: 2rem;
+}
+.card-1 {
+  background: url(/MultiPage-Clone/designs/Cucti-img.webp);
+  background-size: cover;
+  background-position: top;
+}
+.card-2 {
+  background: url(/MultiPage-Clone/designs/plant-img.webp);
+  background-size: cover;
+  background-position: top;
+}
+.card-3 {
+  background: url(/MultiPage-Clone/designs/secculant-img.webp);
+  background-size: cover;
+  background-position: top;
+}
+.card-heading {
+  position: relative;
+  color: var(--red-brown);
+  letter-spacing: 0.6rem;
+  margin-bottom: 1rem;
+  font-family: var(--ff-fjalla);
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+.card-heading::after {
+  position: absolute;
+  content: "";
+  height: 0.2rem;
+  width: 2rem;
+  background-color: var(--red-brown);
+  top: 3rem;
+  left: 45%;
+}
+/*--------------------------Columns------------------------------------*/
+.columns {
+  display: flex;
+  flex-direction: column;
+}
+/*--------------------------About US------------------------------------*/
+.about-us {
+  display: flex;
+  height: 30rem;
+}
+.about-us-card {
+  flex: 50%;
+  padding: 5rem;
+  background-color: var(--white);
+}
+.about-us-heading {
+  position: relative;
+  color: var(--red-brown);
+  letter-spacing: 0.6rem;
+  margin-bottom: 1rem;
+  font-family: var(--ff-outfit-reg);
+  font-weight: 300;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.about-us-heading::after {
+  position: absolute;
+  content: "";
+  height: 0.2rem;
+  width: 1.5rem;
+  background-color: var(--red-brown);
+  top: 3rem;
+  left: 45%;
+}
+.about-us-p {
+  color: var(--red-brown);
+  font-family: var(--ff-outfit-reg);
+  font-weight: 200;
+  text-align: center;
+  line-height: 1.4rem;
+}
+.about-us-img-1,
+.about-us-img-2 {
+  flex: 25%;
+}
+.about-us-img-1 {
+  background: url(/MultiPage-Clone/designs/workshop.webp);
+  background-position: center;
+  background-size: cover;
+}
+.about-us-img-2 {
+  background: url(/MultiPage-Clone/designs/leafylady.webp);
+  background-position: center;
+  background-size: cover;
+}
+/*--------------------------Buy Online---------------------------------*/
+.buy-online {
+  height: 35rem;
+  display: flex;
+}
+.buy-online-img {
+  flex: 50%;
+  background: url(/MultiPage-Clone/designs/Gardenlady.webp);
+  background-position: center;
+  background-size: cover;
+}
+.buy-online-card {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-inline: 7rem;
+  background-color: var(--green-black);
+}
+.buy-online-p {
+  font-size: 5rem;
+  color: white;
+  font-family: var(--ff-fjalla);
+  text-align: center;
+}
+.buy-online-btn {
+  background-color: var(--white);
+  color: black;
+}
+/*--------------------------Contact Us------------------------------------*/
+.contact-us {
+  height: 55rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/MultiPage-Clone/img/form-bg-img.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.contact-form {
+  height: 80%;
+  width: 65%;
+  background: var(--white);
+  display: grid;
+  align-items: center;
+  padding-block: 2rem;
+  padding-inline: 1rem;
+  font-family: var(--ff-outfit-reg);
+  opacity: 0.95;
+}
+
+.contact-form input {
+  width: 100%;
+  height: 3rem;
+  margin-top: 1rem;
+  border: 1px solid black;
+  outline: none;
+  padding: 1rem;
+}
+.contact-form input:focus,
+.contact-form input:hover,
+textarea:hover,
+textarea:focus {
+  border: 3px solid black;
+}
+.contact-form label {
+  font-family: var(--ff-outfit-reg);
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: black;
+}
+.name {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+.name label {
+  flex: 50%;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 1rem;
+  border: 1px solid black;
+  padding: 1rem;
+}
+.form-btn {
+  width: 100%;
+  margin-top: 2rem;
+}
+/*----------------------------------Footer---------------------------------*/
+footer {
+  padding-block: 2rem;
+  height: 30rem;
+  background-color: var(--green-black);
+  display: flex;
+  flex-direction: column;
+}
+.list-container {
+  height: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer-list {
+  width: 100%;
+  color: var(--white);
+  list-style: none;
+  font-weight: 200;
+  text-align: center;
+}
+.footer-list-heading {
+  margin-bottom: 2rem;
+  font-family: var(--ff-outfit-reg);
+  font-weight: 200;
+  letter-spacing: 0.8rem;
+}
+.footer-li {
+  margin-bottom: 0.3rem;
+}
+.subscribe {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+  gap: 1rem;
+}
+.subscribe-form {
+  width: 50%;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: end;
+}
+.subscribe-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 200;
+}
+.subscribe-form input {
+  margin-top: 1rem;
+  height: 2.5rem;
+  width: 15rem;
+}
+.subscribe-heading {
+  font-family: var(--ff-outfit-reg);
+  font-weight: 200;
+  letter-spacing: 0.5rem;
+}
+.subscribe-btn {
+  color: black;
+  background-color: var(--white);
+  width: 10rem;
+}
+.subscribe-icon {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.5rem;
+}
+.subscribe-icon svg {
+  cursor: pointer;
+  fill: var(--white);
+  transition: 0.5s ease;
+}
+.subscribe-icon svg:hover,
+.subscribe-icon svg:focus {
+  fill: var(--red-brown);
+  transform: scale(1.2);
+}
+
+/*------------------------------Mobile Design---------------------------*/
+@media (max-width: 700px) {
+  body,
+  html {
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: static;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    height: 7rem;
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
+  }
+
+  .list {
+    display: none;
+  }
+  .logo-list {
+    width: 100%;
+    flex: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu {
+    cursor: pointer;
+    height: 2rem;
+    width: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .menu span {
+    height: 0.2rem;
+    width: 100%;
+    background-color: var(--red-brown);
+  }
+  .open-list {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+  .wrapper span {
+    left: 1.5rem;
+    top: 8.1rem;
+    font-size: 1rem;
+  }
+  .hero {
+    width: 100%;
+    background-attachment: scroll;
+    height: 38rem;
+    padding-top: 2rem;
+  }
+  .hero-card {
+    width: 100%;
+    height: 100%;
+  }
+  .heading {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+  }
+  .hero-btn {
+    width: 10rem;
+  }
+
+  .log-in {
+    display: none;
+  }
+  .input {
+    width: 50%;
+  }
+  #search-icon {
+    top: 1rem;
+  }
+  .search {
+    width: 15rem;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    height: 90rem;
+  }
+  .card {
+    width: 100%;
+  }
+  .about-us {
+    flex-direction: column;
+    height: 80rem;
+  }
+  .buy-online {
+    display: flex;
+    flex-direction: column;
+  }
+  .buy-online-img {
+    background-position: right;
+  }
+  .contact-us {
+    background-attachment: scroll;
+  }
+  .about-us-card {
+    flex: 25%;
+    width: 100%;
+    padding: 2rem;
+  }
+  .buy-online {
+    flex-direction: column;
+    height: 50rem;
+  }
+  .buy-online-card {
+    padding: 1rem;
+  }
+  .contact-form {
+    width: 96%;
+    height: 90%;
+  }
+  .contact-form h2::after {
+    margin-top: 3rem;
+  }
+  .form-btn {
+    width: 100%;
+  }
+  footer {
+    height: auto;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .list-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer-list-heading {
+    margin-bottom: 0.5rem;
+  }
+  .subscribe-form {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    padding-inline: 1rem;
+  }
+  .subscribe-btn {
+    width: 100%;
+  }
+  .subscribe-form label,
+  .subscribe-form input {
+    width: 100%;
+  }
+  .msg {
+    width: 3rem;
+    border-radius: 50%;
+  }
+  .msg-span {
+    display: none;
+  }
+}
+
 /* Dont' forget to link this file to your HTML in the <head> */
