@@ -1,0 +1,213 @@
+/* universal styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*body*/
+body {
+  font-family: garamond, serif;
+  margin: 0;
+  padding: 0;
+  color: #b76e79;
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 0.85;
+  line-height: 1.6;
+}
+/*h1*/
+h1 {
+  margin-top: 0.4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #b76e79;
+}
+/*h2*/
+h2 {
+  margin-top: 0.7rem;
+  margin-bottom: 0.8rem;
+  margin-left: 3rem;
+  font-weight: 500;
+  font-size: 2rem;
+}
+/*wrapper*/
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 3rem;
+  gap: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  align-items: start;
+}
+/*Form*/
+.form-section {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+}
+
+.form-section form {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1.5rem;
+}
+
+form p {
+  margin-bottom: 0.5rem;
+}
+.colour-tshirt p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.colour-tshirt input {
+  accent-color: #b76e79;
+}
+
+.size-tshirt p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.size-tshirt input {
+  accent-color: grey;
+}
+.delivery-date p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.input [type="date"] {
+  margin-top: 2rem;
+}
+form label {
+  margin-bottom: 0.4rem;
+}
+.firstname {
+  width: 70%;
+}
+.lastname {
+  width: 70%;
+}
+.email {
+  width: 70%;
+}
+.delivery-date {
+  width: 50%;
+}
+.button {
+  width: 30%;
+  margin-top: 1rem;
+}
+input[type="text"],
+input[type="email"],
+input[type="date"],
+button {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+button {
+  cursor: pointer;
+  background-color: #b76e79;
+  color: white;
+  border: none;
+}
+
+.image-section {
+  background-image: url(image/Оверсайз.jpeg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  min-height: 100vh;
+  width: 100%;
+  z-index: -1;
+  border-radius: 2px;
+  transform: scale(1.11);
+  opacity: 0.9;
+}
+/*footer*/
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #808080;
+  border-top: 1px solid #ccc;
+}
+/*media query for screen 768px*/
+@media screen and (max-width: 768px) {
+  .image-section {
+    display: none;
+  }
+
+  body {
+    background-image: url(image/Оверсайз.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+    height: auto;
+    color: #1b1212;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    padding-left: 5rem;
+    opacity: 0.85;
+  }
+  h1 label {
+    text-align: center;
+  }
+  .form-section form {
+    row-gap: 1rem;
+  }
+  label {
+    font-size: 1.3rem;
+  }
+  .firstname {
+    width: 80%;
+  }
+  .lastname {
+    width: 80%;
+  }
+  .email {
+    width: 80%;
+  }
+  .delivery-date {
+    width: 60%;
+  }
+  .button {
+    width: 40%;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+  footer {
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+}
+/*media query for screen 1000px*/
+@media screen and (max-width: 1000px) {
+  label {
+    font-size: 1.3rem;
+  }
+  .image-section {
+    width: 100%;
+  }
+}
