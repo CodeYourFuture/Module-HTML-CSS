@@ -1,0 +1,177 @@
+body{
+    margin-right: 10%;
+    margin-left: 10%;    
+    text-align: center;
+    background-color: #1e1c1cea;
+    font-size: 120%;
+}
+
+
+header{
+    text-align: center;
+    border-bottom: solid 5px #ffffff;
+}
+
+
+h1{
+    font-size: 45px;
+    font-weight: bold;
+    color: #ff7b00;
+}
+
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    color: #ff7b00;
+    font-weight: bolder;
+}
+
+
+h3{
+    font-size: 26px;
+    color: #ff7b00;
+}
+
+
+li{
+    padding-bottom: 15px;
+}
+
+
+/* Header */
+.pHeader{
+    text-align: left;
+    color: #ffffff;
+}
+
+
+.headerList{
+    width: 30%;
+    margin: auto;
+    color: #ffffff;
+}
+
+
+.aList{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+
+/* Article 1 */
+.article1{    
+    border-bottom: solid 5px #ffffff;
+}
+
+
+.article1Img{
+    width: 99%;
+    height: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+.gitImage{
+    width: 100%;
+    height: 100%;
+    border: solid 4px #ffffff;
+    padding-top: 60.697;
+
+
+}
+
+
+.gitImage1{
+    width: 100%;
+    height: 230px;
+    border: solid 4px #ff7b00;
+    margin-top: 20%;
+}
+
+
+.articleText{
+    text-align: left;
+    color: white;
+}
+
+
+/* Article 2 */
+.article2{
+    display: flex;
+    justify-content: space-between;    
+    margin-right: 8px;
+}
+
+
+.article2Img{
+    width: 45%;
+    height: 45%;
+    text-align: center;
+    margin-top: 0%;
+}
+
+
+.article3Img{
+    width: 45%;
+    height: 45%;
+    text-align: center;
+    margin-top: 0%;
+   
+}
+
+
+/* ArticleBorder */
+.articleBorder{
+    border-left: solid 5px #ffffff;
+    margin-left: 8px;
+}
+
+
+/* Button */
+.article1Btn, .article3Btn{
+    width: 120px;
+    height: 40px;
+    background-color: #ff7b00;
+    color: #ffffff;
+    border: solid 2px white;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.article1Btn:hover{
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #ff7b00;
+    border: solid 2px #ff7b00;  
+    font-size: 15px;
+}
+
+
+.article3Btn:hover{
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #ff7b00;
+    border: solid 2px #ff7b00;    
+    font-size: 15px;
+}
+
+
+/* Footer */
+footer{
+    font-size: 17px;
+    font-weight: lighter;
+    color: #ff7b00;
+    margin-top: 60px;
+    border-top: solid 5px #ffffff;
+}
+
+
+.aFooter{
+    color: #ffffff;
+    font-weight: bold;
+}
