@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+}
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+label,
+select,
+input {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+  width: 100%;
+  padding: 8px;
+}
+select {
+  width: 100%;
+  padding: 8px;
+}
+.required {
+  color: red;
+}
