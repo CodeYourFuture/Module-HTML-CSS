@@ -1,0 +1,428 @@
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+:root {
+  --Black: #000;
+  --White: #fff;
+  --Lilac: #f5e8ff;
+  --Light-Green: #e6fac0;
+  --Medium-Green: #5e7d1f;
+  --Dark-Green: #394b2a;
+}
+
+/* Header*/
+
+.user-icon {
+  display: none;
+}
+
+.menu-tab {
+  height: 70px;
+  background-color: var(--Black);
+}
+
+header a {
+  text-decoration: none;
+  color: none;
+}
+
+.menu-tab p {
+  color: var(--White);
+  text-align: center;
+  font-family: "Questrial";
+  font-size: 30px;
+  font-weight: 300;
+  padding: 20px;
+}
+
+.menu-icon {
+  width: 40px;
+}
+
+.nav-tab {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.nav-tab a {
+  text-decoration: none;
+  color: var(--Black);
+}
+
+.nav-tab span {
+  font-family: "Questrial";
+  font-size: 30px;
+  padding: 5px;
+  text-align: center;
+}
+
+/* Main*/
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h1 {
+  font-family: "Questrial";
+  font-weight: 400;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 50px;
+}
+main p {
+  width: 70%;
+  font-size: 25px;
+  font-weight: 300;
+  font-family: "Roboto";
+  line-height: 40px;
+  margin-bottom: 100px;
+  text-wrap: wrap;
+  text-align: center;
+}
+
+main img {
+  width: 100%;
+}
+
+.image-container {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.pear-img,
+.fruit-in-sack-img,
+.hand-and-beetroot-img,
+.fruit-in-a-hanging-sack-img {
+  width: 250px;
+  height: 250px;
+}
+
+.pear-img {
+  position: relative;
+  bottom: 50px;
+}
+
+.hand-and-beetroot-img {
+  position: relative;
+  top: 50px;
+}
+
+/*-------FOOTER----*/
+
+footer {
+  background-color: var(--Dark-Green);
+  color: var(--White);
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--White);
+}
+
+.footer-links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 50px;
+}
+/* --------------GET STARTED--------------- */
+
+.get-started h4 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Questrial";
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.get-started ul {
+  padding-left: 0;
+}
+
+.get-started li {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Roboto";
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: none;
+  list-style: none;
+}
+/* --------------CONNECT--------------- */
+
+.connect h4 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Questrial";
+  text-align: center;
+  margin-bottom: 70px;
+}
+.connect ul {
+  padding-left: 0;
+}
+
+.connect li {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Roboto";
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: none;
+  list-style: none;
+}
+/* --------------MAILING--------------- */
+
+.Mailing {
+  margin-bottom: 70px;
+}
+
+.Mailing h4 {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Questrial";
+  text-align: center;
+  margin-top: 50px;
+}
+
+.Mailing label {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Roboto";
+  text-align: center;
+}
+
+.mailing-subsection input {
+  border: none;
+  background-color: var(--Dark-Green);
+  border-bottom: 3px solid var(--White);
+  padding: 5px;
+  font-size: 20px;
+  outline: none;
+  color: var(--White);
+  width: 100%;
+  margin-top: 10px;
+}
+.Mailing input:focus {
+  border-bottom: 2px solid var(--White);
+}
+
+.Mailing button {
+  background-color: var(--Dark-Green);
+  border: 4px solid var(--White);
+  color: var(--White);
+  font-size: 25px;
+  font-family: "Raleway";
+  height: 70px;
+  margin-left: 20px;
+}
+
+.mailing-subsection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 30px;
+}
+/* --------------LOGO SECTION--------------- */
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.footer-logo img {
+  width: 150px;
+}
+.footer-logo h4 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Questrial";
+  text-align: left;
+  text-decoration: underline;
+}
+
+.footer-logo p {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Roboto";
+  text-align: left;
+}
+
+.educational {
+  text-align: center;
+  margin-left: 20px;
+  padding: 30px;
+}
+
+/* --------------------------LARGE QUERIES-------------- */
+
+@media (min-width: 768px) {
+  .user-icon img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .user-icon p {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: "Roboto";
+  }
+
+  .user-icon {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .menu-tab {
+    width: 30%;
+    height: 90%;
+  }
+
+  .user-icon-and-menu-tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 40%;
+    column-gap: 10px;
+  }
+
+  .nav-tab {
+    display: flex;
+    flex-direction: row-reverse;
+    align-self: center;
+    justify-content: space-between;
+    width: 70%;
+  }
+
+  .nav-tab span {
+    align-self: center;
+    position: relative;
+    right: 55px;
+  }
+
+  header {
+    height: 10vh;
+    column-gap: 200px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  /* --------------MAIN-------------- */
+
+  main p {
+    width: 40%;
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+
+  main img {
+    width: 100%;
+    height: 80vh;
+  }
+
+  main h1 {
+    font-size: 60px;
+    font-family: "Questrial";
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  .image-container {
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 200px;
+    margin-top: 150px;
+  }
+
+  .pear-img,
+  .fruit-in-a-hanging-sack-img {
+    position: relative;
+    bottom: 50px;
+    height: 35vh;
+  }
+
+  .fruit-in-sack-img,
+  .hand-and-beetroot-img {
+    position: relative;
+    top: 50px;
+    height: 40vh;
+  }
+
+  /* -------------------FOOTER------------- */
+  .footer-links-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    column-gap: 70px;
+    position: relative;
+    top: 80px;
+  }
+
+  .footer-links {
+    align-self: flex-start;
+  }
+
+  .mailing-subsection input {
+    width: 250px;
+  }
+
+  .Mailing button {
+    width: 150px;
+    position: relative;
+    left: 100px;
+  }
+
+  .Mailing {
+    position: relative;
+    top: 40px;
+  }
+
+  .footer-logo h4 {
+    font-size: 25px;
+  }
+  .footer-logo {
+    position: relative;
+    top: 90px;
+  }
+  .educational {
+    font-size: 20px;
+    color: var(--White);
+    text-align: center;
+  }
+
+  footer {
+    background-color: var(--Dark-Green);
+    height: 100vh;
+    margin-top: 70px;
+  }
+}

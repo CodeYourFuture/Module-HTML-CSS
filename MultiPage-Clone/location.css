@@ -1,0 +1,590 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+:root {
+  --Black: #000;
+  --White: #fff;
+  --Lilac: #f5e8ff;
+  --Light-Green: #e6fac0;
+  --Medium-Green: #5e7d1f;
+  --Dark-Green: #394b2a;
+}
+
+/*-- ---------------HEADER---------------*/
+
+.user-icon {
+  display: none;
+}
+
+.menu-tab {
+  height: 70px;
+  background-color: var(--Black);
+}
+
+.menu-tab p {
+  color: var(--White);
+  text-align: center;
+  font-family: "Questrial";
+  font-size: 30px;
+  font-weight: 300;
+  padding: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: none;
+}
+
+.menu-icon {
+  width: 40px;
+}
+
+.nav-tab {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.nav-tab a {
+  text-decoration: none;
+  color: var(--Black);
+}
+
+.nav-tab span {
+  font-family: "Questrial";
+  font-size: 30px;
+  padding: 5px;
+}
+
+/*-- ---------------MAIN---------------*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: "questrial";
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.address-1,
+.address-2,
+.address-3 {
+  margin-bottom: 50px;
+  margin-top: 60px;
+}
+
+.address-1 h2,
+.address-2 h2,
+.address-3 h2 {
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+  font-family: "questrial";
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.address-1 p,
+.address-2 p,
+.address-3 p {
+  font-size: 23px;
+  font-family: "Roboto";
+  font-weight: 300;
+  line-height: 40px;
+  text-wrap: wrap;
+  width: 100%;
+  text-align: center;
+}
+
+.image-box {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.location-main {
+  width: 100%;
+  height: 450px;
+}
+
+.Contact-us {
+  font-family: "questrial";
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.contact-form h4 {
+  font-size: 30px;
+  text-wrap: wrap;
+  font-family: "questrial";
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+form {
+  padding: 20px;
+  width: 80%;
+  padding: 50px;
+}
+
+form p {
+  font-size: 20px;
+  font-weight: 300;
+  padding-bottom: 25px;
+  font-family: "Roboto";
+  width: 70%;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  left: 80px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.first-name-box label,
+.last-name-box label,
+.email-box label,
+.comment-box label {
+  font-size: 25px;
+  font-weight: 300;
+  font-family: "Roboto";
+  text-align: center;
+  margin-top: 20px;
+}
+
+.first-name-box input,
+.last-name-box input,
+.email-box input {
+  border: none;
+  outline: none;
+  border-bottom: 3px solid var(--Black);
+  padding: 5px;
+  font-size: 20px;
+  color: var(--Black);
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.comment-box textarea {
+  border: none;
+  border-bottom: 3px solid var(--Medium-Green);
+  padding: 5px;
+  font-size: 20px;
+  color: var(--Black);
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.submit-button button {
+  margin-left: 27px;
+  font-size: 20px;
+  width: 90%;
+  height: 80px;
+  color: var(--White);
+  font-family: "Raleway";
+  margin-bottom: 40px;
+  background-color: var(--Black);
+  border: 3px solid var(--White);
+}
+
+.contact-info h4,
+.address-info h4 {
+  font-size: 30px;
+  font-family: "questrial";
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 7px;
+  margin-top: 30px;
+}
+
+.contact-info p,
+.address-info p {
+  font-size: 23px;
+  font-family: "Roboto";
+  font-weight: 300;
+  line-height: 40px;
+  text-wrap: wrap;
+  width: 100%;
+  text-align: center;
+}
+
+hr {
+  display: none;
+}
+
+/*-- ----------------FOOTER----------------*/
+
+footer {
+  background-color: var(--Dark-Green);
+  color: var(--White);
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--White);
+}
+
+.footer-links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 50px;
+}
+/* --------------GET STARTED--------------- */
+
+.get-started h4 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Questrial";
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.get-started ul {
+  padding-left: 0;
+}
+
+.get-started li {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Roboto";
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: none;
+  list-style: none;
+}
+/* --------------CONNECT--------------- */
+
+.connect h4 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Questrial";
+  text-align: center;
+  margin-bottom: 70px;
+}
+.connect ul {
+  padding-left: 0;
+}
+
+.connect li {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Roboto";
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: none;
+  list-style: none;
+}
+/* --------------MAILING--------------- */
+
+.Mailing {
+  margin-bottom: 70px;
+}
+
+.Mailing h4 {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Questrial";
+  text-align: center;
+  margin-top: 50px;
+}
+
+.Mailing label {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Roboto";
+  text-align: center;
+}
+
+.mailing-subsection input {
+  border: none;
+  background-color: var(--Dark-Green);
+  border-bottom: 3px solid var(--White);
+  padding: 5px;
+  font-size: 20px;
+  color: var(--White);
+  width: 100%;
+  margin-top: 10px;
+}
+
+.Mailing button {
+  background-color: var(--Dark-Green);
+  border: 4px solid var(--White);
+  color: var(--White);
+  font-size: 25px;
+  font-family: "Raleway";
+  height: 70px;
+  margin-left: 20px;
+}
+
+.mailing-subsection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 30px;
+}
+/* --------------LOGO SECTION--------------- */
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.footer-logo img {
+  width: 150px;
+}
+.footer-logo h4 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Questrial";
+  text-align: left;
+  text-decoration: underline;
+}
+
+.footer-logo p {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Roboto";
+  text-align: left;
+}
+
+.educational {
+  text-align: center;
+  margin-left: 20px;
+  padding: 30px;
+}
+
+/* -------------LARGER SCREEN-------------- */
+
+@media (min-width: 768px) {
+  .user-icon img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .user-icon p {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: "Roboto";
+  }
+
+  .user-icon {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .menu-tab {
+    width: 30%;
+    height: 90%;
+  }
+
+  .user-icon-and-menu-tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 40%;
+    column-gap: 10px;
+  }
+
+  .nav-tab {
+    display: flex;
+    flex-direction: row-reverse;
+    align-self: center;
+    justify-content: space-between;
+    width: 70%;
+  }
+
+  .nav-tab span {
+    align-self: center;
+    position: relative;
+    right: 100px;
+  }
+
+  header {
+    height: 10vh;
+    column-gap: 200px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  /* -----------MAIN------------- */
+  main {
+    margin-top: 40px;
+  }
+
+  main h1 {
+    font-size: 70px;
+    margin-bottom: 70px;
+  }
+
+  main h2 {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  main p {
+    font-size: 19px;
+    width: 40%;
+  }
+
+  .first-last-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 30px;
+    margin-top: 30px;
+  }
+  .address-box {
+    display: flex;
+    flex-direction: row;
+    column-gap: 300px;
+    margin-bottom: 30px;
+  }
+
+  .address-1 p,
+  .address-2 p,
+  .address-3 p {
+    text-align: left;
+    margin-bottom: 7px;
+    font-size: 19px;
+  }
+
+  .address-1 h2,
+  .address-2 h2,
+  .address-3 h2 {
+    font-size: 23px;
+    text-align: left;
+    font-weight: 200;
+  }
+
+  .image-box img {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .Contact-us {
+    font-size: 60px;
+    margin-bottom: 70px;
+  }
+
+  .form-button-contact-address-info {
+    display: flex;
+    flex-direction: row;
+  }
+
+  form p {
+    font-size: 30px;
+    font-weight: 300;
+    padding-bottom: 25px;
+    width: 100%;
+    font-family: "Roboto";
+  }
+
+  hr {
+    display: inline;
+    border: 1px solid var(--Black);
+    position: relative;
+    right: 50px;
+    bottom: 10px;
+  }
+
+  .contact-info {
+    margin-bottom: 100px;
+  }
+
+  .contact-and-address {
+    margin-left: 25px;
+  }
+
+  .address-info p,
+  .contact-info p {
+    font-size: 19px;
+    text-align: left;
+  }
+
+  .submit-button {
+    width: 300px;
+  }
+
+  /* -----------FOOTER------------ */
+
+  .footer-links-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    column-gap: 70px;
+    position: relative;
+    top: 80px;
+  }
+
+  .footer-links {
+    align-self: flex-start;
+  }
+
+  .mailing-subsection input {
+    width: 250px;
+  }
+
+  .Mailing button {
+    width: 150px;
+    position: relative;
+    left: 100px;
+  }
+
+  .Mailing {
+    position: relative;
+    top: 40px;
+  }
+
+  .footer-logo h4 {
+    font-size: 25px;
+  }
+  .footer-logo {
+    position: relative;
+    top: 90px;
+  }
+  .educational {
+    font-size: 20px;
+    color: var(--White);
+    text-align: center;
+  }
+
+  footer {
+    background-color: var(--Dark-Green);
+    height: 100vh;
+    margin-top: 70px;
+  }
+}

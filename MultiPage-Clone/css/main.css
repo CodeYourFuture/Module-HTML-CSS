@@ -1,3 +1,1015 @@
 /* Add your CSS here */
 
-/* Dont' forget to link this file to your HTML in the <head> */
+/* Don't forget to link this file to your HTML in the <head> */
+
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+:root {
+  --Black: #000;
+  --White: #fff;
+  --Lilac: #f5e8ff;
+  --Light-Green: #e6fac0;
+  --Medium-Green: #5e7d1f;
+  --Dark-Green: #394b2a;
+}
+
+/* Header*/
+
+header a {
+  text-decoration: none;
+  color: none;
+}
+
+.menu-tab {
+  height: 70px;
+  background-color: var(--Black);
+}
+
+.user-icon {
+  display: none;
+}
+
+.menu-tab p {
+  color: var(--White);
+  text-align: center;
+  font-family: "Questrial";
+  font-size: 30px;
+  font-weight: 300;
+  padding: 20px;
+}
+
+.menu-icon {
+  width: 40px;
+}
+
+.nav-tab {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.nav-tab span {
+  font-family: "Questrial";
+  font-size: 30px;
+  padding: 5px;
+}
+
+.nav-tab a {
+  text-decoration: none;
+  color: var(--Black);
+}
+
+/* -----------SECTION 1------------- */
+
+.main-section-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-section-1 a {
+  text-decoration: none;
+  color: var(--Black);
+}
+
+h1 {
+  font-family: "questrial";
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 30px;
+  width: 70%;
+}
+
+h2 {
+  font-family: "questrial";
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 25px;
+  width: 70%;
+}
+
+button {
+  width: 240px;
+  height: 70px;
+  margin-bottom: 35px;
+  font-family: "Raleway";
+  font-size: 20px;
+  background-color: var(--White);
+  border: 4px solid var(--Black);
+}
+
+.main-section-1 button:hover {
+  color: var(--White);
+  background-color: var(--Black);
+}
+
+/* -----------SECTION 2------------- */
+
+.main-section-2 {
+  margin-bottom: 25px;
+}
+
+.main-section-2 img {
+  width: 100%;
+  height: 450px;
+}
+
+.main-section-2-text {
+  background-color: var(--Lilac);
+  font-family: "Raleway";
+
+  text-align: center;
+  padding: 20px;
+  font-size: 25px;
+}
+
+/* -----------SECTION 3------------- */
+
+.main-section-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-section-3 h2 {
+  width: 60%;
+  font-size: 40px;
+  text-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/* ----------SUB--SECTIONS------------- */
+.sub-section3-A,
+.sub-section3-B,
+.sub-section3-C {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+  row-gap: 25px;
+}
+
+/* ----------SUB-SECTION 3--IMAGES----------- */
+
+.image-A {
+  width: 100px;
+  height: 100px;
+}
+
+.image-B {
+  width: 100px;
+  height: 100px;
+}
+
+.image-C {
+  width: 100px;
+  height: 100px;
+}
+
+/* ----------SUB-SECTION 3--text----------- */
+
+.sub-section3-A h3,
+.sub-section3-B h3,
+.sub-section3-C h3 {
+  font-size: 30px;
+  font-family: "Questrial";
+  font-weight: 400;
+}
+
+.sub-section3-A p,
+.sub-section3-B p,
+.sub-section3-C p {
+  font-size: 25px;
+  font-family: "Roboto";
+  font-weight: 300;
+  line-height: 40px;
+  text-wrap: wrap;
+  width: 85%;
+}
+
+/* --------------SECTION 4--------------- */
+
+.main-section-4 {
+  background-color: var(--Light-Green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-section-4 img {
+  width: 90%;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+.sub-section-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub-section-4 h3 {
+  font-size: 45px;
+  font-family: "Questrial";
+  font-weight: 200;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  line-height: 55px;
+  text-align: center;
+  text-wrap: wrap;
+  align-self: center;
+  width: 80%;
+}
+
+.sub-section-4 p {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 300;
+  font-family: "Roboto";
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+
+.sub-section-4 button {
+  font-size: 25px;
+  width: 200px;
+  height: 70px;
+  font-family: "Raleway";
+  margin-bottom: 40px;
+  background-color: var(--Light-Green);
+  border: 3px solid var(--Black);
+}
+
+.sub-section-4 a {
+  text-decoration: none;
+  color: var(--Black);
+}
+
+.sub-section-4 button:hover {
+  color: var(--White);
+  background-color: var(--Black);
+}
+
+/* --------------SECTION 5--------------- */
+
+.main-section-5 {
+  padding-top: 50px;
+  background-color: var(--Lilac);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.main-section-5 img {
+  width: 90%;
+  height: 700px;
+  margin-bottom: 20px;
+}
+
+.section-5-main-heading {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Questrial";
+  margin-bottom: 60px;
+  margin-top: 50px;
+  width: 50%;
+}
+
+.heading-box-5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* ------------div--SECTION 5-------------- */
+
+.section-5-div1,
+.section-5-div2,
+.section-5-div3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ------------sUB--SECTION 5--PARAGRAPHS------------- */
+
+.section-5-div1 p,
+.section-5-div2 p,
+.section-5-div3 p {
+  width: 50%;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+/* ------------sUB--SECTION 5--HEADINGS------------- */
+
+.section-5-div1 h3,
+.section-5-div2 h3,
+.section-5-div3 h3 {
+  font-family: "Questrial";
+  font-size: 40px;
+  text-align: center;
+  font-weight: 500;
+  width: 50%;
+}
+
+.section-5-div3 a {
+  text-decoration: none;
+  color: var(--Black);
+}
+
+.main-section-5 button {
+  width: 200px;
+  height: 70px;
+  font-size: 25px;
+  font-family: "Raleway";
+  padding: 10px;
+  background-color: var(--Lilac);
+}
+
+.main-section-5 button:hover {
+  color: var(--White);
+  background-color: var(--Black);
+}
+/* --------------SECTION 6------------------ */
+.main-section-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-section-6 img {
+  width: 95%;
+  height: 700px;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.main-section-6 h3 {
+  font-size: 45px;
+  width: 50%;
+  text-align: center;
+  font-family: "Questrial";
+  font-weight: 400;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.main-section-6 p {
+  width: 80%;
+  font-size: 25px;
+  font-family: "Roboto";
+  font-weight: 300;
+  line-height: 45px;
+  margin-bottom: 50px;
+  text-align: center;
+  text-wrap: wrap;
+  margin-top: 30px;
+}
+
+.main-section-6 button:hover {
+  color: var(--White);
+  background-color: var(--Black);
+}
+
+.sub-section-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --------------SECTION 7----------------- */
+
+.main-section-7 {
+  background-color: var(--Light-Green);
+}
+
+.main-section-7 img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+}
+
+.sub-section7-A,
+.sub-section7-B,
+.sub-section7-C {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub-section7-A h3,
+.sub-section7-B h3,
+.sub-section7-C h3 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Questrial";
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sub-section7-A p,
+.sub-section7-B p,
+.sub-section7-C p {
+  width: 70%;
+  font-size: 25px;
+  font-family: "Roboto";
+  font-weight: 300;
+  line-height: 45px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-wrap: wrap;
+}
+
+/* --------------SECTION 8----------------- */
+
+.main-section-8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 40vh;
+}
+
+.main-section-8 h3 {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Questrial";
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 7px;
+}
+
+.main-section-8 p {
+  width: 50%;
+  font-size: 25px;
+  font-family: "Roboto";
+  font-weight: 300;
+  line-height: 45px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-wrap: wrap;
+}
+
+/* --------------FOOTER---------------- */
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--Dark-Green);
+  position: relative;
+  top: 76px;
+  right: 20px;
+}
+
+.footer-images img {
+  width: 100px;
+  height: 100px;
+}
+
+.footer-image-1 {
+  position: relative;
+  left: 110px;
+  bottom: 20px;
+  transform: rotate(-45deg);
+}
+
+.footer-image-2 {
+  position: relative;
+  bottom: 160px;
+  left: 10px;
+  transform: rotate(45deg);
+}
+
+.footer-image-3 {
+  position: relative;
+  left: 54px;
+  bottom: 18px;
+  transform: rotate(45deg);
+  height: 270px;
+}
+
+.footer-image-4 {
+  position: relative;
+  bottom: 160px;
+  right: 47px;
+  transform: rotate(-45deg);
+}
+
+footer {
+  background-color: var(--Dark-Green);
+  color: var(--White);
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--White);
+}
+
+.footer-links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 50px;
+}
+/* --------------GET STARTED--------------- */
+
+.get-started h4 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Questrial";
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.get-started ul {
+  padding-left: 0;
+}
+
+.get-started li {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Roboto";
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: none;
+  list-style: none;
+}
+/* --------------CONNECT--------------- */
+
+.connect h4 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Questrial";
+  text-align: center;
+  margin-bottom: 70px;
+}
+.connect ul {
+  padding-left: 0;
+}
+
+.connect li {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Roboto";
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: none;
+  list-style: none;
+}
+/* --------------MAILING--------------- */
+
+.Mailing {
+  margin-bottom: 70px;
+}
+
+.Mailing h4 {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Questrial";
+  text-align: center;
+  margin-top: 50px;
+}
+
+.Mailing label {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Roboto";
+  text-align: center;
+}
+
+.mailing-subsection input {
+  border: none;
+  background-color: var(--Dark-Green);
+  border-bottom: 3px solid var(--White);
+  padding: 5px;
+  font-size: 20px;
+  outline: none;
+  color: var(--White);
+  width: 100%;
+  margin-top: 10px;
+}
+
+.Mailing button {
+  background-color: var(--Dark-Green);
+  border: 4px solid var(--White);
+  color: var(--White);
+  font-size: 25px;
+  font-family: "Raleway";
+  height: 70px;
+  margin-left: 20px;
+}
+
+.Mailing button:hover {
+  color: var(--Black);
+  background-color: var(--White);
+}
+
+.mailing-subsection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 30px;
+}
+/* --------------LOGO SECTION--------------- */
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.footer-logo img {
+  width: 150px;
+}
+.footer-logo h4 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Questrial";
+  text-align: left;
+  text-decoration: underline;
+}
+
+.footer-logo p {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Roboto";
+  text-align: left;
+}
+
+.educational {
+  text-align: center;
+  margin-left: 20px;
+  padding: 30px;
+}
+/*--------------------------------LARGE SCREENS-----------------*/
+
+@media (min-width: 768px) {
+  .user-icon img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .user-icon p {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: "Roboto";
+  }
+
+  .user-icon {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .menu-tab {
+    width: 30%;
+    height: 90%;
+  }
+
+  .user-icon-and-menu-tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 40%;
+    column-gap: 10px;
+  }
+
+  .nav-tab {
+    display: flex;
+    flex-direction: row-reverse;
+    align-self: center;
+    justify-content: space-between;
+    width: 70%;
+  }
+
+  .nav-tab span {
+    align-self: center;
+    position: relative;
+    right: 55px;
+  }
+  .nav-tab {
+    padding-left: 30px;
+  }
+
+  header {
+    height: 10vh;
+    column-gap: 200px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  /* -----------SECTION 1------------- */
+
+  .main-section-1 {
+    margin: 20px;
+  }
+
+  .main-section-1 h1 {
+    font-size: 70px;
+    font-size: 56px;
+    margin-bottom: 10px;
+  }
+
+  .main-section-1 h2 {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+
+  .main-section-1 button {
+    width: 270px;
+    height: 80px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 2.5px solid var(--Black);
+  }
+
+  /* -----------SECTION 2------------- */
+  .main-section-2 img {
+    width: 100%;
+    min-height: 90vh;
+  }
+
+  /* -----------SECTION 3------------- */
+
+  .main-section-3 h2 {
+    font-size: 60px;
+    margin-bottom: 45px;
+  }
+
+  .sub-section-3 {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    margin-bottom: 100px;
+    margin-top: 40px;
+  }
+
+  .sub-section3-A p,
+  .sub-section3-B p,
+  .sub-section3-C p {
+    width: 40%;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .sub-section3-A h3 {
+    width: 50%;
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .sub-section3-B h3,
+  .sub-section3-C h3 {
+    width: 60%;
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .sub-section3-A img,
+  .sub-section3-B img,
+  .sub-section3-C img {
+    margin-top: 30px;
+  }
+
+  /* -----------SECTION 4------------ */
+
+  .main-section-4 img {
+    width: 600px;
+    height: 60vh;
+    position: relative;
+    top: 100px;
+  }
+
+  .main-section-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 70vh;
+  }
+
+  .sub-section-4 {
+    width: 40%;
+    align-self: flex-end;
+    column-gap: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    left: 130px;
+  }
+
+  .sub-section-4 h3 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .sub-section-4 p {
+    font-size: 17px;
+    line-height: auto;
+  }
+
+  /* -----------SECTION 5------------ */
+
+  .main-section-5 {
+    background-color: var(--White);
+  }
+  .section-5-main-heading {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .section5-grouped-images {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--Lilac);
+  }
+
+  .heading-box-5 {
+    width: 100%;
+    height: 30vh;
+    background-color: var(--White);
+    margin-top: 20px;
+  }
+
+  .main-section-5 img {
+    width: 55%;
+    height: 35vh;
+  }
+
+  .section-5-div2 h3,
+  .section-5-div2 p,
+  .section-5-div2 img {
+    position: relative;
+    bottom: 100px;
+  }
+
+  .section-5-div1 h3,
+  .section-5-div3 h3,
+  .section-5-div1 p,
+  .section-5-div3 p,
+  .section-5-div1 img,
+  .section-5-div3 img {
+    position: relative;
+    bottom: 60px;
+  }
+
+  .section-5-div1 p,
+  .section-5-div2 p,
+  .section-5-div3 p {
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: 300;
+  }
+
+  .main-section-5 button {
+    position: relative;
+    bottom: 110px;
+    width: 240px;
+    height: 70px;
+    border: 2.5px solid var(--Black);
+  }
+
+  /* -----------SECTION 6------------ */
+
+  .main-section-6 h3 {
+    font-size: 50px;
+  }
+  .main-section-6 img {
+    width: 600px;
+    height: 600px;
+  }
+
+  .subsection-6-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+    margin-left: 150px;
+  }
+
+  .sub-section-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0px;
+    padding: 100px;
+  }
+
+  .sub-section-6 h3,
+  .sub-section-6 p {
+    text-align: left;
+    width: 90%;
+  }
+
+  /* -----------SECTION 7------------ */
+
+  .main-section-7 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .sub-section7-A,
+  .sub-section7-B,
+  .sub-section7-C {
+    display: flex;
+    align-items: flex-start;
+    margin: 100px;
+  }
+
+  .sub-section7-A p,
+  .sub-section7-B p,
+  .sub-section7-C p {
+    text-align: left;
+  }
+
+  /* -----------FOOTER------------ */
+  .footer-links-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    column-gap: 70px;
+    position: relative;
+    top: 80px;
+  }
+
+  .footer-links {
+    align-self: flex-start;
+  }
+
+  .mailing-subsection input {
+    width: 250px;
+  }
+
+  .Mailing button {
+    width: 150px;
+    position: relative;
+    left: 100px;
+  }
+
+  .Mailing {
+    position: relative;
+    top: 40px;
+  }
+
+  .footer-logo h4 {
+    font-size: 25px;
+  }
+  .footer-logo {
+    position: relative;
+    top: 90px;
+  }
+
+  .educational {
+    font-size: 20px;
+    color: var(--White);
+    text-align: center;
+  }
+
+  footer {
+    background-color: var(--Dark-Green);
+    height: 100vh;
+    margin-top: 70px;
+  }
+}

@@ -1,28 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 <body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+ <header>
+      <h1>Product Pick</h1>
+     
+</header>
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
 
+
+ <main>
+   <form>
+     <!-- write your html here-->
+     <!-- try writing out the requirements first-->
+
+     <!-------------REQUIREMENTS-->
+     <!--form has semantic html.
+             All inputs have associated labels.
+             Accessibility score is 100.
+             Valid name. I have defined a valid name as a text string of two characters or more.
+             Valid email.
+             One colors from a defined set of 3 colors.
+             One size from a defined set of 6 sizes.
+             One date from a constrained date range.-->
+
+     <!----------------------------- NAME FIELD---------------------------------------------->
+
+     <h2>Confirm Your Name and Email</h2>
+
+       <div class="name"></div>
+        <label for="fullname">Full Name*:</label>
+        <input type="text" id="fullname" name="fullname" required minlength="2" />
+       </div>
+
+     <!--------------------------------------- EMAIL FIELD----------------------------------------------->
+      <div class="email">
+        <label for="email">Email*:</label>
+        <input type="email" id="email" name="email" required  autocomplete="email"/>
+      </div>
+
+     <!--------------------------- COLOR FIELD------------------------------------------------->
+
+     <h3>Choose Shirt Color</h3>
+
+     <div class="colors">
+       <!------------------- Grey------------------------------->
+
+        <div class="grey">
+          <input type="radio" id="grey" name="color" />
+          <label for="grey">Grey</label>
+        </div>
+
+       <!--------------------------Black------------------------>
+        <div class="black">
+          <input type="radio" id="black" name="color" />
+          <label for="black">Black</label>
+        </div>
+       <!--------------------------- White----------------------->
+
+        <div class="white">
+           <input type="radio" id="white" name="color" />
+           <label for="white">White</label>
+        </div>
+      </div>
+
+           <!----------------------------- SIZE FIELD------------------------------------------------->
+           <h3>Choose Shirt Size</h3>
+
+     <div class="sizes">
+       <!---------- EXTRA SMALL ---------------------->
+
+        <div class="xtra-small">
+          <input type="radio" id="xtra-small" name="size" />
+          <label for="xtra-small"> EXTRA-SMALL </label>
+        </div>
+       <!------------------- SMALL --------------->
+        <div class="small">
+          <input type="radio" id="small" name="size" />
+          <label for="small">SMALL</label>
+        </div>
+       <!--------------MEDIUM -------------->
+
+        <div class="medium">
+          <input type="radio" id="medium" name="size" />
+          <label for="medium">MEDIUM</label>
+        </div>
+       <!--------------LARGE --------------->
+
+       <div class="large">
+         <input type="radio" id="large" name="size" />
+         <label for="large">LARGE</label>
+        </div>
+       <!--------------EXTRA LARGE--------------->
+
+        <div class="extra-large">
+          <input type="radio" id="x-large" name="size" />
+          <label for="x-large">X-LARGE</label>
+        </div>
+       <!------------EXTRA EXTRA LARGE--------------->
+
+        <div class="extra-extra-large">
+          <input type="radio" id="XX-large" name="size" />
+          <label for="XX-large">XX-LARGE</label>
+        </div>
+      </div>
+      <!-------------------------------- DELIVERY DATE FIELD ----------------------------------------------------->
+      <h3>Select Delivery Date</h3>
+      <div class="date">
+        <label for="date">Delivery Date:</label>
+        <input type="date" id="date" name="date" />
+      </div>
+
+       <!------------SUBMIT BUTTON------------------------>
+
+     <div class="button">
+       <button class="submit">Submit</button>
+      </div>
+
+
+
+
+
+
+
+
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By Priscilla</h2>
+    </footer>
+  </body>
 </html>
