@@ -1,3 +1,203 @@
-/* Add your CSS here */
+/* Basic styles for the webpage */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
 
-/* Dont' forget to link this file to your HTML in the <head> */
+header {
+    padding: 40px;
+    background-color: white;
+    text-align: left;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+}
+
+header h1 {
+    font-size: 24px;
+    width: 50%;
+    margin: 0;
+    font-weight: bolder;
+}
+
+header nav {
+    text-align: right;
+    width: 50%;
+    margin-top: auto;
+}
+
+header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+header nav a.active {
+    color: blue;
+}
+
+header nav a:hover {
+    color: blue;
+}
+
+.blue-space {
+    height: 12px;
+    width: 12px;
+    background-color: blue;
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 2px;
+}
+
+.profile-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    z-index: 2;
+}
+
+.profile-card {
+    text-align: center;
+    background-color: #F4ECE6;
+    padding-top: 20px;
+    width: 350px;
+    box-shadow: -12px 12px 12px #4545453a;
+}
+
+.background-element {
+    background-color: #E6DACD;
+    width: 40%;
+    height: 532px;
+    position: absolute;
+    z-index: -1;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-card h2 {
+    font-size: 32px;
+}
+
+.profile-card p {
+    margin: 26px;
+}
+
+.line {
+    width: 40px;
+    border: 1px solid blue;
+    margin: auto;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+.info-section {
+    max-width: 500px;
+    padding: 20px;
+}
+
+.info-section h1 {
+    font-size: 80px;
+    margin: 0;
+}
+
+.info-section p {
+    font-size: 20px;
+}
+
+.buttons {
+    padding: 20px 0;
+}
+
+.buttons button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+button.primary {
+    background-color: #0056ff;
+    color: white;
+    border: 2px solid #0056ff;
+}
+
+button.secondary {
+    background-color: #ffffff;
+    color: #202020;
+    border: 2px solid #202020;
+}
+
+button.primary:hover {
+    background-color: #ffffff;
+    color: #202020;
+    border: 2px solid #0056ff;
+}
+
+button.secondary {
+    background-color: #ffffff;
+    color: #202020;
+    border: 2px solid #202020;
+}
+
+button.secondary:hover {
+    background-color: #0056ff;
+    color: #ffffff;
+    border: 2px solid #0056ff;
+}
+
+.description {
+    font-size: 14px;
+    color: gray;
+}
+
+footer {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contact-info {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 500px;
+}
+
+.social-footer a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.social-footer a:hover {
+    color: blue;
+}
+
+footer p {
+    font-size: 12px;
+    color: gray;
+}
+
+footer p strong {
+    color: #202020;
+}

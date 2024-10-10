@@ -10,19 +10,71 @@
 </head>
 <body>
   <header>
-    <h1>Product Pick</h1>
+    <h1>Shirt Order Form</h1>
   </header>
   <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
+  <form id="shirt-order-form">
+    <!-- Customer's Name -->
+    <div class="form-group">
+      <label for="customer-name">What is your name?</label>
+      <input type="text" id="customer-name" name="customer-name" required minlength="2" placeholder="Enter your name">
+    </div>
+
+    <!-- Customer's Email -->
+    <div class="form-group">
+      <label for="customer-email">What is your email?</label>
+      <input type="email" id="customer-email" name="customer-email" required placeholder="Enter your email">
+    </div>
+
+    <!-- T-shirt Color -->
+    <div class="form-group">
+      <label for="tshirt-color">What color should this t-shirt be?</label>
+      <select id="tshirt-color" name="tshirt-color" required>
+        <option value="" disabled selected>Select a color</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select>
+    </div>
+
+    <!-- T-shirt Size -->
+    <div class="form-group">
+      <label for="tshirt-size">What size do you want?</label>
+      <select id="tshirt-size" name="tshirt-size" required>
+        <option value="" disabled selected>Select a size</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+    </div>
+
+    <!-- Delivery Date -->
+    <div class="form-group">
+      <label for="delivery-date">When do you want the t-shirt to be delivered?</label>
+      <input type="date" id="delivery-date" name="delivery-date" required min="" max="">
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit Order</button>
   </form>
 
   </main>
   <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <!-- Change to your name -->
+    <h2>By Delwin Mansur A. Bawa</h2>
   </footer>
-</body>
 
+  <script>
+    // Setting min and max delivery dates (next 4 weeks)
+    const deliveryDateInput = document.getElementById('delivery-date');
+    const today = new Date();
+    const maxDate = new Date(today);
+    maxDate.setDate(today.getDate() + 28); // Max 4 weeks from today
+    deliveryDateInput.min = today.toISOString().split('T')[0];
+    deliveryDateInput.max = maxDate.toISOString().split('T')[0];
+  </script>
+</body>
 </html>

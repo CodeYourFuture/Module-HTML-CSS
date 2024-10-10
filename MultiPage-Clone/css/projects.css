@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9d9ca; /* Light beige background */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 40px;
+    background-color: white;
+    text-align: left;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+}
+
+header h1 {
+    font-size: 24px;
+    width: 50%;
+    margin: 0;
+    font-weight: bolder;
+}
+
+header nav {
+    text-align: right;
+    width: 50%;
+    margin-top: auto;
+}
+
+header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+header nav a.active {
+    color: blue;
+}
+
+header nav a:hover {
+    color: blue;
+}
+
+.blue-space {
+    height: 12px;
+    width: 12px;
+    background-color: blue;
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 2px;
+}
+
+main {
+    background-color: #E6DACE; /* Light beige background */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content {
+    max-width: 750px;
+}
+
+
+/* Projects Section */
+.projects-header {
+    margin: 48px 0px;
+}
+
+.projects-header h1{
+    text-align: center;
+    font-size: 32px;
+}
+
+.projects-header p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.projects-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.projects-section .blue-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #0056FF;
+    margin-right: 10px;
+}
+
+.projects-section .intro-text {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.project-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 48px;
+    height: 320px;
+}
+
+.project-info {
+    padding-right: 36px;
+    padding-top: 36px;
+}
+
+.project-info h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0056FF;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    color: #333;
+    margin-bottom: 10px;
+    margin-left: 36px;
+}
+
+.project-image img {
+    height: 320px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.line {
+    border-left: 12px solid blue;
+    padding-left: 24px;
+}
+
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contact-info {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 500px;
+}
+
+.social-footer a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.social-footer a:hover {
+    color: blue;
+}
+
+footer p {
+    font-size: 12px;
+    color: gray;
+}
+
+footer p strong {
+    color: #202020;
+}
