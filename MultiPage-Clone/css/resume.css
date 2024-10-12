@@ -1,0 +1,659 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url(/MultiPage-Clone/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+  font-family: poppins;
+  src: url(MultiPage-Clone/fonts/poppins);
+}
+
+/* Dont' forget to link this file to your HTML in the <head> */
+:root {
+  --clr-Dark-beige: #e6dacd;
+  --clr-Light-beige: #f4ece6;
+  --clr-Royal-blue: #0150fd;
+  --clr-Black: #000;
+  --clr-White: #fff;
+  --clr-lite-black: rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  background: var(--clr-White);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 2rem;
+}
+
+.logo1 {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo1 img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.logo1 span:nth-child(3) {
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.logo1 :nth-child(2) {
+  font-family: poppins;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.logo :nth-child(4) {
+  font-size: 20px;
+}
+
+.logo p {
+  font-family: Quicksand;
+  font-size: 16px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  text-transform: uppercase;
+}
+
+ul {
+  margin-right: 2rem;
+}
+
+.nav-links li {
+  padding: 0 20px;
+}
+
+.nav-links a {
+  color: var(--clr-Black);
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Quicksand;
+}
+
+.nav-links .active {
+  color: var(--clr-Royal-blue);
+}
+
+.nav-links a:hover {
+  color: var(--clr-Royal-blue);
+}
+
+.nav-links a:active {
+  color: var(--clr-Royal-blue);
+}
+
+.navimage {
+  display: none;
+  cursor: pointer;
+}
+
+.navimage :nth-child(1) {
+  background-color: var(--clr-Royal-blue);
+}
+
+.navimage :nth-child(2) {
+  background-color: var(--clr-Royal-blue);
+}
+
+.navimage :nth-child(3) {
+  background-color: var(--clr-Royal-blue);
+}
+
+.navimage div {
+  width: 25px;
+  height: 3px;
+  background: var(--clr-Black);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/* ...... header section media queries.......*/
+
+@media screen and (max-width: 768px) {
+  nav {
+    position: relative;
+    height: 100px;
+  }
+  .logo1 :nth-child(2) {
+    font-size: 20px;
+  }
+  .logo :nth-child(4) {
+    font-size: 14px;
+  }
+  .logo1 img {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    background: var(--clr-Light-beige);
+    right: 0;
+    left: 0;
+    height: 100vh;
+    top: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .logo1 span:nth-child(3) {
+    display: none;
+  }
+
+  .nav-links li {
+    padding: 20px 0;
+    margin-top: 0.5rem;
+  }
+
+  .nav-links a {
+    font-weight: bold;
+    font-family: poppins;
+    font-size: 20px;
+  }
+
+  .navimage {
+    display: block;
+    padding: 1rem;
+  }
+
+  .nav-active {
+    display: flex;
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+    background-color: var(--clr-Black);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+    background-color: var(--clr-Black);
+  }
+}
+
+/* .............. Main css ...........*/
+@media screen and (max-width: 768px) {
+  main {
+    width: 100vw;
+    height: auto;
+    background-color: var(--clr-Dark-beige);
+  }
+  .top-bun-txt {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .top-bun-txt span {
+    font-family: poppins;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .top-bun-txt button {
+    background-color: var(--clr-Royal-blue);
+    color: var(--clr-White);
+    border: none;
+    padding: 5px 15px 5px 15px;
+    font-size: 1rem;
+    border-radius: 20px;
+    font-family: poppins;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .resume-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 1rem;
+  }
+  .resume-text img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .resume-text :nth-child(2) {
+    font-family: poppins;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1.8rem;
+  }
+  .container {
+    background-color: var(--clr-White);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--clr-lite-black);
+    max-width: 340px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .left-con {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .box-one,
+  .box-two {
+    display: flex;
+    flex-direction: column;
+  }
+  .box-three {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .box-one :nth-child(1) {
+    color: var(--clr-Royal-blue);
+    font-family: poppins;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  .box-one :nth-child(2) {
+    font-family: poppins;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  .box-two span {
+    font-family: Quicksand;
+    font-size: 1rem;
+  }
+  .box-three p {
+    font-family: poppins;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+  #edu-txt {
+    font-family: poppins;
+    font-size: 1.3rem;
+    font-weight: bold;
+    align-self: flex-start;
+    margin-left: 1.5rem;
+  }
+  .skill-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .box {
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--clr-Royal-blue);
+  }
+  .skill-text span {
+    font-family: poppins;
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  .ff {
+    height: 50px;
+  }
+}
+/* ................ footer css ........*/
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: var(--clr-White);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fot-left {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+}
+
+.fot-left span {
+  font-family: Quicksand;
+  font-size: 0.8rem;
+}
+
+.fot-right span {
+  font-family: Quicksand;
+  font-size: 0.8rem;
+}
+
+.fot-right {
+  display: flex;
+  gap: 4rem;
+  margin-right: 3rem;
+}
+
+.fot-right p {
+  font-family: Quicksand;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.fot-right span {
+  font-family: Quicksand;
+}
+
+.fot-right .social-icons .social-link {
+  font-size: 0.8rem;
+}
+
+.one{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+/* ....... footer media Queries ........*/
+@media screen and (max-width: 768px) {
+  footer {
+    width: 100%;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .fot-left {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .social-link {
+    color: var(--clr-Black);
+    font-size: 21px;
+    text-decoration: none;
+  }
+  .fot-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    align-items: center;
+    justify-items: center;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .fot-right :nth-child(1),
+  .fot-right :nth-child(2){
+    grid-column: auto;
+  }
+
+  .fot-right :nth-child(3){
+    grid-column: 1 / span 2;
+    justify-self: center;
+  }
+
+  .fot-right p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .top-paragraph {
+    height: 200px;
+  }
+  .main-container {
+    gap: 1rem;
+  }
+
+  .project-text span {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  footer {
+    padding: 15px;
+  }
+  .empty {
+    height: 20px;
+    visibility: hidden;
+  }
+
+  .fot-right {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .fot-right :nth-child(3) {
+    grid-column: auto;
+  }
+
+  .fot-right p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .social-link {
+    color: var(--clr-Black);
+    font-size: 21px;
+    text-decoration: none;
+  }
+
+  main {
+    width: 100vw;
+    height: auto;
+    background-color: var(--clr-Dark-beige);
+  }
+
+  .top-bun-txt {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 26rem;
+  }
+
+  .top-bun-txt span {
+    font-family: poppins;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .top-bun-txt button {
+    background-color: var(--clr-Royal-blue);
+    color: var(--clr-White);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    font-family: poppins;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .resume-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 1.5rem;
+    margin-top: 10rem;
+  }
+
+  .resume-text img {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+
+  .resume-text :nth-child(2) {
+    font-family: poppins;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+
+  .container {
+    background-color: var(--clr-White);
+    padding: 30px;
+  border-radius: 10px;
+    box-shadow: 0 4px 8px var(--clr-lite-black);
+    max-width: 800px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "box-one box-three box-three"
+      "box-two box-three box-three";
+    column-gap: 1.5rem;
+    row-gap: 0;
+  }
+
+  .left-con {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .box-one {
+    grid-area: box-one;
+  }
+
+  .box-two {
+    grid-area: box-two;
+  }
+
+  .box-three {
+    grid-area: box-three;
+  }
+  .box-one,
+  .box-two {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .box-one {
+    margin-top: 2rem;
+  }
+  .box-three {
+    margin-top: 4rem;
+    box-sizing: border-box;
+  }
+
+  .box-one :nth-child(1) {
+    color: var(--clr-Royal-blue);
+    font-family: poppins;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .box-one :nth-child(2) {
+    font-family: poppins;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+
+  .box-two span {
+    font-family: Quicksand;
+    font-size: 1rem;
+  }
+
+  .box-three p {
+    font-family: poppins;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+  }
+    
+#edu-txt {
+    width: 760px;
+    font-family: Poppins, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    grid-column: span 3;
+    margin-bottom: 1rem;
+}
+
+.skill-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.9rem;
+}
+
+.box {
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--clr-Royal-blue);
+}
+
+.skill-text span {
+    font-family: Poppins, sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+  .ff {
+    height: 60px;
+  }
+}

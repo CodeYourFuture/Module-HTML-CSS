@@ -4,18 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <!-- Add a link to your custom CSS here -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <title>Responsive grid project</title>
 </head>
-
 <body>
+<nav>
+    <div class="logo">
+        <div class="logo1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNgjV6Hxw34EU6zli1YKdNKY45CCCzDtqjKkUsX-uIh3nYTEMMFSL_CMb0Y00h16Hs0uo&usqp=CAU">
+        <span>Maya Nelson</span>
+        <span>/</span>
+        </div>
+        <p>PROJECT MANAGER</p>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html" class="active">about me</a></li>
+        <li><a href="resume.html">resume</a></li>
+        <li><a href="project.html">project</a></li>
+        <li><a href="contact.html">contact</a>
+    </ul>
+    <div class="navimage">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
 
-    <!-- Add your markup here -->
+<main>
+    <div class="left-side"></div>
+    <div class="right-side"></div>
+    <div class="center-box">
+    <div class="inner-left">
+    <img src="https://static.wixstatic.com/media/2e2a49_bd3a1599bc1b4265a01b2754b99b8536~mv2_d_5760_3840_s_4_2.jpeg/v1/crop/x_2703,y_43,w_2199,h_2205/fill/w_205,h_205,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/AdobeStock_230407429.jpeg" alt="profile">
+    <div class="fist-heading">
+    <span>Maya</span>
+    <span>Nelson</span>
+    </div>
+    <p class="line"></p>
+    <div class="btn">
+        <button class="btn1">Resume</button>
+        <button class="btn2">Projects</button>
+    </div>
+    <p class="pp">PROJECT MANAGER</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="inner-right">
+    <div>
+       <h1>Hello</h1>
+       <span>Here's who I am & what I do</span>
+    </div>
+       <div class="btn">
+       <button class="btn1" id="btn-resume" onclick="openPage('btn-resume')">Resume</button>
+       <button class="btn2" id="btn-project" onclick="openPage('btn-project')">Projects</button>
+       </div>
+       <div class="para">
+       <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to
+    add your own content and make changes to the font.</p>
+    <p>I’m a great place for you to tell a story and let your users know a little more about you.</p>
+    </div>
+    </div>
+    </div>
+</main>
+<footer>
+    <div class="fot-left">
+        <span>© 2035 by Maya Nelson.</span>
+        <span>Powered and secured by <u>Wix</u></span>  
+    </div>
+    <div class="fot-right">
+        <div class="one">
+            <p>Call</p>
+            <span>123-456-7890</span>
+        </div>
+        <div class="one">
+            <p>Write</p>
+            <span>info@mysite.com</span>
+        </div>
+        <div class="one">
+            <p>Follow</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+        </div>
+        </div>
+    </div>
+</footer>
 
-
-    <!-- Please leave this in to credit the creators of this design -->
-    <p>This website design was created by Wix.com, and is used here for strictly educational purposes.</p>
+<script src="main.js"></script>
 </body>
-
 </html>
