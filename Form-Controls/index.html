@@ -1,28 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form id="tshirt-form">
+        <!-- write your html here-->
+        <!-- try writing out the requirements first-->
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+        <!-- customer's name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required minlength="2" />
+        <br />
 
+        <!-- customer's email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+
+        <!-- choosing the t-shirt's color -->
+        <label for="color">T-shirt Color:</label>
+        <select id="color" name="color" required>
+          <option value=""></option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+        </select>
+        <br />
+
+        <!-- choosing the t-shirt's size -->
+        <label for="size">T-shirt Size:</label>
+        <input type="radio" id="sizeXS" name="size" value="XS" required /><label
+          for="sizeXS"
+          >XS</label
+        >
+        <input type="radio" id="sizeS" name="size" value="S" required /><label
+          for="sizeS"
+          >S</label
+        >
+        <input type="radio" id="sizeM" name="size" value="M" required /><label
+          for="sizeM"
+          >M</label
+        >
+        <input type="radio" id="sizeL" name="size" value="L" required /><label
+          for="sizeL"
+          >L</label
+        >
+        <input type="radio" id="sizeXL" name="size" value="XL" required /><label
+          for="sizeXL"
+          >XL</label
+        >
+        <input
+          type="radio"
+          id="sizeXXL"
+          name="size"
+          value="XXL"
+          required
+        /><label for="sizeXXL">XXL</label>
+        <br />
+
+        <!-- choosing the delivery date -->
+        <label for="delivery-date">Delivery Date:</label>
+        <input type="date" id="delivery-date" name="delivery-date" required />
+        <br />
+
+        <!-- submission button -->
+        <button type="submit">Submit Order</button>
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>Form practice - Pedram Amani</h2>
+    </footer>
+  </body>
 </html>
