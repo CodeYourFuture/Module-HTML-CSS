@@ -55,7 +55,7 @@ When you're ready to start coding:
   Then our CSS code will be split into **3**:
 
   > 1. **"default"**: default styles, should implement the mobile design (no media query used for these). These styles will apply to all screen sizes by default.
-  > 2. **"medium"**: Our first media query `@media (min-width: 540px) {...}` **will overwrite our default styles** for screens at least 540px wide. Screens _below_ 540px will apply the styles from the "default".
+  > 2. **"medium"**: Our first media query `` **will overwrite our default styles** for screens at least 540px wide. Screens _below_ 540px will apply the styles from the "default".
   > 3. **"large"**: Our second media query `@media (min-width: 900px) {...}` **will overwrite our default AND medium styles** for screens at least 900px wide (no upper limit).
 
 ### Define your own style
